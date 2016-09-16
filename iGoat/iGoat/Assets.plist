@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Reverse Engineering</key>
+    <dict>
+        <key>description</key>
+        <string>This exercise category contains exercises related to reverse engineering a mobile app&apos;s binary code. On its own, reverse engineering an app leads to a number of valuable things for a hacker. First, it will give the hacker a solid blueprint of the app and reveal a great deal of information about the underlying architecture, design, and implementation. This can lead to things like counterfeiting or stealing of code. As a springboard, the hacker can then exploit this knowledge to conduct other types of attacks. For instance, the hacker may extract infrastructure passwords to conduct infrastructure attacks against backend systems. The hacker may leverage this knowledge to modify the app or its runtime behavior. These exercises show you how to raise the bar and make it much more painful and difficult for the hacker to successfully extract anything useful from the binary.</string>
+        <key>exercises</key>
+        <array>
+            <dict>
+                <key>creditsFile</key>
+                <string>KRvWAssociates.html</string>
+                <key>description</key>
+                <string>In this exercise, we are trying to extract a secret piece of information embedded within a string located within the app&apos;s binary. Ideally, you should avoid relying upon sensitive strings embedded within your binary. However, that is not always realistic. Offline availability requirements or system architectures typically drive the need for reliance upon embedded strings.  In some scenarios, it is not possible to avoid placing sensitive strings within your string table. However, there are things you can do to make it much more difficult to exploit these strings...
+                    
+                    Your first goal is to perform a string analysis of the compiled binary and answer the riddle posed by this exercise.
+                    
+                    Your second goal is to alter the mobile app in such a way that static analysis will not easily reveal the answer to the riddle.
+                </string>
+                <key>hints</key>
+                <array>
+                    <string>To extract useful string information from a binary, a hacker will follow a well-established methodology. First, the hacker will download the app from the iTunes store and decrypt it within a jailbroken environment using a free tool like &lt;i&gt;Clutch&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;
+                        
+                        To see a demo of how to bypass iTunes code encryption, click &lt;a href=&quot;http://m.youtube.com/watch?v=nOFXsR4-2AQ&quot;&gt;here&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+                        
+                        Normally, you must start a string analysis by breaking through iTunes code encryption to look at the underlying string table. However, you are running this app within a development environment. Hence, you cannot download the iTunes version of the app which would include this easily breakable protection. You can safely ignore the first step of bypassing iTunes code encryption through the use of a tool like &lt;i&gt;Clutch&lt;/i&gt; on your binary.
+                        
+                    </string>
+                    <string>The heart of every iPhone mobile app lies within its core binary file. The file contains ARM instructions that will be executed by iOS. When you download the app from the iTunes store, your phone receives an IPA file. This is an archive that contains an application bundle (APP file) as well as other files meant for iTunes management of your app.&lt;br/&gt;&lt;br/&gt;
+                        
+                        Within the Xcode environment, you can find the APP file within the &lt;i&gt;Products&lt;/i&gt; directory of the iGoat project. The particular subdirectory will dependend upon which target you are building against. If you are running the app within an iOS emulator, you can find the APP file within the filepath &lt;i&gt;~/Library/Application\ Support/iPhone\ Simulator&lt;/i&gt;.
+                    </string>
+                    <string>The application bundle contains the raw binary you will want to analyze. The binary typically has the same name as the project. In this case, the name of the raw binary is the filename &lt;i&gt;iGoat&lt;/i&gt;
+                    </string>
+                    <string>A hacker will use static analysis tools (&lt;i&gt;IDA Pro&lt;/i&gt;; &lt;i&gt;Hopper&lt;/i&gt;; &lt;i&gt;strings&lt;/i&gt;)to inspect the unencrypted binary&apos;s string table.  To learn how to perform basic static analysis, click &lt;a href=&quot;http://m.youtube.com/watch?v=GvqnJmTb9HU&quot;&gt;here&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+                        
+                        If you like the idea of using a simple command line tool instead, check out &lt;i&gt;strings&lt;/i&gt;.
+                    </string>
+                    <string>A hacker will typically pipe the output from the &lt;i&gt;strings&lt;/i&gt; command line tool to another tool like &lt;i&gt;grep&lt;/i&gt; to search for strings matching a particular pattern.
+                    </string>
+                    <string>There are many simple, easy things you can do to your original code to trick casual hackers from identifying sensitive strings contained within your binary string table. You can tweak the algorithm behind the code that retrieves the sensitive string to ensure that the original string is never stored in plaintext and easily accessible to the hacker.&lt;br/&gt;&lt;br/&gt;
+                        
+                        Which type of encryption / encoding algorithms are available to you? What do you need to worry about with each type?
+                    </string>
+                </array>
+                <key>initialViewController</key>
+                <string>StringAnalysisExerciseController</string>
+                <key>name</key>
+                <string>String Analysis</string>
+                <key>solution</key>
+                <string>There are two key goals of this exercise.
+                    
+                    First, you must answer the riddle posed to you by the application. You might be tempted to just look at the source code and get the answer. However, a hacker will not have the luxury of doing so as they will not have access to the original source code. They will only have access to what they can download off the iTunes store. The answer is embedded within the app&apos;s binary string table.
+                    
+                    To get the answer, a hacker must perform binary string analysis and inspect its string table. The string table contains any hardcoded strings used by the code throughout its execution. Hardcoded strings reveal all sorts of useful tidbits of information. A hacker can use a string table to cross-reference and locate sensitive algorithms within the binary. There are many studies of apps in the wild that show the prevalence of hardcoded usernames and passwords to backend systesm.
+                    
+                    Use the command-line tool &lt;i&gt;strings&lt;/i&gt; against the core binary file iGoat and pipe the output to &lt;i&gt;grep&lt;/i&gt; to search for the answer to the riddle.
+                    
+                    &lt;i&gt;strings iGoat | grep riddle&lt;/i&gt;
+                    
+                    The second goal is to make the app immune to this type of binary attack. To achieve this goal, there are a number of different techniques available. You could store an encrypted version of the string within the string table and decrypt it at runtime. After decryption, perform the string comparison to determine if the answer is correct. In taking this approach, static analysis will no longer yield a useful result. The attacker will be forced to move into the more expensive proposition of performing dynamic analysis to deduce the answer to the riddle. There are a whole other set of deterrents related to preventing or frustrating dynamic analsyis.
+                    
+                    You could also transform the representation of the string into something else (like an array of bytes) that would take it completely outside of the string table. You would be surprised how often this simple transformation will deter a hacker from going further...
+                    
+                    &lt;H1&gt;External References&lt;/H1&gt;
+                    &lt;OL&gt;
+                    &lt;LI&gt;OWASP Technical Risks of Reverse Engineering and Unauthorized Code Modification - &lt;i&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Technical_Risks_of_Reverse_Engineering_and_Unauthorized_Code_Modification#Exposed_String_Tables&quot;&gt;Exposed String Tables&lt;/a&gt;&lt;/i&gt;&lt;/LI&gt;
+                    &lt;LI&gt;OWASP Mobile Top Ten 2014 - &lt;i&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Mobile_Top_10_2014-M10&quot;&gt;M10&lt;/a&gt;&lt;/i&gt;&lt;/LI&gt;
+                    &lt;/OL&gt;
+                </string>
+            </dict>
+        </array>
+    </dict>
+	<key>Tampering</key>
+	<dict>
+		<key>description</key>
+		<string>This exercise category contains exercises relating to the unexpected modification of the mobile app&apos;s external resources (presentation logic; configuration files), execution environment, or the binary code itself. Verification of the integrity of the app is critical when dealing with apps that store, transmit, or process sensitive information assets or conduct sensitive operations. In order to execute these exercises, it will be easiest to execute them within a jailbroken environment. Such an environment will allow you to easily switch between tampered and untampered versions of the app.  Exercises may have a switch that allow you to fake being in a jailbroken environment.</string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>In this exercise, we are trying to verify whether or not the app is running within a jailbroken environment. Typically, a hacker will run your app in said environment to perform static and dynamic analysis. Static analysis will give them a full blueprint of the app along with any vulnerabilities they may later exploit. If you&apos;d like more information about why your app should be detecting and responding to running in a jailbroken environment, click &lt;a href=&quot;https://www.owasp.org/images/e/ec/Consequences_of_a_Jailbroken_iDevice.pdf&quot;&gt;here&lt;/a&gt;.
+                    
+                    When you run this exercise on a jailbroken device (or trick it using the switch) and you push the &lt;i&gt;Verify Status&lt;/i&gt; button, the app will execute its jailbreak detection logic. It will report on whether or not it believes it is running in a jailbroken environment.
+                    
+                    Your first goal is to trick the app into thinking it is not running in a jailbroken environment.
+                    
+                    Your second goal is to alter the jailbreak-detection logic to make it immune to the method swizzling attack vector.
+                </string>
+				<key>hints</key>
+				<array>
+					<string>If you are running this app in an emulator, the jailbreak detection logic will correctly report that it is running in a non-jailbroken environment.  You can get around this within the emulator by flipping the switch that will ignore the environmental cues that it knows are signals that it is running in a safe environment.&lt;br/&gt;&lt;br/&gt;
+                        
+                        Flip the switch to trick the app into ignoring the underlying environmental cues that it sees when inspecting the safety of its environment.
+                    </string>
+					<string>Your first strategy should be to understand the underlying jailbreak detection logic. Once you understand what system level API methods are getting executed by the app, you can then perform the substitution using method swizzling.&lt;br/&gt;&lt;br/&gt;
+                        
+                        This type of reverse engineering is quite straightforward using tools like IDA Pro or Hopper. You can also google for this logic. It is well documented and most developers follow the same logic every time.&lt;br/&gt;&lt;br/&gt;
+                        
+                        What is the underlying system-level API method that the app is calling in its logic?
+                    </string>
+					<string>Within an app, method swizzling can be implemented programmatically via a set of Objective C runtime API methods. Outside of the app, method swizzling can also be implemented via Mobile Substrate.  Mobile Substrate makes method swizzling particularly convenient to execute without having to dive into the details of the original source code. Hence, hackers are particularly fond of leveraging Mobile Substrate in exploiting method swizzling.&lt;br/&gt;&lt;br/&gt;
+                        
+                        In this exercise, there is a convenience switch that will programmatically enable method swizzling from within the app. If you&apos;re feeling particularly adventurous, try using Saurik&apos;s Mobile Substrate to conduct the same attack from outside of the app. This is what a hacker would have to do in real life.&lt;br/&gt;&lt;br/&gt;
+                        
+                        Push the switch to enable the programmatically-equivalent method swizzling.
+                    </string>
+					<string>To prevent the jailbreak detection logic from being bypassed via method swizzling, how else can the app do the same type of inspection of its environment without relying upon Objective C method calls?
+                    </string>
+					<string>Code your solution and run it on an actual jailbroken device. If you run your proposed solution within an iOS emulator and use the convenicence switch provided to fake a jailbroken environment, you will not be able to get an accurate assessment of whether the app believes it is really running in a jailbroken environment.
+                    </string>
+					<string>Extra Credit: What are some other ways of raising the bar to prevent the hacker from analyzing the underlying API method calls?
+                    </string>
+				</array>
+				<key>initialViewController</key>
+				<string>MethodSwizzlingExerciseController</string>
+				<key>name</key>
+				<string>Method Swizzling</string>
+				<key>solution</key>
+				<string>There are two key goals of this exercise.
+                    
+                    First, you must exploit the app via method swizzling to trick it into thinking it is running in a safe environment. Method swizzling is a legitimate feature of Objective C that has useful purposes. It is a convenient way of temporarily substituting one method call with another method call of the same signature that is provided by the developer.  This is useful for cases where the developer wishes to conduct testing or extend functionality without having access to the original source code.
+
+                    Within the app, jailbreak detection logic issues system-level API method calls to inspect its environment for particular features that are unique to jailbroken environments. Hence, a hacker will exploit method swizzling to trick the app into executing substituted method calls in lieu of the intended system-level API calls. The substituted and malicious code will hide the features and trick the app into thinking it is running in a safe environment.
+                    
+                    To really achieve this goal (and not just flip the convenience switch), you must use Mobile Substrate within a jailbroken device and intercept the &lt;i&gt;[NSFileManager fileExistsAtPath:]&lt;/i&gt; selector. Replace its method implementation with your own malicious one. Within your malicious implementation, you must check to see whether the method request involves a search for the &lt;i&gt;/Applications/Cydia.app&lt;/i&gt; file.  If so, return FALSE.  This will trick the app into thinking the file is not present and the app is not running in a jailbroken environment. If the request involves any other file, pass the request to the original system method.
+                    
+                    The second goal is to make the app immune to this type of attack. To achieve this goal, switch out the reliance upon the Objective C API call with a native C equivalent. The native C equivalent cannot be intercepted via method swizzling because it is not being executed in the same way as the traditional Objective C selector approach.  Use C&apos;s &lt;i&gt;fopen()&lt;/i&gt; instead to check for the existence of the file. Then, when the attacker tries to use method swizzling, they will be unable to intercept the call through this method.
+                    
+                    &lt;H1&gt;External References&lt;/H1&gt;
+                    &lt;OL&gt;
+                    &lt;LI&gt;OWASP Technical Risks of Reverse Engineering and Unauthorized Code Modification - &lt;i&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Technical_Risks_of_Reverse_Engineering_and_Unauthorized_Code_Modification#Swizzle_with_Behavioral_Change&quot;&gt;Method Swizzling&lt;/a&gt;&lt;/i&gt;&lt;/LI&gt;
+                    &lt;LI&gt;OWASP Mobile Top Ten 2014 - &lt;i&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Mobile_Top_10_2014-M10&quot;&gt;M10&lt;/a&gt;&lt;/i&gt;&lt;/LI&gt;
+                    &lt;LI&gt;OWASP Mobile Jailbreaking - &lt;i&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Mobile_Jailbreaking_Cheat_Sheet&quot;&gt;Cheatsheet&lt;/a&gt;&lt;/i&gt;&lt;/LI&gt;
+                    &lt;/OL&gt;
+                </string>
+			</dict>
+		</array>
+	</dict>
+	<key>Authentication</key>
+	<dict>
+		<key>description</key>
+		<string>This exercise category contains exercises relating to authentication issues. On iOS, local authentication is generally not an issue, but authenticating securely to a server application is. So, some or most of these exercises include some server-side code that needs to be run in order for the exercise to work. See each exercise&apos;s instructions for details.</string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>In this exercise, you&apos;re going to verify that an application&apos;s
+                    authentication page is vulnerable to a &quot;coffee shop attack&quot; whereby
+                    your username and password can be intercepted by an attacker on the
+                    same network you&apos;re on.
+                    
+                    To simulate an attacker on the same network segment, we use a special
+                    purpose Ruby web server that you&apos;ll run locally on your computer. It
+                    will look for your login locally on a non-encrypted HTTP port
+                    (8080). When it sees you&apos;ve submitted correct login credentials, it
+                    assigns a fake session token and sends the token back to the iGoat
+                    app. It also sends text to iGoat informing it that the username,
+                    password, and session token have been exposed to a &quot;coffee shop
+                    attack&quot;.
+                    
+                    Verifying the existence of the vulnerability is simple. First, launch
+                    the Ruby server from a Terminal window by typing &quot;./igoat_server.rb&quot;
+                    from the server folder under the folder where you&apos;ve installed the iGoat Xcode project. Next,
+                    just login with a username of &quot;donkey&quot; and a password of &quot;hotey&quot;.
+                    
+                    If everything is working, iGoat will notify you that your credentials
+                    have been exposed.
+                    
+                    (Optional, but highly recommended: This information can further be
+                    validated by running a proxy tool such as BurpSuite to capture the
+                    login information and view the entire HTTP request and response from
+                    the server.)</string>
+				<key>hints</key>
+				<array>
+					<string>Try logging in with a username of &quot;donkey&quot; and a password of &quot;hotey&quot;.</string>
+					<string>If you received an error message, be sure to turn on the server, and then try again.</string>
+					<string>To turn on the server, open a terminal window and run ./igoat_server.rb</string>
+					<string>If you received a message telling you that your credentials were compromised, you&apos;ve finished the first part.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>RemoteAuthenticationExerciseController</string>
+				<key>name</key>
+				<string>Remote Authentication</string>
+				<key>solution</key>
+				<string>Verifying the existence of this weakness is quite easy with iGoat. The
+                    exercise is written to send authentication data to a server without
+                    the use of any SSL encryption. Simply submitting the authentication
+                    data will result in the credentials being compromised in a simulated
+                    &quot;coffee shop attack&quot;.
+                    
+                    The solution to this exercise is to use SSL to encrypt the login
+                    credentials in transit. All else in the authentication mechanism will
+                    remain the same.
+                    
+                    Using SSL in iOS is quite easy, as NSURL does much of the &quot;heavy
+                    lifting&quot; in creating a simple SSL-encrypted HTTP connection. See 
+                    the source code to the main view controller in the Server Communication 
+                    exercise for a source code example of how to do this.
+                </string>
+			</dict>
+		</array>
+	</dict>
+	<key>Data Protection (Rest)</key>
+	<dict>
+		<key>description</key>
+		<string>Protecting sensitive data at rest on a mobile device is probably the toughest problem to solve, as small devices are easily lost or stolen. This exercise category contains exercises that help you internalize and understand what the issues are and how to deal with them, as well as what compromises are acceptable for different types of apps. There is, after all, no such thing as perfection here.</string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>The cut and paste feature in iOS is enormously useful to the end user,
+                    of course. Unfortunately, it can also lead to leakage of sensitive
+                    user information. Once the data is in the buffer, any application (or
+                    user) can paste that data inside other applications.
+                    
+                    In this exercise, you&apos;ll first exploit the weakness by finding some sensitive
+                    data inside the cut and paste buffer.</string>
+				<key>hints</key>
+				<array>
+					<string>Try copying some sensitive data in this exercise, and seeing what you can do with it.</string>
+					<string>Exit iGoat and paste it into another app.</string>
+					<string>If it successfully pasted outside of iGoat, then you&apos;ve leaked sensitive data.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>CutAndPasteExerciseController</string>
+				<key>name</key>
+				<string>Cut-and-Paste</string>
+				<key>solution</key>
+				<string>To verify the existence of this exposure, launch the exercise, and
+                    then use the cut and paste buffer to copy the username field
+                    (&quot;donkey&quot;).
+                    
+                    Next, exit the exercise and paste the data into any other
+                    application. This demonstrates that sensitive data can leak from the
+                    application. In some cases, the application should protect itself from
+                    allowing this information leakage.
+                    
+                    To remediate the weakness, the exercise must ensure the cut and paste
+                    buffer is cleared of any sensitive data before the application exits
+                    or backgrounds.
+                    
+                    Source code example is available in the exercise. Scroll to the bottom
+                    of the view controller, below the copyright notice, and you will find
+                    commented-out code. We encourage you to try to figure out the solution
+                    prior to reverting to the commented source, however.</string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>A default behavior in iOS is to capture a JPG image of any application
+                    screen as it is shut down or backgrounded. Unfortunately, the JPG file
+                    is placed on the device without any form of access control or
+                    encryption.
+                    
+                    In this exercise, you&apos;ll first exploit the weakness by finding some data
+                    in the app&apos;s screen shot.</string>
+				<key>hints</key>
+				<array>
+					<string>By default, iOS creates a plaintext screen shot in a JPG file
+                        in any app when the user presses the home key. There is no
+                        built-in protection to prevent sensitive data being stored in
+                        this file.</string>
+					<string>Use the app to enter some sensitive data, and then press the
+                        home key.</string>
+					<string>Verify that the sensitive data was stored in a JPG file on the
+                        device.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>BackgroundingExerciseController</string>
+				<key>name</key>
+				<string>Backgrounding</string>
+				<key>solution</key>
+				<string>
+                    Verifying the existence of this weakness is straight forward. Just
+                    launch the exercise, and then background the app by pressing the
+                    device&apos;s home key.
+                    
+                    Once the exercise is backgrounded, use Finder (on a simulator) or a
+                    tool like iPhone Explorer (on a hardware device) to find the JPG file
+                    containing the screen image.
+                    
+                    Verify that the data is plaintext and easily readable to anyone with
+                    access to that JPG file, such as someone who has stolen an iPhone or
+                    simply found a lost device.
+                    
+                    To prevent sensitive data from finding its way into the JPG screen
+                    shots, it is necessary to control the backgrounding behavior of the
+                    app. When an app backgrounds, iOS uses several methods that can all be
+                    delegated and tailored in your app.
+                    
+                    It is vital that any sensitive data on the screen be set to HIDDEN
+                    before the backgrounding is allowed to proceed, and then unhidden when
+                    the app resumes. This makes the process transparent to the user, while
+                    not exposing the user&apos;s sensitive data in the JPG file.
+                </string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
+                    data locally on the iOS device. In the lesson, the app stores data
+                    using a local SQLite database file, but no encryption is used.
+                    
+                    Your task is to locate the database and find the sensitive data that
+                    it contains.</string>
+				<key>hints</key>
+				<array>
+					<string> SQLite is a built-in database that iOS apps can make use
+                        of. By default, the database files are stored in plaintext on the iOS
+                        device.</string>
+					<string>Use the app to store some sensitive data into a SQLite
+                        database.</string>
+					<string>Now, go verify the sensitive data in the database file.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>LocalDataStorageExerciseController</string>
+				<key>name</key>
+				<string>Local Data Storage</string>
+				<key>solution</key>
+				<string>
+                    SQLite is a handy built-in tool for storing data locally on an iOS
+                    device. However, it provides no means of protecting its databases from
+                    compromise at a disk level.
+                    
+                    This exercise illustrates this weakness. Launch the application and
+                    place some sensitive data into the database.
+                    
+                    Next, exit the application and use Finder (if using the iOS Simulator)
+                    or iPhone Explorer (if using an iOS device) and explore the
+                    ~/Documents folder where iGoat is stored.
+                    
+                    You should find a database file called credentials.sqlite. Use a tool
+                    such as hexdump to view this binary file, and look for the sensitive data.
+                    You should find a plaintext string containing the information.
+                    
+                    To remediate the exercise, we use a special build of SQLite called
+                    SQLcipher. It uses OpenSSL to encrypt the database file using AES-256
+                    encryption.
+                    
+                    Initializing the SQLcipher database takes just a bit of extra code,
+                    and then the rest of your SQLite code will work unchanged. You can
+                    find an example of this commented in the source code.
+                    
+                    NOTE, though: In our example, we&apos;ve hard coded the encryption key into
+                    the source code. This is a horrifically bad practice! How should it be
+                    improved?
+                </string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>mansi.html</string>
+				<key>description</key>
+				<string>In this exercise, you&apos;ll exploit an app that stores sensitive data in cleartext on an iOS device. 
+
+In this lesson,  user&apos;s credentials are stored in &quot;User Defaults&quot;. Your task is to locate that sensitive data on your iPhone/Simulator.</string>
+				<key>hints</key>
+				<array>
+					<string>NSUserDefaults stores information in plist files, unencrypted on your iPhone/iOS Simulator.</string>
+					<string>Enter your credentials and let it &quot;Remember me&quot;.</string>
+					<string>Now, verify your credentials stored in Settings App. 
+
+This information is also stored in:
+
+                        ~/Library/Application Support/iPhone Simulator/&lt;{version}&gt;/Applications
+                        &lt;{Bundle ID}&gt;/Library/Preferences/com.krvw.iGoat.plist</string>
+				</array>
+				<key>initialViewController</key>
+				<string>KeychainExerciseViewController</string>
+				<key>name</key>
+				<string>Keychain Usage</string>
+				<key>solution</key>
+				<string>It can be easily verified in this exercise, that storing sensitive data in a plist (in this case User Defaults), is not a safe way since data is stored in clear text.
+
+It is recommended by Apple to use the keychain on iPhone to store passwords and other sensitive data (such as digital certs, cookies, sftp accounts, instant messaging accounts etc) that can be used to log into secure web sites.
+
+Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&quot;. This function uses  &quot;SecItemAdd&quot;, &quot;SecItemCopyMatch&quot; and &quot;SecItemUpdate&quot; for adding, retrieving and updating items in an app&apos;s keychain.</string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>rutger.html</string>
+				<key>description</key>
+				<string>The autocorrect spellchecker function of iOS is a famous feature of iOS, sometimes very useful and other times offering hilarious suggestions.
+                
+                    Less funny is the fact that it stores text that you have entered on your device. This data is retrievable if you know where to look. Make sure to run iGoat on the simulator if you want to do this exercise.
+                </string>
+				<key>hints</key>
+				<array>
+					<string>Type some text into the provided text fields.</string>
+					<string>Make sure you make one or two typing mistakes to see autocorrect in action and verify that autocorrect is in use.</string>
+					<string>When done entering data, close iGoat and see if you can retrieve the data that was supposedly stored on the simulator.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>KeystrokeLoggingExerciseController</string>
+				<key>name</key>
+				<string>Keystroke Logging</string>
+				<key>solution</key>
+				<string>To verify the existence of this exposure, launch the exercise, and
+                    then enter some text into the fields. Make sure to use the autocorrect function by entering some misspelled words. Later you can try it without misspelling words and compare the behavior.
+                    
+                    Once you are done entering text, close the iGoat app and open Finder to explore your iPhone simulator. ( /Users/[username]/Library/Application Support/iPhone Simulator/5.1 )
+                    
+                    Search for a file called dynamic-text.dat (it can be found in de Library/keyboard folder in your iOS simulator. Open this file in your favorite text editor (eg. Emacs, TextWrangler). You should be able to find familiar text in this file.
+                    
+                    This logging is performed to help autocorrect, the way to prevent this is to turn of autocorrect on your textfields and textviews. This can be done by code or in the Interface Builder.
+                
+                </string>
+			</dict>
+		</array>
+	</dict>
+	<key>Data Protection (Transit)</key>
+	<dict>
+		<key>description</key>
+		<string>Arguably the second most important issue on mobile devices, protecting sensitive data in transit is a vital topic for developers to fully understand and address in their code. This exercise category contains exercises to help you clearly understand what the issues are.</string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>This exercise demonstrates the need for protecting sensitive data when it is in transit from the iOS device to the server. In the first step, you are presented with an authentication page. From there, you will log in using the provided account credentials--and see whether they get compromised in transit.</string>
+				<key>hints</key>
+				<array>
+					<string>To communicate sensitive data with a server, the data must be secured in
+                        transit.</string>
+					<string>For this lesson, you will need to run a small (special purpose)
+                        web server. It is located in the iGoat distribution, with a
+                        filename of &quot;igoat_server.rb&quot;.</string>
+					<string>Run the server from a terminal window by typing:
+                        ./igoat_server.rb from the server folder in your iGoat distribution</string>
+					<string>Now, run the exercise and send the data in the provided fields to the server by pressing the submit button.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>ServerCommunicationExerciseController</string>
+				<key>name</key>
+				<string>Server Communication</string>
+				<key>solution</key>
+				<string>Exploiting this weakness is easy. Just run the server process, and launch the exercise. In the exercise, submit the sensitive data (the user&apos;s account information) to the server.
+                    
+                    The server simulates a &quot;coffee shop attack&quot; that intercepts the user&apos;s data while it transits through the 
+                    coffee shop&apos;s wifi network.
+                    
+                    Remediating this weakness is best done by using SSL encryption for all sensitive data communications with the 
+                    server.
+                    
+                    Using SSL in iOS is quite easy, as NSURL does much of the &quot;heavy
+                    lifting&quot; in creating a simple SSL-encrypted HTTP connection.
+                </string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>In this exercise, you will verify the identity of the server you have connected to via SSL. You must verify the identify of the backend server during the initial SSL handshake.  Otherwise, transmitted sensitive data can still be intercepted by the hacker. First, the hacker sets up a malicious SSL server that will receive the sensitive data.  Then, the attacker exploits various infrastructure attacks (ARP Cache poisoning; DNS attacks) and redirects the mobile app&apos;s SSL connection requests to the rogue server (using a WiFi Pineapple Mark V device).  The rogue server will receive sensitive data issued by the client.
+                    
+Pinning is the process of a mobile app verifying an SSL server&apos;s identity through attributes contained within the certificate issued by the server. There are a number of different certificate attributes that the client can associate (or pin) to the server&apos;s identity.  In this exercise, we pin the public key to the server&apos;s identity and use the public key as a reliable and consistent way to verify the server&apos;s identity over time. This is particualrly advantageous when an organization&apos;s outer certificate periodically rotates while the inner key does not.</string>
+				<key>hints</key>
+				<array>
+					<string>Be sure to startup the local iGoat servers before this exercise! The servers are found in the &lt;i&gt;server&lt;/i&gt; directory and are written in Ruby. The legitimate server runs on port 8443 and a malicious server runs on port 8442.</string>
+					<string>An attacker may exploit ARP Cache poisoning to redirect all legitimate requests from the intended server to a malicious third-party site instead.</string>
+					<string>An attacker may exploit DNS cache poisoning to redirect all legitimate requests from the intended server to a malicious third-party site instead.</string>
+					<string>Check out the &lt;i&gt;Pineapple Mark V&lt;/i&gt; device to see how easy it can be to intercept and redirect mobile app traffic.</string>
+					<string>For this demo, exploiting an infrastructure attack to redirect will be difficult because the intended server is on the localhost. You can simulate a redirection attack to a third-party site by changing the destination server&apos;s port (in the source code) to 8442.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>PublicKeyPinningExerciseController</string>
+				<key>name</key>
+				<string>Public Key Pinning</string>
+				<key>solution</key>
+				<string>Exploiting this weakness is easy. Just run the server process, and launch the exercise. In the exercise, submit the sensitive data (the user&apos;s account information) to the server.
+                    
+                    A malicious server receives the user&apos;s sensitive data instead of the legitimate SSL server. This simulates a &quot;redirection attack&quot;. The data is encrypted during transmission and this will prevent a hacker from stealing sensitive data via traffic sniffing. However, the code unconditionally transmits its sensitive data to the server after establishing an SSL session. It assumes that the SSL server is legitimate.
+                    
+                    Remediating this weakness is best done by inspecting the actual certificate issued by the SSL server during the initial handshake. There are a number of different attributes that the app can inspect within the certificate. Inspecting the public key is advantageous as this is relatively stable over time. However, this logic assumes that there are no SSL proxies between the client and the server.
+                    
+                    Using SSL in iOS is quite easy, as NSURL does much of the &quot;heavy
+                    lifting&quot; in creating a simple SSL-encrypted HTTP connection. Finding adequate documentation for how to inspect a certificate&quot;s public key inspection is challenging.
+                </string>
+			</dict>
+		</array>
+	</dict>
+	<key>Injection Flaws</key>
+	<dict>
+		<key>description</key>
+		<string>In this exercise category, you&apos;ll find exercises that pertain to malicious data injection attacks. These include several classic OWASP Top-10 issues such as SQL Injection, Cross-site scripting, and some iOS specific issues, such as URL redirection.</string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>The purpose of this exercise is to demonstrate the danger of using an
+                    SQLite query that&apos;s been dynamically-generated from user input, which presents
+                    an obvious SQL injection vector.
+
+                    The exercise is designed to mimic the interface to a searchable article
+                    database provided by a local news outlet. There are two article categories:
+                    free and premium. The goal is to trick the interface into granting the user
+                    access to premium content in addition to the free.
+
+                    Note: Simply omit the search term for a list of all [free] articles.
+                </string>
+				<key>hints</key>
+				<array>
+					<string>SQL injection can occur when unvalidated input is dynamically
+                        attached to a SQL query.</string>
+					<string> Local SQLite databases on an iOS device are just as susceptible
+                        to SQLi as those on a remote server.</string>
+					<string>Try placing a SQLi attack in one of the text fields in this
+                        lesson.</string>
+					<string>Start by putting a single quote (@apos;) character into a text
+                        field.</string>
+					<string>Try one of the dreaded 1=1 attacks next to see if you can dump
+                        all the data in the database.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>SQLInjectionExerciseController</string>
+				<key>name</key>
+				<string>SQL Injection</string>
+				<key>solution</key>
+				<string>The SQL call in this exercise is written to use simple dynamically
+                    built string queries. These are entirely exploitable with classic SQL
+                    Injection techniques, like those described in the OWASP Top 10.
+                    
+                    To steal the data from this database, a simple attack like: @apos; or 1=1--
+                    will do the trick.
+                
+                    Remediating the problem is also quite straight forward. Rather than
+                    using dynamic strings for your query, you will need to use a
+                    parameterized query API.
+                </string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		141E2FBE16C3D49900586528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FBD16C3D49900586528 /* UIKit.framework */; };
+		141E2FC016C3D49900586528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FBF16C3D49900586528 /* Foundation.framework */; };
+		141E2FC216C3D49900586528 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FC116C3D49900586528 /* CoreGraphics.framework */; };
+		141E2FC816C3D49900586528 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 141E2FC616C3D49900586528 /* InfoPlist.strings */; };
+		141E2FCA16C3D49900586528 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 141E2FC916C3D49900586528 /* main.m */; };
+		141E2FCE16C3D49900586528 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 141E2FCD16C3D49900586528 /* AppDelegate.m */; };
+		141E2FD016C3D49900586528 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 141E2FCF16C3D49900586528 /* Default.png */; };
+		141E2FD216C3D49900586528 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 141E2FD116C3D49900586528 /* Default@2x.png */; };
+		141E2FD416C3D49900586528 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 141E2FD316C3D49900586528 /* Default-568h@2x.png */; };
+		141E2FD716C3D49900586528 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141E2FD516C3D49900586528 /* MainStoryboard_iPhone.storyboard */; };
+		141E2FDA16C3D49900586528 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141E2FD816C3D49900586528 /* MainStoryboard_iPad.storyboard */; };
+		141E2FDD16C3D49900586528 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141E2FDC16C3D49900586528 /* MasterViewController.m */; };
+		141E2FE016C3D49900586528 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141E2FDF16C3D49900586528 /* DetailViewController.m */; };
+		143D7A2F16DD006D001AE794 /* articles.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1462779116C56BDD007FE838 /* articles.sqlite */; };
+		143D7A3016DD0078001AE794 /* SQLInjectionArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1462779716C56BDD007FE838 /* SQLInjectionArticlesViewController.xib */; };
+		1462775F16C56431007FE838 /* Assets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1462775E16C56431007FE838 /* Assets.plist */; };
+		1462776716C56447007FE838 /* rutger.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776016C56447007FE838 /* rutger.html */; };
+		1462776916C56447007FE838 /* igoat.css in Resources */ = {isa = PBXBuildFile; fileRef = 1462776216C56447007FE838 /* igoat.css */; };
+		1462776A16C56447007FE838 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776316C56447007FE838 /* about.html */; };
+		1462776B16C56447007FE838 /* splash.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776416C56447007FE838 /* splash.html */; };
+		1462776C16C56447007FE838 /* KRvWAssociates.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776516C56447007FE838 /* KRvWAssociates.html */; };
+		1462776F16C5645F007FE838 /* mansi.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776E16C5645F007FE838 /* mansi.html */; };
+		1462777C16C5653E007FE838 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1462777B16C5653E007FE838 /* Icon.png */; };
+		1462777E16C56546007FE838 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1462777D16C56546007FE838 /* Icon@2x.png */; };
+		146277B416C95FAB007FE838 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277AD16C95FAB007FE838 /* Asset.m */; };
+		146277B516C95FAB007FE838 /* AssetStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277AF16C95FAB007FE838 /* AssetStore.m */; };
+		146277B616C95FAB007FE838 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277B116C95FAB007FE838 /* Category.m */; };
+		146277B716C95FAB007FE838 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277B316C95FAB007FE838 /* Exercise.m */; };
+		146277B916C962E6007FE838 /* RemoteAuthenticationExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779916C56BE8007FE838 /* RemoteAuthenticationExerciseController.m */; };
+		146277BE16C96440007FE838 /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277BC16C96325007FE838 /* ExerciseViewController.m */; };
+		146277C616C9662D007FE838 /* HtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277C216C96545007FE838 /* HtmlViewController.m */; };
+		146277C816C9662D007FE838 /* HintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277C416C96547007FE838 /* HintsViewController.m */; };
+		146277CC16CA5496007FE838 /* ExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277CB16CA5496007FE838 /* ExercisesViewController.m */; };
+		1472EAA616D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAA516D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib */; };
+		1472EAA816D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAA716D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib */; };
+		1472EAA916D6891B00AD63D1 /* BackgroundingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779F16C56BFD007FE838 /* BackgroundingExerciseController.m */; };
+		1472EAAB16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAAA16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib */; };
+		1472EAAD16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAAC16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib */; };
+		1472EAAE16D695E400AD63D1 /* CutAndPasteExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779C16C56BF1007FE838 /* CutAndPasteExerciseController.m */; };
+		1472EAB116D7863F00AD63D1 /* RotationLimitingNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1472EAB016D7863F00AD63D1 /* RotationLimitingNavigationViewController.m */; };
+		1472EAB216D790B700AD63D1 /* KeychainExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462778C16C56BC1007FE838 /* KeychainExerciseViewController.m */; };
+		1472EAB416D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAB316D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib */; };
+		1472EAB616D798B100AD63D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1472EAB516D798B100AD63D1 /* Security.framework */; };
+		1472EAB816D798C500AD63D1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1472EAB716D798C400AD63D1 /* SystemConfiguration.framework */; };
+		1472EABA16D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAB916D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib */; };
+		1472EABB16D7AA4800AD63D1 /* KeystrokeLoggingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462778916C56BB5007FE838 /* KeystrokeLoggingExerciseController.m */; };
+		1472EABD16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EABC16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib */; };
+		1472EABF16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EABE16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib */; };
+		1472EAC116D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAC016D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib */; };
+		1472EAC216D7B23600AD63D1 /* LocalDataStorageExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462778F16C56BCF007FE838 /* LocalDataStorageExerciseController.m */; };
+		1472EAC416D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAC316D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib */; };
+		1475029916D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1475029816D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib */; };
+		1475029C16D4E2CE009C2432 /* ExerciseContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1475029B16D4E2CE009C2432 /* ExerciseContainerViewController.m */; };
+		14CFECDA16D7BD5900B6E6E7 /* LocalDataStorageExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECD916D7BD5800B6E6E7 /* LocalDataStorageExerciseController_iPad.xib */; };
+		14CFECDB16D7C27100B6E6E7 /* ServerCommunicationExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277A216C56C07007FE838 /* ServerCommunicationExerciseController.m */; };
+		14CFECE816D7C46400B6E6E7 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECDF16D7C46400B6E6E7 /* NSObject+SBJSON.m */; };
+		14CFECE916D7C46400B6E6E7 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECE116D7C46400B6E6E7 /* NSString+SBJSON.m */; };
+		14CFECEA16D7C46400B6E6E7 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECE316D7C46400B6E6E7 /* SBJsonBase.m */; };
+		14CFECEB16D7C46400B6E6E7 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECE516D7C46400B6E6E7 /* SBJsonParser.m */; };
+		14CFECEC16D7C46400B6E6E7 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECE716D7C46400B6E6E7 /* SBJsonWriter.m */; };
+		14CFECEE16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECED16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib */; };
+		14CFECF016D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECEF16D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib */; };
+		14CFECF216D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECF116D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib */; };
+		14CFECF316D7CAD200B6E6E7 /* SQLInjectionExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779316C56BDD007FE838 /* SQLInjectionExerciseController.m */; };
+		14CFECF416D7CAD200B6E6E7 /* SQLInjectionArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779616C56BDD007FE838 /* SQLInjectionArticlesViewController.m */; };
+		14CFECF616D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */; };
+		14D8962716DA888E00D0720A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D8962516DA886F00D0720A /* libsqlite3.dylib */; };
+		BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */ = {isa = PBXBuildFile; fileRef = BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */; };
+		BCA6D1C919DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */; };
+		BCA6D1CB19DA14FF00002CA0 /* StringAnalysisExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6D1C819DA14FF00002CA0 /* StringAnalysisExerciseController.m */; };
+		BCA6D1CD19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA6D1CC19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib */; };
+		BCF7AD5819D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF7AD5419D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib */; };
+		BCF7AD5919D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF7AD5519D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib */; };
+		BCF7AD5A19D0C2A8007ED80A /* MethodSwizzlingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF7AD5719D0C2A8007ED80A /* MethodSwizzlingExerciseController.m */; };
+		BCFB4AE319BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCFB4ADF19BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib */; };
+		BCFB4AE419BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCFB4AE019BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib */; };
+		BCFB4AE519BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFB4AE219BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		141E2FBA16C3D49900586528 /* iGoat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGoat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		141E2FBD16C3D49900586528 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		141E2FBF16C3D49900586528 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		141E2FC116C3D49900586528 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		141E2FC516C3D49900586528 /* iGoat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iGoat-Info.plist"; sourceTree = "<group>"; };
+		141E2FC716C3D49900586528 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		141E2FC916C3D49900586528 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		141E2FCB16C3D49900586528 /* iGoat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iGoat-Prefix.pch"; sourceTree = "<group>"; };
+		141E2FCC16C3D49900586528 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		141E2FCD16C3D49900586528 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		141E2FCF16C3D49900586528 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		141E2FD116C3D49900586528 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		141E2FD316C3D49900586528 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		141E2FD616C3D49900586528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		141E2FD916C3D49900586528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		141E2FDB16C3D49900586528 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		141E2FDC16C3D49900586528 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		141E2FDE16C3D49900586528 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		141E2FDF16C3D49900586528 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1462775E16C56431007FE838 /* Assets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Assets.plist; sourceTree = "<group>"; };
+		1462776016C56447007FE838 /* rutger.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = rutger.html; sourceTree = "<group>"; };
+		1462776216C56447007FE838 /* igoat.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = igoat.css; sourceTree = "<group>"; };
+		1462776316C56447007FE838 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		1462776416C56447007FE838 /* splash.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = splash.html; sourceTree = "<group>"; };
+		1462776516C56447007FE838 /* KRvWAssociates.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KRvWAssociates.html; sourceTree = "<group>"; };
+		1462776E16C5645F007FE838 /* mansi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mansi.html; sourceTree = "<group>"; };
+		1462777016C5648D007FE838 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		1462777116C5648D007FE838 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		1462777B16C5653E007FE838 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		1462777D16C56546007FE838 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		1462778816C56BB5007FE838 /* KeystrokeLoggingExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeystrokeLoggingExerciseController.h; sourceTree = "<group>"; };
+		1462778916C56BB5007FE838 /* KeystrokeLoggingExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeystrokeLoggingExerciseController.m; sourceTree = "<group>"; };
+		1462778B16C56BC1007FE838 /* KeychainExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainExerciseViewController.h; sourceTree = "<group>"; };
+		1462778C16C56BC1007FE838 /* KeychainExerciseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainExerciseViewController.m; sourceTree = "<group>"; };
+		1462778E16C56BCF007FE838 /* LocalDataStorageExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDataStorageExerciseController.h; sourceTree = "<group>"; };
+		1462778F16C56BCF007FE838 /* LocalDataStorageExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataStorageExerciseController.m; sourceTree = "<group>"; };
+		1462779116C56BDD007FE838 /* articles.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = articles.sqlite; sourceTree = "<group>"; };
+		1462779216C56BDD007FE838 /* SQLInjectionExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLInjectionExerciseController.h; sourceTree = "<group>"; };
+		1462779316C56BDD007FE838 /* SQLInjectionExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLInjectionExerciseController.m; sourceTree = "<group>"; };
+		1462779516C56BDD007FE838 /* SQLInjectionArticlesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLInjectionArticlesViewController.h; sourceTree = "<group>"; };
+		1462779616C56BDD007FE838 /* SQLInjectionArticlesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLInjectionArticlesViewController.m; sourceTree = "<group>"; };
+		1462779716C56BDD007FE838 /* SQLInjectionArticlesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQLInjectionArticlesViewController.xib; sourceTree = "<group>"; };
+		1462779816C56BE8007FE838 /* RemoteAuthenticationExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteAuthenticationExerciseController.h; sourceTree = "<group>"; };
+		1462779916C56BE8007FE838 /* RemoteAuthenticationExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteAuthenticationExerciseController.m; sourceTree = "<group>"; };
+		1462779B16C56BF1007FE838 /* CutAndPasteExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CutAndPasteExerciseController.h; sourceTree = "<group>"; };
+		1462779C16C56BF1007FE838 /* CutAndPasteExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CutAndPasteExerciseController.m; sourceTree = "<group>"; };
+		1462779E16C56BFD007FE838 /* BackgroundingExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundingExerciseController.h; sourceTree = "<group>"; };
+		1462779F16C56BFD007FE838 /* BackgroundingExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundingExerciseController.m; sourceTree = "<group>"; };
+		146277A116C56C07007FE838 /* ServerCommunicationExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerCommunicationExerciseController.h; sourceTree = "<group>"; };
+		146277A216C56C07007FE838 /* ServerCommunicationExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerCommunicationExerciseController.m; sourceTree = "<group>"; };
+		146277AC16C95FAB007FE838 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		146277AD16C95FAB007FE838 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
+		146277AE16C95FAB007FE838 /* AssetStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetStore.h; sourceTree = "<group>"; };
+		146277AF16C95FAB007FE838 /* AssetStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetStore.m; sourceTree = "<group>"; };
+		146277B016C95FAB007FE838 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		146277B116C95FAB007FE838 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		146277B216C95FAB007FE838 /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise.h; sourceTree = "<group>"; };
+		146277B316C95FAB007FE838 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
+		146277BB16C96324007FE838 /* ExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
+		146277BC16C96325007FE838 /* ExerciseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
+		146277C116C96544007FE838 /* HtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HtmlViewController.h; sourceTree = "<group>"; };
+		146277C216C96545007FE838 /* HtmlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HtmlViewController.m; sourceTree = "<group>"; };
+		146277C316C96546007FE838 /* HintsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HintsViewController.h; sourceTree = "<group>"; };
+		146277C416C96547007FE838 /* HintsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HintsViewController.m; sourceTree = "<group>"; };
+		146277CA16CA5496007FE838 /* ExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesViewController.h; sourceTree = "<group>"; };
+		146277CB16CA5496007FE838 /* ExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExercisesViewController.m; sourceTree = "<group>"; };
+		1472EAA516D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		1472EAA716D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		1472EAAA16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController_iPad.xib; sourceTree = "<group>"; };
+		1472EAAC16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		1472EAAF16D7863E00AD63D1 /* RotationLimitingNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationLimitingNavigationViewController.h; sourceTree = "<group>"; };
+		1472EAB016D7863F00AD63D1 /* RotationLimitingNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationLimitingNavigationViewController.m; sourceTree = "<group>"; };
+		1472EAB316D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		1472EAB516D798B100AD63D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1472EAB716D798C400AD63D1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1472EAB916D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		1472EABC16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController_iPad.xib; sourceTree = "<group>"; };
+		1472EABE16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		1472EAC016D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController_iPad.xib; sourceTree = "<group>"; };
+		1472EAC316D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalDataStorageExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		1475029816D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController_iPad.xib; sourceTree = "<group>"; };
+		1475029A16D4E2CD009C2432 /* ExerciseContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseContainerViewController.h; sourceTree = "<group>"; };
+		1475029B16D4E2CE009C2432 /* ExerciseContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseContainerViewController.m; sourceTree = "<group>"; };
+		14CFECD916D7BD5800B6E6E7 /* LocalDataStorageExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalDataStorageExerciseController_iPad.xib; sourceTree = "<group>"; };
+		14CFECDC16D7C2D000B6E6E7 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		14CFECDE16D7C46400B6E6E7 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		14CFECDF16D7C46400B6E6E7 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		14CFECE016D7C46400B6E6E7 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		14CFECE116D7C46400B6E6E7 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		14CFECE216D7C46400B6E6E7 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		14CFECE316D7C46400B6E6E7 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		14CFECE416D7C46400B6E6E7 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		14CFECE516D7C46400B6E6E7 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		14CFECE616D7C46400B6E6E7 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		14CFECE716D7C46400B6E6E7 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		14CFECED16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		14CFECEF16D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController_iPad.xib; sourceTree = "<group>"; };
+		14CFECF116D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPad.xib; sourceTree = "<group>"; };
+		14D8962516DA886F00D0720A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = iGoatSSLServer.der; sourceTree = "<group>"; };
+		BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPad.xib; sourceTree = "<group>"; };
+		BCA6D1C719DA14FF00002CA0 /* StringAnalysisExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAnalysisExerciseController.h; sourceTree = "<group>"; };
+		BCA6D1C819DA14FF00002CA0 /* StringAnalysisExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringAnalysisExerciseController.m; sourceTree = "<group>"; };
+		BCA6D1CC19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		BCF7AD5419D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodSwizzlingExerciseController_iPad.xib; sourceTree = "<group>"; };
+		BCF7AD5519D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodSwizzlingExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		BCF7AD5619D0C2A8007ED80A /* MethodSwizzlingExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingExerciseController.h; sourceTree = "<group>"; };
+		BCF7AD5719D0C2A8007ED80A /* MethodSwizzlingExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingExerciseController.m; sourceTree = "<group>"; };
+		BCFB4ADF19BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicKeyPinningExerciseController_iPad.xib; sourceTree = "<group>"; };
+		BCFB4AE019BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicKeyPinningExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		BCFB4AE119BE43EA00CB15F2 /* PublicKeyPinningExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicKeyPinningExerciseController.h; sourceTree = "<group>"; };
+		BCFB4AE219BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicKeyPinningExerciseController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		141E2FB716C3D49900586528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D8962716DA888E00D0720A /* libsqlite3.dylib in Frameworks */,
+				1472EAB816D798C500AD63D1 /* SystemConfiguration.framework in Frameworks */,
+				1472EAB616D798B100AD63D1 /* Security.framework in Frameworks */,
+				141E2FBE16C3D49900586528 /* UIKit.framework in Frameworks */,
+				141E2FC016C3D49900586528 /* Foundation.framework in Frameworks */,
+				141E2FC216C3D49900586528 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		141E2FB116C3D49900586528 = {
+			isa = PBXGroup;
+			children = (
+				141E2FC316C3D49900586528 /* iGoat */,
+				141E2FBC16C3D49900586528 /* Frameworks */,
+				141E2FBB16C3D49900586528 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		141E2FBB16C3D49900586528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				141E2FBA16C3D49900586528 /* iGoat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		141E2FBC16C3D49900586528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14D8962516DA886F00D0720A /* libsqlite3.dylib */,
+				1472EAB716D798C400AD63D1 /* SystemConfiguration.framework */,
+				1472EAB516D798B100AD63D1 /* Security.framework */,
+				141E2FBD16C3D49900586528 /* UIKit.framework */,
+				141E2FBF16C3D49900586528 /* Foundation.framework */,
+				141E2FC116C3D49900586528 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		141E2FC316C3D49900586528 /* iGoat */ = {
+			isa = PBXGroup;
+			children = (
+				1462777016C5648D007FE838 /* Utils.h */,
+				1462777116C5648D007FE838 /* Utils.m */,
+				141E2FCC16C3D49900586528 /* AppDelegate.h */,
+				141E2FCD16C3D49900586528 /* AppDelegate.m */,
+				141E2FD516C3D49900586528 /* MainStoryboard_iPhone.storyboard */,
+				141E2FD816C3D49900586528 /* MainStoryboard_iPad.storyboard */,
+				1462777216C56499007FE838 /* Assets */,
+				1462777F16C56B2E007FE838 /* Exercises */,
+				146277C916CA4DD2007FE838 /* View Controllers */,
+				1462775D16C56410007FE838 /* Resources */,
+				141E2FC416C3D49900586528 /* Supporting Files */,
+				14CFECDD16D7C42400B6E6E7 /* JSON */,
+			);
+			path = iGoat;
+			sourceTree = "<group>";
+		};
+		141E2FC416C3D49900586528 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1462777B16C5653E007FE838 /* Icon.png */,
+				1462777D16C56546007FE838 /* Icon@2x.png */,
+				141E2FC516C3D49900586528 /* iGoat-Info.plist */,
+				141E2FC616C3D49900586528 /* InfoPlist.strings */,
+				141E2FC916C3D49900586528 /* main.m */,
+				141E2FCB16C3D49900586528 /* iGoat-Prefix.pch */,
+				141E2FCF16C3D49900586528 /* Default.png */,
+				141E2FD116C3D49900586528 /* Default@2x.png */,
+				141E2FD316C3D49900586528 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1462775D16C56410007FE838 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */,
+				1462776316C56447007FE838 /* about.html */,
+				1462776E16C5645F007FE838 /* mansi.html */,
+				1462776016C56447007FE838 /* rutger.html */,
+				1462776416C56447007FE838 /* splash.html */,
+				1462776516C56447007FE838 /* KRvWAssociates.html */,
+				1462776216C56447007FE838 /* igoat.css */,
+				1462775E16C56431007FE838 /* Assets.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1462777216C56499007FE838 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				146277AC16C95FAB007FE838 /* Asset.h */,
+				146277AD16C95FAB007FE838 /* Asset.m */,
+				146277AE16C95FAB007FE838 /* AssetStore.h */,
+				146277AF16C95FAB007FE838 /* AssetStore.m */,
+				146277B016C95FAB007FE838 /* Category.h */,
+				146277B116C95FAB007FE838 /* Category.m */,
+				146277B216C95FAB007FE838 /* Exercise.h */,
+				146277B316C95FAB007FE838 /* Exercise.m */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		1462777F16C56B2E007FE838 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				BCA6D1C419D9F59100002CA0 /* String Analysis */,
+				BCF7AD5319D0C167007ED80A /* Method Swizzling */,
+				BCFB4ADE19BE430600CB15F2 /* Public Key Pinning */,
+				1462778616C56B77007FE838 /* Authentication */,
+				1462778516C56B6C007FE838 /* Backgrounding */,
+				1462778416C56B62007FE838 /* Cut-and-Paste */,
+				1462778116C56B4B007FE838 /* Keychain */,
+				1462778016C56B3D007FE838 /* Keylogging */,
+				1462778216C56B52007FE838 /* Local Data Storage */,
+				1462778316C56B5A007FE838 /* SQL Injection */,
+				1462778716C56B94007FE838 /* Server Communication */,
+			);
+			name = Exercises;
+			sourceTree = "<group>";
+		};
+		1462778016C56B3D007FE838 /* Keylogging */ = {
+			isa = PBXGroup;
+			children = (
+				1462778816C56BB5007FE838 /* KeystrokeLoggingExerciseController.h */,
+				1462778916C56BB5007FE838 /* KeystrokeLoggingExerciseController.m */,
+				1472EAC016D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib */,
+				1472EAB916D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib */,
+			);
+			name = Keylogging;
+			sourceTree = "<group>";
+		};
+		1462778116C56B4B007FE838 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				1462778B16C56BC1007FE838 /* KeychainExerciseViewController.h */,
+				1462778C16C56BC1007FE838 /* KeychainExerciseViewController.m */,
+				1472EABE16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib */,
+				1472EAB316D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib */,
+			);
+			name = Keychain;
+			sourceTree = "<group>";
+		};
+		1462778216C56B52007FE838 /* Local Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				1462778E16C56BCF007FE838 /* LocalDataStorageExerciseController.h */,
+				1462778F16C56BCF007FE838 /* LocalDataStorageExerciseController.m */,
+				14CFECD916D7BD5800B6E6E7 /* LocalDataStorageExerciseController_iPad.xib */,
+				1472EAC316D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib */,
+			);
+			name = "Local Data Storage";
+			sourceTree = "<group>";
+		};
+		1462778316C56B5A007FE838 /* SQL Injection */ = {
+			isa = PBXGroup;
+			children = (
+				1462779116C56BDD007FE838 /* articles.sqlite */,
+				1462779216C56BDD007FE838 /* SQLInjectionExerciseController.h */,
+				1462779316C56BDD007FE838 /* SQLInjectionExerciseController.m */,
+				14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */,
+				14CFECF116D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib */,
+				1462779516C56BDD007FE838 /* SQLInjectionArticlesViewController.h */,
+				1462779616C56BDD007FE838 /* SQLInjectionArticlesViewController.m */,
+				1462779716C56BDD007FE838 /* SQLInjectionArticlesViewController.xib */,
+			);
+			name = "SQL Injection";
+			sourceTree = "<group>";
+		};
+		1462778416C56B62007FE838 /* Cut-and-Paste */ = {
+			isa = PBXGroup;
+			children = (
+				1462779B16C56BF1007FE838 /* CutAndPasteExerciseController.h */,
+				1462779C16C56BF1007FE838 /* CutAndPasteExerciseController.m */,
+				1472EABC16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib */,
+				1472EAAC16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib */,
+			);
+			name = "Cut-and-Paste";
+			sourceTree = "<group>";
+		};
+		1462778516C56B6C007FE838 /* Backgrounding */ = {
+			isa = PBXGroup;
+			children = (
+				1462779E16C56BFD007FE838 /* BackgroundingExerciseController.h */,
+				1462779F16C56BFD007FE838 /* BackgroundingExerciseController.m */,
+				1472EAAA16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib */,
+				1472EAA716D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib */,
+			);
+			name = Backgrounding;
+			sourceTree = "<group>";
+		};
+		1462778616C56B77007FE838 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1462779816C56BE8007FE838 /* RemoteAuthenticationExerciseController.h */,
+				1462779916C56BE8007FE838 /* RemoteAuthenticationExerciseController.m */,
+				1475029816D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib */,
+				1472EAA516D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		1462778716C56B94007FE838 /* Server Communication */ = {
+			isa = PBXGroup;
+			children = (
+				146277A116C56C07007FE838 /* ServerCommunicationExerciseController.h */,
+				146277A216C56C07007FE838 /* ServerCommunicationExerciseController.m */,
+				14CFECEF16D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib */,
+				14CFECED16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib */,
+			);
+			name = "Server Communication";
+			sourceTree = "<group>";
+		};
+		146277C916CA4DD2007FE838 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1472EAAF16D7863E00AD63D1 /* RotationLimitingNavigationViewController.h */,
+				1472EAB016D7863F00AD63D1 /* RotationLimitingNavigationViewController.m */,
+				141E2FDB16C3D49900586528 /* MasterViewController.h */,
+				141E2FDC16C3D49900586528 /* MasterViewController.m */,
+				141E2FDE16C3D49900586528 /* DetailViewController.h */,
+				141E2FDF16C3D49900586528 /* DetailViewController.m */,
+				1475029A16D4E2CD009C2432 /* ExerciseContainerViewController.h */,
+				1475029B16D4E2CE009C2432 /* ExerciseContainerViewController.m */,
+				146277BB16C96324007FE838 /* ExerciseViewController.h */,
+				146277BC16C96325007FE838 /* ExerciseViewController.m */,
+				146277CA16CA5496007FE838 /* ExercisesViewController.h */,
+				146277CB16CA5496007FE838 /* ExercisesViewController.m */,
+				146277C116C96544007FE838 /* HtmlViewController.h */,
+				146277C216C96545007FE838 /* HtmlViewController.m */,
+				146277C316C96546007FE838 /* HintsViewController.h */,
+				146277C416C96547007FE838 /* HintsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		14CFECDD16D7C42400B6E6E7 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				14CFECDC16D7C2D000B6E6E7 /* JSON.h */,
+				14CFECDE16D7C46400B6E6E7 /* NSObject+SBJSON.h */,
+				14CFECDF16D7C46400B6E6E7 /* NSObject+SBJSON.m */,
+				14CFECE016D7C46400B6E6E7 /* NSString+SBJSON.h */,
+				14CFECE116D7C46400B6E6E7 /* NSString+SBJSON.m */,
+				14CFECE216D7C46400B6E6E7 /* SBJsonBase.h */,
+				14CFECE316D7C46400B6E6E7 /* SBJsonBase.m */,
+				14CFECE416D7C46400B6E6E7 /* SBJsonParser.h */,
+				14CFECE516D7C46400B6E6E7 /* SBJsonParser.m */,
+				14CFECE616D7C46400B6E6E7 /* SBJsonWriter.h */,
+				14CFECE716D7C46400B6E6E7 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		BCA6D1C419D9F59100002CA0 /* String Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				BCA6D1CC19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib */,
+				BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */,
+				BCA6D1C719DA14FF00002CA0 /* StringAnalysisExerciseController.h */,
+				BCA6D1C819DA14FF00002CA0 /* StringAnalysisExerciseController.m */,
+			);
+			name = "String Analysis";
+			sourceTree = "<group>";
+		};
+		BCF7AD5319D0C167007ED80A /* Method Swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				BCF7AD5419D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib */,
+				BCF7AD5519D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib */,
+				BCF7AD5619D0C2A8007ED80A /* MethodSwizzlingExerciseController.h */,
+				BCF7AD5719D0C2A8007ED80A /* MethodSwizzlingExerciseController.m */,
+			);
+			name = "Method Swizzling";
+			sourceTree = "<group>";
+		};
+		BCFB4ADE19BE430600CB15F2 /* Public Key Pinning */ = {
+			isa = PBXGroup;
+			children = (
+				BCFB4ADF19BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib */,
+				BCFB4AE019BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib */,
+				BCFB4AE119BE43EA00CB15F2 /* PublicKeyPinningExerciseController.h */,
+				BCFB4AE219BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m */,
+			);
+			name = "Public Key Pinning";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		141E2FB916C3D49900586528 /* iGoat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 141E2FE316C3D49900586528 /* Build configuration list for PBXNativeTarget "iGoat" */;
+			buildPhases = (
+				141E2FB616C3D49900586528 /* Sources */,
+				141E2FB716C3D49900586528 /* Frameworks */,
+				141E2FB816C3D49900586528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iGoat;
+			productName = iGoat;
+			productReference = 141E2FBA16C3D49900586528 /* iGoat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		141E2FB216C3D49900586528 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "KRvW Associates, LLC";
+			};
+			buildConfigurationList = 141E2FB516C3D49900586528 /* Build configuration list for PBXProject "iGoat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 141E2FB116C3D49900586528;
+			productRefGroup = 141E2FBB16C3D49900586528 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				141E2FB916C3D49900586528 /* iGoat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		141E2FB816C3D49900586528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143D7A2F16DD006D001AE794 /* articles.sqlite in Resources */,
+				141E2FC816C3D49900586528 /* InfoPlist.strings in Resources */,
+				141E2FD016C3D49900586528 /* Default.png in Resources */,
+				141E2FD216C3D49900586528 /* Default@2x.png in Resources */,
+				BCFB4AE419BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */,
+				141E2FD416C3D49900586528 /* Default-568h@2x.png in Resources */,
+				141E2FD716C3D49900586528 /* MainStoryboard_iPhone.storyboard in Resources */,
+				BCF7AD5919D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib in Resources */,
+				141E2FDA16C3D49900586528 /* MainStoryboard_iPad.storyboard in Resources */,
+				1462775F16C56431007FE838 /* Assets.plist in Resources */,
+				1462776716C56447007FE838 /* rutger.html in Resources */,
+				1462776916C56447007FE838 /* igoat.css in Resources */,
+				1462776A16C56447007FE838 /* about.html in Resources */,
+				BCA6D1CD19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib in Resources */,
+				1462776B16C56447007FE838 /* splash.html in Resources */,
+				1462776C16C56447007FE838 /* KRvWAssociates.html in Resources */,
+				1462776F16C5645F007FE838 /* mansi.html in Resources */,
+				1462777C16C5653E007FE838 /* Icon.png in Resources */,
+				BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */,
+				1462777E16C56546007FE838 /* Icon@2x.png in Resources */,
+				1475029916D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */,
+				1472EAA616D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */,
+				1472EAA816D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib in Resources */,
+				1472EAAB16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib in Resources */,
+				BCFB4AE319BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib in Resources */,
+				1472EAAD16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib in Resources */,
+				1472EAB416D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib in Resources */,
+				1472EABA16D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib in Resources */,
+				1472EABD16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib in Resources */,
+				1472EABF16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib in Resources */,
+				1472EAC116D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */,
+				1472EAC416D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib in Resources */,
+				14CFECDA16D7BD5900B6E6E7 /* LocalDataStorageExerciseController_iPad.xib in Resources */,
+				14CFECEE16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib in Resources */,
+				14CFECF016D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib in Resources */,
+				14CFECF216D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib in Resources */,
+				14CFECF616D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib in Resources */,
+				143D7A3016DD0078001AE794 /* SQLInjectionArticlesViewController.xib in Resources */,
+				BCF7AD5819D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib in Resources */,
+				BCA6D1C919DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		141E2FB616C3D49900586528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CFECF316D7CAD200B6E6E7 /* SQLInjectionExerciseController.m in Sources */,
+				14CFECF416D7CAD200B6E6E7 /* SQLInjectionArticlesViewController.m in Sources */,
+				BCF7AD5A19D0C2A8007ED80A /* MethodSwizzlingExerciseController.m in Sources */,
+				14CFECDB16D7C27100B6E6E7 /* ServerCommunicationExerciseController.m in Sources */,
+				1472EAC216D7B23600AD63D1 /* LocalDataStorageExerciseController.m in Sources */,
+				BCA6D1CB19DA14FF00002CA0 /* StringAnalysisExerciseController.m in Sources */,
+				1472EABB16D7AA4800AD63D1 /* KeystrokeLoggingExerciseController.m in Sources */,
+				1472EAB216D790B700AD63D1 /* KeychainExerciseViewController.m in Sources */,
+				1472EAAE16D695E400AD63D1 /* CutAndPasteExerciseController.m in Sources */,
+				1472EAA916D6891B00AD63D1 /* BackgroundingExerciseController.m in Sources */,
+				146277C616C9662D007FE838 /* HtmlViewController.m in Sources */,
+				146277C816C9662D007FE838 /* HintsViewController.m in Sources */,
+				146277BE16C96440007FE838 /* ExerciseViewController.m in Sources */,
+				146277B916C962E6007FE838 /* RemoteAuthenticationExerciseController.m in Sources */,
+				141E2FCA16C3D49900586528 /* main.m in Sources */,
+				141E2FCE16C3D49900586528 /* AppDelegate.m in Sources */,
+				141E2FDD16C3D49900586528 /* MasterViewController.m in Sources */,
+				BCFB4AE519BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m in Sources */,
+				141E2FE016C3D49900586528 /* DetailViewController.m in Sources */,
+				146277B416C95FAB007FE838 /* Asset.m in Sources */,
+				146277B516C95FAB007FE838 /* AssetStore.m in Sources */,
+				146277B616C95FAB007FE838 /* Category.m in Sources */,
+				146277B716C95FAB007FE838 /* Exercise.m in Sources */,
+				146277CC16CA5496007FE838 /* ExercisesViewController.m in Sources */,
+				1475029C16D4E2CE009C2432 /* ExerciseContainerViewController.m in Sources */,
+				1472EAB116D7863F00AD63D1 /* RotationLimitingNavigationViewController.m in Sources */,
+				14CFECE816D7C46400B6E6E7 /* NSObject+SBJSON.m in Sources */,
+				14CFECE916D7C46400B6E6E7 /* NSString+SBJSON.m in Sources */,
+				14CFECEA16D7C46400B6E6E7 /* SBJsonBase.m in Sources */,
+				14CFECEB16D7C46400B6E6E7 /* SBJsonParser.m in Sources */,
+				14CFECEC16D7C46400B6E6E7 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		141E2FC616C3D49900586528 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141E2FC716C3D49900586528 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		141E2FD516C3D49900586528 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141E2FD616C3D49900586528 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		141E2FD816C3D49900586528 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141E2FD916C3D49900586528 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		141E2FE116C3D49900586528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = sqlcipher;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		141E2FE216C3D49900586528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = sqlcipher;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		141E2FE416C3D49900586528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
+				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		141E2FE516C3D49900586528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
+				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		141E2FB516C3D49900586528 /* Build configuration list for PBXProject "iGoat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141E2FE116C3D49900586528 /* Debug */,
+				141E2FE216C3D49900586528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		141E2FE316C3D49900586528 /* Build configuration list for PBXNativeTarget "iGoat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141E2FE416C3D49900586528 /* Debug */,
+				141E2FE516C3D49900586528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 141E2FB216C3D49900586528 /* Project object */;
+}

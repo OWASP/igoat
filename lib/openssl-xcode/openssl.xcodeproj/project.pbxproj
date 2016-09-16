@@ -1,0 +1,182 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		9069D28C0FCE659A0042E34C /* libcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9069D12D0FCE340B0042E34C = {
+			isa = PBXGroup;
+			children = (
+				9069D25C0FCE62420042E34C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9069D25C0FCE62420042E34C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9069D28C0FCE659A0042E34C /* libcrypto.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9069D28B0FCE659A0042E34C /* crypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9069D2980FCE65C10042E34C /* Build configuration list for PBXNativeTarget "crypto" */;
+			buildPhases = (
+				9038ACD812DCAC96004FA0D0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = crypto;
+			productName = crypto;
+			productReference = 9069D28C0FCE659A0042E34C /* libcrypto.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9069D12F0FCE340B0042E34C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 9069D1320FCE340B0042E34C /* Build configuration list for PBXProject "openssl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 9069D12D0FCE340B0042E34C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9069D28B0FCE659A0042E34C /* crypto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9038ACD812DCAC96004FA0D0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set | grep ARCH\nset -x\n\n## Determine the appropriate openssl source path to use\n## Introduced by michaeltyson, adapted to account for OPENSSL_SRC build path\n\n# locate src archive file if present\nSRC_ARCHIVE=`ls openssl*tar.gz 2>/dev/null`\n\n# if there is an openssl directory immediately under the openssl.xcode source \n# folder then build there\nif [ -d \"$SRCROOT/openssl\" ]; then\nOPENSSL_SRC=\"$SRCROOT/openssl\"\n# else, if there is a openssl.tar.gz in the directory, expand it to openssl\n# and use it\nelif [ -f \"$SRC_ARCHIVE\" ]; then\nOPENSSL_SRC=\"$PROJECT_TEMP_DIR/openssl\"\nif [ ! -d \"$OPENSSL_SRC\" ]; then\necho \"extracting $SRC_ARCHIVE...\"\nmkdir \"$OPENSSL_SRC\"\ntar -C \"$OPENSSL_SRC\" --strip-components=1 -zxf \"$SRC_ARCHIVE\" || exit 1\ncp -RL \"$OPENSSL_SRC/include\" \"$TARGET_BUILD_DIR\"\nfi\n# else, if $OPENSSL_SRC is not already defined (i.e. by prerequisites for SQLCipher XCode config)\n# then assume openssl is in the current directory\nelif [ ! -d \"$OPENSSL_SRC\" ]; then\nOPENSSL_SRC=\"$SRCROOT\"\nfi\n\necho \"***** using $OPENSSL_SRC for openssl source code  *****\"\n\n# check whether libcrypto.a already exists - we'll only build if it does not\nif [ -f  \"$TARGET_BUILD_DIR/libcrypto.a\" ]; then\necho \"***** Using previously-built libary $TARGET_BUILD_DIR/libcrypto.a - skipping build *****\"\necho \"***** To force a rebuild clean project and clean dependencies *****\"\nexit 0;\nelse\necho \"***** No previously-built libary present at $TARGET_BUILD_DIR/libcrypto.a - performing build *****\"\nfi\n\n# figure out the right set of build architectures for this run\nBUILDARCHS=\"$ARCHS\"\n\necho \"***** creating universal binary for architectures: $BUILDARCHS *****\"\n\nif [ \"$SDKROOT\" != \"\" ]; then\nISYSROOT=\"-isysroot $SDKROOT\"\nfi\n\necho \"***** using ISYSROOT $ISYSROOT *****\"\n\nOPENSSL_OPTIONS=\"no-krb5 no-gost\"\n\necho \"***** using OPENSSL_OPTIONS $OPENSSL_OPTIONS *****\"\n\ncd \"$OPENSSL_SRC\"\n\nfor BUILDARCH in $BUILDARCHS\ndo\necho \"***** BUILDING UNIVERSAL ARCH $BUILDARCH ******\"\nmake clean\n\n# disable assembler\necho \"***** configuring WITHOUT assembler optimizations based on architecture $BUILDARCH and build style $BUILD_STYLE *****\"\n./config no-asm $OPENSSL_OPTIONS -openssldir=\"$BUILD_DIR\"\nASM_DEF=\"-UOPENSSL_BN_ASM_PART_WORDS\"\n\nmake CFLAG=\"-D_DARWIN_C_SOURCE $ASM_DEF -arch $BUILDARCH $ISYSROOT -Wno-unused-value -Wno-parentheses\" SHARED_LDFLAGS=\"-arch $BUILDARCH -dynamiclib\"\n\necho \"***** copying intermediate libraries to $CONFIGURATION_TEMP_DIR/$BUILDARCH-*.a *****\"\ncp libcrypto.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libcrypto.a\ncp libssl.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libssl.a\ndone\n\necho \"***** creating universallibraries in $TARGET_BUILD_DIR *****\"\nmkdir -p \"$TARGET_BUILD_DIR\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a -output \"$TARGET_BUILD_DIR/libcrypto.a\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a -output \"$TARGET_BUILD_DIR/libssl.a\"\n                                       \necho \"***** removing temporary files from $CONFIGURATION_TEMP_DIR *****\"\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a\n                                       \necho \"***** executing ranlib on libraries in $TARGET_BUILD_DIR *****\"\nranlib \"$TARGET_BUILD_DIR/libcrypto.a\"\nranlib \"$TARGET_BUILD_DIR/libssl.a\"\n                                       \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9069D1300FCE340B0042E34C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = (
+					armv7,
+					armv7s,
+				);
+				"ARCHS[sdk=macosx*]" = (
+					x86_64,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "$(PLATFORM_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
+				VALID_ARCHS = "i386 x86_64 armv7 armv6 armv7s";
+			};
+			name = Debug;
+		};
+		9069D1310FCE340B0042E34C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = (
+					armv7,
+					armv7s,
+				);
+				"ARCHS[sdk=macosx*]" = (
+					x86_64,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				SDKROOT = "$(PLATFORM_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
+				VALID_ARCHS = "i386 x86_64 armv7 armv6 armv7s";
+			};
+			name = Release;
+		};
+		9069D28D0FCE659B0042E34C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = crypto;
+			};
+			name = Debug;
+		};
+		9069D28E0FCE659B0042E34C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = crypto;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9069D1320FCE340B0042E34C /* Build configuration list for PBXProject "openssl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9069D1300FCE340B0042E34C /* Debug */,
+				9069D1310FCE340B0042E34C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9069D2980FCE65C10042E34C /* Build configuration list for PBXNativeTarget "crypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9069D28D0FCE659B0042E34C /* Debug */,
+				9069D28E0FCE659B0042E34C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9069D12F0FCE340B0042E34C /* Project object */;
+}

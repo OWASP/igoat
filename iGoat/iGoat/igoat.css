@@ -1,0 +1,24 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: #c3c3c3;
+    background-color: #262b32;
+}
+
+h1 {
+    font-size: 22px;
+    color: #3366CC;
+}
+
+h2 {
+    font-size: 18px;
+    color: #3366CC;
+}
+
+a {
+    color: #c3c3c3;
+}
+
+.large-text {
+    font-size: 16px;
+}
