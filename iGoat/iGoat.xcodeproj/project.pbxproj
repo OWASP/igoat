@@ -524,7 +524,7 @@
 		141E2FB216C3D49900586528 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "KRvW Associates, LLC";
 			};
 			buildConfigurationList = 141E2FB516C3D49900586528 /* Build configuration list for PBXProject "iGoat" */;
@@ -677,6 +677,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -730,6 +731,7 @@
 				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krvw.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
@@ -744,6 +746,7 @@
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krvw.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;

@@ -35,13 +35,20 @@
     [self.webView loadHTMLString:_content baseURL:baseURL];
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 90000
+- (NSUInteger)supportedInterfaceOrientations
+
+#else
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+#endif
+{
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         return UIInterfaceOrientationMaskAll;
     } else {
         return UIInterfaceOrientationMaskPortrait;
     }
 }
+
 
 // TODO: This is kinda hacky.
 - (NSString *)formatAsHtml:(NSString *)content {
