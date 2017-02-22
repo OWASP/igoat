@@ -31,17 +31,18 @@ Method originalMethod = nil;
 -(void)displayStatusMessage:(NSString*)msg
 {
     
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Status"
-                                                    message:msg
-                                                   delegate:self
-                                          cancelButtonTitle:@"Ok"
-                                          otherButtonTitles: nil];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Status"
+                                                                   message:msg
+                                                            preferredStyle:UIAlertControllerStyleAlert];
     
-    if(nil != alert)
-    {
-        [alert show];
-        // [alert release];
-    }
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
+    
 }
 
 static IMP __original_Method_Imp;
@@ -148,33 +149,33 @@ int _replacement_Method(id self, SEL _cmd, NSString* path)
 //******************************************************************************
 
 /*
--(IBAction)fetchButtonTapped:(id)sender
-{
-    // Note: To verify this is really working,
-    // you must run this on an actual jailbroken device.
-    // Here, the delegate method no longer takes into account
-    // user preferences for 'faking jailbreak status' in an emulator environment.
-    // If it did, the app will never report what it truly thinks is the
-    // state of the environment and the correctness of this solution cannot be verified.
-    //
+ -(IBAction)fetchButtonTapped:(id)sender
+ {
+ // Note: To verify this is really working,
+ // you must run this on an actual jailbroken device.
+ // Here, the delegate method no longer takes into account
+ // user preferences for 'faking jailbreak status' in an emulator environment.
+ // If it did, the app will never report what it truly thinks is the
+ // state of the environment and the correctness of this solution cannot be verified.
+ //
  
-    // Determine whether this is a jailbroken phone or not
-    BOOL fileExists = FALSE;
-    
-    FILE* cydiaFileHandle = fopen("/Applications/Cydia.app", "r");
-    fileExists = (cydiaFileHandle != NULL);
-    if (cydiaFileHandle != NULL)
-    {
-        fclose(cydiaFileHandle);
-        cydiaFileHandle = NULL;
-    }
+ // Determine whether this is a jailbroken phone or not
+ BOOL fileExists = FALSE;
  
-    if (fileExists)
-        [self displayStatusMessage:@"This app is running on a jailbroken device"];
-    else
-        [self displayStatusMessage:@"This app is not running on a jailbroken device"];
-}
-*/
+ FILE* cydiaFileHandle = fopen("/Applications/Cydia.app", "r");
+ fileExists = (cydiaFileHandle != NULL);
+ if (cydiaFileHandle != NULL)
+ {
+ fclose(cydiaFileHandle);
+ cydiaFileHandle = NULL;
+ }
+ 
+ if (fileExists)
+ [self displayStatusMessage:@"This app is running on a jailbroken device"];
+ else
+ [self displayStatusMessage:@"This app is not running on a jailbroken device"];
+ }
+ */
 
 @end
 

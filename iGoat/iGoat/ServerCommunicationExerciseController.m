@@ -7,63 +7,91 @@ NSString * const SERVERCOMMUNICATION_USER_URL = @"http://localhost:8080/igoat/us
 
 @synthesize firstNameField, lastNameField, ssnField;
 
-- (IBAction)submit:(id) sender { 
+- (IBAction)submit:(id) sender {
     SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
-	jsonWriter.humanReadable = YES;
-	jsonWriter.sortKeys = YES;
-
-	NSDictionary *accountInfo = [[NSDictionary alloc] initWithObjectsAndKeys:firstNameField.text, @"firstName", lastNameField.text, @"lastName", ssnField.text, @"socialSecurityNumber", nil];
-	
-	NSString *jsonString = [[NSString alloc] initWithString:[jsonWriter stringWithObject:accountInfo]];
+    jsonWriter.humanReadable = YES;
+    jsonWriter.sortKeys = YES;
     
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:SERVERCOMMUNICATION_USER_URL]];
-	responseData = [NSMutableData data];
-	
-	[request setHTTPMethod:@"POST"];
-	[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-	[request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    NSDictionary *accountInfo = [[NSDictionary alloc] initWithObjectsAndKeys:firstNameField.text, @"firstName", lastNameField.text, @"lastName", ssnField.text, @"socialSecurityNumber", nil];
+    
+    NSString *jsonString = [[NSString alloc] initWithString:[jsonWriter stringWithObject:accountInfo]];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:SERVERCOMMUNICATION_USER_URL]];
+    responseData = [NSMutableData data];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setValue:@"close" forHTTPHeaderField:@"Connection"];
-	[request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
-
-	NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-
+    [request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    
     // This line only exists to avoid a compiler warning (Unused Entity Issue).
     if (conn) {}
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-	[responseData setLength:0];
-
-    UIAlertView *alert;
-
+    [responseData setLength:0];
+    
+    
+    UIAlertController* alert;
+    
+    UIAlertAction* defaultAction;
+    
+    
+    
+    
+    
     NSDictionary *headers = [(NSHTTPURLResponse *) response allHeaderFields];
     NSString *sslEnabled = [headers objectForKey:@"X-Goat-Secure"];
-
+    
     if ([sslEnabled boolValue]) {
-        alert = [[UIAlertView alloc] initWithTitle:@"Congratulations!" message:@"The user's account info was protected in transit." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        alert = [UIAlertController alertControllerWithTitle:@"Congratulations!"
+                                                    message:@"The user's account info was protected in transit."
+                                             preferredStyle:UIAlertControllerStyleAlert];
+        defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction * action) {}];
+        
     } else {
-        alert = [[UIAlertView alloc] initWithTitle:@"Owned" message:@"The user's account profile info was stolen by someone on your Wi-Fi!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        alert = [UIAlertController alertControllerWithTitle:@"Owned"
+                                                    message:@"The user's account profile info was stolen by someone on your Wi-Fi!"
+                                             preferredStyle:UIAlertControllerStyleAlert];
+        defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction * action) {}];
+        
     }
-
-    [alert show];  
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     // TODO: Parse the JSON in the server response and do something with it?
-	[responseData appendData:data];
-
+    [responseData appendData:data];
+    
     /*
-    NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSASCIIStringEncoding];
-    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
-    NSDictionary *json = (NSDictionary *)[jsonParser objectWithString:jsonString error:NULL];
+     NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSASCIIStringEncoding];
+     SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+     NSDictionary *json = (NSDictionary *)[jsonParser objectWithString:jsonString error:NULL];
      */
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Server reqest failed; see log for details." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-
-    [alert show];  
-
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                   message:@"Server reqest failed; see log for details."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
     NSLog(@"Request failed: %@ %@", [error localizedDescription], [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 }
 
@@ -88,14 +116,14 @@ NSString * const SERVERCOMMUNICATION_USER_URL = @"http://localhost:8080/igoat/us
 //******************************************************************************
 
 /*
-- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
-    return [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust];
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {	
-    [challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
-}
-*/
+ - (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
+ return [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust];
+ }
+ 
+ - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+ [challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
+ }
+ */
 
 @end
 

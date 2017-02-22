@@ -21,46 +21,57 @@
     
     if ([self isValidResponse:answerField.text]) {
         if ([self isPlaintextStringTableEntry]) {
-            UIAlertView *alert = [[UIAlertView alloc]
-                 initWithTitle:@"Almost there..."
-                 message:@"How can you change the string table entry to not store the plaintext answer?"
-                 delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            if(nil != alert)
-            {
-                [alert show];
-            }
+            
+            
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Almost there..."
+                                                                           message:@"How can you change the string table entry to not store the plaintext answer?"
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            
         }
         else {
-            UIAlertView *alert = [[UIAlertView alloc]
-                                  initWithTitle:@"Congratulations!"
-                                  message:@"You appear to have protected the answer against string analysis"
-                                  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            if(nil != alert)
-            {
-                [alert show];
-            }
-
+            
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Congratulations!"
+                                                                           message:@"You appear to have protected the answer against string analysis"
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            
+            
         }
     }
     else {
-        UIAlertView *alert = [[UIAlertView alloc]
-                              initWithTitle:@"Incorrect!"
-                              message:@"Look at the hints if you're having trouble analyzing the binary for the answer"
-                              delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        if(nil != alert)
-        {
-            [alert show];
-        }
+        
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Incorrect!"
+                                                                       message:@"Look at the hints if you're having trouble analyzing the binary for the answer"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+        
     }
-
+    
 }
 
 // To use the solution coded below, begin cutting off and repalcing here
- 
+
 NSString* StringAnalysisExercise = @"secret plaintext riddle answer: To prove it wasn't chicken";
- 
+
 - (BOOL) isValidResponse:(NSString*)proposedResponse {
     NSString* stringTableEntry = [self retrieveStringTableEntry];
     return ([stringTableEntry rangeOfString:proposedResponse options:NSCaseInsensitiveSearch].location != NSNotFound);
@@ -93,38 +104,38 @@ NSString* StringAnalysisExercise = @"secret plaintext riddle answer: To prove it
 // basic static analysis
 
 /*
-NSString* StringAnalysisExercise = @"EhEKNQoVVBsuCwUYDGcfDRUAKRsEDB1nDg8HHiIdW1Q9KE8RBgYxCkEdHWcYAAcHYBtBFwEuDAoRBw==";
-
-- (void)transform:(NSData *)input
-{
-    NSString* key = @"iGoat";
-    unsigned char* pBytesInput = (unsigned char*)[input bytes];
-    unsigned char* pBytesKey = (unsigned char*)[[key dataUsingEncoding:NSUTF8StringEncoding] bytes];
-    unsigned int vlen = [input length];
-    unsigned int klen = [key length];
-    unsigned int v = 0;
-    unsigned int k = vlen % klen;
-    unsigned char c;
-    for (v; v < vlen; v++) {
-        c = pBytesInput[v] ^ pBytesKey[k];
-        pBytesInput[v] = c;
-        k = (++k < klen ? k : 0);
-    }
-}
-
-- (BOOL) isValidResponse:(NSString *)proposedResponse {
-    NSString* stringTableEntryInput = [self retrieveStringTableEntry];
-    NSData *data = [[NSData alloc] initWithBase64EncodedString:stringTableEntryInput options:0];
-    
-    // Try to 'decrypt' the buffer, transformation happens in-place.
-    [self transform:data];
-    
-    // See if it got transformed back ok.
-    NSString* result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-
-    return ([result rangeOfString:proposedResponse options:NSCaseInsensitiveSearch].location != NSNotFound);
-}
-*/
+ NSString* StringAnalysisExercise = @"EhEKNQoVVBsuCwUYDGcfDRUAKRsEDB1nDg8HHiIdW1Q9KE8RBgYxCkEdHWcYAAcHYBtBFwEuDAoRBw==";
+ 
+ - (void)transform:(NSData *)input
+ {
+ NSString* key = @"iGoat";
+ unsigned char* pBytesInput = (unsigned char*)[input bytes];
+ unsigned char* pBytesKey = (unsigned char*)[[key dataUsingEncoding:NSUTF8StringEncoding] bytes];
+ unsigned int vlen = [input length];
+ unsigned int klen = [key length];
+ unsigned int v = 0;
+ unsigned int k = vlen % klen;
+ unsigned char c;
+ for (v; v < vlen; v++) {
+ c = pBytesInput[v] ^ pBytesKey[k];
+ pBytesInput[v] = c;
+ k = (++k < klen ? k : 0);
+ }
+ }
+ 
+ - (BOOL) isValidResponse:(NSString *)proposedResponse {
+ NSString* stringTableEntryInput = [self retrieveStringTableEntry];
+ NSData *data = [[NSData alloc] initWithBase64EncodedString:stringTableEntryInput options:0];
+ 
+ // Try to 'decrypt' the buffer, transformation happens in-place.
+ [self transform:data];
+ 
+ // See if it got transformed back ok.
+ NSString* result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+ 
+ return ([result rangeOfString:proposedResponse options:NSCaseInsensitiveSearch].location != NSNotFound);
+ }
+ */
 
 @end
 

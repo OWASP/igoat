@@ -8,50 +8,72 @@ NSString * const TOKEN_URL = @"http://localhost:8080/igoat/token?username=%@&pas
 
 - (IBAction)submit:(id)sender {
     NSString *urlWithParams = [NSString stringWithFormat:TOKEN_URL, usernameField.text, passwordField.text];
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlWithParams]];
-	
-	[request setHTTPMethod:@"GET"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlWithParams]];
     
-	NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [request setHTTPMethod:@"GET"];
+    
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
     // This line only exists to avoid a compiler warning (Unused Entity Issue).
     if (conn) {}
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {    
-    UIAlertView *alert;
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    
+    
+    
+    UIAlertController* alert;
+    
+    UIAlertAction* defaultAction;
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
     NSDictionary *headers = [(NSHTTPURLResponse *) response allHeaderFields];
     NSString *sslEnabled = [headers objectForKey:@"X-Goat-Secure"];
     
     if ([sslEnabled boolValue]) {
-        alert = [[UIAlertView alloc]
-                 initWithTitle:@"Congratulations!"
-                 message:@"The user's authentication credentials were protected in transit."
-                 delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        alert = [UIAlertController alertControllerWithTitle:@"Congratulations!"
+                                                    message:@"The user's authentication credentials were protected in transit."
+                                             preferredStyle:UIAlertControllerStyleAlert];
+        defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction * action) {}];
+        
+        
     } else {
-        alert = [[UIAlertView alloc]
-                 initWithTitle:@"Owned"
-                 message:@"The user's authentication credentials were stolen by someone on your Wi-Fi!"
-                 delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        alert = [UIAlertController alertControllerWithTitle:@"Owned"
+                                                    message:@"The user's authentication credentials were stolen by someone on your Wi-Fi!"
+                                             preferredStyle:UIAlertControllerStyleAlert];
+        defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction * action) {}];
     }
     
-    [alert show];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    UIAlertView *alert = [[UIAlertView alloc]
-                          initWithTitle:@"Error"
-                          message:@"Server reqest failed; see log for details."
-                          delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
-    [alert show];  
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                   message:@"Server reqest failed; see log for details."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
     
     NSLog(@"Request failed: %@ %@", [error localizedDescription],
-		  [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-
+    
 }
 
 //******************************************************************************
@@ -81,14 +103,14 @@ NSString * const TOKEN_URL = @"http://localhost:8080/igoat/token?username=%@&pas
 //******************************************************************************
 
 /*
-- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
-    return [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust];
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+ - (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
+ return [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust];
+ }
+ 
+ - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
 	[challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
-}
-*/
+ }
+ */
 
 @end
 

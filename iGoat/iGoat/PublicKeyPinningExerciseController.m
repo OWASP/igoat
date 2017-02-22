@@ -8,35 +8,41 @@ bool identityVerificationEnforced = false;
 
 @synthesize firstNameField, lastNameField, ssnField;
 
-- (IBAction)submit:(id) sender { 
+- (IBAction)submit:(id) sender {
     SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
-	jsonWriter.humanReadable = YES;
-	jsonWriter.sortKeys = YES;
-
-	NSDictionary *accountInfo = [[NSDictionary alloc] initWithObjectsAndKeys:firstNameField.text, @"firstName", lastNameField.text, @"lastName", ssnField.text, @"socialSecurityNumber", nil];
-	
-	NSString *jsonString = [[NSString alloc] initWithString:[jsonWriter stringWithObject:accountInfo]];
+    jsonWriter.humanReadable = YES;
+    jsonWriter.sortKeys = YES;
     
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:PUBLICKEYPINNING_USER_URL]];
-	responseData = [NSMutableData data];
-	
-	[request setHTTPMethod:@"POST"];
-	[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-	[request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    NSDictionary *accountInfo = [[NSDictionary alloc] initWithObjectsAndKeys:firstNameField.text, @"firstName", lastNameField.text, @"lastName", ssnField.text, @"socialSecurityNumber", nil];
+    
+    NSString *jsonString = [[NSString alloc] initWithString:[jsonWriter stringWithObject:accountInfo]];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:PUBLICKEYPINNING_USER_URL]];
+    responseData = [NSMutableData data];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setValue:@"close" forHTTPHeaderField:@"Connection"];
-	[request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
-
-	NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-
+    [request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    
     // This line only exists to avoid a compiler warning (Unused Entity Issue).
     if (conn) {}
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-	[responseData setLength:0];
-
-    UIAlertView *alert;
-
+    [responseData setLength:0];
+    
+    
+    UIAlertController* alert;
+    UIAlertAction* defaultAction;
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
     NSDictionary *headers = [(NSHTTPURLResponse *) response allHeaderFields];
     NSString *legitimateServer = [headers objectForKey:@"X-Goat-LegitimateServer"];
     if (legitimateServer == nil)
@@ -48,27 +54,57 @@ bool identityVerificationEnforced = false;
     
     if ([legitimateServer boolValue]) {
         if (!identityVerificationEnforced) {
-            alert = [[UIAlertView alloc] initWithTitle:@"Verification Required" message:@"In this exercise, the app must verify the server's identity." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            alert = [UIAlertController alertControllerWithTitle:@"Verification Required"
+                                                        message:@"In this exercise, the app must verify the server's identity."
+                                                 preferredStyle:UIAlertControllerStyleAlert];
+            defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                   handler:^(UIAlertAction * action) {}];
+            
+            
+            
         }
         else {
-            alert = [[UIAlertView alloc] initWithTitle:@"Congratulations!" message:@"The app appears to be verifying the server's identity." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            alert = [UIAlertController alertControllerWithTitle:@"Congratulations!"
+                                                        message:@"The app appears to be verifying the server's identity."
+                                                 preferredStyle:UIAlertControllerStyleAlert];
+            defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                   handler:^(UIAlertAction * action) {}];
+            
+            
         }
     } else {
-        alert = [[UIAlertView alloc] initWithTitle:@"Owned" message:@"The user's account info was transitted to a malicious SSL server." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        alert = [UIAlertController alertControllerWithTitle:@"Owned"
+                                                    message:@"The user's account info was transitted to a malicious SSL server."
+                                             preferredStyle:UIAlertControllerStyleAlert];
+        defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction * action) {}];
+        
+        
     }
-
-    [alert show];  
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-	[responseData appendData:data];
+    [responseData appendData:data];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Server reqest failed; see log for details." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-
-    [alert show];  
-
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                   message:@"Server reqest failed; see log for details."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
     NSLog(@"Request failed: %@ %@", [error localizedDescription], [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 }
 
@@ -76,7 +112,7 @@ bool identityVerificationEnforced = false;
     return [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {	
+- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
     [challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
     identityVerificationEnforced = false;
 }
@@ -141,102 +177,102 @@ bool identityVerificationEnforced = false;
 //******************************************************************************
 
 /*
-static NSString *const CONSTANT_CERTIFICATE_FILE = @"iGoatSSLServer";
+ static NSString *const CONSTANT_CERTIFICATE_FILE = @"iGoatSSLServer";
  
-- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
-{
-    if (connection == nil)
-    {
-        NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: connection=nil");
-        return;
-    }
-    
-    if (challenge == nil)
-    {
-        NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: challenge=nil");
-        return;
-    }
-    
-    if ([[[challenge protectionSpace] authenticationMethod] isEqualToString: NSURLAuthenticationMethodServerTrust])
-    {
-        SecTrustRef serverTrust = [[challenge protectionSpace] serverTrust];
-        if(!(nil != serverTrust)) {
-            NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: serverTrust=nil");
-            return;
-        }
-        
-        // Validate the trust
-        OSStatus status = SecTrustEvaluate(serverTrust, NULL);
-        if(errSecSuccess != status) {
-            NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: errSecSuccess != status");
-            return;
-        }
-        
-        // Exract received public key from server trust
-        SecKeyRef receivedPublicKeyRef = SecTrustCopyPublicKey(serverTrust);
-        if(receivedPublicKeyRef == nil) {
-            NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: receivedPublicKeyRef=nil");
-            return;
-        }
-        
-        NSData* receivedKeyData = [self getPublicKeyBitsFromKey:receivedPublicKeyRef];
-        
-        // Load stored public key
-        NSString *file1 = [[NSBundle mainBundle] pathForResource:CONSTANT_CERTIFICATE_FILE ofType:@"der"];
-        if(file1 == nil) {
-            NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: file1=nil");
-            return;
-        }
-        
-        // Extract the data from the file resources
-        NSData* cert1 = [NSData dataWithContentsOfFile:file1];
-        if(cert1 == nil) {
-            NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: cert1=nil");
-            return;
-        }
-        
-        // Create the certificate based on the DER representation
-        SecCertificateRef certificate1Ref = SecCertificateCreateWithData(NULL, (__bridge CFDataRef)cert1);
-        
-        // Create trust based on the certificates
-        SecPolicyRef policy1Ref = SecPolicyCreateBasicX509();
-        SecTrustRef trust1Ref;
-        status = SecTrustCreateWithCertificates(certificate1Ref, policy1Ref, &trust1Ref);
-        if(errSecSuccess != status) {
-            NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: errSecSuccess != status");
-            return;
-        }
-        
-        // Evaluate the trusts for validity
-        status = SecTrustEvaluate(trust1Ref, NULL);
-        if(errSecSuccess != status) {
-            NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: errSecSuccess != status");
-            return;
-        }
-        
-        // Load key data from trust
-        SecKeyRef calculatedPublicKey1Ref = SecTrustCopyPublicKey(trust1Ref);
-        if(calculatedPublicKey1Ref == nil) {
-            NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: calculatedPublicKey1Ref=nil");
-            return;
-        }
-        NSData* calculatedKey1Data = [self getPublicKeyBitsFromKey:calculatedPublicKey1Ref];
-        
-        BOOL isEqualKey1Data = [receivedKeyData isEqualToData:calculatedKey1Data];
-        identityVerificationEnforced = true;
-        if (isEqualKey1Data)
-            return [[challenge sender] useCredential: [NSURLCredential credentialForTrust: serverTrust]forAuthenticationChallenge: challenge];
-        else
-        {
-            // Client successfully detected that the server is not the one it expects
-            // You can do something additional here if you like
-        }
-    }
-    
-    return [[challenge sender] cancelAuthenticationChallenge: challenge];
-}
-
-- (NSData *)getPublicKeyBitsFromKey:(SecKeyRef)givenKey {
+ - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+ {
+ if (connection == nil)
+ {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: connection=nil");
+ return;
+ }
+ 
+ if (challenge == nil)
+ {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: challenge=nil");
+ return;
+ }
+ 
+ if ([[[challenge protectionSpace] authenticationMethod] isEqualToString: NSURLAuthenticationMethodServerTrust])
+ {
+ SecTrustRef serverTrust = [[challenge protectionSpace] serverTrust];
+ if(!(nil != serverTrust)) {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: serverTrust=nil");
+ return;
+ }
+ 
+ // Validate the trust
+ OSStatus status = SecTrustEvaluate(serverTrust, NULL);
+ if(errSecSuccess != status) {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: errSecSuccess != status");
+ return;
+ }
+ 
+ // Exract received public key from server trust
+ SecKeyRef receivedPublicKeyRef = SecTrustCopyPublicKey(serverTrust);
+ if(receivedPublicKeyRef == nil) {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: receivedPublicKeyRef=nil");
+ return;
+ }
+ 
+ NSData* receivedKeyData = [self getPublicKeyBitsFromKey:receivedPublicKeyRef];
+ 
+ // Load stored public key
+ NSString *file1 = [[NSBundle mainBundle] pathForResource:CONSTANT_CERTIFICATE_FILE ofType:@"der"];
+ if(file1 == nil) {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: file1=nil");
+ return;
+ }
+ 
+ // Extract the data from the file resources
+ NSData* cert1 = [NSData dataWithContentsOfFile:file1];
+ if(cert1 == nil) {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: cert1=nil");
+ return;
+ }
+ 
+ // Create the certificate based on the DER representation
+ SecCertificateRef certificate1Ref = SecCertificateCreateWithData(NULL, (__bridge CFDataRef)cert1);
+ 
+ // Create trust based on the certificates
+ SecPolicyRef policy1Ref = SecPolicyCreateBasicX509();
+ SecTrustRef trust1Ref;
+ status = SecTrustCreateWithCertificates(certificate1Ref, policy1Ref, &trust1Ref);
+ if(errSecSuccess != status) {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: errSecSuccess != status");
+ return;
+ }
+ 
+ // Evaluate the trusts for validity
+ status = SecTrustEvaluate(trust1Ref, NULL);
+ if(errSecSuccess != status) {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: errSecSuccess != status");
+ return;
+ }
+ 
+ // Load key data from trust
+ SecKeyRef calculatedPublicKey1Ref = SecTrustCopyPublicKey(trust1Ref);
+ if(calculatedPublicKey1Ref == nil) {
+ NSLog(@"PublicKetPinningExerciseController: didReceiveAuthenticationChallenge: calculatedPublicKey1Ref=nil");
+ return;
+ }
+ NSData* calculatedKey1Data = [self getPublicKeyBitsFromKey:calculatedPublicKey1Ref];
+ 
+ BOOL isEqualKey1Data = [receivedKeyData isEqualToData:calculatedKey1Data];
+ identityVerificationEnforced = true;
+ if (isEqualKey1Data)
+ return [[challenge sender] useCredential: [NSURLCredential credentialForTrust: serverTrust]forAuthenticationChallenge: challenge];
+ else
+ {
+ // Client successfully detected that the server is not the one it expects
+ // You can do something additional here if you like
+ }
+ }
+ 
+ return [[challenge sender] cancelAuthenticationChallenge: challenge];
+ }
+ 
+ - (NSData *)getPublicKeyBitsFromKey:(SecKeyRef)givenKey {
  
  static const uint8_t publicKeyIdentifier[] = "com.your.company.publickey";
  NSData *publicTag = [[NSData alloc] initWithBytes:publicKeyIdentifier length:sizeof(publicKeyIdentifier)];
@@ -264,7 +300,7 @@ static NSString *const CONSTANT_CERTIFICATE_FILE = @"iGoatSSLServer";
  
  return publicKeyBits;
  }
-*/
+ */
 
 @end
 
