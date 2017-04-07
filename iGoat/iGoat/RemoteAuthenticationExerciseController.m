@@ -11,8 +11,12 @@ NSString * const TOKEN_URL = @"http://localhost:8080/igoat/token?username=%@&pas
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlWithParams]];
     
     [request setHTTPMethod:@"GET"];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     
+    // offending line of code goes here
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+#pragma clang diagnostic pop
     
     // This line only exists to avoid a compiler warning (Unused Entity Issue).
     if (conn) {}

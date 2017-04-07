@@ -526,6 +526,12 @@
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "KRvW Associates, LLC";
+				TargetAttributes = {
+					141E2FB916C3D49900586528 = {
+						DevelopmentTeam = 4CC4EPV32V;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 141E2FB516C3D49900586528 /* Build configuration list for PBXProject "iGoat" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -745,12 +751,15 @@
 		141E2FE416C3D49900586528 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4CC4EPV32V;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.krvw.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "db012c53-63ca-4e17-9974-acdc4467b8a0";
+				PROVISIONING_PROFILE_SPECIFIER = ALL_apps;
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -759,13 +768,16 @@
 		141E2FE516C3D49900586528 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4CC4EPV32V;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.krvw.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "db012c53-63ca-4e17-9974-acdc4467b8a0";
+				PROVISIONING_PROFILE_SPECIFIER = ALL_apps;
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};

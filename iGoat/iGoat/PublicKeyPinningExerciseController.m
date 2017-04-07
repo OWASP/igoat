@@ -25,9 +25,12 @@ bool identityVerificationEnforced = false;
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setValue:@"close" forHTTPHeaderField:@"Connection"];
     [request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     
+    // offending line of code goes here
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    
+#pragma clang diagnostic pop
     // This line only exists to avoid a compiler warning (Unused Entity Issue).
     if (conn) {}
 }

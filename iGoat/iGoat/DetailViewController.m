@@ -3,8 +3,12 @@
 #import "HtmlViewController.h"
 
 @interface DetailViewController ()
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
+// offending line of code goes here
 @property (strong, nonatomic) UIPopoverController *categoriesPopoverController;
+#pragma clang diagnostic pop
 
 - (void)configureView;
 
@@ -73,13 +77,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
+// offending line of code goes here
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController {
 
     barButtonItem.title = NSLocalizedString(@"Categories", @"Categories");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.categoriesPopoverController = popoverController;
 }
+
+#pragma clang diagnostic pop
 
 - (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
 
