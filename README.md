@@ -13,4 +13,4 @@ Step 4 is optional, but highly recommended for all iOS developers. Assistance is
 
 Project Details - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 
-To contribute to iGoat project, please contact to Swaroop ( swaroop[dot]yermalkar[at]owasp[dot]org] or @swaroopsy )
+To contribute to iGoat project, please contact to Swaroop ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
