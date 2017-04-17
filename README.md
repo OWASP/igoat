@@ -10,3 +10,7 @@ The lessons are laid out in the following steps:
 1. Fix the problem by correcting and rebuilding the iGoat program.
 
 Step 4 is optional, but highly recommended for all iOS developers. Assistance is available within iGoat if you don't know how to fix a specific problem.
+
+Project Details - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
+
+To contribute to iGoat project, please contact to Swaroop ( swaroop[dot]yermalkar[at]owasp[dot]org] or @swaroopsy )
