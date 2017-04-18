@@ -74,6 +74,9 @@
 		14CFECF416D7CAD200B6E6E7 /* SQLInjectionArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779616C56BDD007FE838 /* SQLInjectionArticlesViewController.m */; };
 		14CFECF616D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */; };
 		14D8962716DA888E00D0720A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D8962516DA886F00D0720A /* libsqlite3.dylib */; };
+		4F9C77061EA663ED00710C1F /* DeviceLogsExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */; };
+		4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */; };
+		4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */; };
 		BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */ = {isa = PBXBuildFile; fileRef = BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */; };
 		BCA6D1C919DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */; };
 		BCA6D1CB19DA14FF00002CA0 /* StringAnalysisExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6D1C819DA14FF00002CA0 /* StringAnalysisExerciseController.m */; };
@@ -187,6 +190,10 @@
 		14CFECF116D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPad.xib; sourceTree = "<group>"; };
 		14D8962516DA886F00D0720A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4F9C77041EA663ED00710C1F /* DeviceLogsExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLogsExerciseViewController.h; sourceTree = "<group>"; };
+		4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceLogsExerciseViewController.m; sourceTree = "<group>"; };
+		4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = iGoatSSLServer.der; sourceTree = "<group>"; };
 		BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPad.xib; sourceTree = "<group>"; };
 		BCA6D1C719DA14FF00002CA0 /* StringAnalysisExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAnalysisExerciseController.h; sourceTree = "<group>"; };
@@ -317,6 +324,7 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				4F9C77031EA663CD00710C1F /* Device Logs */,
 				BCA6D1C419D9F59100002CA0 /* String Analysis */,
 				BCF7AD5319D0C167007ED80A /* Method Swizzling */,
 				BCFB4ADE19BE430600CB15F2 /* Public Key Pinning */,
@@ -465,6 +473,17 @@
 			name = JSON;
 			sourceTree = "<group>";
 		};
+		4F9C77031EA663CD00710C1F /* Device Logs */ = {
+			isa = PBXGroup;
+			children = (
+				4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */,
+				4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */,
+				4F9C77041EA663ED00710C1F /* DeviceLogsExerciseViewController.h */,
+				4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */,
+			);
+			name = "Device Logs";
+			sourceTree = "<group>";
+		};
 		BCA6D1C419D9F59100002CA0 /* String Analysis */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,7 +594,9 @@
 				1462777C16C5653E007FE838 /* Icon.png in Resources */,
 				BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */,
 				1462777E16C56546007FE838 /* Icon@2x.png in Resources */,
+				4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */,
 				1475029916D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */,
+				4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */,
 				1472EAA616D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */,
 				1472EAA816D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib in Resources */,
 				1472EAAB16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib in Resources */,
@@ -634,6 +655,7 @@
 				14CFECE816D7C46400B6E6E7 /* NSObject+SBJSON.m in Sources */,
 				14CFECE916D7C46400B6E6E7 /* NSString+SBJSON.m in Sources */,
 				14CFECEA16D7C46400B6E6E7 /* SBJsonBase.m in Sources */,
+				4F9C77061EA663ED00710C1F /* DeviceLogsExerciseViewController.m in Sources */,
 				14CFECEB16D7C46400B6E6E7 /* SBJsonParser.m in Sources */,
 				14CFECEC16D7C46400B6E6E7 /* SBJsonWriter.m in Sources */,
 			);
