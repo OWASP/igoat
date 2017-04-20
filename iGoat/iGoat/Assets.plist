@@ -214,7 +214,7 @@
 		<array>
 			<dict>
 				<key>creditsFile</key>
-				<string>KRvWAssociates.html</string>
+				<string>Swaroop.html</string>
 				<key>description</key>
 				<string>In this exercise, we are trying to extract sensitive information from logs. Many times developers forget to remove the logs which are added during development. In this exercise, you need to check logs for any financial data leakage. </string>
 				<key>hints</key>
@@ -341,7 +341,7 @@
 				<key>initialViewController</key>
 				<string>LocalDataStorageExerciseController</string>
 				<key>name</key>
-				<string>Local Data Storage</string>
+				<string>Local Data Storage (SQLite)</string>
 				<key>solution</key>
 				<string>
                     SQLite is a handy built-in tool for storing data locally on an iOS
@@ -554,6 +554,22 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
                     using dynamic strings for your query, you will need to use a
                     parameterized query API.
                 </string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>The purpose of this exercise is to perform Cross Site Scripting (XSS) Attack on iOS app.</string>
+				<key>hints</key>
+				<array>
+					<string>Can you try most common XSS payload?</string>
+				</array>
+				<key>initialViewController</key>
+				<string>CrossSiteScriptingExerciseViewController</string>
+				<key>name</key>
+				<string>Cross Site Scripting</string>
+				<key>solution</key>
+				<string>Try XSS payload &amp;ltscript&amp;gt alert(1) &amp;lt/script&amp;gt</string>
 			</dict>
 		</array>
 	</dict>

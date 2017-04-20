@@ -74,6 +74,10 @@
 		14CFECF416D7CAD200B6E6E7 /* SQLInjectionArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779616C56BDD007FE838 /* SQLInjectionArticlesViewController.m */; };
 		14CFECF616D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */; };
 		14D8962716DA888E00D0720A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D8962516DA886F00D0720A /* libsqlite3.dylib */; };
+		4F0777CC1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0777CB1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m */; };
+		4F0777CF1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0777CD1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib */; };
+		4F0777D01EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0777CE1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib */; };
+		4F0777D21EA8CD940089AA18 /* Swaroop.html in Resources */ = {isa = PBXBuildFile; fileRef = 4F0777D11EA8CD940089AA18 /* Swaroop.html */; };
 		4F9C77061EA663ED00710C1F /* DeviceLogsExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */; };
 		4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */; };
 		4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */; };
@@ -190,6 +194,11 @@
 		14CFECF116D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPad.xib; sourceTree = "<group>"; };
 		14D8962516DA886F00D0720A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4F0777CA1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossSiteScriptingExerciseViewController.h; sourceTree = "<group>"; };
+		4F0777CB1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossSiteScriptingExerciseViewController.m; sourceTree = "<group>"; };
+		4F0777CD1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossSiteScriptingExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		4F0777CE1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossSiteScriptingExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		4F0777D11EA8CD940089AA18 /* Swaroop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop.html; sourceTree = "<group>"; };
 		4F9C77041EA663ED00710C1F /* DeviceLogsExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLogsExerciseViewController.h; sourceTree = "<group>"; };
 		4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceLogsExerciseViewController.m; sourceTree = "<group>"; };
 		4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPad.xib; sourceTree = "<group>"; };
@@ -294,6 +303,7 @@
 		1462775D16C56410007FE838 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4F0777D11EA8CD940089AA18 /* Swaroop.html */,
 				BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */,
 				1462776316C56447007FE838 /* about.html */,
 				1462776E16C5645F007FE838 /* mansi.html */,
@@ -324,6 +334,7 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				4F0777C21EA8C2B70089AA18 /* Cross Site Scripting */,
 				4F9C77031EA663CD00710C1F /* Device Logs */,
 				BCA6D1C419D9F59100002CA0 /* String Analysis */,
 				BCF7AD5319D0C167007ED80A /* Method Swizzling */,
@@ -473,6 +484,17 @@
 			name = JSON;
 			sourceTree = "<group>";
 		};
+		4F0777C21EA8C2B70089AA18 /* Cross Site Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				4F0777CD1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib */,
+				4F0777CE1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib */,
+				4F0777CA1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.h */,
+				4F0777CB1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m */,
+			);
+			name = "Cross Site Scripting";
+			sourceTree = "<group>";
+		};
 		4F9C77031EA663CD00710C1F /* Device Logs */ = {
 			isa = PBXGroup;
 			children = (
@@ -598,6 +620,7 @@
 				1475029916D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */,
 				4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */,
 				1472EAA616D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */,
+				4F0777CF1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
 				1472EAA816D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib in Resources */,
 				1472EAAB16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib in Resources */,
 				BCFB4AE319BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib in Resources */,
@@ -608,6 +631,7 @@
 				1472EABF16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib in Resources */,
 				1472EAC116D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */,
 				1472EAC416D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib in Resources */,
+				4F0777D01EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */,
 				14CFECDA16D7BD5900B6E6E7 /* LocalDataStorageExerciseController_iPad.xib in Resources */,
 				14CFECEE16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib in Resources */,
 				14CFECF016D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib in Resources */,
@@ -615,6 +639,7 @@
 				14CFECF616D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib in Resources */,
 				143D7A3016DD0078001AE794 /* SQLInjectionArticlesViewController.xib in Resources */,
 				BCF7AD5819D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib in Resources */,
+				4F0777D21EA8CD940089AA18 /* Swaroop.html in Resources */,
 				BCA6D1C919DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +668,7 @@
 				141E2FCA16C3D49900586528 /* main.m in Sources */,
 				141E2FCE16C3D49900586528 /* AppDelegate.m in Sources */,
 				141E2FDD16C3D49900586528 /* MasterViewController.m in Sources */,
+				4F0777CC1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m in Sources */,
 				BCFB4AE519BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m in Sources */,
 				141E2FE016C3D49900586528 /* DetailViewController.m in Sources */,
 				146277B416C95FAB007FE838 /* Asset.m in Sources */,
