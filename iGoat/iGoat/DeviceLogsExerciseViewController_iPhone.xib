@@ -12,7 +12,7 @@
             <connections>
                 <outlet property="ccField" destination="xyF-wt-YvS" id="Hbr-Yz-bSm"/>
                 <outlet property="cvvField" destination="hd3-cO-Eit" id="5Dg-Ss-d7h"/>
-                <outlet property="pinField" destination="xNI-cR-pJc" id="n3h-Bk-A5l"/>
+                <outlet property="pinField" destination="xNI-cR-pJc" id="Ths-HH-qbl"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -41,9 +41,6 @@
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <action selector="submitAction:" destination="-1" eventType="editingDidEnd" id="guz-oD-5Hf"/>
-                    </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CC NO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="04L-hh-ALV">
                     <rect key="frame" x="57" y="129" width="67" height="21"/>

@@ -50,15 +50,15 @@
     NSLog(@"CVV value : %@", _cvvField.text);
     NSLog(@"PIN value :  %@", _pinField.text);
     
-   // UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Success"
-     //                                                              message:@"Data Submitted Successfully"
-       //                                                     preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Success"
+                                                                   message:@"Data Submitted Successfully"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
     
-  //  UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-    //                                                      handler:^(UIAlertAction * action) {}];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
     
-   // [alert addAction:defaultAction];
-    // [self presentViewController:alert animated:YES completion:nil];
+    [alert addAction:defaultAction];
+     [self presentViewController:alert animated:YES completion:nil];
     
 }
 @end
