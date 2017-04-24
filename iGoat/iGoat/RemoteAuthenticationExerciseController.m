@@ -24,15 +24,8 @@ NSString * const TOKEN_URL = @"http://localhost:8080/igoat/token?username=%@&pas
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     
-    
-    
     UIAlertController* alert;
-    
     UIAlertAction* defaultAction;
-    
-    [alert addAction:defaultAction];
-    [self presentViewController:alert animated:YES completion:nil];
-    
     
     NSDictionary *headers = [(NSHTTPURLResponse *) response allHeaderFields];
     NSString *sslEnabled = [headers objectForKey:@"X-Goat-Secure"];
