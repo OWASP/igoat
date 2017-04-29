@@ -82,6 +82,9 @@
 		4F0D66621EB4458200AC8FDF /* PlistStorageExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66611EB4458200AC8FDF /* PlistStorageExerciseViewController_iPhone.xib */; };
 		4F0D66641EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66631EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib */; };
 		4F0D66661EB44EA000AC8FDF /* Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66651EB44EA000AC8FDF /* Credentials.plist */; };
+		4F0D66721EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D66711EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m */; };
+		4F0D66751EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66731EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib */; };
+		4F0D66761EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */; };
 		4F9C77061EA663ED00710C1F /* DeviceLogsExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */; };
 		4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */; };
 		4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */; };
@@ -208,6 +211,10 @@
 		4F0D66611EB4458200AC8FDF /* PlistStorageExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		4F0D66631EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController_iPad.xib; sourceTree = "<group>"; };
 		4F0D66651EB44EA000AC8FDF /* Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credentials.plist; sourceTree = "<group>"; };
+		4F0D66701EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsStorageExerciseViewController.h; sourceTree = "<group>"; };
+		4F0D66711EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsStorageExerciseViewController.m; sourceTree = "<group>"; };
+		4F0D66731EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		4F9C77041EA663ED00710C1F /* DeviceLogsExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLogsExerciseViewController.h; sourceTree = "<group>"; };
 		4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceLogsExerciseViewController.m; sourceTree = "<group>"; };
 		4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPad.xib; sourceTree = "<group>"; };
@@ -343,6 +350,7 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				4F0D666F1EB4DF4200AC8FDF /* NSUserDefaults Storage */,
 				4F0D665D1EB444A400AC8FDF /* Plist Storage */,
 				4F0777C21EA8C2B70089AA18 /* Cross Site Scripting */,
 				4F9C77031EA663CD00710C1F /* Device Logs */,
@@ -517,6 +525,17 @@
 			name = "Plist Storage";
 			sourceTree = "<group>";
 		};
+		4F0D666F1EB4DF4200AC8FDF /* NSUserDefaults Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4F0D66731EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib */,
+				4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */,
+				4F0D66701EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.h */,
+				4F0D66711EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m */,
+			);
+			name = "NSUserDefaults Storage";
+			sourceTree = "<group>";
+		};
 		4F9C77031EA663CD00710C1F /* Device Logs */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,12 +673,14 @@
 				1472EABD16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib in Resources */,
 				1472EABF16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib in Resources */,
 				1472EAC116D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */,
+				4F0D66751EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */,
 				1472EAC416D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib in Resources */,
 				4F0777D01EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */,
 				14CFECDA16D7BD5900B6E6E7 /* LocalDataStorageExerciseController_iPad.xib in Resources */,
 				14CFECEE16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib in Resources */,
 				14CFECF016D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib in Resources */,
 				14CFECF216D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib in Resources */,
+				4F0D66761EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */,
 				14CFECF616D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib in Resources */,
 				143D7A3016DD0078001AE794 /* SQLInjectionArticlesViewController.xib in Resources */,
 				BCF7AD5819D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib in Resources */,
@@ -687,6 +708,7 @@
 				1472EAAE16D695E400AD63D1 /* CutAndPasteExerciseController.m in Sources */,
 				1472EAA916D6891B00AD63D1 /* BackgroundingExerciseController.m in Sources */,
 				146277C616C9662D007FE838 /* HtmlViewController.m in Sources */,
+				4F0D66721EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m in Sources */,
 				146277C816C9662D007FE838 /* HintsViewController.m in Sources */,
 				146277BE16C96440007FE838 /* ExerciseViewController.m in Sources */,
 				146277B916C962E6007FE838 /* RemoteAuthenticationExerciseController.m in Sources */,
@@ -830,7 +852,7 @@
 				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.krvw.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swaroopsy.iGoat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "db012c53-63ca-4e17-9974-acdc4467b8a0";
 				PROVISIONING_PROFILE_SPECIFIER = ALL_apps;
@@ -848,7 +870,7 @@
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.krvw.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swaroopsy.iGoat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "db012c53-63ca-4e17-9974-acdc4467b8a0";
 				PROVISIONING_PROFILE_SPECIFIER = ALL_apps;
