@@ -431,6 +431,27 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
                 
                 </string>
 			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
+                    data locally on the iOS device. In the lesson, the app stores data
+                    using a Plist file.
+                    
+                    Your task is to locate the plist file and find the sensitive data that
+                    it contains.</string>
+				<key>hints</key>
+				<array>
+					<string>Try to find out .plist file in app sandbox.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>PlistStorageExerciseViewController</string>
+				<key>name</key>
+				<string>Plist Storage</string>
+				<key>solution</key>
+				<string>Locate the Credentials.plist file in app sandbox and enter the credentials.</string>
+			</dict>
 		</array>
 	</dict>
 	<key>Data Protection (Transit)</key>
