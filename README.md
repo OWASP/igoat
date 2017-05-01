@@ -46,6 +46,9 @@ __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroop
 * Testing iGoat and checking if any issues
 * Suggest us new attacks
 * Writing blogs / article about iGoat
+* Spreading iGoat :)
+
+To contribute to iGoat project, please contact __Swaroop__ ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
 
 ### Project Contributors ###
 * Ken van Wyk
@@ -53,7 +56,4 @@ __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroop
 * masbog
 * Cheena Kathpal
 * Anthony Gonsalves
-
-* Spreading iGoat :)
-
-To contribute to iGoat project, please contact __Swaroop__ ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
+* Matt Tesauro
