@@ -13,21 +13,31 @@ As such, iGoat is a safe environment where iOS developers can learn about the ma
 
 Step 4 is optional, but highly recommended for all iOS developers. Assistance is available within iGoat if you don't know how to fix a specific problem.
 
-### Vulnerabities Covered: ###
+### Vulnerabities Covered: (version 2.8) ###
 * Reverse Engineering
   * String Analysis
 * Data Protection (Rest)
+  * Local Data Storage (SQLite)
+  * Plist Storage
+  * Keychain Usage
+  * NSUserDefaults Storage
 * Data Protection (Transit)
+  * Server Communication
+  * Public Key Pinning
 * Authentication
+  * Remote Authentication
 * Side Channel Data Leaks
+  * Device Logs
+  * Cut-and-Paste
 * Tamepring 
+  * Method Swizzling
 * Injection Flaws
+  * SQL Injection
+  * Cross Site Scripting
 
 __Project Details__ - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 
 __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroopsy?lang=en))
-
-To contribute to iGoat project, please contact __Swaroop__ ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
 
 ### How to countribute? ###
 * You can add new exercises
@@ -35,3 +45,5 @@ To contribute to iGoat project, please contact __Swaroop__ ( swaroop[dot]yermalk
 * Suggest us new attacks
 * Writing blogs / article about iGoat
 * Spreading iGoat :)
+
+To contribute to iGoat project, please contact __Swaroop__ ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
