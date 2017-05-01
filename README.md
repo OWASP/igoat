@@ -1,4 +1,4 @@
-# iGoat #
+# iGoat - A deliberately insecure iOS Application #
 
 iGoat is a learning tool for iOS developers (iPhone, iPad, etc.). It was inspired by the WebGoat project, and has a similar conceptual flow to it.
 
@@ -22,7 +22,7 @@ Step 4 is optional, but highly recommended for all iOS developers. Assistance is
 * Tamepring 
 * Injection Flaws
 
-Project Details - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
+__Project Details__ - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 
 __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroopsy?lang=en) )
 
