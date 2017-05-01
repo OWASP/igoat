@@ -11,14 +11,14 @@ The lessons are laid out in the following steps:
 
 Step 4 is optional, but highly recommended for all iOS developers. Assistance is available within iGoat if you don't know how to fix a specific problem.
 
-1. Vulnerabities Covered:
-1. Reverse Engineering
-1. Data Protection (Rest)
-1. Data Protection (Transit)
-1. Authentication
-1. Side Channel Data Leaks
-1. Tamepring 
-1. Injection Flaws
+.  Vulnerabities Covered:
+.  Reverse Engineering
+.  Data Protection (Rest)
+.  Data Protection (Transit)
+.  Authentication
+.  Side Channel Data Leaks
+.  Tamepring 
+.  Injection Flaws
 
 Project Details - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 
