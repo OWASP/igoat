@@ -29,6 +29,8 @@ Step 4 is optional, but highly recommended for all iOS developers. Assistance is
 * Side Channel Data Leaks
   * Device Logs
   * Cut-and-Paste
+  * Backgrounding
+  * Keystroke Logging
 * Tamepring 
   * Method Swizzling
 * Injection Flaws
