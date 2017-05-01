@@ -11,7 +11,7 @@ The lessons are laid out in the following steps:
 
 Step 4 is optional, but highly recommended for all iOS developers. Assistance is available within iGoat if you don't know how to fix a specific problem.
 
-1. Vulnerabities Covered:
+Vulnerabities Covered:
 1. Reverse Engineering
 1. Data Protection (Rest)
 1. Data Protection (Transit)
