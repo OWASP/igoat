@@ -11,6 +11,7 @@ The lessons are laid out in the following steps:
 
 Step 4 is optional, but highly recommended for all iOS developers. Assistance is available within iGoat if you don't know how to fix a specific problem.
 
+ Markup : * Bullet list
 .  Vulnerabities Covered:
 .  Reverse Engineering
 .  Data Protection (Rest)
