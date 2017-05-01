@@ -214,113 +214,6 @@
 		<array>
 			<dict>
 				<key>creditsFile</key>
-				<string>Swaroop.html</string>
-				<key>description</key>
-				<string>In this exercise, we are trying to extract sensitive information from logs. Many times developers forget to remove the logs which are added during development. In this exercise, you need to check logs for any financial data leakage. </string>
-				<key>hints</key>
-				<array>
-					<string>Can you find how to check device logs?</string>
-				</array>
-				<key>initialViewController</key>
-				<string>DeviceLogsExerciseViewController</string>
-				<key>name</key>
-				<string>Device Logs</string>
-				<key>solution</key>
-				<string>You can use Organizer utility in Xcode to check out device / simulator logs. In case of iDevice, make sure device is connected to macbook.</string>
-			</dict>
-			<dict>
-				<key>creditsFile</key>
-				<string>KRvWAssociates.html</string>
-				<key>description</key>
-				<string>The cut and paste feature in iOS is enormously useful to the end user,
-                    of course. Unfortunately, it can also lead to leakage of sensitive
-                    user information. Once the data is in the buffer, any application (or
-                    user) can paste that data inside other applications.
-                    
-                    In this exercise, you&apos;ll first exploit the weakness by finding some sensitive
-                    data inside the cut and paste buffer.</string>
-				<key>hints</key>
-				<array>
-					<string>Try copying some sensitive data in this exercise, and seeing what you can do with it.</string>
-					<string>Exit iGoat and paste it into another app.</string>
-					<string>If it successfully pasted outside of iGoat, then you&apos;ve leaked sensitive data.</string>
-				</array>
-				<key>initialViewController</key>
-				<string>CutAndPasteExerciseController</string>
-				<key>name</key>
-				<string>Cut-and-Paste</string>
-				<key>solution</key>
-				<string>To verify the existence of this exposure, launch the exercise, and
-                    then use the cut and paste buffer to copy the username field
-                    (&quot;donkey&quot;).
-                    
-                    Next, exit the exercise and paste the data into any other
-                    application. This demonstrates that sensitive data can leak from the
-                    application. In some cases, the application should protect itself from
-                    allowing this information leakage.
-                    
-                    To remediate the weakness, the exercise must ensure the cut and paste
-                    buffer is cleared of any sensitive data before the application exits
-                    or backgrounds.
-                    
-                    Source code example is available in the exercise. Scroll to the bottom
-                    of the view controller, below the copyright notice, and you will find
-                    commented-out code. We encourage you to try to figure out the solution
-                    prior to reverting to the commented source, however.</string>
-			</dict>
-			<dict>
-				<key>creditsFile</key>
-				<string>KRvWAssociates.html</string>
-				<key>description</key>
-				<string>A default behavior in iOS is to capture a JPG image of any application
-                    screen as it is shut down or backgrounded. Unfortunately, the JPG file
-                    is placed on the device without any form of access control or
-                    encryption.
-                    
-                    In this exercise, you&apos;ll first exploit the weakness by finding some data
-                    in the app&apos;s screen shot.</string>
-				<key>hints</key>
-				<array>
-					<string>By default, iOS creates a plaintext screen shot in a JPG file
-                        in any app when the user presses the home key. There is no
-                        built-in protection to prevent sensitive data being stored in
-                        this file.</string>
-					<string>Use the app to enter some sensitive data, and then press the
-                        home key.</string>
-					<string>Verify that the sensitive data was stored in a JPG file on the
-                        device.</string>
-				</array>
-				<key>initialViewController</key>
-				<string>BackgroundingExerciseController</string>
-				<key>name</key>
-				<string>Backgrounding</string>
-				<key>solution</key>
-				<string>
-                    Verifying the existence of this weakness is straight forward. Just
-                    launch the exercise, and then background the app by pressing the
-                    device&apos;s home key.
-                    
-                    Once the exercise is backgrounded, use Finder (on a simulator) or a
-                    tool like iPhone Explorer (on a hardware device) to find the JPG file
-                    containing the screen image.
-                    
-                    Verify that the data is plaintext and easily readable to anyone with
-                    access to that JPG file, such as someone who has stolen an iPhone or
-                    simply found a lost device.
-                    
-                    To prevent sensitive data from finding its way into the JPG screen
-                    shots, it is necessary to control the backgrounding behavior of the
-                    app. When an app backgrounds, iOS uses several methods that can all be
-                    delegated and tailored in your app.
-                    
-                    It is vital that any sensitive data on the screen be set to HIDDEN
-                    before the backgrounding is allowed to proceed, and then unhidden when
-                    the app resumes. This makes the process transparent to the user, while
-                    not exposing the user&apos;s sensitive data in the JPG file.
-                </string>
-			</dict>
-			<dict>
-				<key>creditsFile</key>
 				<string>KRvWAssociates.html</string>
 				<key>description</key>
 				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
@@ -400,36 +293,6 @@ This information is also stored in:
 It is recommended by Apple to use the keychain on iPhone to store passwords and other sensitive data (such as digital certs, cookies, sftp accounts, instant messaging accounts etc) that can be used to log into secure web sites.
 
 Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&quot;. This function uses  &quot;SecItemAdd&quot;, &quot;SecItemCopyMatch&quot; and &quot;SecItemUpdate&quot; for adding, retrieving and updating items in an app&apos;s keychain.</string>
-			</dict>
-			<dict>
-				<key>creditsFile</key>
-				<string>rutger.html</string>
-				<key>description</key>
-				<string>The autocorrect spellchecker function of iOS is a famous feature of iOS, sometimes very useful and other times offering hilarious suggestions.
-                
-                    Less funny is the fact that it stores text that you have entered on your device. This data is retrievable if you know where to look. Make sure to run iGoat on the simulator if you want to do this exercise.
-                </string>
-				<key>hints</key>
-				<array>
-					<string>Type some text into the provided text fields.</string>
-					<string>Make sure you make one or two typing mistakes to see autocorrect in action and verify that autocorrect is in use.</string>
-					<string>When done entering data, close iGoat and see if you can retrieve the data that was supposedly stored on the simulator.</string>
-				</array>
-				<key>initialViewController</key>
-				<string>KeystrokeLoggingExerciseController</string>
-				<key>name</key>
-				<string>Keystroke Logging</string>
-				<key>solution</key>
-				<string>To verify the existence of this exposure, launch the exercise, and
-                    then enter some text into the fields. Make sure to use the autocorrect function by entering some misspelled words. Later you can try it without misspelling words and compare the behavior.
-                    
-                    Once you are done entering text, close the iGoat app and open Finder to explore your iPhone simulator. ( /Users/[username]/Library/Application Support/iPhone Simulator/5.1 )
-                    
-                    Search for a file called dynamic-text.dat (it can be found in de Library/keyboard folder in your iOS simulator. Open this file in your favorite text editor (eg. Emacs, TextWrangler). You should be able to find familiar text in this file.
-                    
-                    This logging is performed to help autocorrect, the way to prevent this is to turn of autocorrect on your textfields and textviews. This can be done by code or in the Interface Builder.
-                
-                </string>
 			</dict>
 			<dict>
 				<key>creditsFile</key>
@@ -612,6 +475,151 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<string>Cross Site Scripting</string>
 				<key>solution</key>
 				<string>Try XSS payload &amp;ltscript&amp;gt alert(1) &amp;lt/script&amp;gt</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Side Channel Data Leaks</key>
+	<dict>
+		<key>description</key>
+		<string>In this exercise category, you&apos;ll find exercises which leaks sensitive data via side channels.</string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>rutger.html</string>
+				<key>description</key>
+				<string>The autocorrect spellchecker function of iOS is a famous feature of iOS, sometimes very useful and other times offering hilarious suggestions.
+                
+                    Less funny is the fact that it stores text that you have entered on your device. This data is retrievable if you know where to look. Make sure to run iGoat on the simulator if you want to do this exercise.
+                </string>
+				<key>hints</key>
+				<array>
+					<string>Type some text into the provided text fields.</string>
+					<string>Make sure you make one or two typing mistakes to see autocorrect in action and verify that autocorrect is in use.</string>
+					<string>When done entering data, close iGoat and see if you can retrieve the data that was supposedly stored on the simulator.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>KeystrokeLoggingExerciseController</string>
+				<key>name</key>
+				<string>Keystroke Logging</string>
+				<key>solution</key>
+				<string>To verify the existence of this exposure, launch the exercise, and
+                    then enter some text into the fields. Make sure to use the autocorrect function by entering some misspelled words. Later you can try it without misspelling words and compare the behavior.
+                    
+                    Once you are done entering text, close the iGoat app and open Finder to explore your iPhone simulator. ( /Users/[username]/Library/Application Support/iPhone Simulator/5.1 )
+                    
+                    Search for a file called dynamic-text.dat (it can be found in de Library/keyboard folder in your iOS simulator. Open this file in your favorite text editor (eg. Emacs, TextWrangler). You should be able to find familiar text in this file.
+                    
+                    This logging is performed to help autocorrect, the way to prevent this is to turn of autocorrect on your textfields and textviews. This can be done by code or in the Interface Builder.
+                
+                </string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>A default behavior in iOS is to capture a JPG image of any application
+                    screen as it is shut down or backgrounded. Unfortunately, the JPG file
+                    is placed on the device without any form of access control or
+                    encryption.
+                    
+                    In this exercise, you&apos;ll first exploit the weakness by finding some data
+                    in the app&apos;s screen shot.</string>
+				<key>hints</key>
+				<array>
+					<string>By default, iOS creates a plaintext screen shot in a JPG file
+                        in any app when the user presses the home key. There is no
+                        built-in protection to prevent sensitive data being stored in
+                        this file.</string>
+					<string>Use the app to enter some sensitive data, and then press the
+                        home key.</string>
+					<string>Verify that the sensitive data was stored in a JPG file on the
+                        device.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>BackgroundingExerciseController</string>
+				<key>name</key>
+				<string>Backgrounding</string>
+				<key>solution</key>
+				<string>
+                    Verifying the existence of this weakness is straight forward. Just
+                    launch the exercise, and then background the app by pressing the
+                    device&apos;s home key.
+                    
+                    Once the exercise is backgrounded, use Finder (on a simulator) or a
+                    tool like iPhone Explorer (on a hardware device) to find the JPG file
+                    containing the screen image.
+                    
+                    Verify that the data is plaintext and easily readable to anyone with
+                    access to that JPG file, such as someone who has stolen an iPhone or
+                    simply found a lost device.
+                    
+                    To prevent sensitive data from finding its way into the JPG screen
+                    shots, it is necessary to control the backgrounding behavior of the
+                    app. When an app backgrounds, iOS uses several methods that can all be
+                    delegated and tailored in your app.
+                    
+                    It is vital that any sensitive data on the screen be set to HIDDEN
+                    before the backgrounding is allowed to proceed, and then unhidden when
+                    the app resumes. This makes the process transparent to the user, while
+                    not exposing the user&apos;s sensitive data in the JPG file.
+                </string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>The cut and paste feature in iOS is enormously useful to the end user,
+                    of course. Unfortunately, it can also lead to leakage of sensitive
+                    user information. Once the data is in the buffer, any application (or
+                    user) can paste that data inside other applications.
+                    
+                    In this exercise, you&apos;ll first exploit the weakness by finding some sensitive
+                    data inside the cut and paste buffer.</string>
+				<key>hints</key>
+				<array>
+					<string>Try copying some sensitive data in this exercise, and seeing what you can do with it.</string>
+					<string>Exit iGoat and paste it into another app.</string>
+					<string>If it successfully pasted outside of iGoat, then you&apos;ve leaked sensitive data.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>CutAndPasteExerciseController</string>
+				<key>name</key>
+				<string>Cut-and-Paste</string>
+				<key>solution</key>
+				<string>To verify the existence of this exposure, launch the exercise, and
+                    then use the cut and paste buffer to copy the username field
+                    (&quot;donkey&quot;).
+                    
+                    Next, exit the exercise and paste the data into any other
+                    application. This demonstrates that sensitive data can leak from the
+                    application. In some cases, the application should protect itself from
+                    allowing this information leakage.
+                    
+                    To remediate the weakness, the exercise must ensure the cut and paste
+                    buffer is cleared of any sensitive data before the application exits
+                    or backgrounds.
+                    
+                    Source code example is available in the exercise. Scroll to the bottom
+                    of the view controller, below the copyright notice, and you will find
+                    commented-out code. We encourage you to try to figure out the solution
+                    prior to reverting to the commented source, however.</string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>In this exercise, we are trying to extract sensitive information from logs. Many times developers forget to remove the logs which are added during development. In this exercise, you need to check logs for any financial data leakage. </string>
+				<key>hints</key>
+				<array>
+					<string>Can you find how to check device logs?</string>
+				</array>
+				<key>initialViewController</key>
+				<string>DeviceLogsExerciseViewController</string>
+				<key>name</key>
+				<string>Device Logs</string>
+				<key>solution</key>
+				<string>You can use Organizer utility in Xcode to check out device / simulator logs. In case of iDevice, make sure device is connected to macbook.</string>
 			</dict>
 		</array>
 	</dict>
