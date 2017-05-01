@@ -11,15 +11,14 @@ The lessons are laid out in the following steps:
 
 Step 4 is optional, but highly recommended for all iOS developers. Assistance is available within iGoat if you don't know how to fix a specific problem.
 
- Markup : * Bullet list
-.  Vulnerabities Covered:
-.  Reverse Engineering
-.  Data Protection (Rest)
-.  Data Protection (Transit)
-.  Authentication
-.  Side Channel Data Leaks
-.  Tamepring 
-.  Injection Flaws
+1. Vulnerabities Covered:
+1. Reverse Engineering
+1. Data Protection (Rest)
+1. Data Protection (Transit)
+1. Authentication
+1. Side Channel Data Leaks
+1. Tamepring 
+1. Injection Flaws
 
 Project Details - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 
@@ -28,8 +27,8 @@ Project Leader - Swaroop Yermalkar (@swaroopsy)
 To contribute to iGoat project, please contact Swaroop ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
 
 How to countribute?
-You can add new exercises
-Testing iGoat and checking if any issues
-Suggest us new attacks
-Writing blogs / article about iGoat
-Spreading iGoat :)
+1. You can add new exercises
+1. Testing iGoat and checking if any issues
+1. Suggest us new attacks
+1. Writing blogs / article about iGoat
+1. Spreading iGoat :)
