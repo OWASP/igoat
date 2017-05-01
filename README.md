@@ -1,4 +1,4 @@
-# iGoat - A Deliberately Insecure iOS Application #
+# iGoat - A Learning Tool for iOS App Pentesting and Security #
 
 iGoat is a learning tool for iOS developers (iPhone, iPad, etc.). It was inspired by the WebGoat project, and has a similar conceptual flow to it.
 
