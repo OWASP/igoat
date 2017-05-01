@@ -15,6 +15,7 @@ Step 4 is optional, but highly recommended for all iOS developers. Assistance is
 
 ### Vulnerabities Covered: ###
 * Reverse Engineering
+  * String Analysis
 * Data Protection (Rest)
 * Data Protection (Transit)
 * Authentication
@@ -26,7 +27,7 @@ __Project Details__ - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 
 __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroopsy?lang=en))
 
-To contribute to iGoat project, please contact Swaroop ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
+To contribute to iGoat project, please contact __Swaroop__ ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
 
 ### How to countribute? ###
 * You can add new exercises
