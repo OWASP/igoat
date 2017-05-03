@@ -15,7 +15,7 @@
 # The toplevel directory of the source tree.  This is the directory
 # that contains this "Makefile.in" and the "configure.in" script.
 #
-TOP = /Volumes/Work/Projects/Others/igoat/iGoat/sqlcipher
+TOP = /Users/hackerbox/Documents/Dev/iGoat/iGoat/sqlcipher
 
 
 # C Compiler and options for use in building executables that
@@ -47,11 +47,11 @@ TCC += -DNDEBUG
 
 # Compiler options needed for programs that use the TCL library.
 #
-TCC += 
+TCC += -I/System/Library/Frameworks/Tcl.framework/Versions/8.5/Headers
 
 # The library that programs using TCL must link against.
 #
-LIBTCL = 
+LIBTCL = -F/System/Library/Frameworks -framework Tcl
 
 # Compiler options needed for programs that use the readline() library.
 #
@@ -106,7 +106,7 @@ TEXE =
 # variable is "1", the TCL extension library (libtclsqlite3.so) is built
 # and installed.
 #
-HAVE_TCL = 
+HAVE_TCL = 1
 
 # This is the command to use for tclsh - normally just "tclsh", but we may
 # know the specific version we want to use
@@ -119,7 +119,7 @@ TCLLIBDIR = /System/Library/Frameworks/Tcl.framework/Versions/8.5/Resources/Scri
 
 # The suffix used on shared libraries.  Ex:  ".dll", ".so", ".dylib"
 #
-SHLIB_SUFFIX = 
+SHLIB_SUFFIX = .dylib
 
 # If gcov support was enabled by the configure script, add the appropriate
 # flags here.  It's not always as easy as just having the user add the right
@@ -167,7 +167,7 @@ libdir = ${exec_prefix}/lib
 pkgconfigdir = $(libdir)/pkgconfig
 bindir = ${exec_prefix}/bin
 includedir = ${prefix}/include/sqlcipher
-INSTALL = /usr/bin/install -c
+INSTALL = /usr/local/bin/ginstall -c
 LIBTOOL = ./libtool
 ALLOWRELEASE = 
 
@@ -602,7 +602,7 @@ libsqlcipher.la:	$(LIBOBJ)
 
 libtclsqlite3.la:	tclsqlite.lo libsqlcipher.la
 	$(LTLINK) -no-undefined -o $@ tclsqlite.lo \
-		libsqlcipher.la  $(TLIBS) \
+		libsqlcipher.la -L/System/Library/Frameworks/Tcl.framework/Versions/8.5 -ltclstub8.5 $(TLIBS) \
 		-rpath "$(TCLLIBDIR)" \
 		-version-info "8:6:8" \
 		-avoid-version

@@ -25,6 +25,7 @@
 	if (sqlite3_open(path, &credentialsDB) == SQLITE_OK) {
 		sqlite3_stmt *compiledStmt;
         
+        //sqlite3_exec(credentialsDB, "PRAGMA key = 'secretKey!'", NULL, NULL, NULL);
 		// Create the table if it doesn't exist.
 		const char *createStmt = 
             "CREATE TABLE IF NOT EXISTS creds (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, password TEXT);";

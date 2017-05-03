@@ -1,6 +1,6 @@
 #! /bin/sh
 # Generated automatically by config.status () 3.15
-# Libtool was configured on host MACC02RK254G8WN:
+# Libtool was configured on host MacBook-Pro.local:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 
 # Provide generalized library-building support services.
@@ -67,13 +67,13 @@ PATH_SEPARATOR=":"
 
 # The host system.
 host_alias=
-host=i386-apple-darwin16.3.0
-host_os=darwin16.3.0
+host=i386-apple-darwin15.6.0
+host_os=darwin15.6.0
 
 # The build system.
 build_alias=
-build=i386-apple-darwin16.3.0
-build_os=darwin16.3.0
+build=i386-apple-darwin15.6.0
+build_os=darwin15.6.0
 
 # A sed program that does not truncate output.
 SED="/usr/bin/sed"
@@ -91,7 +91,7 @@ EGREP="/usr/bin/grep -E"
 FGREP="/usr/bin/grep -F"
 
 # A BSD- or MS-compatible name lister.
-NM="/Volumes/Work/Main/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/nm -B"
+NM="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/nm -B"
 
 # Whether we need soft or hard links.
 LN_S="ln -s"
@@ -282,7 +282,7 @@ finish_eval=""
 hardcode_into_libs=no
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/Volumes/Work/Main/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0  /usr/local/lib"
+sys_lib_search_path_spec="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0  /usr/local/lib"
 
 # Detected run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"
@@ -305,7 +305,7 @@ striplib="strip -x"
 
 
 # The linker used to build libraries.
-LD="/Volumes/Work/Main/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
+LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
 
 # How to create reloadable object files.
 reload_flag=" -r"
