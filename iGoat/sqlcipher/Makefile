@@ -15,7 +15,7 @@
 # The toplevel directory of the source tree.  This is the directory
 # that contains this "Makefile.in" and the "configure.in" script.
 #
-TOP = /Users/hackerbox/Documents/Dev/iGoat/iGoat/sqlcipher
+TOP = /Users/hackerbox/Documents/Dev/igoat/iGoat/sqlcipher
 
 
 # C Compiler and options for use in building executables that

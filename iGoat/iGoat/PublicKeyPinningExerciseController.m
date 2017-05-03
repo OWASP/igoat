@@ -41,10 +41,7 @@ bool identityVerificationEnforced = false;
     
     UIAlertController* alert;
     UIAlertAction* defaultAction;
-    
-    [alert addAction:defaultAction];
-    [self presentViewController:alert animated:YES completion:nil];
-    
+        
     
     NSDictionary *headers = [(NSHTTPURLResponse *) response allHeaderFields];
     NSString *legitimateServer = [headers objectForKey:@"X-Goat-LegitimateServer"];
