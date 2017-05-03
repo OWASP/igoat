@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLCipher
+Description: SQL database engine
+Version: 3.15.2
+Libs: -L${libdir} -lsqlcipher
+Libs.private: 
+Cflags: -I${includedir}/sqlcipher
