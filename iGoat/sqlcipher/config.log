@@ -30,8 +30,8 @@ Kernel configured for up to 4 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1 2 3
 Primary memory available: 10.00 gigabytes
-Default processor set: 330 tasks, 1337 threads, 4 processors
-Load average: 2.23, Mach factor: 1.76
+Default processor set: 338 tasks, 1385 threads, 4 processors
+Load average: 1.96, Mach factor: 2.03
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -1280,7 +1280,7 @@ configure:11654: checking for localtime_s
 configure:11654: gcc -o conftest -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_localtime_s", referenced from:
-      _main in conftest-f98127.o
+      _main in conftest-b996c6.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:11654: $? = 1
@@ -1366,7 +1366,7 @@ configure:11654: checking for malloc_usable_size
 configure:11654: gcc -o conftest -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_malloc_usable_size", referenced from:
-      _main in conftest-a09e91.o
+      _main in conftest-b362d2.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:11654: $? = 1
@@ -1452,7 +1452,7 @@ configure:11654: checking for strchrnul
 configure:11654: gcc -o conftest -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_strchrnul", referenced from:
-      _main in conftest-1cf8c2.o
+      _main in conftest-906364.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:11654: $? = 1
@@ -1550,7 +1550,7 @@ configure:11654: checking for pread64
 configure:11654: gcc -o conftest -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_pread64", referenced from:
-      _main in conftest-bbf96a.o
+      _main in conftest-c99ba4.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:11654: $? = 1
@@ -1643,7 +1643,7 @@ configure:11654: checking for pwrite64
 configure:11654: gcc -o conftest -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_pwrite64", referenced from:
-      _main in conftest-a24d73.o
+      _main in conftest-29fbdf.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:11654: $? = 1
@@ -1765,7 +1765,7 @@ configure:12456: checking for library containing readline
 configure:12487: gcc -o conftest -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLCIPHER_CRYPTO_CC -DSQLITE_OS_UNIX=1   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_readline", referenced from:
-      _main in conftest-f29bd8.o
+      _main in conftest-e2bbd7.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:12487: $? = 1

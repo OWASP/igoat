@@ -623,5 +623,29 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 			</dict>
 		</array>
 	</dict>
+	<key>Broken Cryptography</key>
+	<dict>
+		<key>description</key>
+		<string>This exercise category contains exercises relating to authentication issues. On iOS, local authentication is generally not an issue, but authenticating securely to a server application is. So, some or most of these exercises include some server-side code that needs to be run in order for the exercise to work. See each exercise&apos;s instructions for details.</string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>In this exercise, you&apos;re going to idenfiy insecure mechanism for storing sensitive data locally. You will observe encryption key hard coded in code using which you can decrypt sensitive data into plain text.                        </string>
+				<key>hints</key>
+				<array>
+					<string>Can you identify hard coded encryption key in code?</string>
+				</array>
+				<key>initialViewController</key>
+				<string>BrokenCryptographyExerciseViewController</string>
+				<key>name</key>
+				<string>Broken Cryptography</string>
+				<key>solution</key>
+				<string>You can develope another sample app with decryption code for hard coded key used in this exercise.</string>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>
