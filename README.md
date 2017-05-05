@@ -40,7 +40,7 @@ __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroop
 * Injection Flaws
   * SQL Injection
   * Cross Site Scripting
-  * Broken Cryptography
+* Broken Cryptography
 
 ### How to countribute? ###
 * You can add new exercises
