@@ -17,7 +17,7 @@ __Project Details__ - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 
 __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroopsy?lang=en))
 
-### Vulnerabities Covered (version 2.8): ###
+### Vulnerabities Covered (version 3.0): ###
 * Reverse Engineering
   * String Analysis
 * Data Protection (Rest)
