@@ -105,34 +105,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A2590B351EB9C17E00CBA9D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C0041981BFC382400ED2AD5;
-			remoteInfo = "SQLCipher iOS";
-		};
-		A2590B371EB9C17E00CBA9D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C0041B11BFC3B2200ED2AD5;
-			remoteInfo = "SQLCipher OSX";
-		};
-		A2590B391EB9C17E00CBA9D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C0041C31BFC3CC000ED2AD5;
-			remoteInfo = "SQLCipher tvOS";
-		};
-		A2590B3B1EB9C17E00CBA9D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C0041D61BFC3E2500ED2AD5;
-			remoteInfo = "SQLCipher watchOS";
-		};
 		A2590B3D1EB9C17E00CBA9D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */;
@@ -621,10 +593,6 @@
 		A2590B2D1EB9C17E00CBA9D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2590B361EB9C17E00CBA9D7 /* SQLCipher.framework */,
-				A2590B381EB9C17E00CBA9D7 /* SQLCipher.framework */,
-				A2590B3A1EB9C17E00CBA9D7 /* SQLCipher.framework */,
-				A2590B3C1EB9C17E00CBA9D7 /* SQLCipher.framework */,
 				A2590B3E1EB9C17E00CBA9D7 /* libsqlcipher.a */,
 			);
 			name = Products;
@@ -723,34 +691,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A2590B361EB9C17E00CBA9D7 /* SQLCipher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLCipher.framework;
-			remoteRef = A2590B351EB9C17E00CBA9D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A2590B381EB9C17E00CBA9D7 /* SQLCipher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLCipher.framework;
-			remoteRef = A2590B371EB9C17E00CBA9D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A2590B3A1EB9C17E00CBA9D7 /* SQLCipher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLCipher.framework;
-			remoteRef = A2590B391EB9C17E00CBA9D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A2590B3C1EB9C17E00CBA9D7 /* SQLCipher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLCipher.framework;
-			remoteRef = A2590B3B1EB9C17E00CBA9D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		A2590B3E1EB9C17E00CBA9D7 /* libsqlcipher.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
