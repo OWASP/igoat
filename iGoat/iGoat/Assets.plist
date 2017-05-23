@@ -214,6 +214,27 @@
 		<array>
 			<dict>
 				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
+                    data locally on the iOS device. In the lesson, the app stores data
+                    in Core Data format.
+                    
+                    Your task is to locate the CoreData file and find the sensitive data that
+                    it contains.</string>
+				<key>hints</key>
+				<array>
+					<string>Try to find out NSUserDefaults file in app sandbox.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>CoreDataExerciseViewController</string>
+				<key>name</key>
+				<string>Core Data Storage</string>
+				<key>solution</key>
+				<string>Check out Core Data file located in Documents of app sandbox.</string>
+			</dict>
+			<dict>
+				<key>creditsFile</key>
 				<string>KRvWAssociates.html</string>
 				<key>description</key>
 				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
@@ -644,6 +665,30 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<string>Broken Cryptography</string>
 				<key>solution</key>
 				<string>You can develope another sample app with decryption code for hard coded key used in this exercise.</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Key Management</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>In this exercise, you will study one of the way to generate random key to store sensitive locally.</string>
+				<key>hints</key>
+				<array>
+					<string>Look into one of side channel data leakage.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>RandomKeyGenerationExerciseViewController</string>
+				<key>name</key>
+				<string>Random Key Generation</string>
+				<key>solution</key>
+				<string>Check out device logs for encryption key.</string>
 			</dict>
 		</array>
 	</dict>

@@ -84,9 +84,19 @@
 		4F0D66721EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D66711EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m */; };
 		4F0D66751EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66731EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib */; };
 		4F0D66761EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */; };
+		4F253A021ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A011ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m */; };
+		4F253A041ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A031ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib */; };
+		4F253A081ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A071ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib */; };
+		4F253A0B1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A0A1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib */; };
+		4F253A1C1ECE07CF0070D22E /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A1B1ECE07CF0070D22E /* Model.xcdatamodel */; };
+		4F253A1E1ECE08580070D22E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F253A1D1ECE08580070D22E /* CoreData.framework */; };
+		4F253A261ECEDA000070D22E /* CoreDataExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A251ECEDA000070D22E /* CoreDataExerciseViewController.m */; };
+		4F253A291ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A271ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib */; };
+		4F253A2A1ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A281ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib */; };
+		4F253A3E1ECF1CCA0070D22E /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A3B1ECF1CCA0070D22E /* User+CoreDataClass.m */; };
+		4F253A3F1ECF1CCA0070D22E /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A3D1ECF1CCA0070D22E /* User+CoreDataProperties.m */; };
 		4F93AF981EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93AF971EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m */; };
 		4F93AF9B1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F93AF991EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib */; };
-		4F93AF9C1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F93AF9A1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPhone.xib */; };
 		4F93AF9F1EBB4EFC00361C70 /* NSData+AESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93AF9E1EBB4EFC00361C70 /* NSData+AESEncryption.m */; };
 		4F9C77061EA663ED00710C1F /* DeviceLogsExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */; };
 		4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */; };
@@ -236,10 +246,24 @@
 		4F0D66711EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsStorageExerciseViewController.m; sourceTree = "<group>"; };
 		4F0D66731EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPad.xib; sourceTree = "<group>"; };
 		4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		4F253A001ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomKeyGenerationExerciseViewController.h; sourceTree = "<group>"; };
+		4F253A011ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomKeyGenerationExerciseViewController.m; sourceTree = "<group>"; };
+		4F253A031ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RandomKeyGenerationExerciseViewController_iPhone.xib; path = ../../../../../Downloads/key/RandomKeyGenerationExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		4F253A071ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomKeyGenerationExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		4F253A0A1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		4F253A1B1ECE07CF0070D22E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4F253A1D1ECE08580070D22E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4F253A241ECEDA000070D22E /* CoreDataExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataExerciseViewController.h; sourceTree = "<group>"; };
+		4F253A251ECEDA000070D22E /* CoreDataExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataExerciseViewController.m; sourceTree = "<group>"; };
+		4F253A271ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		4F253A281ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		4F253A3A1ECF1CCA0070D22E /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
+		4F253A3B1ECF1CCA0070D22E /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
+		4F253A3C1ECF1CCA0070D22E /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		4F253A3D1ECF1CCA0070D22E /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
 		4F93AF961EBB006D00361C70 /* BrokenCryptographyExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrokenCryptographyExerciseViewController.h; sourceTree = "<group>"; };
 		4F93AF971EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokenCryptographyExerciseViewController.m; sourceTree = "<group>"; };
 		4F93AF991EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseViewController_iPad.xib; sourceTree = "<group>"; };
-		4F93AF9A1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		4F93AF9D1EBB4EFC00361C70 /* NSData+AESEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESEncryption.h"; sourceTree = "<group>"; };
 		4F93AF9E1EBB4EFC00361C70 /* NSData+AESEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESEncryption.m"; sourceTree = "<group>"; };
 		4F9C77041EA663ED00710C1F /* DeviceLogsExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLogsExerciseViewController.h; sourceTree = "<group>"; };
@@ -267,6 +291,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F253A1E1ECE08580070D22E /* CoreData.framework in Frameworks */,
 				A2590B411EB9C18C00CBA9D7 /* libsqlcipher.a in Frameworks */,
 				1472EAB816D798C500AD63D1 /* SystemConfiguration.framework in Frameworks */,
 				1472EAB616D798B100AD63D1 /* Security.framework in Frameworks */,
@@ -300,6 +325,7 @@
 		141E2FBC16C3D49900586528 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F253A1D1ECE08580070D22E /* CoreData.framework */,
 				14D8962516DA886F00D0720A /* libsqlite3.dylib */,
 				1472EAB716D798C400AD63D1 /* SystemConfiguration.framework */,
 				1472EAB516D798B100AD63D1 /* Security.framework */,
@@ -379,6 +405,8 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				4F253A231ECED9D80070D22E /* Core Data Storage */,
+				4F2539FF1ECDF8350070D22E /* Random Key Generation */,
 				4F93AF901EBB001F00361C70 /* Broken Cryptography */,
 				4F0D666F1EB4DF4200AC8FDF /* NSUserDefaults Storage */,
 				4F0D665D1EB444A400AC8FDF /* Plist Storage */,
@@ -424,9 +452,9 @@
 		1462778216C56B52007FE838 /* Local Data Storage */ = {
 			isa = PBXGroup;
 			children = (
+				14CFECD916D7BD5800B6E6E7 /* LocalDataStorageExerciseController_iPad.xib */,
 				1462778E16C56BCF007FE838 /* LocalDataStorageExerciseController.h */,
 				1462778F16C56BCF007FE838 /* LocalDataStorageExerciseController.m */,
-				14CFECD916D7BD5800B6E6E7 /* LocalDataStorageExerciseController_iPad.xib */,
 				1472EAC316D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib */,
 			);
 			name = "Local Data Storage";
@@ -566,11 +594,38 @@
 			name = "NSUserDefaults Storage";
 			sourceTree = "<group>";
 		};
+		4F2539FF1ECDF8350070D22E /* Random Key Generation */ = {
+			isa = PBXGroup;
+			children = (
+				4F253A071ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib */,
+				4F253A031ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib */,
+				4F253A001ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.h */,
+				4F253A011ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m */,
+			);
+			name = "Random Key Generation";
+			sourceTree = "<group>";
+		};
+		4F253A231ECED9D80070D22E /* Core Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4F253A1B1ECE07CF0070D22E /* Model.xcdatamodel */,
+				4F253A3A1ECF1CCA0070D22E /* User+CoreDataClass.h */,
+				4F253A3B1ECF1CCA0070D22E /* User+CoreDataClass.m */,
+				4F253A3C1ECF1CCA0070D22E /* User+CoreDataProperties.h */,
+				4F253A3D1ECF1CCA0070D22E /* User+CoreDataProperties.m */,
+				4F253A271ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib */,
+				4F253A281ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib */,
+				4F253A241ECEDA000070D22E /* CoreDataExerciseViewController.h */,
+				4F253A251ECEDA000070D22E /* CoreDataExerciseViewController.m */,
+			);
+			name = "Core Data Storage";
+			sourceTree = "<group>";
+		};
 		4F93AF901EBB001F00361C70 /* Broken Cryptography */ = {
 			isa = PBXGroup;
 			children = (
+				4F253A0A1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib */,
 				4F93AF991EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib */,
-				4F93AF9A1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPhone.xib */,
 				4F93AF961EBB006D00361C70 /* BrokenCryptographyExerciseViewController.h */,
 				4F93AF971EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m */,
 				4F93AF9D1EBB4EFC00361C70 /* NSData+AESEncryption.h */,
@@ -705,11 +760,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F253A041ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib in Resources */,
 				143D7A2F16DD006D001AE794 /* articles.sqlite in Resources */,
 				141E2FC816C3D49900586528 /* InfoPlist.strings in Resources */,
 				141E2FD016C3D49900586528 /* Default.png in Resources */,
 				141E2FD216C3D49900586528 /* Default@2x.png in Resources */,
 				BCFB4AE419BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */,
+				4F253A2A1ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib in Resources */,
 				141E2FD416C3D49900586528 /* Default-568h@2x.png in Resources */,
 				141E2FD716C3D49900586528 /* MainStoryboard_iPhone.storyboard in Resources */,
 				BCF7AD5919D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib in Resources */,
@@ -734,6 +791,7 @@
 				4F0777CF1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
 				1472EAA816D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib in Resources */,
 				1472EAAB16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib in Resources */,
+				4F253A081ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib in Resources */,
 				BCFB4AE319BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib in Resources */,
 				1472EAAD16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib in Resources */,
 				1472EAB416D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib in Resources */,
@@ -745,9 +803,10 @@
 				1472EAC416D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib in Resources */,
 				4F0777D01EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */,
 				14CFECDA16D7BD5900B6E6E7 /* LocalDataStorageExerciseController_iPad.xib in Resources */,
+				4F253A0B1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */,
 				14CFECEE16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib in Resources */,
 				14CFECF016D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib in Resources */,
-				4F93AF9C1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */,
+				4F253A291ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib in Resources */,
 				14CFECF216D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib in Resources */,
 				4F0D66761EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */,
 				14CFECF616D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib in Resources */,
@@ -767,10 +826,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F253A3F1ECF1CCA0070D22E /* User+CoreDataProperties.m in Sources */,
 				14CFECF316D7CAD200B6E6E7 /* SQLInjectionExerciseController.m in Sources */,
 				14CFECF416D7CAD200B6E6E7 /* SQLInjectionArticlesViewController.m in Sources */,
 				BCF7AD5A19D0C2A8007ED80A /* MethodSwizzlingExerciseController.m in Sources */,
 				14CFECDB16D7C27100B6E6E7 /* ServerCommunicationExerciseController.m in Sources */,
+				4F253A3E1ECF1CCA0070D22E /* User+CoreDataClass.m in Sources */,
 				1472EAC216D7B23600AD63D1 /* LocalDataStorageExerciseController.m in Sources */,
 				BCA6D1CB19DA14FF00002CA0 /* StringAnalysisExerciseController.m in Sources */,
 				1472EABB16D7AA4800AD63D1 /* KeystrokeLoggingExerciseController.m in Sources */,
@@ -780,11 +841,13 @@
 				146277C616C9662D007FE838 /* HtmlViewController.m in Sources */,
 				4F0D66721EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m in Sources */,
 				146277C816C9662D007FE838 /* HintsViewController.m in Sources */,
+				4F253A261ECEDA000070D22E /* CoreDataExerciseViewController.m in Sources */,
 				146277BE16C96440007FE838 /* ExerciseViewController.m in Sources */,
 				146277B916C962E6007FE838 /* RemoteAuthenticationExerciseController.m in Sources */,
 				141E2FCA16C3D49900586528 /* main.m in Sources */,
 				141E2FCE16C3D49900586528 /* AppDelegate.m in Sources */,
 				141E2FDD16C3D49900586528 /* MasterViewController.m in Sources */,
+				4F253A1C1ECE07CF0070D22E /* Model.xcdatamodel in Sources */,
 				4F0777CC1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m in Sources */,
 				BCFB4AE519BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m in Sources */,
 				141E2FE016C3D49900586528 /* DetailViewController.m in Sources */,
@@ -804,6 +867,7 @@
 				4F93AF981EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m in Sources */,
 				14CFECEC16D7C46400B6E6E7 /* SBJsonWriter.m in Sources */,
 				4F0D66601EB444EB00AC8FDF /* PlistStorageExerciseViewController.m in Sources */,
+				4F253A021ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
