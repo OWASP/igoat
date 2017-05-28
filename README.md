@@ -18,29 +18,30 @@ __Project Details__ - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroopsy?lang=en))
 
 ### Vulnerabities Covered (version 3.0): ###
-* Reverse Engineering
+* __Reverse Engineering__
   * String Analysis
-* Data Protection (Rest)
+* __Data Protection (Rest)__
   * Local Data Storage (SQLite)
   * Plist Storage
   * Keychain Usage
   * NSUserDefaults Storage
-* Data Protection (Transit)
+* __Data Protection (Transit)__
   * Server Communication
   * Public Key Pinning
-* Authentication
+* __Authentication__
   * Remote Authentication
-* Side Channel Data Leaks
+* __Side Channel Data Leaks__
   * Device Logs
   * Cut-and-Paste
   * Backgrounding
   * Keystroke Logging
-* Tamepring 
+* __Tamepring__ 
   * Method Swizzling
-* Injection Flaws
+* __Injection Flaws__
   * SQL Injection
   * Cross Site Scripting
-* Broken Cryptography
+* __Broken Cryptography__
+* __Key Management__
 
 ### How to countribute? ###
 * You can add new exercises
