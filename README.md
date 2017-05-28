@@ -52,9 +52,9 @@ __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroop
 To contribute to iGoat project, please contact __Swaroop__ ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
 
 ### Project Contributors - ###
+* Anthony Gonsalves
 * Ken van Wyk
 * Jonathan Carter
 * masbog
 * Cheena Kathpal
-* Anthony Gonsalves
 * Matt Tesauro
