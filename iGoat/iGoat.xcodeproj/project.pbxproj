@@ -85,8 +85,6 @@
 		4F0D66751EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66731EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib */; };
 		4F0D66761EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */; };
 		4F253A021ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A011ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m */; };
-		4F253A041ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A031ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib */; };
-		4F253A081ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A071ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib */; };
 		4F253A0B1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A0A1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib */; };
 		4F253A1C1ECE07CF0070D22E /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A1B1ECE07CF0070D22E /* Model.xcdatamodel */; };
 		4F253A1E1ECE08580070D22E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F253A1D1ECE08580070D22E /* CoreData.framework */; };
@@ -102,6 +100,7 @@
 		4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */; };
 		4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */; };
 		A2590B411EB9C18C00CBA9D7 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2590B3E1EB9C17E00CBA9D7 /* libsqlcipher.a */; };
+		A29FF9411EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */; };
 		BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */ = {isa = PBXBuildFile; fileRef = BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */; };
 		BCA6D1C919DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */; };
 		BCA6D1CB19DA14FF00002CA0 /* StringAnalysisExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6D1C819DA14FF00002CA0 /* StringAnalysisExerciseController.m */; };
@@ -248,8 +247,6 @@
 		4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		4F253A001ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomKeyGenerationExerciseViewController.h; sourceTree = "<group>"; };
 		4F253A011ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomKeyGenerationExerciseViewController.m; sourceTree = "<group>"; };
-		4F253A031ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RandomKeyGenerationExerciseViewController_iPhone.xib; path = ../../../../../Downloads/key/RandomKeyGenerationExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
-		4F253A071ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomKeyGenerationExerciseViewController_iPad.xib; sourceTree = "<group>"; };
 		4F253A0A1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		4F253A1B1ECE07CF0070D22E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4F253A1D1ECE08580070D22E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -271,6 +268,7 @@
 		4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPad.xib; sourceTree = "<group>"; };
 		4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
+		A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomKeyGenerationExerciseViewController.xib; sourceTree = "<group>"; };
 		BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = iGoatSSLServer.der; sourceTree = "<group>"; };
 		BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPad.xib; sourceTree = "<group>"; };
 		BCA6D1C719DA14FF00002CA0 /* StringAnalysisExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAnalysisExerciseController.h; sourceTree = "<group>"; };
@@ -597,8 +595,7 @@
 		4F2539FF1ECDF8350070D22E /* Random Key Generation */ = {
 			isa = PBXGroup;
 			children = (
-				4F253A071ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib */,
-				4F253A031ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib */,
+				A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */,
 				4F253A001ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.h */,
 				4F253A011ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m */,
 			);
@@ -760,8 +757,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F253A041ECDF8FB0070D22E /* RandomKeyGenerationExerciseViewController_iPhone.xib in Resources */,
 				143D7A2F16DD006D001AE794 /* articles.sqlite in Resources */,
+				A29FF9411EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib in Resources */,
 				141E2FC816C3D49900586528 /* InfoPlist.strings in Resources */,
 				141E2FD016C3D49900586528 /* Default.png in Resources */,
 				141E2FD216C3D49900586528 /* Default@2x.png in Resources */,
@@ -791,7 +788,6 @@
 				4F0777CF1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
 				1472EAA816D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib in Resources */,
 				1472EAAB16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib in Resources */,
-				4F253A081ECDFC820070D22E /* RandomKeyGenerationExerciseViewController_iPad.xib in Resources */,
 				BCFB4AE319BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib in Resources */,
 				1472EAAD16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib in Resources */,
 				1472EAB416D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib in Resources */,

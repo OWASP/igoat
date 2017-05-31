@@ -1,0 +1,77 @@
+#import "YAPExcersizeViewController.h"
+#import "UIAlertController+EasyBlock.h"
+#import "YapDatabase.h"
+
+static NSString *const YapValueEmail = @"JohnDoe@yap.com";
+static NSString *const YapValuePassword = @"TheUnknown";
+
+static NSString *const YapKeyEmail = @"YapKeyEmail";
+static NSString *const YapKeyPassword = @"YapKeyPassword";
+
+
+
+@implementation YAPExcersizeViewController
+    
+    -(void)saveData {
+        NSString *databaseName = @"YapDatabase.sqlite";
+        NSURL *baseURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationSupportDirectory
+                                                                inDomain:NSUserDomainMask
+                                                       appropriateForURL:nil
+                                                                  create:YES
+                                                                   error:NULL];
+        NSURL *databaseURL = [baseURL URLByAppendingPathComponent:databaseName isDirectory:NO];
+        NSString *databasePath = databaseURL.filePathURL.path;
+        
+        YapDatabase *database = [[YapDatabase alloc] initWithPath:databasePath];
+        YapDatabaseConnection *connection = [database newConnection];
+        [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
+            [transaction setObject:YapValueEmail forKey:YapKeyEmail inCollection:nil];
+            [transaction setObject:YapValuePassword forKey:YapKeyPassword inCollection:nil];
+        }];
+    }
+    
+    - (void)viewDidLoad {
+        [super viewDidLoad];
+        // Do any additional setup after loading the view from its nib.
+        [self saveData];
+    }
+
+    -(IBAction)verifyItemPressed:(id)sender {
+        BOOL isVerified = [self verifyName:self.emailTextField.text
+                                  password:self.passwordTextField.text];
+        NSString *message = (isVerified) ?  @"Success!!" : @"Failed";
+        [UIAlertController showWithTitle:@"iGoat" message:message preferedStyle:UIAlertControllerStyleAlert cancelButtonTitle:@"OK" otherButtonTitles:nil tapBlock:^(UIAlertAction * _Nonnull action, NSInteger buttonIndex) {
+            
+        }];
+        
+    }
+    
+    -(NSString *)getYAPDatabasePath {
+        NSString *databaseName = @"YapDatabase.sqlite";
+        NSURL *baseURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationSupportDirectory
+                                                                inDomain:NSUserDomainMask
+                                                       appropriateForURL:nil
+                                                                  create:YES
+                                                                   error:NULL];
+        NSURL *databaseURL = [baseURL URLByAppendingPathComponent:databaseName isDirectory:NO];
+        NSString *databasePath = databaseURL.filePathURL.path;
+        return databasePath;
+    }
+    
+    -(BOOL)verifyName:(NSString *)name password:(NSString *)password {
+        YapDatabase *database = [[YapDatabase alloc] initWithPath:self.getYAPDatabasePath];
+        YapDatabaseConnection *connection = [database newConnection];
+        __block BOOL isVerified = false;
+        [connection readWithBlock:^(YapDatabaseReadTransaction * _Nonnull transaction) {
+            NSString *email = [transaction objectForKey:YapKeyEmail inCollection:nil];
+            NSString *password = [transaction objectForKey:YapKeyPassword inCollection:nil];
+            
+            isVerified = ([email isEqualToString:name] &&
+                          [password isEqualToString:password]) ? true : false;
+        }];
+
+        return isVerified;
+    }
+    
+@end
+

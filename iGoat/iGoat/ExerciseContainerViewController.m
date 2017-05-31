@@ -45,7 +45,13 @@
         nibName = [NSString stringWithFormat:@"%@_iPhone", initialControllerName];
     }
     
+    NSString *path = [[NSBundle mainBundle]pathForResource:initialControllerName ofType:@".nib"];
+    if (path) {
+        nibName = initialControllerName;
+    }
+    
     ExerciseViewController *newController = [[NSClassFromString(initialControllerName) alloc] initWithNibName:nibName bundle:nil exercise:newExercise];
+    
     
     if (newController) {
         // Disable the "Hints" button if there aren't any.
