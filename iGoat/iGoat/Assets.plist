@@ -399,6 +399,27 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 				<key>solution</key>
 				<string>Check out plist file located in Library/Preferences of app sandbox.</string>
 			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
+                    data locally on the iOS device. In the lesson, the app stores data
+                    using a NSUserDefaults file.
+                    
+                    Your task is to locate the NSUserDefaults file and find the sensitive data that
+                    it contains.</string>
+				<key>hints</key>
+				<array>
+					<string>Try to find out NSUserDefaults file in app sandbox.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>CouchBaseExerciseViewController</string>
+				<key>name</key>
+				<string>CouchBase Storage</string>
+				<key>solution</key>
+				<string>Check out plist file located in Library/Preferences of app sandbox.</string>
+			</dict>
 		</array>
 	</dict>
 	<key>Data Protection (Transit)</key>
