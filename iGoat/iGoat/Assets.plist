@@ -359,66 +359,66 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 			</dict>
 			<dict>
 				<key>creditsFile</key>
-				<string>Swaroop.html</string>
+				<string>Swaroop_anthony.html</string>
 				<key>description</key>
 				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
                     data locally on the iOS device. In the lesson, the app stores data
-                    using a NSUserDefaults file.
+                    using a YAP Storage file.
                     
-                    Your task is to locate the NSUserDefaults file and find the sensitive data that
+                    Your task is to locate the YAP Storage file and find the sensitive data that
                     it contains.</string>
 				<key>hints</key>
 				<array>
-					<string>Try to find out NSUserDefaults file in app sandbox.</string>
+					<string>Try to find out YAP Storage file in app sandbox.</string>
 				</array>
 				<key>initialViewController</key>
 				<string>YAPExcersizeViewController</string>
 				<key>name</key>
 				<string>YAP Storage</string>
 				<key>solution</key>
-				<string>Check out plist file located in Library/Preferences of app sandbox.</string>
+				<string>Check out YAP storage file located inside app sandbox.</string>
 			</dict>
 			<dict>
 				<key>creditsFile</key>
-				<string>Swaroop.html</string>
+				<string>Swaroop_anthony.html</string>
 				<key>description</key>
 				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
                     data locally on the iOS device. In the lesson, the app stores data
-                    using a NSUserDefaults file.
+                    using a Realm Storage file.
                     
-                    Your task is to locate the NSUserDefaults file and find the sensitive data that
+                    Your task is to locate the Realm Storage file and find the sensitive data that
                     it contains.</string>
 				<key>hints</key>
 				<array>
-					<string>Try to find out NSUserDefaults file in app sandbox.</string>
+					<string>Try to find out Realm storage file in app sandbox.</string>
 				</array>
 				<key>initialViewController</key>
 				<string>RealmExerciseViewController</string>
 				<key>name</key>
 				<string>Realm Data Storage</string>
 				<key>solution</key>
-				<string>Check out plist file located in Library/Preferences of app sandbox.</string>
+				<string>Check out realm file location inside app sandbox.</string>
 			</dict>
 			<dict>
 				<key>creditsFile</key>
-				<string>Swaroop.html</string>
+				<string>Swaroop_anthony.html</string>
 				<key>description</key>
 				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
                     data locally on the iOS device. In the lesson, the app stores data
-                    using a NSUserDefaults file.
+                    using a CouchBase file.
                     
-                    Your task is to locate the NSUserDefaults file and find the sensitive data that
+                    Your task is to locate the CouchBase file and find the sensitive data that
                     it contains.</string>
 				<key>hints</key>
 				<array>
-					<string>Try to find out NSUserDefaults file in app sandbox.</string>
+					<string>Try to find out CouchBase file in app sandbox.</string>
 				</array>
 				<key>initialViewController</key>
 				<string>CouchBaseExerciseViewController</string>
 				<key>name</key>
 				<string>CouchBase Storage</string>
 				<key>solution</key>
-				<string>Check out plist file located in Library/Preferences of app sandbox.</string>
+				<string>Check out CouchBase file located inside app sandbox.</string>
 			</dict>
 		</array>
 	</dict>

@@ -93,6 +93,7 @@
 		4F253A2A1ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A281ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib */; };
 		4F253A3E1ECF1CCA0070D22E /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A3B1ECF1CCA0070D22E /* User+CoreDataClass.m */; };
 		4F253A3F1ECF1CCA0070D22E /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A3D1ECF1CCA0070D22E /* User+CoreDataProperties.m */; };
+		4F7316721EE3D61E0095FCDA /* Swaroop_anthony.html in Resources */ = {isa = PBXBuildFile; fileRef = 4F7316711EE3D61E0095FCDA /* Swaroop_anthony.html */; };
 		4F93AF981EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93AF971EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m */; };
 		4F93AF9B1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F93AF991EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib */; };
 		4F93AF9F1EBB4EFC00361C70 /* NSData+AESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93AF9E1EBB4EFC00361C70 /* NSData+AESEncryption.m */; };
@@ -375,6 +376,7 @@
 		4F253A3B1ECF1CCA0070D22E /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
 		4F253A3C1ECF1CCA0070D22E /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
 		4F253A3D1ECF1CCA0070D22E /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		4F7316711EE3D61E0095FCDA /* Swaroop_anthony.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_anthony.html; sourceTree = "<group>"; };
 		4F93AF961EBB006D00361C70 /* BrokenCryptographyExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrokenCryptographyExerciseViewController.h; sourceTree = "<group>"; };
 		4F93AF971EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokenCryptographyExerciseViewController.m; sourceTree = "<group>"; };
 		4F93AF991EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseViewController_iPad.xib; sourceTree = "<group>"; };
@@ -712,6 +714,7 @@
 		1462775D16C56410007FE838 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4F7316711EE3D61E0095FCDA /* Swaroop_anthony.html */,
 				4F0777D11EA8CD940089AA18 /* Swaroop.html */,
 				BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */,
 				1462776316C56447007FE838 /* about.html */,
@@ -1605,6 +1608,7 @@
 				1462777C16C5653E007FE838 /* Icon.png in Resources */,
 				BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */,
 				1462777E16C56546007FE838 /* Icon@2x.png in Resources */,
+				4F7316721EE3D61E0095FCDA /* Swaroop_anthony.html in Resources */,
 				4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */,
 				1475029916D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */,
 				4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */,
