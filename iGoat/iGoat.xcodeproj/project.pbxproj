@@ -205,6 +205,8 @@
 		A29FFD9D1EDF03BA0047E340 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFD9C1EDF03BA0047E340 /* libz.tbd */; };
 		A29FFDA11EDF149C0047E340 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFDA01EDF149C0047E340 /* CFNetwork.framework */; };
 		A29FFDA31EDF15210047E340 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFDA21EDF15210047E340 /* CouchbaseLite.framework */; };
+		A2D78F8B1EE5760400C815A8 /* BinaryCookiesExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D78F891EE5760400C815A8 /* BinaryCookiesExerciseViewController.m */; };
+		A2D78F8C1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */; };
 		BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */ = {isa = PBXBuildFile; fileRef = BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */; };
 		BCA6D1C919DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */; };
 		BCA6D1CB19DA14FF00002CA0 /* StringAnalysisExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6D1C819DA14FF00002CA0 /* StringAnalysisExerciseController.m */; };
@@ -601,6 +603,9 @@
 		A29FFD9C1EDF03BA0047E340 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A29FFDA01EDF149C0047E340 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A29FFDA21EDF15210047E340 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+		A2D78F881EE5760400C815A8 /* BinaryCookiesExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryCookiesExerciseViewController.h; sourceTree = "<group>"; };
+		A2D78F891EE5760400C815A8 /* BinaryCookiesExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryCookiesExerciseViewController.m; sourceTree = "<group>"; };
+		A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryCookiesExerciseViewController.xib; sourceTree = "<group>"; };
 		BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = iGoatSSLServer.der; sourceTree = "<group>"; };
 		BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPad.xib; sourceTree = "<group>"; };
 		BCA6D1C719DA14FF00002CA0 /* StringAnalysisExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAnalysisExerciseController.h; sourceTree = "<group>"; };
@@ -746,6 +751,7 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				A2D78F841EE575C700C815A8 /* Binary Cookies */,
 				A29FFD931EDEE5430047E340 /* CouchBase */,
 				A29FFD821EDEE3130047E340 /* Realm Data Storage */,
 				A29FFD7C1EDEE3080047E340 /* YAP Data Storage */,
@@ -1474,6 +1480,16 @@
 			path = CouchBase;
 			sourceTree = "<group>";
 		};
+		A2D78F841EE575C700C815A8 /* Binary Cookies */ = {
+			isa = PBXGroup;
+			children = (
+				A2D78F881EE5760400C815A8 /* BinaryCookiesExerciseViewController.h */,
+				A2D78F891EE5760400C815A8 /* BinaryCookiesExerciseViewController.m */,
+				A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */,
+			);
+			path = "Binary Cookies";
+			sourceTree = "<group>";
+		};
 		BCA6D1C419D9F59100002CA0 /* String Analysis */ = {
 			isa = PBXGroup;
 			children = (
@@ -1590,6 +1606,7 @@
 				BCFB4AE419BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */,
 				4F253A2A1ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib in Resources */,
 				141E2FD416C3D49900586528 /* Default-568h@2x.png in Resources */,
+				A2D78F8C1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib in Resources */,
 				141E2FD716C3D49900586528 /* MainStoryboard_iPhone.storyboard in Resources */,
 				BCF7AD5919D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib in Resources */,
 				141E2FDA16C3D49900586528 /* MainStoryboard_iPad.storyboard in Resources */,
@@ -1705,6 +1722,7 @@
 				A29FFD611EDEE2FB0047E340 /* YapDatabaseView.m in Sources */,
 				A29FFD551EDEE2FB0047E340 /* YapDatabaseSecondaryIndex.m in Sources */,
 				A29FFD731EDEE2FB0047E340 /* YapCollectionKey.m in Sources */,
+				A2D78F8B1EE5760400C815A8 /* BinaryCookiesExerciseViewController.m in Sources */,
 				146277C616C9662D007FE838 /* HtmlViewController.m in Sources */,
 				4F0D66721EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m in Sources */,
 				A29FFD651EDEE2FB0047E340 /* YapDatabaseViewTypes.m in Sources */,
