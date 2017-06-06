@@ -1,5 +1,7 @@
 #import "AppDelegate.h"
 #import "AssetStore.h"
+#import "NSURL+Parameters.h"
+#import "UIAlertController+EasyBlock.h"
 
 @implementation AppDelegate
 
@@ -44,6 +46,24 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     
 }
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    if (!url) {
+        return NO;
+    }
+    NSString *URLString = [url absoluteString];
+    NSLog(@"handle url %@",URLString);
+
+    if ([url.scheme isEqualToString:@"igoat"]) {
+        NSDictionary *queryInfo = [url parmetersInfo];
+        NSString *mobileNo = queryInfo[@"contactNumber"];
+        NSString *message = queryInfo[@"message"];
+        NSString *sentMessage = [NSString stringWithFormat:@"Message \"%@\" sent to %@",message,mobileNo];
+        [UIAlertController showWithTitle:@"iGoat" message:sentMessage preferedStyle:UIAlertControllerStyleAlert cancelButtonTitle:@"OK" otherButtonTitles:nil tapBlock:nil];
+    }
+    return YES;
+}
+
 
 #pragma mark - Core Data methods
 
