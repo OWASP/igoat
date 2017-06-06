@@ -426,20 +426,20 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 				<key>description</key>
 				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
                     data locally on the iOS device. In the lesson, the app stores data
-                    using a CouchBase file.
+                    using a binary cookies file.
                     
-                    Your task is to locate the CouchBase file and find the sensitive data that
+                    Your task is to locate the binary cookies file and find the sensitive data that
                     it contains.</string>
 				<key>hints</key>
 				<array>
-					<string>Try to find out CouchBase file in app sandbox.</string>
+					<string>Try to find out binary cookies file in app sandbox.</string>
 				</array>
 				<key>initialViewController</key>
 				<string>BinaryCookiesExerciseViewController</string>
 				<key>name</key>
 				<string>Cookie Storage</string>
 				<key>solution</key>
-				<string>Check out CouchBase file located inside app sandbox.</string>
+				<string>Check out binary cookies file located inside app sandbox.</string>
 			</dict>
 			<dict>
 				<key>creditsFile</key>
