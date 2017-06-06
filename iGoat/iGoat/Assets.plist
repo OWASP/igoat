@@ -441,27 +441,6 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 				<key>solution</key>
 				<string>Check out binary cookies file located inside app sandbox.</string>
 			</dict>
-			<dict>
-				<key>creditsFile</key>
-				<string>Swaroop_anthony.html</string>
-				<key>description</key>
-				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
-                    data locally on the iOS device. In the lesson, the app stores data
-                    using a CouchBase file.
-                    
-                    Your task is to locate the CouchBase file and find the sensitive data that
-                    it contains.</string>
-				<key>hints</key>
-				<array>
-					<string>Try to find out CouchBase file in app sandbox.</string>
-				</array>
-				<key>initialViewController</key>
-				<string>URLSchemeAttackExerciseVC</string>
-				<key>name</key>
-				<string>URL Scheme</string>
-				<key>solution</key>
-				<string>Check out CouchBase file located inside app sandbox.</string>
-			</dict>
 		</array>
 	</dict>
 	<key>Data Protection (Transit)</key>
@@ -794,6 +773,30 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<string>Random Key Generation</string>
 				<key>solution</key>
 				<string>Check out device logs for encryption key.</string>
+			</dict>
+		</array>
+	</dict>
+	<key>URL Scheme Attack</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop_anthony.html</string>
+				<key>description</key>
+				<string>In this exercise, you will study iOS url schemes and possible attack vectors.</string>
+				<key>hints</key>
+				<array>
+					<string>Anything suspicious in logs?</string>
+				</array>
+				<key>initialViewController</key>
+				<string>URLSchemeAttackExerciseVC</string>
+				<key>name</key>
+				<string>URL Scheme</string>
+				<key>solution</key>
+				<string>Check the url which gets used to perform send message functionality.</string>
 			</dict>
 		</array>
 	</dict>
