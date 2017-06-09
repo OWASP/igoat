@@ -205,6 +205,10 @@
 		A29FFD9D1EDF03BA0047E340 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFD9C1EDF03BA0047E340 /* libz.tbd */; };
 		A29FFDA11EDF149C0047E340 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFDA01EDF149C0047E340 /* CFNetwork.framework */; };
 		A29FFDA31EDF15210047E340 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFDA21EDF15210047E340 /* CouchbaseLite.framework */; };
+		A2CBC9961EE978300032CF0B /* SocialEngineeringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC9941EE978300032CF0B /* SocialEngineeringVC.m */; };
+		A2CBC9971EE978300032CF0B /* SocialEngineeringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CBC9951EE978300032CF0B /* SocialEngineeringVC.xib */; };
+		A2CBC99C1EE983E90032CF0B /* WeakServerSideControlsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC99A1EE983E90032CF0B /* WeakServerSideControlsVC.m */; };
+		A2CBC99D1EE983E90032CF0B /* WeakServerSideControlsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CBC99B1EE983E90032CF0B /* WeakServerSideControlsVC.xib */; };
 		A2D78F8B1EE5760400C815A8 /* BinaryCookiesExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D78F891EE5760400C815A8 /* BinaryCookiesExerciseViewController.m */; };
 		A2D78F8C1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */; };
 		A2D78F991EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D78F971EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m */; };
@@ -606,6 +610,12 @@
 		A29FFD9C1EDF03BA0047E340 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A29FFDA01EDF149C0047E340 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A29FFDA21EDF15210047E340 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+		A2CBC9931EE978300032CF0B /* SocialEngineeringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialEngineeringVC.h; sourceTree = "<group>"; };
+		A2CBC9941EE978300032CF0B /* SocialEngineeringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialEngineeringVC.m; sourceTree = "<group>"; };
+		A2CBC9951EE978300032CF0B /* SocialEngineeringVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialEngineeringVC.xib; sourceTree = "<group>"; };
+		A2CBC9991EE983E90032CF0B /* WeakServerSideControlsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakServerSideControlsVC.h; sourceTree = "<group>"; };
+		A2CBC99A1EE983E90032CF0B /* WeakServerSideControlsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakServerSideControlsVC.m; sourceTree = "<group>"; };
+		A2CBC99B1EE983E90032CF0B /* WeakServerSideControlsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeakServerSideControlsVC.xib; sourceTree = "<group>"; };
 		A2D78F881EE5760400C815A8 /* BinaryCookiesExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryCookiesExerciseViewController.h; sourceTree = "<group>"; };
 		A2D78F891EE5760400C815A8 /* BinaryCookiesExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryCookiesExerciseViewController.m; sourceTree = "<group>"; };
 		A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryCookiesExerciseViewController.xib; sourceTree = "<group>"; };
@@ -760,6 +770,8 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				A2CBC9981EE980880032CF0B /* WeakServerSideControls */,
+				A2CBC9921EE977150032CF0B /* Social Engineering */,
 				A2D78F951EE6D2BC00C815A8 /* URL Scheme */,
 				A2D78F841EE575C700C815A8 /* Binary Cookies */,
 				A29FFD931EDEE5430047E340 /* CouchBase */,
@@ -1490,6 +1502,26 @@
 			path = CouchBase;
 			sourceTree = "<group>";
 		};
+		A2CBC9921EE977150032CF0B /* Social Engineering */ = {
+			isa = PBXGroup;
+			children = (
+				A2CBC9931EE978300032CF0B /* SocialEngineeringVC.h */,
+				A2CBC9941EE978300032CF0B /* SocialEngineeringVC.m */,
+				A2CBC9951EE978300032CF0B /* SocialEngineeringVC.xib */,
+			);
+			path = "Social Engineering";
+			sourceTree = "<group>";
+		};
+		A2CBC9981EE980880032CF0B /* WeakServerSideControls */ = {
+			isa = PBXGroup;
+			children = (
+				A2CBC9991EE983E90032CF0B /* WeakServerSideControlsVC.h */,
+				A2CBC99A1EE983E90032CF0B /* WeakServerSideControlsVC.m */,
+				A2CBC99B1EE983E90032CF0B /* WeakServerSideControlsVC.xib */,
+			);
+			path = WeakServerSideControls;
+			sourceTree = "<group>";
+		};
 		A2D78F841EE575C700C815A8 /* Binary Cookies */ = {
 			isa = PBXGroup;
 			children = (
@@ -1667,6 +1699,7 @@
 				A2D78F9A1EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.xib in Resources */,
 				1472EAB416D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib in Resources */,
 				1472EABA16D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib in Resources */,
+				A2CBC9971EE978300032CF0B /* SocialEngineeringVC.xib in Resources */,
 				A29FFD8A1EDEE3130047E340 /* RealmExerciseViewController.xib in Resources */,
 				1472EABD16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib in Resources */,
 				1472EABF16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib in Resources */,
@@ -1688,6 +1721,7 @@
 				4F0D66641EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib in Resources */,
 				4F0777D21EA8CD940089AA18 /* Swaroop.html in Resources */,
 				A29FFD281EDEE2FB0047E340 /* README.txt in Resources */,
+				A2CBC99D1EE983E90032CF0B /* WeakServerSideControlsVC.xib in Resources */,
 				BCA6D1C919DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1800,6 +1834,7 @@
 				A2D78F9E1EE6D9C200C815A8 /* NSURL+Parameters.m in Sources */,
 				146277CC16CA5496007FE838 /* ExercisesViewController.m in Sources */,
 				A29FFD5E1EDEE2FB0047E340 /* YapDatabaseViewChange.m in Sources */,
+				A2CBC99C1EE983E90032CF0B /* WeakServerSideControlsVC.m in Sources */,
 				1475029C16D4E2CE009C2432 /* ExerciseContainerViewController.m in Sources */,
 				A29FFD3C1EDEE2FB0047E340 /* YapDatabaseFilteredView.m in Sources */,
 				1472EAB116D7863F00AD63D1 /* RotationLimitingNavigationViewController.m in Sources */,
@@ -1816,6 +1851,7 @@
 				4F9C77061EA663ED00710C1F /* DeviceLogsExerciseViewController.m in Sources */,
 				A29FFD201EDEE2FB0047E340 /* DDASLLogCapture.m in Sources */,
 				14CFECEB16D7C46400B6E6E7 /* SBJsonParser.m in Sources */,
+				A2CBC9961EE978300032CF0B /* SocialEngineeringVC.m in Sources */,
 				4F93AF981EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m in Sources */,
 				A29FFD7A1EDEE2FB0047E340 /* YapDatabaseOptions.m in Sources */,
 				A29FFD601EDEE2FB0047E340 /* YapDatabaseViewRangeOptions.m in Sources */,
