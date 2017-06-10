@@ -441,27 +441,6 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 				<key>solution</key>
 				<string>Check out binary cookies file located inside app sandbox.</string>
 			</dict>
-			<dict>
-				<key>creditsFile</key>
-				<string>Swaroop_anthony.html</string>
-				<key>description</key>
-				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive
-                    data locally on the iOS device. In the lesson, the app stores data
-                    using a binary cookies file.
-                    
-                    Your task is to locate the binary cookies file and find the sensitive data that
-                    it contains.</string>
-				<key>hints</key>
-				<array>
-					<string>Try to find out binary cookies file in app sandbox.</string>
-				</array>
-				<key>initialViewController</key>
-				<string>WeakServerSideControlsVC</string>
-				<key>name</key>
-				<string>Weak Server Side Controls</string>
-				<key>solution</key>
-				<string>Check out binary cookies file located inside app sandbox.</string>
-			</dict>
 		</array>
 	</dict>
 	<key>Data Protection (Transit)</key>
@@ -842,6 +821,30 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<string>Social Engineering</string>
 				<key>solution</key>
 				<string>If you are using simulator, make sure to check &apos;Toggle Enrolled State&apos; option.</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Weak Server Side Controls</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop_anthony.html</string>
+				<key>description</key>
+				<string>In this exercise, you will learn attacks related with back-end web componenets. </string>
+				<key>hints</key>
+				<array>
+					<string>Can you see some other user&apos;s data?</string>
+				</array>
+				<key>initialViewController</key>
+				<string>WeakServerSideControlsVC</string>
+				<key>name</key>
+				<string>Weak Server Side Control </string>
+				<key>solution</key>
+				<string>All you need is proxy tool to observe / modify traffic. You can perform privlege escalation and other web related attacks.</string>
 			</dict>
 		</array>
 	</dict>
