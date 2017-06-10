@@ -209,6 +209,8 @@
 		A2CBC9971EE978300032CF0B /* SocialEngineeringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CBC9951EE978300032CF0B /* SocialEngineeringVC.xib */; };
 		A2CBC99C1EE983E90032CF0B /* WeakServerSideControlsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC99A1EE983E90032CF0B /* WeakServerSideControlsVC.m */; };
 		A2CBC99D1EE983E90032CF0B /* WeakServerSideControlsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CBC99B1EE983E90032CF0B /* WeakServerSideControlsVC.xib */; };
+		A2CBC9A11EEACCDF0032CF0B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CBC9A01EEACCDF0032CF0B /* LocalAuthentication.framework */; };
+		A2CBC9A31EEACDF00032CF0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2CBC9A21EEACDF00032CF0B /* Images.xcassets */; };
 		A2D78F8B1EE5760400C815A8 /* BinaryCookiesExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D78F891EE5760400C815A8 /* BinaryCookiesExerciseViewController.m */; };
 		A2D78F8C1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */; };
 		A2D78F991EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D78F971EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m */; };
@@ -616,6 +618,8 @@
 		A2CBC9991EE983E90032CF0B /* WeakServerSideControlsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakServerSideControlsVC.h; sourceTree = "<group>"; };
 		A2CBC99A1EE983E90032CF0B /* WeakServerSideControlsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakServerSideControlsVC.m; sourceTree = "<group>"; };
 		A2CBC99B1EE983E90032CF0B /* WeakServerSideControlsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeakServerSideControlsVC.xib; sourceTree = "<group>"; };
+		A2CBC9A01EEACCDF0032CF0B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		A2CBC9A21EEACDF00032CF0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A2D78F881EE5760400C815A8 /* BinaryCookiesExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryCookiesExerciseViewController.h; sourceTree = "<group>"; };
 		A2D78F891EE5760400C815A8 /* BinaryCookiesExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryCookiesExerciseViewController.m; sourceTree = "<group>"; };
 		A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryCookiesExerciseViewController.xib; sourceTree = "<group>"; };
@@ -644,6 +648,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2CBC9A11EEACCDF0032CF0B /* LocalAuthentication.framework in Frameworks */,
 				A29FFDA11EDF149C0047E340 /* CFNetwork.framework in Frameworks */,
 				A29FFD9D1EDF03BA0047E340 /* libz.tbd in Frameworks */,
 				A29FFD8F1EDEE3320047E340 /* CloudKit.framework in Frameworks */,
@@ -684,6 +689,7 @@
 		141E2FBC16C3D49900586528 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2CBC9A01EEACCDF0032CF0B /* LocalAuthentication.framework */,
 				A29FFDA01EDF149C0047E340 /* CFNetwork.framework */,
 				A29FFD9C1EDF03BA0047E340 /* libz.tbd */,
 				A29FFD8E1EDEE3320047E340 /* CloudKit.framework */,
@@ -715,6 +721,7 @@
 				1462775D16C56410007FE838 /* Resources */,
 				141E2FC416C3D49900586528 /* Supporting Files */,
 				14CFECDD16D7C42400B6E6E7 /* JSON */,
+				A2CBC9A21EEACDF00032CF0B /* Images.xcassets */,
 			);
 			path = iGoat;
 			sourceTree = "<group>";
@@ -1675,6 +1682,7 @@
 				1462775F16C56431007FE838 /* Assets.plist in Resources */,
 				1462776716C56447007FE838 /* rutger.html in Resources */,
 				1462776916C56447007FE838 /* igoat.css in Resources */,
+				A2CBC9A31EEACDF00032CF0B /* Images.xcassets in Resources */,
 				1462776A16C56447007FE838 /* about.html in Resources */,
 				BCA6D1CD19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib in Resources */,
 				A29FFD811EDEE3080047E340 /* YAPExcersizeViewController.xib in Resources */,
@@ -2001,6 +2009,8 @@
 		141E2FE416C3D49900586528 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 4CC4EPV32V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2028,6 +2038,8 @@
 		141E2FE516C3D49900586528 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 4CC4EPV32V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
