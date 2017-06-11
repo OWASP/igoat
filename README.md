@@ -19,6 +19,8 @@ __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroop
 
 __Twitter__ - ([@OWASPiGoat](https://twitter.com/owaspigoat?lang=en))
 
+__Lead Developer__ - Anthony Gonsalves
+
 ### Vulnerabities Covered (version 3.0): ###
 * __Reverse Engineering__
   * String Analysis
