@@ -25,8 +25,8 @@ static NSString *const YapKeyPassword = @"YapKeyPassword";
         YapDatabase *database = [[YapDatabase alloc] initWithPath:databasePath];
         YapDatabaseConnection *connection = [database newConnection];
         [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
-            [transaction setObject:YapValueEmail forKey:YapKeyEmail inCollection:nil];
-            [transaction setObject:YapValuePassword forKey:YapKeyPassword inCollection:nil];
+            [transaction setObject:YapValueEmail forKey:YapKeyEmail inCollection:@"iGoat"];
+            [transaction setObject:YapValuePassword forKey:YapKeyPassword inCollection:@"iGoat"];
         }];
     }
     
@@ -58,16 +58,16 @@ static NSString *const YapKeyPassword = @"YapKeyPassword";
         return databasePath;
     }
     
-    -(BOOL)verifyName:(NSString *)name password:(NSString *)password {
+    -(BOOL)verifyName:(NSString *)enteredName password:(NSString *)enteredPassword {
         YapDatabase *database = [[YapDatabase alloc] initWithPath:self.getYAPDatabasePath];
         YapDatabaseConnection *connection = [database newConnection];
         __block BOOL isVerified = false;
         [connection readWithBlock:^(YapDatabaseReadTransaction * _Nonnull transaction) {
-            NSString *email = [transaction objectForKey:YapKeyEmail inCollection:nil];
-            NSString *password = [transaction objectForKey:YapKeyPassword inCollection:nil];
+            NSString *email = [transaction objectForKey:YapKeyEmail inCollection:@"iGoat"];
+            NSString *password = [transaction objectForKey:YapKeyPassword inCollection:@"iGoat"];
             
-            isVerified = ([email isEqualToString:name] &&
-                          [password isEqualToString:password]) ? true : false;
+            isVerified = ([email isEqualToString:enteredName] &&
+                          [password isEqualToString:enteredPassword]) ? true : false;
         }];
 
         return isVerified;

@@ -3,10 +3,10 @@
 #import "UIAlertController+EasyBlock.h"
 #import <CouchbaseLite/CouchbaseLite.h>
 
-static NSString *const CBKeyPatientName = @"YapKeyPatientName";
-static NSString *const CBKeyPatientAge = @"YapKeyPatientAge";
-static NSString *const CBKeyPatientGender = @"YapKeyPatientGender";
-static NSString *const CBKeyPatientDisease = @"YapKeyPatientDisease";
+static NSString *const CBKeyPatientName = @"CouchKeyPatientName";
+static NSString *const CBKeyPatientAge = @"CouchKeyPatientAge";
+static NSString *const CBKeyPatientGender = @"CouchKeyPatientGender";
+static NSString *const CBKeyPatientDisease = @"CouchKeyPatientDisease";
 
 static NSString *const CBValuePatientName = @"Jane Roe";
 static NSString *const CBValuePatientAge = @"52";
@@ -63,12 +63,11 @@ static NSString *const CBValuePatientDisease = @"Cancer";
     NSString *documentID = [[NSUserDefaults standardUserDefaults]objectForKey:@"documentID"];
     if (documentID) {
         CBLDocument *document = [database documentWithID:documentID];
-        return
-        ([document propertyForKey:CBKeyPatientName] == info[CBKeyPatientName] &&
-         [document propertyForKey:CBKeyPatientAge] == info[CBKeyPatientAge] &&
-         [document propertyForKey:CBKeyPatientGender] == info[CBKeyPatientGender] &&
-         [document propertyForKey:CBKeyPatientDisease] == info[CBKeyPatientDisease]) ? true : false;
-         
+        
+        return  ([[document propertyForKey:CBKeyPatientName] isEqualToString:info[CBKeyPatientName]] &&
+         [[document propertyForKey:CBKeyPatientAge] isEqualToString:info[CBKeyPatientAge]] &&
+         [[document propertyForKey:CBKeyPatientGender] isEqualToString:info[CBKeyPatientGender]] &&
+         [[document propertyForKey:CBKeyPatientDisease] isEqualToString:info[CBKeyPatientDisease]]) ? true : false;
     }
     return false;
 }
