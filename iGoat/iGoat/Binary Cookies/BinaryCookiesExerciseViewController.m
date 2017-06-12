@@ -85,7 +85,12 @@ static NSString *const GoatUserNameKey = @"username";
         }
         if (found == false) return false;
         
-        NSString *cookieValue = cookieValues[[cookieKeys indexOfString:cookie.name]];
+        NSUInteger index = [cookieKeys indexOfString:cookie.name];
+        if (index == NSNotFound) {
+            return false;
+        }
+        
+        NSString *cookieValue = cookieValues[index];
         if ([cookie.value isEqualToString:cookieValue] == false) {
             return false;
         }
