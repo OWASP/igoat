@@ -13,7 +13,9 @@ As such, iGoat is a safe environment where iOS developers can learn about the ma
 
 Step 4 is optional, but highly recommended for all iOS developers. Assistance is available within iGoat if you don't know how to fix a specific problem.
 
-__Project Details__ - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
+### Project Details ###
+
+__Page__ - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 
 __Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroopsy?lang=en))
 
