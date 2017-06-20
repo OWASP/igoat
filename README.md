@@ -67,6 +67,7 @@ To contribute to iGoat project, please contact __Swaroop__ ( swaroop[dot]yermalk
 * Anthony Gonsalves
 * Ken van Wyk
 * Jonathan Carter
+* Bernhard Mueller
 * masbog
 * Cheena Kathpal
 * Matt Tesauro
