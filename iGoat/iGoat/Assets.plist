@@ -848,5 +848,53 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 			</dict>
 		</array>
 	</dict>
+	<key>Runtime Analysis</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>TBD</string>
+				<key>hints</key>
+				<array>
+					<string>Can you see some other user&apos;s data?</string>
+				</array>
+				<key>initialViewController</key>
+				<string>RuntimeAnalysisChallengeVC</string>
+				<key>name</key>
+				<string>Runtime Analysis</string>
+				<key>solution</key>
+				<string>TBD</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Miscellaneous</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>TBD</string>
+				<key>hints</key>
+				<array>
+					<string>Can you see some other user&apos;s data?</string>
+				</array>
+				<key>initialViewController</key>
+				<string></string>
+				<key>name</key>
+				<string>Miscellaneous</string>
+				<key>solution</key>
+				<string>TBD</string>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>

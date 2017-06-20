@@ -100,6 +100,9 @@
 		4F9C77061EA663ED00710C1F /* DeviceLogsExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */; };
 		4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */; };
 		4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */; };
+		4FE1C65B1EF9321200F40320 /* maxpower.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6591EF9321200F40320 /* maxpower.c */; };
+		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
+		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
 		A2590B411EB9C18C00CBA9D7 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2590B3E1EB9C17E00CBA9D7 /* libsqlcipher.a */; };
 		A29FF9411EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */; };
 		A29FFD1E1EDEE2FB0047E340 /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC3C1EDEE2FB0047E340 /* CLIColor.m */; };
@@ -397,6 +400,11 @@
 		4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceLogsExerciseViewController.m; sourceTree = "<group>"; };
 		4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPad.xib; sourceTree = "<group>"; };
 		4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		4FE1C6591EF9321200F40320 /* maxpower.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = maxpower.c; path = iGoat/maxpower.c; sourceTree = "<group>"; };
+		4FE1C65A1EF9321200F40320 /* maxpower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = maxpower.h; path = iGoat/maxpower.h; sourceTree = "<group>"; };
+		4FE1C6661EF939AE00F40320 /* RuntimeAnalysisChallengeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeAnalysisChallengeVC.h; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.h"; sourceTree = "<group>"; };
+		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
+		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
 		A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
 		A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomKeyGenerationExerciseViewController.xib; sourceTree = "<group>"; };
 		A29FFC3B1EDEE2FB0047E340 /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
@@ -671,6 +679,8 @@
 		141E2FB116C3D49900586528 = {
 			isa = PBXGroup;
 			children = (
+				4FE1C6591EF9321200F40320 /* maxpower.c */,
+				4FE1C65A1EF9321200F40320 /* maxpower.h */,
 				A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */,
 				141E2FC316C3D49900586528 /* iGoat */,
 				141E2FBC16C3D49900586528 /* Frameworks */,
@@ -777,6 +787,7 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				4FE1C65E1EF9367000F40320 /* Runtime Analysis Challenge */,
 				A2CBC9981EE980880032CF0B /* WeakServerSideControls */,
 				A2CBC9921EE977150032CF0B /* Social Engineering */,
 				A2D78F951EE6D2BC00C815A8 /* URL Scheme */,
@@ -1021,6 +1032,16 @@
 				4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */,
 			);
 			name = "Device Logs";
+			sourceTree = "<group>";
+		};
+		4FE1C65E1EF9367000F40320 /* Runtime Analysis Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */,
+				4FE1C6661EF939AE00F40320 /* RuntimeAnalysisChallengeVC.h */,
+				4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */,
+			);
+			name = "Runtime Analysis Challenge";
 			sourceTree = "<group>";
 		};
 		A2590B2D1EB9C17E00CBA9D7 /* Products */ = {
@@ -1727,6 +1748,7 @@
 				BCF7AD5819D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib in Resources */,
 				4F93AF9B1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib in Resources */,
 				4F0D66641EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib in Resources */,
+				4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */,
 				4F0777D21EA8CD940089AA18 /* Swaroop.html in Resources */,
 				A29FFD281EDEE2FB0047E340 /* README.txt in Resources */,
 				A2CBC99D1EE983E90032CF0B /* WeakServerSideControlsVC.xib in Resources */,
@@ -1741,11 +1763,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */,
 				4F253A3F1ECF1CCA0070D22E /* User+CoreDataProperties.m in Sources */,
 				14CFECF316D7CAD200B6E6E7 /* SQLInjectionExerciseController.m in Sources */,
 				A29FFD5C1EDEE2FB0047E340 /* YapDatabaseViewPageMetadata.m in Sources */,
 				A29FFD701EDEE2FB0047E340 /* YapTouch.m in Sources */,
 				A29FFD571EDEE2FB0047E340 /* YapDatabaseSecondaryIndexHandler.m in Sources */,
+				4FE1C65B1EF9321200F40320 /* maxpower.c in Sources */,
 				A29FFD221EDEE2FB0047E340 /* DDFileLogger.m in Sources */,
 				A29FFD7B1EDEE2FB0047E340 /* YapDatabaseTransaction.m in Sources */,
 				A29FFD6E1EDEE2FB0047E340 /* YapNull.m in Sources */,
