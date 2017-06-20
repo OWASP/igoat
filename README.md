@@ -63,7 +63,7 @@ __Lead Developer__ - Anthony Gonsalves
 * Writing blogs / article about iGoat
 * Spreading iGoat :)
 
-To contribute to iGoat project, please contact __Swaroop__ ( swaroop[dot]yermalkar[at]owasp[dot]org or @swaroopsy )
+To contribute to iGoat project, please contact __Swaroop__ ( swaroop.yermalkar@owasp.org or @swaroopsy )
 
 ### Project Contributors - ###
 * Anthony Gonsalves
