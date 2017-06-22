@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
 gems:
   - jekyll-seo-tag
+  
+favicon: https://pbs.twimg.com/profile_images/2744781207/4f8119edb77de9a573d977ac333b184b_400x400.png
