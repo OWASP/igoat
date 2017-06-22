@@ -2,5 +2,5 @@ theme: jekyll-theme-hacker
 gems:
   - jekyll-seo-tag
   
-favicon:     "/iGoat.ico"
+favicon:     "iGoat.ico"
 
