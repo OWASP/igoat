@@ -2,4 +2,3 @@ theme: jekyll-theme-hacker
 gems:
   - jekyll-seo-tag
   
-favicon: http://jekyllrb.com/favicon.png
