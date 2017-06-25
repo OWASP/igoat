@@ -116,7 +116,6 @@
 		A29FFD261EDEE2FB0047E340 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC4E1EDEE2FB0047E340 /* DDDispatchQueueLogFormatter.m */; };
 		A29FFD271EDEE2FB0047E340 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC501EDEE2FB0047E340 /* DDMultiFormatter.m */; };
 		A29FFD281EDEE2FB0047E340 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A29FFC511EDEE2FB0047E340 /* README.txt */; };
-		A29FFD2A1EDEE2FB0047E340 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFC541EDEE2FB0047E340 /* Realm.framework */; };
 		A29FFD2D1EDEE2FB0047E340 /* UIAlertController+EasyBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC591EDEE2FB0047E340 /* UIAlertController+EasyBlock.m */; };
 		A29FFD2E1EDEE2FB0047E340 /* YDBCKAttachRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC601EDEE2FB0047E340 /* YDBCKAttachRequest.m */; };
 		A29FFD2F1EDEE2FB0047E340 /* YDBCKChangeQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC621EDEE2FB0047E340 /* YDBCKChangeQueue.m */; };
@@ -232,18 +231,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		82EFD9071EFF889400729DB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
 		A2590B3D1EB9C17E00CBA9D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC046055464E500DB518D;
-			remoteInfo = sqlcipher;
-		};
-		A2590B3F1EB9C18600CBA9D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC045055464E500DB518D;
 			remoteInfo = sqlcipher;
 		};
 /* End PBXContainerItemProxy section */
@@ -666,7 +665,6 @@
 				A2590B411EB9C18C00CBA9D7 /* libsqlcipher.a in Frameworks */,
 				1472EAB816D798C500AD63D1 /* SystemConfiguration.framework in Frameworks */,
 				1472EAB616D798B100AD63D1 /* Security.framework in Frameworks */,
-				A29FFD2A1EDEE2FB0047E340 /* Realm.framework in Frameworks */,
 				141E2FBE16C3D49900586528 /* UIKit.framework in Frameworks */,
 				141E2FC016C3D49900586528 /* Foundation.framework in Frameworks */,
 				141E2FC216C3D49900586528 /* CoreGraphics.framework in Frameworks */,
@@ -1627,7 +1625,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A2590B401EB9C18600CBA9D7 /* PBXTargetDependency */,
+				82EFD9081EFF889400729DB4 /* PBXTargetDependency */,
 			);
 			name = iGoat;
 			productName = iGoat;
@@ -1640,7 +1638,7 @@
 		141E2FB216C3D49900586528 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "KRvW Associates, LLC";
 				TargetAttributes = {
 					141E2FB916C3D49900586528 = {
@@ -1910,10 +1908,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A2590B401EB9C18600CBA9D7 /* PBXTargetDependency */ = {
+		82EFD9081EFF889400729DB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = sqlcipher;
-			targetProxy = A2590B3F1EB9C18600CBA9D7 /* PBXContainerItemProxy */;
+			targetProxy = 82EFD9071EFF889400729DB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2034,7 +2032,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 4CC4EPV32V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2063,7 +2060,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 4CC4EPV32V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
