@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C0041A61BFC3A5000ED2AD5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0041A51BFC3A5000ED2AD5 /* Security.framework */; };
-		9069D0A30FCE1A4D0042E34C /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 9069D0A20FCE1A4D0042E34C /* sqlite3.c */; };
+		9069D0A30FCE1A4D0042E34C /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 9069D0A20FCE1A4D0042E34C /* sqlite3.c */; settings = {COMPILER_FLAGS = "-Wno-unreachable-code -Wno-unused-function -Wno-#warnings"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
