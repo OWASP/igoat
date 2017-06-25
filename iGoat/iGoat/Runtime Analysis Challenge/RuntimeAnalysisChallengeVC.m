@@ -39,25 +39,18 @@
 
 - (IBAction)buttonClick:(id)sender {
     
-    UIAlertView *alert;
+    UIAlertController *alert;
     
     if ([self.theTextField.text isEqualToString:self.theLabel.text]) {
-        alert = [[UIAlertView alloc] initWithTitle:@"Congratulations!"
-                                           message:@"You found the secret!!"
-                                          delegate:self
-                                 cancelButtonTitle:@"OK"
-                                 otherButtonTitles:nil];
+        alert = [UIAlertController alertControllerWithTitle:@"Congratulations!" message:@"You found the secret!!" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
         
     } else {
-        alert = [[UIAlertView alloc] initWithTitle:@"Verification Failed."
-                                           message:@"This is not the string you are looking for. Try again."
-                                          delegate:self
-                                 cancelButtonTitle:@"OK"
-                                 otherButtonTitles:nil];
+        alert = [UIAlertController alertControllerWithTitle:@"Verification Failed." message:@"This is not the string you are looking for. Try again." preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
     }
     
-    [alert show];
-    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 
