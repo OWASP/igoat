@@ -872,6 +872,35 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 			</dict>
 		</array>
 	</dict>
+	<key>Runtime Brute Force Attack</key>
+	<dict>
+		<key>description</key>
+		<string>This exercise category contains exercises related to brute force attack. On its own, reverse engineering an app leads to a number of valuable things for a hacker. First, it will give the hacker a solid blueprint of the app and reveal a great deal of information about the underlying architecture, design, and implementation. This can lead to things like counterfeiting or stealing of code. As a springboard, the hacker can then exploit this knowledge to conduct other types of attacks. For instance, the hacker may extract infrastructure passwords to conduct infrastructure attacks against backend systems. The hacker may leverage this knowledge to modify the app or its runtime behavior. These exercises show you how to raise the bar and make it much more painful and difficult for the hacker to successfully extract anything useful from the binary.</string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>KRvWAssociates.html</string>
+				<key>description</key>
+				<string>In this exercise, we will try to brute force the user PIN to be able to get the confidential info of the user such as bank statements. ...                    
+                </string>
+				<key>hints</key>
+				<array>
+					<string>To brute force PIN or password at runtime, a hacker needs to first reverse engineer the app, getting the right view controller and the method that validates the PIN. See category &lt;b&gt;Runtime Analysis&lt;/b&gt; for the available tools to accomplish this.
+                    </string>
+					<string>Once the hacker has identified the right method, he will execute a runtime tool such cycript to brute force input by looping all the possible values of 4-digit PIN {0000,9999}.</string>
+					<string>In this exercise, after identifying the correct PIN, type it into the textfield and the success message must be displayed. </string>
+				</array>
+				<key>initialViewController</key>
+				<string>BruteForceRuntimeVC</string>
+				<key>name</key>
+				<string>Runtime Brute Force Attack</string>
+				<key>solution</key>
+				<string>Use Cycript to brute force all possible PIN values.
+                </string>
+			</dict>
+		</array>
+	</dict>
 	<key>Miscellaneous</key>
 	<dict>
 		<key>description</key>

@@ -103,6 +103,8 @@
 		4FE1C65B1EF9321200F40320 /* maxpower.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6591EF9321200F40320 /* maxpower.c */; };
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
+		82BDD97E1F00271F001DACAD /* BruteForceRuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */; };
+		82BDD97F1F00271F001DACAD /* BruteForceRuntimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */; };
 		A2590B411EB9C18C00CBA9D7 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2590B3E1EB9C17E00CBA9D7 /* libsqlcipher.a */; };
 		A29FF9411EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */; };
 		A29FFD1E1EDEE2FB0047E340 /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC3C1EDEE2FB0047E340 /* CLIColor.m */; };
@@ -404,6 +406,9 @@
 		4FE1C6661EF939AE00F40320 /* RuntimeAnalysisChallengeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeAnalysisChallengeVC.h; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.h"; sourceTree = "<group>"; };
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
+		82BDD97B1F00271F001DACAD /* BruteForceRuntimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BruteForceRuntimeVC.h; sourceTree = "<group>"; };
+		82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BruteForceRuntimeVC.m; sourceTree = "<group>"; };
+		82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BruteForceRuntimeVC.xib; sourceTree = "<group>"; };
 		A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
 		A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomKeyGenerationExerciseViewController.xib; sourceTree = "<group>"; };
 		A29FFC3B1EDEE2FB0047E340 /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
@@ -811,6 +816,7 @@
 				1462778216C56B52007FE838 /* Local Data Storage */,
 				1462778316C56B5A007FE838 /* SQL Injection */,
 				1462778716C56B94007FE838 /* Server Communication */,
+				82BDD97A1F00271F001DACAD /* Runtime Brute Force Attack */,
 			);
 			name = Exercises;
 			sourceTree = "<group>";
@@ -1040,6 +1046,16 @@
 				4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */,
 			);
 			name = "Runtime Analysis Challenge";
+			sourceTree = "<group>";
+		};
+		82BDD97A1F00271F001DACAD /* Runtime Brute Force Attack */ = {
+			isa = PBXGroup;
+			children = (
+				82BDD97B1F00271F001DACAD /* BruteForceRuntimeVC.h */,
+				82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */,
+				82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */,
+			);
+			path = "Runtime Brute Force Attack";
 			sourceTree = "<group>";
 		};
 		A2590B2D1EB9C17E00CBA9D7 /* Products */ = {
@@ -1733,6 +1749,7 @@
 				1472EAC116D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */,
 				4F0D66751EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */,
 				1472EAC416D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib in Resources */,
+				82BDD97F1F00271F001DACAD /* BruteForceRuntimeVC.xib in Resources */,
 				4F0777D01EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */,
 				14CFECDA16D7BD5900B6E6E7 /* LocalDataStorageExerciseController_iPad.xib in Resources */,
 				4F253A0B1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */,
@@ -1839,6 +1856,7 @@
 				A29FFD681EDEE2FB0047E340 /* YapDatabaseConnectionState.m in Sources */,
 				A29FFD5D1EDEE2FB0047E340 /* YapDatabaseViewState.m in Sources */,
 				A29FFD521EDEE2FB0047E340 /* YapDatabaseSearchResultsViewConnection.m in Sources */,
+				82BDD97E1F00271F001DACAD /* BruteForceRuntimeVC.m in Sources */,
 				A29FFD251EDEE2FB0047E340 /* DDContextFilterLogFormatter.m in Sources */,
 				A29FFD501EDEE2FB0047E340 /* YapDatabaseSearchQueue.m in Sources */,
 				A29FFD751EDEE2FB0047E340 /* YapMurmurHash.m in Sources */,
