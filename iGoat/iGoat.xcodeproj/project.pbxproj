@@ -103,6 +103,7 @@
 		4FE1C65B1EF9321200F40320 /* maxpower.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6591EF9321200F40320 /* maxpower.c */; };
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
+		4FE1C67B1F02E15F00F40320 /* Swaroop_Junard.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C67A1F02E15F00F40320 /* Swaroop_Junard.html */; };
 		82BDD97E1F00271F001DACAD /* BruteForceRuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */; };
 		82BDD97F1F00271F001DACAD /* BruteForceRuntimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */; };
 		A2590B411EB9C18C00CBA9D7 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2590B3E1EB9C17E00CBA9D7 /* libsqlcipher.a */; };
@@ -406,6 +407,7 @@
 		4FE1C6661EF939AE00F40320 /* RuntimeAnalysisChallengeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeAnalysisChallengeVC.h; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.h"; sourceTree = "<group>"; };
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
+		4FE1C67A1F02E15F00F40320 /* Swaroop_Junard.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Junard.html; sourceTree = "<group>"; };
 		82BDD97B1F00271F001DACAD /* BruteForceRuntimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BruteForceRuntimeVC.h; sourceTree = "<group>"; };
 		82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BruteForceRuntimeVC.m; sourceTree = "<group>"; };
 		82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BruteForceRuntimeVC.xib; sourceTree = "<group>"; };
@@ -758,6 +760,7 @@
 		1462775D16C56410007FE838 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4FE1C67A1F02E15F00F40320 /* Swaroop_Junard.html */,
 				4F7316711EE3D61E0095FCDA /* Swaroop_anthony.html */,
 				4F0777D11EA8CD940089AA18 /* Swaroop.html */,
 				BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */,
@@ -1733,6 +1736,7 @@
 				4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */,
 				1475029916D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */,
 				4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */,
+				4FE1C67B1F02E15F00F40320 /* Swaroop_Junard.html in Resources */,
 				1472EAA616D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */,
 				4F0777CF1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
 				1472EAA816D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib in Resources */,

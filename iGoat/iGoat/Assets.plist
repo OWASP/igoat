@@ -870,17 +870,9 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<key>solution</key>
 				<string>TBD</string>
 			</dict>
-		</array>
-	</dict>
-	<key>Runtime Brute Force Attack</key>
-	<dict>
-		<key>description</key>
-		<string>This exercise category contains exercises related to brute force attack. On its own, reverse engineering an app leads to a number of valuable things for a hacker. First, it will give the hacker a solid blueprint of the app and reveal a great deal of information about the underlying architecture, design, and implementation. This can lead to things like counterfeiting or stealing of code. As a springboard, the hacker can then exploit this knowledge to conduct other types of attacks. For instance, the hacker may extract infrastructure passwords to conduct infrastructure attacks against backend systems. The hacker may leverage this knowledge to modify the app or its runtime behavior. These exercises show you how to raise the bar and make it much more painful and difficult for the hacker to successfully extract anything useful from the binary.</string>
-		<key>exercises</key>
-		<array>
 			<dict>
 				<key>creditsFile</key>
-				<string>KRvWAssociates.html</string>
+				<string>Swaroop_Junard.html</string>
 				<key>description</key>
 				<string>In this exercise, we will try to brute force the user PIN to be able to get the confidential info of the user such as bank statements. ...                    
                 </string>
