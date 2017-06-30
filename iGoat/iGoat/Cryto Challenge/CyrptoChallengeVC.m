@@ -8,7 +8,7 @@
 @end
 
 static NSString *successMessage = @"You bought iPhone in ZERO";
-static NSString *failureMessage = @"Fail! Checksum doen't match.";
+static NSString *failureMessage = @"Fail! You didn't purchase iPhone for $0";
 
 @implementation CyrptoChallengeVC
 
@@ -18,12 +18,23 @@ static NSString *failureMessage = @"Fail! Checksum doen't match.";
 }
 
 -(IBAction)buyItemPressed:(id)sender {
-
-    NSURL *url = [NSURL URLWithString:@"http://13.59.35.177/crypto1/checkout.php"];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: url
-                                                    cachePolicy:NSURLRequestUseProtocolCachePolicy
-                                                    timeoutInterval:10.0];
-    [request setHTTPMethod:@"GET"];
+    NSDictionary *postInfo = @{@"msg":@"Nullcon2015%257Ccorporate%257C10999",
+                               @"checksum": @"568fe78b29ac377a58ae1fbf02b4d1a158e605b3897916227e4b3ecfc78973db"};
+    
+    NSMutableArray *postArray = [@[] mutableCopy];
+    for (NSString *key in postInfo.allKeys) {
+        [postArray addObject:[NSString stringWithFormat:@"%@=%@",key,postInfo[key]]];
+    }
+    NSString *postString = [postArray componentsJoinedByString:@"&"];
+    NSData *postData = [postString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://13.59.35.177/crypto1/checkout.php"]
+                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                       timeoutInterval:10.0];
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:postData];
+    
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request
                                                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
@@ -58,7 +69,7 @@ static NSString *failureMessage = @"Fail! Checksum doen't match.";
     if (success) {
         NSRange prefixRange = [responseString rangeOfString:@"dollar!"];
         NSString *flagString = [responseString substringFromIndex:prefixRange.location+prefixRange.length];
-        flagString = [flagString substringToIndex:[flagString rangeOfString:@"</bab>"].location];
+        flagString = [flagString substringToIndex:[flagString rangeOfString:@"}  \n"].location];
         message = flagString;
     } else {
         message = failureMessage;
@@ -72,5 +83,4 @@ static NSString *failureMessage = @"Fail! Checksum doen't match.";
     [UIAlertController showWithTitle:@"iGoat" message:message preferedStyle:UIAlertControllerStyleAlert
                    cancelButtonTitle:@"Ok" otherButtonTitles:nil tapBlock:nil];
 }
-
 @end

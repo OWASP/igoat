@@ -27,12 +27,14 @@
                             <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPS-A4-JpC">
-                            <rect key="frame" x="122" y="268" width="76" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPS-A4-JpC">
+                            <rect key="frame" x="122" y="268" width="76" height="34"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="76" id="t7b-Qw-B7b"/>
                             </constraints>
-                            <state key="normal" title="Buy"/>
+                            <state key="normal" title="Buy">
+                                <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="buyItemPressed:" destination="-1" eventType="touchUpInside" id="NpX-3W-i2c"/>
                             </connections>
@@ -73,7 +75,7 @@
                 <constraint firstItem="9eB-pU-K6M" firstAttribute="centerX" secondItem="1yC-S3-iXy" secondAttribute="centerX" id="yNE-lq-kLP"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-4" y="-15"/>
+            <point key="canvasLocation" x="-189" y="30"/>
         </view>
     </objects>
     <resources>
