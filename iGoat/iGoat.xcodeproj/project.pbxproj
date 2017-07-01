@@ -1683,8 +1683,8 @@
 				ORGANIZATIONNAME = "KRvW Associates, LLC";
 				TargetAttributes = {
 					141E2FB916C3D49900586528 = {
-						DevelopmentTeam = 4CC4EPV32V;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 6J6AZQ7T23;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -2079,7 +2079,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4CC4EPV32V;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6J6AZQ7T23;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iGoat/ThirdParty/Realm",
@@ -2094,10 +2095,10 @@
 					"$(BUILT_PRODUCTS_DIR)/libsqlcipher.a",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.swaroopsy.iGoat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swaroop.iGoat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "db012c53-63ca-4e17-9974-acdc4467b8a0";
-				PROVISIONING_PROFILE_SPECIFIER = ALL_apps;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2107,7 +2108,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4CC4EPV32V;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6J6AZQ7T23;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iGoat/ThirdParty/Realm",
@@ -2123,10 +2125,10 @@
 					"$(BUILT_PRODUCTS_DIR)/libsqlcipher.a",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.swaroopsy.iGoat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swaroop.iGoat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "db012c53-63ca-4e17-9974-acdc4467b8a0";
-				PROVISIONING_PROFILE_SPECIFIER = ALL_apps;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};

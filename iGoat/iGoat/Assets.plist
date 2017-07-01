@@ -758,7 +758,7 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<key>hints</key>
 				<array>
 					<string>key size is XXXXXXXXXXXXXXXXXXX</string>
-					<string>xyz = hash(&quot;sha256, key, msg)</string>
+					<string>xyz = hash(sha256, key, msg)</string>
 				</array>
 				<key>initialViewController</key>
 				<string>CyrptoChallengeVC</string>
