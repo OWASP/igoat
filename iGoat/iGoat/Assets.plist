@@ -752,19 +752,20 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 			</dict>
 			<dict>
 				<key>creditsFile</key>
-				<string>Swaroop.html</string>
+				<string>Swaroop_anthony.html</string>
 				<key>description</key>
-				<string>In this exercise, you&apos;re going to idenfiy insecure mechanism for storing sensitive data locally. You will observe encryption key hard coded in code using which you can decrypt sensitive data into plain text. For more information, Refer: (https://www.owasp.org/index.php/Mobile_Top_10_2014-M6).                       </string>
+				<string>In this exercise, you&apos;re going to perform crypto attack in payment gateway which can allow you to buy goods for free.</string>
 				<key>hints</key>
 				<array>
-					<string>Can you identify hard coded encryption key in code?</string>
+					<string>key size is XXXXXXXXXXXXXXXXXXX</string>
+					<string>xyz = hash(&quot;sha256, key, msg)</string>
 				</array>
 				<key>initialViewController</key>
 				<string>CyrptoChallengeVC</string>
 				<key>name</key>
 				<string>Crypto Challenge</string>
 				<key>solution</key>
-				<string>You can develope another sample app with decryption code for hard coded key used in this exercise.</string>
+				<string>Soluion will be released soon.</string>
 			</dict>
 		</array>
 	</dict>

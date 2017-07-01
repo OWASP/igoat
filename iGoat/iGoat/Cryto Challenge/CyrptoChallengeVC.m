@@ -18,8 +18,8 @@ static NSString *failureMessage = @"Fail! You didn't purchase iPhone for $0";
 }
 
 -(IBAction)buyItemPressed:(id)sender {
-    NSDictionary *postInfo = @{@"msg":@"Nullcon2015%257Ccorporate%257C10999",
-                               @"checksum": @"568fe78b29ac377a58ae1fbf02b4d1a158e605b3897916227e4b3ecfc78973db"};
+    NSDictionary *postInfo = @{@"msg":@"iPhone%7Cbuy%7C1000",
+                               @"checksum": @"014a347fa0f1cac1baaaf1618481b22a1efeedf88fd1f294b2d69f72a45e6caa"};
     
     NSMutableArray *postArray = [@[] mutableCopy];
     for (NSString *key in postInfo.allKeys) {
