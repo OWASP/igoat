@@ -422,7 +422,7 @@
 		82B7ED891F13959900C90736 /* PhotoViewerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewerVC.h; sourceTree = "<group>"; };
 		82B7ED8A1F13959900C90736 /* PhotoViewerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewerVC.m; sourceTree = "<group>"; };
 		82B7ED8B1F13959900C90736 /* PhotoViewerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewerVC.xib; sourceTree = "<group>"; };
-		82B7ED8E1F13982000C90736 /* superdog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = superdog.jpg; path = ../../../../../../Downloads/superdog.jpg; sourceTree = "<group>"; };
+		82B7ED8E1F13982000C90736 /* superdog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superdog.jpg; sourceTree = "<group>"; };
 		82BDD97B1F00271F001DACAD /* BruteForceRuntimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BruteForceRuntimeVC.h; sourceTree = "<group>"; };
 		82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BruteForceRuntimeVC.m; sourceTree = "<group>"; };
 		82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BruteForceRuntimeVC.xib; sourceTree = "<group>"; };
@@ -705,6 +705,7 @@
 			children = (
 				A2E1E2131F052B95003B363A /* iphone.png */,
 				4FE1C6591EF9321200F40320 /* maxpower.c */,
+				82B7ED8E1F13982000C90736 /* superdog.jpg */,
 				4FE1C65A1EF9321200F40320 /* maxpower.h */,
 				A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */,
 				141E2FC316C3D49900586528 /* iGoat */,
@@ -1091,7 +1092,6 @@
 		82B7ED901F13982800C90736 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				82B7ED8E1F13982000C90736 /* superdog.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
