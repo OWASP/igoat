@@ -104,6 +104,11 @@
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
 		4FE1C67B1F02E15F00F40320 /* Swaroop_Junard.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C67A1F02E15F00F40320 /* Swaroop_Junard.html */; };
+		82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */; };
+		82B7ED881F1391C300C90736 /* PersonalPhotoStorageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */; };
+		82B7ED8C1F13959900C90736 /* PhotoViewerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED8A1F13959900C90736 /* PhotoViewerVC.m */; };
+		82B7ED8D1F13959900C90736 /* PhotoViewerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B7ED8B1F13959900C90736 /* PhotoViewerVC.xib */; };
+		82B7ED8F1F13982000C90736 /* superdog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82B7ED8E1F13982000C90736 /* superdog.jpg */; };
 		82BDD97E1F00271F001DACAD /* BruteForceRuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */; };
 		82BDD97F1F00271F001DACAD /* BruteForceRuntimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */; };
 		A2590B411EB9C18C00CBA9D7 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2590B3E1EB9C17E00CBA9D7 /* libsqlcipher.a */; };
@@ -411,6 +416,13 @@
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
 		4FE1C67A1F02E15F00F40320 /* Swaroop_Junard.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Junard.html; sourceTree = "<group>"; };
+		82B7ED841F1391C300C90736 /* PersonalPhotoStorageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalPhotoStorageVC.h; sourceTree = "<group>"; };
+		82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalPhotoStorageVC.m; sourceTree = "<group>"; };
+		82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalPhotoStorageVC.xib; sourceTree = "<group>"; };
+		82B7ED891F13959900C90736 /* PhotoViewerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewerVC.h; sourceTree = "<group>"; };
+		82B7ED8A1F13959900C90736 /* PhotoViewerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewerVC.m; sourceTree = "<group>"; };
+		82B7ED8B1F13959900C90736 /* PhotoViewerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewerVC.xib; sourceTree = "<group>"; };
+		82B7ED8E1F13982000C90736 /* superdog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = superdog.jpg; path = ../../../../../../Downloads/superdog.jpg; sourceTree = "<group>"; };
 		82BDD97B1F00271F001DACAD /* BruteForceRuntimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BruteForceRuntimeVC.h; sourceTree = "<group>"; };
 		82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BruteForceRuntimeVC.m; sourceTree = "<group>"; };
 		82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BruteForceRuntimeVC.xib; sourceTree = "<group>"; };
@@ -829,6 +841,7 @@
 				1462778316C56B5A007FE838 /* SQL Injection */,
 				1462778716C56B94007FE838 /* Server Communication */,
 				82BDD97A1F00271F001DACAD /* Runtime Brute Force Attack */,
+				82B7ED831F1391C300C90736 /* Personal Photo Storage */,
 			);
 			name = Exercises;
 			sourceTree = "<group>";
@@ -1058,6 +1071,29 @@
 				4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */,
 			);
 			name = "Runtime Analysis Challenge";
+			sourceTree = "<group>";
+		};
+		82B7ED831F1391C300C90736 /* Personal Photo Storage */ = {
+			isa = PBXGroup;
+			children = (
+				82B7ED901F13982800C90736 /* Resources */,
+				82B7ED841F1391C300C90736 /* PersonalPhotoStorageVC.h */,
+				82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */,
+				82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */,
+				82B7ED891F13959900C90736 /* PhotoViewerVC.h */,
+				82B7ED8A1F13959900C90736 /* PhotoViewerVC.m */,
+				82B7ED8B1F13959900C90736 /* PhotoViewerVC.xib */,
+			);
+			name = "Personal Photo Storage";
+			path = "iGoat/Personal Photo Storage";
+			sourceTree = SOURCE_ROOT;
+		};
+		82B7ED901F13982800C90736 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82B7ED8E1F13982000C90736 /* superdog.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		82BDD97A1F00271F001DACAD /* Runtime Brute Force Attack */ = {
@@ -1740,6 +1776,7 @@
 				141E2FDA16C3D49900586528 /* MainStoryboard_iPad.storyboard in Resources */,
 				4F0D66661EB44EA000AC8FDF /* Credentials.plist in Resources */,
 				A2E1E2121F052820003B363A /* CyrptoChallengeVC.xib in Resources */,
+				82B7ED8F1F13982000C90736 /* superdog.jpg in Resources */,
 				1462775F16C56431007FE838 /* Assets.plist in Resources */,
 				1462776716C56447007FE838 /* rutger.html in Resources */,
 				1462776916C56447007FE838 /* igoat.css in Resources */,
@@ -1767,11 +1804,13 @@
 				1472EAAB16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib in Resources */,
 				BCFB4AE319BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib in Resources */,
 				1472EAAD16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib in Resources */,
+				82B7ED881F1391C300C90736 /* PersonalPhotoStorageVC.xib in Resources */,
 				A2D78F9A1EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.xib in Resources */,
 				1472EAB416D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib in Resources */,
 				1472EABA16D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib in Resources */,
 				A2CBC9971EE978300032CF0B /* SocialEngineeringVC.xib in Resources */,
 				A29FFD8A1EDEE3130047E340 /* RealmExerciseViewController.xib in Resources */,
+				82B7ED8D1F13959900C90736 /* PhotoViewerVC.xib in Resources */,
 				1472EABD16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib in Resources */,
 				1472EABF16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib in Resources */,
 				1472EAC116D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */,
@@ -1837,6 +1876,7 @@
 				A29FFD4D1EDEE2FB0047E340 /* YapDatabaseRelationshipEdge.m in Sources */,
 				BCA6D1CB19DA14FF00002CA0 /* StringAnalysisExerciseController.m in Sources */,
 				A29FFD761EDEE2FB0047E340 /* YapSet.m in Sources */,
+				82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */,
 				A29FFD6D1EDEE2FB0047E340 /* YapMemoryTable.m in Sources */,
 				1472EABB16D7AA4800AD63D1 /* KeystrokeLoggingExerciseController.m in Sources */,
 				A29FFD3E1EDEE2FB0047E340 /* YapDatabaseFilteredViewTransaction.m in Sources */,
@@ -1934,6 +1974,7 @@
 				A29FFD6B1EDEE2FB0047E340 /* YapDatabaseStatement.m in Sources */,
 				14CFECEC16D7C46400B6E6E7 /* SBJsonWriter.m in Sources */,
 				A29FFD541EDEE2FB0047E340 /* YapDatabaseSearchResultsViewTransaction.m in Sources */,
+				82B7ED8C1F13959900C90736 /* PhotoViewerVC.m in Sources */,
 				A29FFD451EDEE2FB0047E340 /* YapDatabaseHooks.m in Sources */,
 				A29FFD4E1EDEE2FB0047E340 /* YapDatabaseRelationshipOptions.m in Sources */,
 				A29FFD301EDEE2FB0047E340 /* YDBCKChangeRecord.m in Sources */,

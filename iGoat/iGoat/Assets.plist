@@ -908,6 +908,24 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<string>Use Cycript to brute force all possible PIN values.
                 </string>
 			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop_Junard.html</string>
+				<key>description</key>
+				<string>In this exercise, you will need to hook GDB to find out the stored password. Getting the correct password will show you a secret photo. 
+                </string>
+				<key>hints</key>
+				<array>
+					<string>A phrase to the hidden treasure.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>PersonalPhotoStorageVC</string>
+				<key>name</key>
+				<string>Personal Photo Storage</string>
+				<key>solution</key>
+				<string>Use GDB to get the password.
+                </string>
+			</dict>
 		</array>
 	</dict>
 	<key>Miscellaneous</key>
