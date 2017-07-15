@@ -19,7 +19,7 @@
     [super viewDidLoad];
     self.title = @"Private Photo Storage";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(dismiss:)];
-    self.imageView.image = [UIImage imageNamed:@"superdog.jpg"];
+    self.imageView.image = [UIImage imageNamed:@"iphone.png"];
 }
 
 - (void)dismiss:(id)sender
