@@ -18,92 +18,16 @@
 		141E2FD416C3D49900586528 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 141E2FD316C3D49900586528 /* Default-568h@2x.png */; };
 		141E2FD716C3D49900586528 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141E2FD516C3D49900586528 /* MainStoryboard_iPhone.storyboard */; };
 		141E2FDA16C3D49900586528 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141E2FD816C3D49900586528 /* MainStoryboard_iPad.storyboard */; };
-		141E2FDD16C3D49900586528 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141E2FDC16C3D49900586528 /* MasterViewController.m */; };
-		141E2FE016C3D49900586528 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141E2FDF16C3D49900586528 /* DetailViewController.m */; };
-		143D7A2F16DD006D001AE794 /* articles.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1462779116C56BDD007FE838 /* articles.sqlite */; };
-		143D7A3016DD0078001AE794 /* SQLInjectionArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1462779716C56BDD007FE838 /* SQLInjectionArticlesViewController.xib */; };
 		1462775F16C56431007FE838 /* Assets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1462775E16C56431007FE838 /* Assets.plist */; };
-		1462776716C56447007FE838 /* rutger.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776016C56447007FE838 /* rutger.html */; };
 		1462776916C56447007FE838 /* igoat.css in Resources */ = {isa = PBXBuildFile; fileRef = 1462776216C56447007FE838 /* igoat.css */; };
-		1462776A16C56447007FE838 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776316C56447007FE838 /* about.html */; };
-		1462776B16C56447007FE838 /* splash.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776416C56447007FE838 /* splash.html */; };
-		1462776C16C56447007FE838 /* KRvWAssociates.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776516C56447007FE838 /* KRvWAssociates.html */; };
-		1462776F16C5645F007FE838 /* mansi.html in Resources */ = {isa = PBXBuildFile; fileRef = 1462776E16C5645F007FE838 /* mansi.html */; };
 		1462777C16C5653E007FE838 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1462777B16C5653E007FE838 /* Icon.png */; };
 		1462777E16C56546007FE838 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1462777D16C56546007FE838 /* Icon@2x.png */; };
-		146277B416C95FAB007FE838 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277AD16C95FAB007FE838 /* Asset.m */; };
-		146277B516C95FAB007FE838 /* AssetStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277AF16C95FAB007FE838 /* AssetStore.m */; };
-		146277B616C95FAB007FE838 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277B116C95FAB007FE838 /* Category.m */; };
-		146277B716C95FAB007FE838 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277B316C95FAB007FE838 /* Exercise.m */; };
-		146277B916C962E6007FE838 /* RemoteAuthenticationExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779916C56BE8007FE838 /* RemoteAuthenticationExerciseController.m */; };
-		146277BE16C96440007FE838 /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277BC16C96325007FE838 /* ExerciseViewController.m */; };
-		146277C616C9662D007FE838 /* HtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277C216C96545007FE838 /* HtmlViewController.m */; };
-		146277C816C9662D007FE838 /* HintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277C416C96547007FE838 /* HintsViewController.m */; };
-		146277CC16CA5496007FE838 /* ExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277CB16CA5496007FE838 /* ExercisesViewController.m */; };
-		1472EAA616D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAA516D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib */; };
-		1472EAA816D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAA716D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib */; };
-		1472EAA916D6891B00AD63D1 /* BackgroundingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779F16C56BFD007FE838 /* BackgroundingExerciseController.m */; };
-		1472EAAB16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAAA16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib */; };
-		1472EAAD16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAAC16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib */; };
-		1472EAAE16D695E400AD63D1 /* CutAndPasteExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779C16C56BF1007FE838 /* CutAndPasteExerciseController.m */; };
-		1472EAB116D7863F00AD63D1 /* RotationLimitingNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1472EAB016D7863F00AD63D1 /* RotationLimitingNavigationViewController.m */; };
-		1472EAB216D790B700AD63D1 /* KeychainExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462778C16C56BC1007FE838 /* KeychainExerciseViewController.m */; };
-		1472EAB416D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAB316D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib */; };
 		1472EAB616D798B100AD63D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1472EAB516D798B100AD63D1 /* Security.framework */; };
 		1472EAB816D798C500AD63D1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1472EAB716D798C400AD63D1 /* SystemConfiguration.framework */; };
-		1472EABA16D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAB916D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib */; };
-		1472EABB16D7AA4800AD63D1 /* KeystrokeLoggingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462778916C56BB5007FE838 /* KeystrokeLoggingExerciseController.m */; };
-		1472EABD16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EABC16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib */; };
-		1472EABF16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EABE16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib */; };
-		1472EAC116D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAC016D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib */; };
-		1472EAC216D7B23600AD63D1 /* LocalDataStorageExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462778F16C56BCF007FE838 /* LocalDataStorageExerciseController.m */; };
-		1472EAC416D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1472EAC316D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib */; };
-		1475029916D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1475029816D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib */; };
-		1475029C16D4E2CE009C2432 /* ExerciseContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1475029B16D4E2CE009C2432 /* ExerciseContainerViewController.m */; };
-		14CFECDA16D7BD5900B6E6E7 /* LocalDataStorageExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECD916D7BD5800B6E6E7 /* LocalDataStorageExerciseController_iPad.xib */; };
-		14CFECDB16D7C27100B6E6E7 /* ServerCommunicationExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146277A216C56C07007FE838 /* ServerCommunicationExerciseController.m */; };
-		14CFECE816D7C46400B6E6E7 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECDF16D7C46400B6E6E7 /* NSObject+SBJSON.m */; };
-		14CFECE916D7C46400B6E6E7 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECE116D7C46400B6E6E7 /* NSString+SBJSON.m */; };
-		14CFECEA16D7C46400B6E6E7 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECE316D7C46400B6E6E7 /* SBJsonBase.m */; };
-		14CFECEB16D7C46400B6E6E7 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECE516D7C46400B6E6E7 /* SBJsonParser.m */; };
-		14CFECEC16D7C46400B6E6E7 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFECE716D7C46400B6E6E7 /* SBJsonWriter.m */; };
-		14CFECEE16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECED16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib */; };
-		14CFECF016D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECEF16D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib */; };
-		14CFECF216D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECF116D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib */; };
-		14CFECF316D7CAD200B6E6E7 /* SQLInjectionExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779316C56BDD007FE838 /* SQLInjectionExerciseController.m */; };
-		14CFECF416D7CAD200B6E6E7 /* SQLInjectionArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462779616C56BDD007FE838 /* SQLInjectionArticlesViewController.m */; };
-		14CFECF616D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */; };
-		4F0777CC1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0777CB1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m */; };
-		4F0777CF1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0777CD1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib */; };
-		4F0777D01EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0777CE1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib */; };
-		4F0777D21EA8CD940089AA18 /* Swaroop.html in Resources */ = {isa = PBXBuildFile; fileRef = 4F0777D11EA8CD940089AA18 /* Swaroop.html */; };
-		4F0D66601EB444EB00AC8FDF /* PlistStorageExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D665F1EB444EB00AC8FDF /* PlistStorageExerciseViewController.m */; };
-		4F0D66621EB4458200AC8FDF /* PlistStorageExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66611EB4458200AC8FDF /* PlistStorageExerciseViewController_iPhone.xib */; };
-		4F0D66641EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66631EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib */; };
-		4F0D66661EB44EA000AC8FDF /* Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66651EB44EA000AC8FDF /* Credentials.plist */; };
-		4F0D66721EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D66711EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m */; };
-		4F0D66751EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66731EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib */; };
-		4F0D66761EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */; };
-		4F253A021ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A011ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m */; };
-		4F253A0B1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A0A1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib */; };
-		4F253A1C1ECE07CF0070D22E /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A1B1ECE07CF0070D22E /* Model.xcdatamodel */; };
 		4F253A1E1ECE08580070D22E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F253A1D1ECE08580070D22E /* CoreData.framework */; };
-		4F253A261ECEDA000070D22E /* CoreDataExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A251ECEDA000070D22E /* CoreDataExerciseViewController.m */; };
-		4F253A291ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A271ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib */; };
-		4F253A2A1ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F253A281ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib */; };
-		4F253A3E1ECF1CCA0070D22E /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A3B1ECF1CCA0070D22E /* User+CoreDataClass.m */; };
-		4F253A3F1ECF1CCA0070D22E /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F253A3D1ECF1CCA0070D22E /* User+CoreDataProperties.m */; };
-		4F7316721EE3D61E0095FCDA /* Swaroop_anthony.html in Resources */ = {isa = PBXBuildFile; fileRef = 4F7316711EE3D61E0095FCDA /* Swaroop_anthony.html */; };
-		4F93AF981EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93AF971EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m */; };
-		4F93AF9B1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F93AF991EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib */; };
-		4F93AF9F1EBB4EFC00361C70 /* NSData+AESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93AF9E1EBB4EFC00361C70 /* NSData+AESEncryption.m */; };
-		4F9C77061EA663ED00710C1F /* DeviceLogsExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */; };
-		4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */; };
-		4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */; };
 		4FE1C65B1EF9321200F40320 /* maxpower.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6591EF9321200F40320 /* maxpower.c */; };
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
-		4FE1C67B1F02E15F00F40320 /* Swaroop_Junard.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C67A1F02E15F00F40320 /* Swaroop_Junard.html */; };
 		82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */; };
 		82B7ED881F1391C300C90736 /* PersonalPhotoStorageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */; };
 		82B7ED8C1F13959900C90736 /* PhotoViewerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED8A1F13959900C90736 /* PhotoViewerVC.m */; };
@@ -111,7 +35,6 @@
 		82BDD97E1F00271F001DACAD /* BruteForceRuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */; };
 		82BDD97F1F00271F001DACAD /* BruteForceRuntimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */; };
 		A2590B411EB9C18C00CBA9D7 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2590B3E1EB9C17E00CBA9D7 /* libsqlcipher.a */; };
-		A29FF9411EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */; };
 		A29FFD1E1EDEE2FB0047E340 /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC3C1EDEE2FB0047E340 /* CLIColor.m */; };
 		A29FFD1F1EDEE2FB0047E340 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC3E1EDEE2FB0047E340 /* DDAbstractDatabaseLogger.m */; };
 		A29FFD201EDEE2FB0047E340 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = A29FFC401EDEE2FB0047E340 /* DDASLLogCapture.m */; };
@@ -224,20 +147,114 @@
 		A2D78F8C1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */; };
 		A2D78F991EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D78F971EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m */; };
 		A2D78F9A1EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D78F981EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.xib */; };
-		A2D78F9E1EE6D9C200C815A8 /* NSURL+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D78F9D1EE6D9C200C815A8 /* NSURL+Parameters.m */; };
 		A2E1E2111F052820003B363A /* CyrptoChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E1E20F1F052820003B363A /* CyrptoChallengeVC.m */; };
 		A2E1E2121F052820003B363A /* CyrptoChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E1E2101F052820003B363A /* CyrptoChallengeVC.xib */; };
 		A2E1E2141F052B95003B363A /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E1E2131F052B95003B363A /* iphone.png */; };
+		A2F639751F1D34E7002C4CC9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639651F1D34E7002C4CC9 /* DetailViewController.m */; };
+		A2F639761F1D34E7002C4CC9 /* HintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639671F1D34E7002C4CC9 /* HintsViewController.m */; };
+		A2F639771F1D34E7002C4CC9 /* HintsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639681F1D34E7002C4CC9 /* HintsViewController.xib */; };
+		A2F639781F1D34E7002C4CC9 /* HtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F6396A1F1D34E7002C4CC9 /* HtmlViewController.m */; };
+		A2F639791F1D34E7002C4CC9 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F6396C1F1D34E7002C4CC9 /* InfoViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A2F6397A1F1D34E7002C4CC9 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F6396D1F1D34E7002C4CC9 /* InfoViewController.xib */; };
+		A2F6397B1F1D34E7002C4CC9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F6396F1F1D34E7002C4CC9 /* MasterViewController.m */; };
+		A2F6397C1F1D34E7002C4CC9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639711F1D34E7002C4CC9 /* RootViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A2F6397D1F1D34E7002C4CC9 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639721F1D34E7002C4CC9 /* RootViewController.xib */; };
+		A2F6397E1F1D34E7002C4CC9 /* RotationLimitingNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639741F1D34E7002C4CC9 /* RotationLimitingNavigationViewController.m */; };
+		A2F639911F1D34FB002C4CC9 /* NSData+AESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639821F1D34FB002C4CC9 /* NSData+AESEncryption.m */; };
+		A2F639921F1D34FB002C4CC9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639841F1D34FB002C4CC9 /* NSObject+SBJSON.m */; };
+		A2F639931F1D34FB002C4CC9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639861F1D34FB002C4CC9 /* NSString+SBJSON.m */; };
+		A2F639941F1D34FB002C4CC9 /* NSURL+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639881F1D34FB002C4CC9 /* NSURL+Parameters.m */; };
+		A2F639951F1D34FB002C4CC9 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F6398A1F1D34FB002C4CC9 /* SBJsonBase.m */; };
+		A2F639961F1D34FB002C4CC9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F6398C1F1D34FB002C4CC9 /* SBJsonParser.m */; };
+		A2F639971F1D34FB002C4CC9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F6398E1F1D34FB002C4CC9 /* SBJsonWriter.m */; };
+		A2F639981F1D34FB002C4CC9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639901F1D34FB002C4CC9 /* Utils.m */; };
+		A2F639A21F1D3518002C4CC9 /* CoreDataExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F6399B1F1D3518002C4CC9 /* CoreDataExerciseViewController.m */; };
+		A2F639A31F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F6399C1F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib */; };
+		A2F639A41F1D3518002C4CC9 /* CoreDataExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F6399D1F1D3518002C4CC9 /* CoreDataExerciseViewController_iPhone.xib */; };
+		A2F639A51F1D3518002C4CC9 /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F6399F1F1D3518002C4CC9 /* User+CoreDataClass.m */; };
+		A2F639A61F1D3518002C4CC9 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639A11F1D3518002C4CC9 /* User+CoreDataProperties.m */; };
+		A2F639AA1F1D3541002C4CC9 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A2F639A91F1D3541002C4CC9 /* Model.xcdatamodel */; };
+		A2F639AF1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639AD1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.m */; };
+		A2F639B01F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639AE1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.xib */; };
+		A2F639B61F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639B31F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController.m */; };
+		A2F639B71F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639B41F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPad.xib */; };
+		A2F639B81F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639B51F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPhone.xib */; };
+		A2F639BF1F1D3606002C4CC9 /* Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2F639BA1F1D3606002C4CC9 /* Credentials.plist */; };
+		A2F639C01F1D3606002C4CC9 /* PlistStorageExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639BC1F1D3606002C4CC9 /* PlistStorageExerciseViewController.m */; };
+		A2F639C11F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639BD1F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPad.xib */; };
+		A2F639C21F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639BE1F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPhone.xib */; };
+		A2F639C81F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639C51F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController.m */; };
+		A2F639C91F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639C61F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPad.xib */; };
+		A2F639CA1F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639C71F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPhone.xib */; };
+		A2F639D01F1D3625002C4CC9 /* DeviceLogsExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639CD1F1D3625002C4CC9 /* DeviceLogsExerciseViewController.m */; };
+		A2F639D11F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639CE1F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPad.xib */; };
+		A2F639D21F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639CF1F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPhone.xib */; };
+		A2F639D81F1D3636002C4CC9 /* StringAnalysisExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639D51F1D3636002C4CC9 /* StringAnalysisExerciseController.m */; };
+		A2F639D91F1D3636002C4CC9 /* StringAnalysisExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639D61F1D3636002C4CC9 /* StringAnalysisExerciseController_iPad.xib */; };
+		A2F639DA1F1D3636002C4CC9 /* StringAnalysisExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639D71F1D3636002C4CC9 /* StringAnalysisExerciseController_iPhone.xib */; };
+		A2F639E01F1D3645002C4CC9 /* MethodSwizzlingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639DD1F1D3645002C4CC9 /* MethodSwizzlingExerciseController.m */; };
+		A2F639E11F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639DE1F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPad.xib */; };
+		A2F639E21F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639DF1F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPhone.xib */; };
+		A2F639E81F1D3663002C4CC9 /* PublicKeyPinningExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639E51F1D3663002C4CC9 /* PublicKeyPinningExerciseController.m */; };
+		A2F639E91F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639E61F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPad.xib */; };
+		A2F639EA1F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639E71F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPhone.xib */; };
+		A2F639F01F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639ED1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController.m */; };
+		A2F639F11F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639EE1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPad.xib */; };
+		A2F639F21F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639EF1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */; };
+		A2F639F91F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639F51F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m */; };
+		A2F639FA1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639F61F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib */; };
+		A2F639FB1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639F71F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib */; };
+		A2F639FC1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639F81F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib */; };
+		A2F63A031F1D36CF002C4CC9 /* BackgroundingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639FF1F1D36CF002C4CC9 /* BackgroundingExerciseController.m */; };
+		A2F63A041F1D36CF002C4CC9 /* BackgroundingExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A001F1D36CF002C4CC9 /* BackgroundingExerciseController.xib */; };
+		A2F63A051F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A011F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib */; };
+		A2F63A061F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A021F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib */; };
+		A2F63A0D1F1D36DF002C4CC9 /* CutAndPasteExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A091F1D36DF002C4CC9 /* CutAndPasteExerciseController.m */; };
+		A2F63A0E1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A0A1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib */; };
+		A2F63A0F1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A0B1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib */; };
+		A2F63A101F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A0C1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPhone.xib */; };
+		A2F63A171F1D36EF002C4CC9 /* KeychainExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A131F1D36EF002C4CC9 /* KeychainExerciseViewController.m */; };
+		A2F63A181F1D36EF002C4CC9 /* KeychainExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A141F1D36EF002C4CC9 /* KeychainExerciseViewController.xib */; };
+		A2F63A191F1D36EF002C4CC9 /* KeychainExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A151F1D36EF002C4CC9 /* KeychainExerciseViewController_iPad.xib */; };
+		A2F63A1A1F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A161F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib */; };
+		A2F63A211F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A1D1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m */; };
+		A2F63A221F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A1E1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib */; };
+		A2F63A231F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A1F1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib */; };
+		A2F63A241F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A201F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPhone.xib */; };
+		A2F63A2B1F1D371B002C4CC9 /* LocalDataStorageExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A271F1D371B002C4CC9 /* LocalDataStorageExerciseController.m */; };
+		A2F63A2C1F1D371B002C4CC9 /* LocalDataStorageExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A281F1D371B002C4CC9 /* LocalDataStorageExerciseController.xib */; };
+		A2F63A2D1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A291F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPad.xib */; };
+		A2F63A2E1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A2A1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPhone.xib */; };
+		A2F63A351F1D372A002C4CC9 /* ServerCommunicationExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A311F1D372A002C4CC9 /* ServerCommunicationExerciseController.m */; };
+		A2F63A361F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A321F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib */; };
+		A2F63A371F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A331F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPad.xib */; };
+		A2F63A381F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A341F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib */; };
+		A2F63A521F1D377B002C4CC9 /* articles.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A491F1D377B002C4CC9 /* articles.sqlite */; };
+		A2F63A531F1D377B002C4CC9 /* SQLInjectionArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A4B1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.m */; };
+		A2F63A541F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A4C1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib */; };
+		A2F63A551F1D377B002C4CC9 /* SQLInjectionExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A4E1F1D377B002C4CC9 /* SQLInjectionExerciseController.m */; };
+		A2F63A561F1D377B002C4CC9 /* SQLInjectionExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A4F1F1D377B002C4CC9 /* SQLInjectionExerciseController.xib */; };
+		A2F63A571F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A501F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib */; };
+		A2F63A581F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A511F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib */; };
+		A2F63A621F1D379F002C4CC9 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A5A1F1D379F002C4CC9 /* about.html */; };
+		A2F63A631F1D379F002C4CC9 /* KRvWAssociates.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A5B1F1D379F002C4CC9 /* KRvWAssociates.html */; };
+		A2F63A641F1D379F002C4CC9 /* mansi.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A5C1F1D379F002C4CC9 /* mansi.html */; };
+		A2F63A651F1D379F002C4CC9 /* rutger.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A5D1F1D379F002C4CC9 /* rutger.html */; };
+		A2F63A661F1D379F002C4CC9 /* splash.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A5E1F1D379F002C4CC9 /* splash.html */; };
+		A2F63A671F1D379F002C4CC9 /* Swaroop.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A5F1F1D379F002C4CC9 /* Swaroop.html */; };
+		A2F63A681F1D379F002C4CC9 /* Swaroop_anthony.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A601F1D379F002C4CC9 /* Swaroop_anthony.html */; };
+		A2F63A691F1D379F002C4CC9 /* Swaroop_Junard.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A611F1D379F002C4CC9 /* Swaroop_Junard.html */; };
+		A2F63A771F1D386F002C4CC9 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A6C1F1D386F002C4CC9 /* Exercise.m */; };
+		A2F63A781F1D386F002C4CC9 /* ExerciseContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A6E1F1D386F002C4CC9 /* ExerciseContainerViewController.m */; };
+		A2F63A791F1D386F002C4CC9 /* ExerciseIntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A701F1D386F002C4CC9 /* ExerciseIntroViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A2F63A7A1F1D386F002C4CC9 /* ExerciseIntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A711F1D386F002C4CC9 /* ExerciseIntroViewController.xib */; };
+		A2F63A7B1F1D386F002C4CC9 /* ExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A731F1D386F002C4CC9 /* ExercisesViewController.m */; };
+		A2F63A7C1F1D386F002C4CC9 /* ExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A741F1D386F002C4CC9 /* ExercisesViewController.xib */; };
+		A2F63A7D1F1D386F002C4CC9 /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A761F1D386F002C4CC9 /* ExerciseViewController.m */; };
+		A2F63A851F1D3890002C4CC9 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A801F1D3890002C4CC9 /* Asset.m */; };
+		A2F63A861F1D3890002C4CC9 /* AssetStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A821F1D3890002C4CC9 /* AssetStore.m */; };
+		A2F63A871F1D3890002C4CC9 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A841F1D3890002C4CC9 /* Category.m */; };
 		BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */ = {isa = PBXBuildFile; fileRef = BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */; };
-		BCA6D1C919DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */; };
-		BCA6D1CB19DA14FF00002CA0 /* StringAnalysisExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6D1C819DA14FF00002CA0 /* StringAnalysisExerciseController.m */; };
-		BCA6D1CD19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA6D1CC19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib */; };
-		BCF7AD5819D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF7AD5419D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib */; };
-		BCF7AD5919D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF7AD5519D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib */; };
-		BCF7AD5A19D0C2A8007ED80A /* MethodSwizzlingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF7AD5719D0C2A8007ED80A /* MethodSwizzlingExerciseController.m */; };
-		BCFB4AE319BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCFB4ADF19BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib */; };
-		BCFB4AE419BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCFB4AE019BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib */; };
-		BCFB4AE519BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFB4AE219BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -287,134 +304,19 @@
 		141E2FD316C3D49900586528 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		141E2FD616C3D49900586528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		141E2FD916C3D49900586528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		141E2FDB16C3D49900586528 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		141E2FDC16C3D49900586528 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		141E2FDE16C3D49900586528 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		141E2FDF16C3D49900586528 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		1462775E16C56431007FE838 /* Assets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Assets.plist; sourceTree = "<group>"; };
-		1462776016C56447007FE838 /* rutger.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = rutger.html; sourceTree = "<group>"; };
 		1462776216C56447007FE838 /* igoat.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = igoat.css; sourceTree = "<group>"; };
-		1462776316C56447007FE838 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
-		1462776416C56447007FE838 /* splash.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = splash.html; sourceTree = "<group>"; };
-		1462776516C56447007FE838 /* KRvWAssociates.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KRvWAssociates.html; sourceTree = "<group>"; };
-		1462776E16C5645F007FE838 /* mansi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mansi.html; sourceTree = "<group>"; };
-		1462777016C5648D007FE838 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
-		1462777116C5648D007FE838 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		1462777B16C5653E007FE838 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		1462777D16C56546007FE838 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
-		1462778816C56BB5007FE838 /* KeystrokeLoggingExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeystrokeLoggingExerciseController.h; sourceTree = "<group>"; };
-		1462778916C56BB5007FE838 /* KeystrokeLoggingExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeystrokeLoggingExerciseController.m; sourceTree = "<group>"; };
-		1462778B16C56BC1007FE838 /* KeychainExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainExerciseViewController.h; sourceTree = "<group>"; };
-		1462778C16C56BC1007FE838 /* KeychainExerciseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainExerciseViewController.m; sourceTree = "<group>"; };
-		1462778E16C56BCF007FE838 /* LocalDataStorageExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDataStorageExerciseController.h; sourceTree = "<group>"; };
-		1462778F16C56BCF007FE838 /* LocalDataStorageExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataStorageExerciseController.m; sourceTree = "<group>"; };
-		1462779116C56BDD007FE838 /* articles.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = articles.sqlite; sourceTree = "<group>"; };
-		1462779216C56BDD007FE838 /* SQLInjectionExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLInjectionExerciseController.h; sourceTree = "<group>"; };
-		1462779316C56BDD007FE838 /* SQLInjectionExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLInjectionExerciseController.m; sourceTree = "<group>"; };
-		1462779516C56BDD007FE838 /* SQLInjectionArticlesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLInjectionArticlesViewController.h; sourceTree = "<group>"; };
-		1462779616C56BDD007FE838 /* SQLInjectionArticlesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLInjectionArticlesViewController.m; sourceTree = "<group>"; };
-		1462779716C56BDD007FE838 /* SQLInjectionArticlesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQLInjectionArticlesViewController.xib; sourceTree = "<group>"; };
-		1462779816C56BE8007FE838 /* RemoteAuthenticationExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteAuthenticationExerciseController.h; sourceTree = "<group>"; };
-		1462779916C56BE8007FE838 /* RemoteAuthenticationExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteAuthenticationExerciseController.m; sourceTree = "<group>"; };
-		1462779B16C56BF1007FE838 /* CutAndPasteExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CutAndPasteExerciseController.h; sourceTree = "<group>"; };
-		1462779C16C56BF1007FE838 /* CutAndPasteExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CutAndPasteExerciseController.m; sourceTree = "<group>"; };
-		1462779E16C56BFD007FE838 /* BackgroundingExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundingExerciseController.h; sourceTree = "<group>"; };
-		1462779F16C56BFD007FE838 /* BackgroundingExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundingExerciseController.m; sourceTree = "<group>"; };
-		146277A116C56C07007FE838 /* ServerCommunicationExerciseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerCommunicationExerciseController.h; sourceTree = "<group>"; };
-		146277A216C56C07007FE838 /* ServerCommunicationExerciseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerCommunicationExerciseController.m; sourceTree = "<group>"; };
-		146277AC16C95FAB007FE838 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
-		146277AD16C95FAB007FE838 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
-		146277AE16C95FAB007FE838 /* AssetStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetStore.h; sourceTree = "<group>"; };
-		146277AF16C95FAB007FE838 /* AssetStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetStore.m; sourceTree = "<group>"; };
-		146277B016C95FAB007FE838 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
-		146277B116C95FAB007FE838 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
-		146277B216C95FAB007FE838 /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise.h; sourceTree = "<group>"; };
-		146277B316C95FAB007FE838 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
-		146277BB16C96324007FE838 /* ExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
-		146277BC16C96325007FE838 /* ExerciseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
-		146277C116C96544007FE838 /* HtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HtmlViewController.h; sourceTree = "<group>"; };
-		146277C216C96545007FE838 /* HtmlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HtmlViewController.m; sourceTree = "<group>"; };
-		146277C316C96546007FE838 /* HintsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HintsViewController.h; sourceTree = "<group>"; };
-		146277C416C96547007FE838 /* HintsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HintsViewController.m; sourceTree = "<group>"; };
-		146277CA16CA5496007FE838 /* ExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesViewController.h; sourceTree = "<group>"; };
-		146277CB16CA5496007FE838 /* ExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExercisesViewController.m; sourceTree = "<group>"; };
-		1472EAA516D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		1472EAA716D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		1472EAAA16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController_iPad.xib; sourceTree = "<group>"; };
-		1472EAAC16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		1472EAAF16D7863E00AD63D1 /* RotationLimitingNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationLimitingNavigationViewController.h; sourceTree = "<group>"; };
-		1472EAB016D7863F00AD63D1 /* RotationLimitingNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationLimitingNavigationViewController.m; sourceTree = "<group>"; };
-		1472EAB316D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		1472EAB516D798B100AD63D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1472EAB716D798C400AD63D1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		1472EAB916D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		1472EABC16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController_iPad.xib; sourceTree = "<group>"; };
-		1472EABE16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseViewController_iPad.xib; sourceTree = "<group>"; };
-		1472EAC016D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController_iPad.xib; sourceTree = "<group>"; };
-		1472EAC316D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalDataStorageExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		1475029816D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController_iPad.xib; sourceTree = "<group>"; };
-		1475029A16D4E2CD009C2432 /* ExerciseContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseContainerViewController.h; sourceTree = "<group>"; };
-		1475029B16D4E2CE009C2432 /* ExerciseContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseContainerViewController.m; sourceTree = "<group>"; };
-		14CFECD916D7BD5800B6E6E7 /* LocalDataStorageExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalDataStorageExerciseController_iPad.xib; sourceTree = "<group>"; };
-		14CFECDC16D7C2D000B6E6E7 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		14CFECDE16D7C46400B6E6E7 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		14CFECDF16D7C46400B6E6E7 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
-		14CFECE016D7C46400B6E6E7 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		14CFECE116D7C46400B6E6E7 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
-		14CFECE216D7C46400B6E6E7 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
-		14CFECE316D7C46400B6E6E7 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
-		14CFECE416D7C46400B6E6E7 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		14CFECE516D7C46400B6E6E7 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
-		14CFECE616D7C46400B6E6E7 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		14CFECE716D7C46400B6E6E7 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		14CFECED16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		14CFECEF16D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController_iPad.xib; sourceTree = "<group>"; };
-		14CFECF116D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPad.xib; sourceTree = "<group>"; };
 		14D8962516DA886F00D0720A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		4F0777CA1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossSiteScriptingExerciseViewController.h; sourceTree = "<group>"; };
-		4F0777CB1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossSiteScriptingExerciseViewController.m; sourceTree = "<group>"; };
-		4F0777CD1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossSiteScriptingExerciseViewController_iPad.xib; sourceTree = "<group>"; };
-		4F0777CE1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossSiteScriptingExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
-		4F0777D11EA8CD940089AA18 /* Swaroop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop.html; sourceTree = "<group>"; };
-		4F0D665E1EB444EB00AC8FDF /* PlistStorageExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistStorageExerciseViewController.h; sourceTree = "<group>"; };
-		4F0D665F1EB444EB00AC8FDF /* PlistStorageExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistStorageExerciseViewController.m; sourceTree = "<group>"; };
-		4F0D66611EB4458200AC8FDF /* PlistStorageExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
-		4F0D66631EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController_iPad.xib; sourceTree = "<group>"; };
-		4F0D66651EB44EA000AC8FDF /* Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credentials.plist; sourceTree = "<group>"; };
-		4F0D66701EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsStorageExerciseViewController.h; sourceTree = "<group>"; };
-		4F0D66711EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsStorageExerciseViewController.m; sourceTree = "<group>"; };
-		4F0D66731EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPad.xib; sourceTree = "<group>"; };
-		4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
-		4F253A001ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomKeyGenerationExerciseViewController.h; sourceTree = "<group>"; };
-		4F253A011ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomKeyGenerationExerciseViewController.m; sourceTree = "<group>"; };
-		4F253A0A1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
-		4F253A1B1ECE07CF0070D22E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4F253A1D1ECE08580070D22E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		4F253A241ECEDA000070D22E /* CoreDataExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataExerciseViewController.h; sourceTree = "<group>"; };
-		4F253A251ECEDA000070D22E /* CoreDataExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataExerciseViewController.m; sourceTree = "<group>"; };
-		4F253A271ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataExerciseViewController_iPad.xib; sourceTree = "<group>"; };
-		4F253A281ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
-		4F253A3A1ECF1CCA0070D22E /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
-		4F253A3B1ECF1CCA0070D22E /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
-		4F253A3C1ECF1CCA0070D22E /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
-		4F253A3D1ECF1CCA0070D22E /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
-		4F7316711EE3D61E0095FCDA /* Swaroop_anthony.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_anthony.html; sourceTree = "<group>"; };
-		4F93AF961EBB006D00361C70 /* BrokenCryptographyExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrokenCryptographyExerciseViewController.h; sourceTree = "<group>"; };
-		4F93AF971EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokenCryptographyExerciseViewController.m; sourceTree = "<group>"; };
-		4F93AF991EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseViewController_iPad.xib; sourceTree = "<group>"; };
-		4F93AF9D1EBB4EFC00361C70 /* NSData+AESEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESEncryption.h"; sourceTree = "<group>"; };
-		4F93AF9E1EBB4EFC00361C70 /* NSData+AESEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESEncryption.m"; sourceTree = "<group>"; };
-		4F9C77041EA663ED00710C1F /* DeviceLogsExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLogsExerciseViewController.h; sourceTree = "<group>"; };
-		4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceLogsExerciseViewController.m; sourceTree = "<group>"; };
-		4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPad.xib; sourceTree = "<group>"; };
-		4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		4FE1C6591EF9321200F40320 /* maxpower.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = maxpower.c; path = iGoat/maxpower.c; sourceTree = "<group>"; };
 		4FE1C65A1EF9321200F40320 /* maxpower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = maxpower.h; path = iGoat/maxpower.h; sourceTree = "<group>"; };
 		4FE1C6661EF939AE00F40320 /* RuntimeAnalysisChallengeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeAnalysisChallengeVC.h; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.h"; sourceTree = "<group>"; };
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
-		4FE1C67A1F02E15F00F40320 /* Swaroop_Junard.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Junard.html; sourceTree = "<group>"; };
 		82B7ED841F1391C300C90736 /* PersonalPhotoStorageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalPhotoStorageVC.h; sourceTree = "<group>"; };
 		82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalPhotoStorageVC.m; sourceTree = "<group>"; };
 		82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalPhotoStorageVC.xib; sourceTree = "<group>"; };
@@ -425,7 +327,6 @@
 		82BDD97C1F00271F001DACAD /* BruteForceRuntimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BruteForceRuntimeVC.m; sourceTree = "<group>"; };
 		82BDD97D1F00271F001DACAD /* BruteForceRuntimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BruteForceRuntimeVC.xib; sourceTree = "<group>"; };
 		A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
-		A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomKeyGenerationExerciseViewController.xib; sourceTree = "<group>"; };
 		A29FFC3B1EDEE2FB0047E340 /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
 		A29FFC3C1EDEE2FB0047E340 /* CLIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIColor.m; sourceTree = "<group>"; };
 		A29FFC3D1EDEE2FB0047E340 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
@@ -653,25 +554,161 @@
 		A2D78F961EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSchemeAttackExerciseVC.h; sourceTree = "<group>"; };
 		A2D78F971EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLSchemeAttackExerciseVC.m; sourceTree = "<group>"; };
 		A2D78F981EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLSchemeAttackExerciseVC.xib; sourceTree = "<group>"; };
-		A2D78F9C1EE6D9C200C815A8 /* NSURL+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Parameters.h"; sourceTree = "<group>"; };
-		A2D78F9D1EE6D9C200C815A8 /* NSURL+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Parameters.m"; sourceTree = "<group>"; };
 		A2E1E20E1F052820003B363A /* CyrptoChallengeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyrptoChallengeVC.h; sourceTree = "<group>"; };
 		A2E1E20F1F052820003B363A /* CyrptoChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyrptoChallengeVC.m; sourceTree = "<group>"; };
 		A2E1E2101F052820003B363A /* CyrptoChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CyrptoChallengeVC.xib; sourceTree = "<group>"; };
 		A2E1E2131F052B95003B363A /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
+		A2F639641F1D34E7002C4CC9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A2F639651F1D34E7002C4CC9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A2F639661F1D34E7002C4CC9 /* HintsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HintsViewController.h; sourceTree = "<group>"; };
+		A2F639671F1D34E7002C4CC9 /* HintsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HintsViewController.m; sourceTree = "<group>"; };
+		A2F639681F1D34E7002C4CC9 /* HintsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HintsViewController.xib; sourceTree = "<group>"; };
+		A2F639691F1D34E7002C4CC9 /* HtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlViewController.h; sourceTree = "<group>"; };
+		A2F6396A1F1D34E7002C4CC9 /* HtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlViewController.m; sourceTree = "<group>"; };
+		A2F6396B1F1D34E7002C4CC9 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		A2F6396C1F1D34E7002C4CC9 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		A2F6396D1F1D34E7002C4CC9 /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		A2F6396E1F1D34E7002C4CC9 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		A2F6396F1F1D34E7002C4CC9 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		A2F639701F1D34E7002C4CC9 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		A2F639711F1D34E7002C4CC9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A2F639721F1D34E7002C4CC9 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		A2F639731F1D34E7002C4CC9 /* RotationLimitingNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationLimitingNavigationViewController.h; sourceTree = "<group>"; };
+		A2F639741F1D34E7002C4CC9 /* RotationLimitingNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationLimitingNavigationViewController.m; sourceTree = "<group>"; };
+		A2F639801F1D34FB002C4CC9 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		A2F639811F1D34FB002C4CC9 /* NSData+AESEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESEncryption.h"; sourceTree = "<group>"; };
+		A2F639821F1D34FB002C4CC9 /* NSData+AESEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESEncryption.m"; sourceTree = "<group>"; };
+		A2F639831F1D34FB002C4CC9 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		A2F639841F1D34FB002C4CC9 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		A2F639851F1D34FB002C4CC9 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		A2F639861F1D34FB002C4CC9 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		A2F639871F1D34FB002C4CC9 /* NSURL+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Parameters.h"; sourceTree = "<group>"; };
+		A2F639881F1D34FB002C4CC9 /* NSURL+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Parameters.m"; sourceTree = "<group>"; };
+		A2F639891F1D34FB002C4CC9 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		A2F6398A1F1D34FB002C4CC9 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		A2F6398B1F1D34FB002C4CC9 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		A2F6398C1F1D34FB002C4CC9 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		A2F6398D1F1D34FB002C4CC9 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		A2F6398E1F1D34FB002C4CC9 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		A2F6398F1F1D34FB002C4CC9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		A2F639901F1D34FB002C4CC9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		A2F6399A1F1D3518002C4CC9 /* CoreDataExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataExerciseViewController.h; sourceTree = "<group>"; };
+		A2F6399B1F1D3518002C4CC9 /* CoreDataExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataExerciseViewController.m; sourceTree = "<group>"; };
+		A2F6399C1F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		A2F6399D1F1D3518002C4CC9 /* CoreDataExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		A2F6399E1F1D3518002C4CC9 /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
+		A2F6399F1F1D3518002C4CC9 /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
+		A2F639A01F1D3518002C4CC9 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A2F639A11F1D3518002C4CC9 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A2F639A91F1D3541002C4CC9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = Model.xcdatamodel; path = iGoat/Model.xcdatamodel; sourceTree = SOURCE_ROOT; };
+		A2F639AC1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomKeyGenerationExerciseViewController.h; sourceTree = "<group>"; };
+		A2F639AD1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomKeyGenerationExerciseViewController.m; sourceTree = "<group>"; };
+		A2F639AE1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomKeyGenerationExerciseViewController.xib; sourceTree = "<group>"; };
+		A2F639B21F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrokenCryptographyExerciseViewController.h; sourceTree = "<group>"; };
+		A2F639B31F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokenCryptographyExerciseViewController.m; sourceTree = "<group>"; };
+		A2F639B41F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		A2F639B51F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		A2F639BA1F1D3606002C4CC9 /* Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credentials.plist; sourceTree = "<group>"; };
+		A2F639BB1F1D3606002C4CC9 /* PlistStorageExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistStorageExerciseViewController.h; sourceTree = "<group>"; };
+		A2F639BC1F1D3606002C4CC9 /* PlistStorageExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistStorageExerciseViewController.m; sourceTree = "<group>"; };
+		A2F639BD1F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		A2F639BE1F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		A2F639C41F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossSiteScriptingExerciseViewController.h; sourceTree = "<group>"; };
+		A2F639C51F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossSiteScriptingExerciseViewController.m; sourceTree = "<group>"; };
+		A2F639C61F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossSiteScriptingExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		A2F639C71F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossSiteScriptingExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		A2F639CC1F1D3625002C4CC9 /* DeviceLogsExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLogsExerciseViewController.h; sourceTree = "<group>"; };
+		A2F639CD1F1D3625002C4CC9 /* DeviceLogsExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceLogsExerciseViewController.m; sourceTree = "<group>"; };
+		A2F639CE1F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		A2F639CF1F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		A2F639D41F1D3636002C4CC9 /* StringAnalysisExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAnalysisExerciseController.h; sourceTree = "<group>"; };
+		A2F639D51F1D3636002C4CC9 /* StringAnalysisExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringAnalysisExerciseController.m; sourceTree = "<group>"; };
+		A2F639D61F1D3636002C4CC9 /* StringAnalysisExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F639D71F1D3636002C4CC9 /* StringAnalysisExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F639DC1F1D3645002C4CC9 /* MethodSwizzlingExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingExerciseController.h; sourceTree = "<group>"; };
+		A2F639DD1F1D3645002C4CC9 /* MethodSwizzlingExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingExerciseController.m; sourceTree = "<group>"; };
+		A2F639DE1F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodSwizzlingExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F639DF1F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodSwizzlingExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F639E41F1D3663002C4CC9 /* PublicKeyPinningExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicKeyPinningExerciseController.h; sourceTree = "<group>"; };
+		A2F639E51F1D3663002C4CC9 /* PublicKeyPinningExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicKeyPinningExerciseController.m; sourceTree = "<group>"; };
+		A2F639E61F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicKeyPinningExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F639E71F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicKeyPinningExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F639EC1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsStorageExerciseViewController.h; sourceTree = "<group>"; };
+		A2F639ED1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsStorageExerciseViewController.m; sourceTree = "<group>"; };
+		A2F639EE1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		A2F639EF1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		A2F639F41F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteAuthenticationExerciseController.h; sourceTree = "<group>"; };
+		A2F639F51F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteAuthenticationExerciseController.m; sourceTree = "<group>"; };
+		A2F639F61F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController.xib; sourceTree = "<group>"; };
+		A2F639F71F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F639F81F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F639FE1F1D36CF002C4CC9 /* BackgroundingExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundingExerciseController.h; sourceTree = "<group>"; };
+		A2F639FF1F1D36CF002C4CC9 /* BackgroundingExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundingExerciseController.m; sourceTree = "<group>"; };
+		A2F63A001F1D36CF002C4CC9 /* BackgroundingExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController.xib; sourceTree = "<group>"; };
+		A2F63A011F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F63A021F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F63A081F1D36DF002C4CC9 /* CutAndPasteExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutAndPasteExerciseController.h; sourceTree = "<group>"; };
+		A2F63A091F1D36DF002C4CC9 /* CutAndPasteExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CutAndPasteExerciseController.m; sourceTree = "<group>"; };
+		A2F63A0A1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController.xib; sourceTree = "<group>"; };
+		A2F63A0B1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F63A0C1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F63A121F1D36EF002C4CC9 /* KeychainExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainExerciseViewController.h; sourceTree = "<group>"; };
+		A2F63A131F1D36EF002C4CC9 /* KeychainExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainExerciseViewController.m; sourceTree = "<group>"; };
+		A2F63A141F1D36EF002C4CC9 /* KeychainExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseViewController.xib; sourceTree = "<group>"; };
+		A2F63A151F1D36EF002C4CC9 /* KeychainExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseViewController_iPad.xib; sourceTree = "<group>"; };
+		A2F63A161F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
+		A2F63A1C1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeystrokeLoggingExerciseController.h; sourceTree = "<group>"; };
+		A2F63A1D1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeystrokeLoggingExerciseController.m; sourceTree = "<group>"; };
+		A2F63A1E1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController.xib; sourceTree = "<group>"; };
+		A2F63A1F1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F63A201F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F63A261F1D371B002C4CC9 /* LocalDataStorageExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataStorageExerciseController.h; sourceTree = "<group>"; };
+		A2F63A271F1D371B002C4CC9 /* LocalDataStorageExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDataStorageExerciseController.m; sourceTree = "<group>"; };
+		A2F63A281F1D371B002C4CC9 /* LocalDataStorageExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalDataStorageExerciseController.xib; sourceTree = "<group>"; };
+		A2F63A291F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalDataStorageExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F63A2A1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalDataStorageExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F63A301F1D372A002C4CC9 /* ServerCommunicationExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerCommunicationExerciseController.h; sourceTree = "<group>"; };
+		A2F63A311F1D372A002C4CC9 /* ServerCommunicationExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerCommunicationExerciseController.m; sourceTree = "<group>"; };
+		A2F63A321F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController.xib; sourceTree = "<group>"; };
+		A2F63A331F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F63A341F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F63A491F1D377B002C4CC9 /* articles.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = articles.sqlite; sourceTree = "<group>"; };
+		A2F63A4A1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLInjectionArticlesViewController.h; sourceTree = "<group>"; };
+		A2F63A4B1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLInjectionArticlesViewController.m; sourceTree = "<group>"; };
+		A2F63A4C1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionArticlesViewController.xib; sourceTree = "<group>"; };
+		A2F63A4D1F1D377B002C4CC9 /* SQLInjectionExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLInjectionExerciseController.h; sourceTree = "<group>"; };
+		A2F63A4E1F1D377B002C4CC9 /* SQLInjectionExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLInjectionExerciseController.m; sourceTree = "<group>"; };
+		A2F63A4F1F1D377B002C4CC9 /* SQLInjectionExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController.xib; sourceTree = "<group>"; };
+		A2F63A501F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPad.xib; sourceTree = "<group>"; };
+		A2F63A511F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPhone.xib; sourceTree = "<group>"; };
+		A2F63A5A1F1D379F002C4CC9 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		A2F63A5B1F1D379F002C4CC9 /* KRvWAssociates.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KRvWAssociates.html; sourceTree = "<group>"; };
+		A2F63A5C1F1D379F002C4CC9 /* mansi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mansi.html; sourceTree = "<group>"; };
+		A2F63A5D1F1D379F002C4CC9 /* rutger.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = rutger.html; sourceTree = "<group>"; };
+		A2F63A5E1F1D379F002C4CC9 /* splash.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = splash.html; sourceTree = "<group>"; };
+		A2F63A5F1F1D379F002C4CC9 /* Swaroop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop.html; sourceTree = "<group>"; };
+		A2F63A601F1D379F002C4CC9 /* Swaroop_anthony.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_anthony.html; sourceTree = "<group>"; };
+		A2F63A611F1D379F002C4CC9 /* Swaroop_Junard.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Junard.html; sourceTree = "<group>"; };
+		A2F63A6B1F1D386F002C4CC9 /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise.h; sourceTree = "<group>"; };
+		A2F63A6C1F1D386F002C4CC9 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
+		A2F63A6D1F1D386F002C4CC9 /* ExerciseContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseContainerViewController.h; sourceTree = "<group>"; };
+		A2F63A6E1F1D386F002C4CC9 /* ExerciseContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseContainerViewController.m; sourceTree = "<group>"; };
+		A2F63A6F1F1D386F002C4CC9 /* ExerciseIntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseIntroViewController.h; sourceTree = "<group>"; };
+		A2F63A701F1D386F002C4CC9 /* ExerciseIntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseIntroViewController.m; sourceTree = "<group>"; };
+		A2F63A711F1D386F002C4CC9 /* ExerciseIntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseIntroViewController.xib; sourceTree = "<group>"; };
+		A2F63A721F1D386F002C4CC9 /* ExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesViewController.h; sourceTree = "<group>"; };
+		A2F63A731F1D386F002C4CC9 /* ExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExercisesViewController.m; sourceTree = "<group>"; };
+		A2F63A741F1D386F002C4CC9 /* ExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExercisesViewController.xib; sourceTree = "<group>"; };
+		A2F63A751F1D386F002C4CC9 /* ExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
+		A2F63A761F1D386F002C4CC9 /* ExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
+		A2F63A7F1F1D3890002C4CC9 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		A2F63A801F1D3890002C4CC9 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
+		A2F63A811F1D3890002C4CC9 /* AssetStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetStore.h; sourceTree = "<group>"; };
+		A2F63A821F1D3890002C4CC9 /* AssetStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetStore.m; sourceTree = "<group>"; };
+		A2F63A831F1D3890002C4CC9 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		A2F63A841F1D3890002C4CC9 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		A2F63A881F1D38BB002C4CC9 /* InfoViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewDelegate.h; sourceTree = "<group>"; };
 		BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = iGoatSSLServer.der; sourceTree = "<group>"; };
-		BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPad.xib; sourceTree = "<group>"; };
-		BCA6D1C719DA14FF00002CA0 /* StringAnalysisExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAnalysisExerciseController.h; sourceTree = "<group>"; };
-		BCA6D1C819DA14FF00002CA0 /* StringAnalysisExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringAnalysisExerciseController.m; sourceTree = "<group>"; };
-		BCA6D1CC19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		BCF7AD5419D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodSwizzlingExerciseController_iPad.xib; sourceTree = "<group>"; };
-		BCF7AD5519D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodSwizzlingExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		BCF7AD5619D0C2A8007ED80A /* MethodSwizzlingExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingExerciseController.h; sourceTree = "<group>"; };
-		BCF7AD5719D0C2A8007ED80A /* MethodSwizzlingExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingExerciseController.m; sourceTree = "<group>"; };
-		BCFB4ADF19BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicKeyPinningExerciseController_iPad.xib; sourceTree = "<group>"; };
-		BCFB4AE019BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicKeyPinningExerciseController_iPhone.xib; sourceTree = "<group>"; };
-		BCFB4AE119BE43EA00CB15F2 /* PublicKeyPinningExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicKeyPinningExerciseController.h; sourceTree = "<group>"; };
-		BCFB4AE219BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicKeyPinningExerciseController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -740,20 +777,19 @@
 		141E2FC316C3D49900586528 /* iGoat */ = {
 			isa = PBXGroup;
 			children = (
-				A2D78F9B1EE6D99B00C815A8 /* Utilty */,
+				A2F6397F1F1D34FB002C4CC9 /* Utilty */,
+				A2F63A7E1F1D3890002C4CC9 /* AssetStore */,
+				A2F63A6A1F1D386F002C4CC9 /* Exercise Base */,
+				A2F639631F1D34E7002C4CC9 /* Container ViewControllers */,
 				A29FFC381EDEE2FB0047E340 /* ThirdParty */,
-				1462777016C5648D007FE838 /* Utils.h */,
-				1462777116C5648D007FE838 /* Utils.m */,
 				141E2FCC16C3D49900586528 /* AppDelegate.h */,
+				A2F63A881F1D38BB002C4CC9 /* InfoViewDelegate.h */,
 				141E2FCD16C3D49900586528 /* AppDelegate.m */,
 				141E2FD516C3D49900586528 /* MainStoryboard_iPhone.storyboard */,
 				141E2FD816C3D49900586528 /* MainStoryboard_iPad.storyboard */,
-				1462777216C56499007FE838 /* Assets */,
 				1462777F16C56B2E007FE838 /* Exercises */,
-				146277C916CA4DD2007FE838 /* View Controllers */,
 				1462775D16C56410007FE838 /* Resources */,
 				141E2FC416C3D49900586528 /* Supporting Files */,
-				14CFECDD16D7C42400B6E6E7 /* JSON */,
 				A2CBC9A21EEACDF00032CF0B /* Images.xcassets */,
 			);
 			path = iGoat;
@@ -778,34 +814,12 @@
 		1462775D16C56410007FE838 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4FE1C67A1F02E15F00F40320 /* Swaroop_Junard.html */,
-				4F7316711EE3D61E0095FCDA /* Swaroop_anthony.html */,
-				4F0777D11EA8CD940089AA18 /* Swaroop.html */,
+				A2F63A591F1D379F002C4CC9 /* HTML */,
 				BC837C0119BF7C86003E4CFF /* iGoatSSLServer.der */,
-				1462776316C56447007FE838 /* about.html */,
-				1462776E16C5645F007FE838 /* mansi.html */,
-				1462776016C56447007FE838 /* rutger.html */,
-				1462776416C56447007FE838 /* splash.html */,
-				1462776516C56447007FE838 /* KRvWAssociates.html */,
 				1462776216C56447007FE838 /* igoat.css */,
 				1462775E16C56431007FE838 /* Assets.plist */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		1462777216C56499007FE838 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				146277AC16C95FAB007FE838 /* Asset.h */,
-				146277AD16C95FAB007FE838 /* Asset.m */,
-				146277AE16C95FAB007FE838 /* AssetStore.h */,
-				146277AF16C95FAB007FE838 /* AssetStore.m */,
-				146277B016C95FAB007FE838 /* Category.h */,
-				146277B116C95FAB007FE838 /* Category.m */,
-				146277B216C95FAB007FE838 /* Exercise.h */,
-				146277B316C95FAB007FE838 /* Exercise.m */,
-			);
-			name = Assets;
 			sourceTree = "<group>";
 		};
 		1462777F16C56B2E007FE838 /* Exercises */ = {
@@ -820,245 +834,28 @@
 				A29FFD931EDEE5430047E340 /* CouchBase */,
 				A29FFD821EDEE3130047E340 /* Realm Data Storage */,
 				A29FFD7C1EDEE3080047E340 /* YAP Data Storage */,
-				4F253A231ECED9D80070D22E /* Core Data Storage */,
-				4F2539FF1ECDF8350070D22E /* Random Key Generation */,
-				4F93AF901EBB001F00361C70 /* Broken Cryptography */,
-				4F0D666F1EB4DF4200AC8FDF /* NSUserDefaults Storage */,
-				4F0D665D1EB444A400AC8FDF /* Plist Storage */,
-				4F0777C21EA8C2B70089AA18 /* Cross Site Scripting */,
-				4F9C77031EA663CD00710C1F /* Device Logs */,
-				BCA6D1C419D9F59100002CA0 /* String Analysis */,
-				BCF7AD5319D0C167007ED80A /* Method Swizzling */,
-				BCFB4ADE19BE430600CB15F2 /* Public Key Pinning */,
-				1462778616C56B77007FE838 /* Authentication */,
-				1462778516C56B6C007FE838 /* Backgrounding */,
-				1462778416C56B62007FE838 /* Cut-and-Paste */,
-				1462778116C56B4B007FE838 /* Keychain */,
-				1462778016C56B3D007FE838 /* Keylogging */,
-				1462778216C56B52007FE838 /* Local Data Storage */,
-				1462778316C56B5A007FE838 /* SQL Injection */,
-				1462778716C56B94007FE838 /* Server Communication */,
+				A2F639991F1D3518002C4CC9 /* Core Data */,
+				A2F639AB1F1D356F002C4CC9 /* Random Key */,
+				A2F639B11F1D35AD002C4CC9 /* Broken Cryptography */,
+				A2F639EB1F1D3697002C4CC9 /* User Defaults */,
+				A2F639B91F1D3606002C4CC9 /* Plist Storage */,
+				A2F639C31F1D361A002C4CC9 /* CrossSite Scripting */,
+				A2F639CB1F1D3625002C4CC9 /* Device Logging */,
+				A2F639DB1F1D3644002C4CC9 /* Method Swizzling */,
+				A2F639D31F1D3636002C4CC9 /* String Analysis */,
+				A2F639E31F1D3663002C4CC9 /* PublicKey Pinning */,
+				A2F639FD1F1D36CF002C4CC9 /* Backgrounding Exercise */,
+				A2F639F31F1D36BE002C4CC9 /* Remote Authentication */,
+				A2F63A071F1D36DF002C4CC9 /* Cut Paste */,
+				A2F63A111F1D36EF002C4CC9 /* Key Chain */,
+				A2F63A1B1F1D370F002C4CC9 /* Key Stroke */,
+				A2F63A251F1D371B002C4CC9 /* Local DataStorage */,
+				A2F63A2F1F1D372A002C4CC9 /* Server Communication */,
+				A2F63A481F1D377B002C4CC9 /* SQL Injection */,
 				82BDD97A1F00271F001DACAD /* Runtime Brute Force Attack */,
 				82B7ED831F1391C300C90736 /* Personal Photo Storage */,
 			);
 			name = Exercises;
-			sourceTree = "<group>";
-		};
-		1462778016C56B3D007FE838 /* Keylogging */ = {
-			isa = PBXGroup;
-			children = (
-				1462778816C56BB5007FE838 /* KeystrokeLoggingExerciseController.h */,
-				1462778916C56BB5007FE838 /* KeystrokeLoggingExerciseController.m */,
-				1472EAC016D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib */,
-				1472EAB916D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib */,
-			);
-			name = Keylogging;
-			sourceTree = "<group>";
-		};
-		1462778116C56B4B007FE838 /* Keychain */ = {
-			isa = PBXGroup;
-			children = (
-				1462778B16C56BC1007FE838 /* KeychainExerciseViewController.h */,
-				1462778C16C56BC1007FE838 /* KeychainExerciseViewController.m */,
-				1472EABE16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib */,
-				1472EAB316D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib */,
-			);
-			name = Keychain;
-			sourceTree = "<group>";
-		};
-		1462778216C56B52007FE838 /* Local Data Storage */ = {
-			isa = PBXGroup;
-			children = (
-				14CFECD916D7BD5800B6E6E7 /* LocalDataStorageExerciseController_iPad.xib */,
-				1462778E16C56BCF007FE838 /* LocalDataStorageExerciseController.h */,
-				1462778F16C56BCF007FE838 /* LocalDataStorageExerciseController.m */,
-				1472EAC316D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib */,
-			);
-			name = "Local Data Storage";
-			sourceTree = "<group>";
-		};
-		1462778316C56B5A007FE838 /* SQL Injection */ = {
-			isa = PBXGroup;
-			children = (
-				1462779116C56BDD007FE838 /* articles.sqlite */,
-				1462779216C56BDD007FE838 /* SQLInjectionExerciseController.h */,
-				1462779316C56BDD007FE838 /* SQLInjectionExerciseController.m */,
-				14CFECF516D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib */,
-				14CFECF116D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib */,
-				1462779516C56BDD007FE838 /* SQLInjectionArticlesViewController.h */,
-				1462779616C56BDD007FE838 /* SQLInjectionArticlesViewController.m */,
-				1462779716C56BDD007FE838 /* SQLInjectionArticlesViewController.xib */,
-			);
-			name = "SQL Injection";
-			sourceTree = "<group>";
-		};
-		1462778416C56B62007FE838 /* Cut-and-Paste */ = {
-			isa = PBXGroup;
-			children = (
-				1462779B16C56BF1007FE838 /* CutAndPasteExerciseController.h */,
-				1462779C16C56BF1007FE838 /* CutAndPasteExerciseController.m */,
-				1472EABC16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib */,
-				1472EAAC16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib */,
-			);
-			name = "Cut-and-Paste";
-			sourceTree = "<group>";
-		};
-		1462778516C56B6C007FE838 /* Backgrounding */ = {
-			isa = PBXGroup;
-			children = (
-				1462779E16C56BFD007FE838 /* BackgroundingExerciseController.h */,
-				1462779F16C56BFD007FE838 /* BackgroundingExerciseController.m */,
-				1472EAAA16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib */,
-				1472EAA716D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib */,
-			);
-			name = Backgrounding;
-			sourceTree = "<group>";
-		};
-		1462778616C56B77007FE838 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				1462779816C56BE8007FE838 /* RemoteAuthenticationExerciseController.h */,
-				1462779916C56BE8007FE838 /* RemoteAuthenticationExerciseController.m */,
-				1475029816D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib */,
-				1472EAA516D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib */,
-			);
-			name = Authentication;
-			sourceTree = "<group>";
-		};
-		1462778716C56B94007FE838 /* Server Communication */ = {
-			isa = PBXGroup;
-			children = (
-				146277A116C56C07007FE838 /* ServerCommunicationExerciseController.h */,
-				146277A216C56C07007FE838 /* ServerCommunicationExerciseController.m */,
-				14CFECEF16D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib */,
-				14CFECED16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib */,
-			);
-			name = "Server Communication";
-			sourceTree = "<group>";
-		};
-		146277C916CA4DD2007FE838 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				1472EAAF16D7863E00AD63D1 /* RotationLimitingNavigationViewController.h */,
-				1472EAB016D7863F00AD63D1 /* RotationLimitingNavigationViewController.m */,
-				141E2FDB16C3D49900586528 /* MasterViewController.h */,
-				141E2FDC16C3D49900586528 /* MasterViewController.m */,
-				141E2FDE16C3D49900586528 /* DetailViewController.h */,
-				141E2FDF16C3D49900586528 /* DetailViewController.m */,
-				1475029A16D4E2CD009C2432 /* ExerciseContainerViewController.h */,
-				1475029B16D4E2CE009C2432 /* ExerciseContainerViewController.m */,
-				146277BB16C96324007FE838 /* ExerciseViewController.h */,
-				146277BC16C96325007FE838 /* ExerciseViewController.m */,
-				146277CA16CA5496007FE838 /* ExercisesViewController.h */,
-				146277CB16CA5496007FE838 /* ExercisesViewController.m */,
-				146277C116C96544007FE838 /* HtmlViewController.h */,
-				146277C216C96545007FE838 /* HtmlViewController.m */,
-				146277C316C96546007FE838 /* HintsViewController.h */,
-				146277C416C96547007FE838 /* HintsViewController.m */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		14CFECDD16D7C42400B6E6E7 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				14CFECDC16D7C2D000B6E6E7 /* JSON.h */,
-				14CFECDE16D7C46400B6E6E7 /* NSObject+SBJSON.h */,
-				14CFECDF16D7C46400B6E6E7 /* NSObject+SBJSON.m */,
-				14CFECE016D7C46400B6E6E7 /* NSString+SBJSON.h */,
-				14CFECE116D7C46400B6E6E7 /* NSString+SBJSON.m */,
-				14CFECE216D7C46400B6E6E7 /* SBJsonBase.h */,
-				14CFECE316D7C46400B6E6E7 /* SBJsonBase.m */,
-				14CFECE416D7C46400B6E6E7 /* SBJsonParser.h */,
-				14CFECE516D7C46400B6E6E7 /* SBJsonParser.m */,
-				14CFECE616D7C46400B6E6E7 /* SBJsonWriter.h */,
-				14CFECE716D7C46400B6E6E7 /* SBJsonWriter.m */,
-			);
-			name = JSON;
-			sourceTree = "<group>";
-		};
-		4F0777C21EA8C2B70089AA18 /* Cross Site Scripting */ = {
-			isa = PBXGroup;
-			children = (
-				4F0777CD1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib */,
-				4F0777CE1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib */,
-				4F0777CA1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.h */,
-				4F0777CB1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m */,
-			);
-			name = "Cross Site Scripting";
-			sourceTree = "<group>";
-		};
-		4F0D665D1EB444A400AC8FDF /* Plist Storage */ = {
-			isa = PBXGroup;
-			children = (
-				4F0D66651EB44EA000AC8FDF /* Credentials.plist */,
-				4F0D66631EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib */,
-				4F0D66611EB4458200AC8FDF /* PlistStorageExerciseViewController_iPhone.xib */,
-				4F0D665E1EB444EB00AC8FDF /* PlistStorageExerciseViewController.h */,
-				4F0D665F1EB444EB00AC8FDF /* PlistStorageExerciseViewController.m */,
-			);
-			name = "Plist Storage";
-			sourceTree = "<group>";
-		};
-		4F0D666F1EB4DF4200AC8FDF /* NSUserDefaults Storage */ = {
-			isa = PBXGroup;
-			children = (
-				4F0D66731EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib */,
-				4F0D66741EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */,
-				4F0D66701EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.h */,
-				4F0D66711EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m */,
-			);
-			name = "NSUserDefaults Storage";
-			sourceTree = "<group>";
-		};
-		4F2539FF1ECDF8350070D22E /* Random Key Generation */ = {
-			isa = PBXGroup;
-			children = (
-				A29FF9401EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib */,
-				4F253A001ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.h */,
-				4F253A011ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m */,
-			);
-			name = "Random Key Generation";
-			sourceTree = "<group>";
-		};
-		4F253A231ECED9D80070D22E /* Core Data Storage */ = {
-			isa = PBXGroup;
-			children = (
-				4F253A1B1ECE07CF0070D22E /* Model.xcdatamodel */,
-				4F253A3A1ECF1CCA0070D22E /* User+CoreDataClass.h */,
-				4F253A3B1ECF1CCA0070D22E /* User+CoreDataClass.m */,
-				4F253A3C1ECF1CCA0070D22E /* User+CoreDataProperties.h */,
-				4F253A3D1ECF1CCA0070D22E /* User+CoreDataProperties.m */,
-				4F253A271ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib */,
-				4F253A281ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib */,
-				4F253A241ECEDA000070D22E /* CoreDataExerciseViewController.h */,
-				4F253A251ECEDA000070D22E /* CoreDataExerciseViewController.m */,
-			);
-			name = "Core Data Storage";
-			sourceTree = "<group>";
-		};
-		4F93AF901EBB001F00361C70 /* Broken Cryptography */ = {
-			isa = PBXGroup;
-			children = (
-				4F253A0A1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib */,
-				4F93AF991EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib */,
-				4F93AF961EBB006D00361C70 /* BrokenCryptographyExerciseViewController.h */,
-				4F93AF971EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m */,
-				4F93AF9D1EBB4EFC00361C70 /* NSData+AESEncryption.h */,
-				4F93AF9E1EBB4EFC00361C70 /* NSData+AESEncryption.m */,
-			);
-			name = "Broken Cryptography";
-			sourceTree = "<group>";
-		};
-		4F9C77031EA663CD00710C1F /* Device Logs */ = {
-			isa = PBXGroup;
-			children = (
-				4F9C77071EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib */,
-				4F9C77081EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib */,
-				4F9C77041EA663ED00710C1F /* DeviceLogsExerciseViewController.h */,
-				4F9C77051EA663ED00710C1F /* DeviceLogsExerciseViewController.m */,
-			);
-			name = "Device Logs";
 			sourceTree = "<group>";
 		};
 		4FE1C65E1EF9367000F40320 /* Runtime Analysis Challenge */ = {
@@ -1629,15 +1426,6 @@
 			path = "URL Scheme";
 			sourceTree = "<group>";
 		};
-		A2D78F9B1EE6D99B00C815A8 /* Utilty */ = {
-			isa = PBXGroup;
-			children = (
-				A2D78F9C1EE6D9C200C815A8 /* NSURL+Parameters.h */,
-				A2D78F9D1EE6D9C200C815A8 /* NSURL+Parameters.m */,
-			);
-			path = Utilty;
-			sourceTree = "<group>";
-		};
 		A2E1E20D1F0527FC003B363A /* Cryto Challenge */ = {
 			isa = PBXGroup;
 			children = (
@@ -1648,37 +1436,316 @@
 			path = "Cryto Challenge";
 			sourceTree = "<group>";
 		};
-		BCA6D1C419D9F59100002CA0 /* String Analysis */ = {
+		A2F639631F1D34E7002C4CC9 /* Container ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BCA6D1CC19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib */,
-				BCA6D1C519DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib */,
-				BCA6D1C719DA14FF00002CA0 /* StringAnalysisExerciseController.h */,
-				BCA6D1C819DA14FF00002CA0 /* StringAnalysisExerciseController.m */,
+				A2F639641F1D34E7002C4CC9 /* DetailViewController.h */,
+				A2F639651F1D34E7002C4CC9 /* DetailViewController.m */,
+				A2F639661F1D34E7002C4CC9 /* HintsViewController.h */,
+				A2F639671F1D34E7002C4CC9 /* HintsViewController.m */,
+				A2F639681F1D34E7002C4CC9 /* HintsViewController.xib */,
+				A2F639691F1D34E7002C4CC9 /* HtmlViewController.h */,
+				A2F6396A1F1D34E7002C4CC9 /* HtmlViewController.m */,
+				A2F6396B1F1D34E7002C4CC9 /* InfoViewController.h */,
+				A2F6396C1F1D34E7002C4CC9 /* InfoViewController.m */,
+				A2F6396D1F1D34E7002C4CC9 /* InfoViewController.xib */,
+				A2F6396E1F1D34E7002C4CC9 /* MasterViewController.h */,
+				A2F6396F1F1D34E7002C4CC9 /* MasterViewController.m */,
+				A2F639701F1D34E7002C4CC9 /* RootViewController.h */,
+				A2F639711F1D34E7002C4CC9 /* RootViewController.m */,
+				A2F639721F1D34E7002C4CC9 /* RootViewController.xib */,
+				A2F639731F1D34E7002C4CC9 /* RotationLimitingNavigationViewController.h */,
+				A2F639741F1D34E7002C4CC9 /* RotationLimitingNavigationViewController.m */,
 			);
-			name = "String Analysis";
+			path = "Container ViewControllers";
 			sourceTree = "<group>";
 		};
-		BCF7AD5319D0C167007ED80A /* Method Swizzling */ = {
+		A2F6397F1F1D34FB002C4CC9 /* Utilty */ = {
 			isa = PBXGroup;
 			children = (
-				BCF7AD5419D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib */,
-				BCF7AD5519D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib */,
-				BCF7AD5619D0C2A8007ED80A /* MethodSwizzlingExerciseController.h */,
-				BCF7AD5719D0C2A8007ED80A /* MethodSwizzlingExerciseController.m */,
+				A2F639801F1D34FB002C4CC9 /* JSON.h */,
+				A2F639811F1D34FB002C4CC9 /* NSData+AESEncryption.h */,
+				A2F639821F1D34FB002C4CC9 /* NSData+AESEncryption.m */,
+				A2F639831F1D34FB002C4CC9 /* NSObject+SBJSON.h */,
+				A2F639841F1D34FB002C4CC9 /* NSObject+SBJSON.m */,
+				A2F639851F1D34FB002C4CC9 /* NSString+SBJSON.h */,
+				A2F639861F1D34FB002C4CC9 /* NSString+SBJSON.m */,
+				A2F639871F1D34FB002C4CC9 /* NSURL+Parameters.h */,
+				A2F639881F1D34FB002C4CC9 /* NSURL+Parameters.m */,
+				A2F639891F1D34FB002C4CC9 /* SBJsonBase.h */,
+				A2F6398A1F1D34FB002C4CC9 /* SBJsonBase.m */,
+				A2F6398B1F1D34FB002C4CC9 /* SBJsonParser.h */,
+				A2F6398C1F1D34FB002C4CC9 /* SBJsonParser.m */,
+				A2F6398D1F1D34FB002C4CC9 /* SBJsonWriter.h */,
+				A2F6398E1F1D34FB002C4CC9 /* SBJsonWriter.m */,
+				A2F6398F1F1D34FB002C4CC9 /* Utils.h */,
+				A2F639901F1D34FB002C4CC9 /* Utils.m */,
+			);
+			path = Utilty;
+			sourceTree = "<group>";
+		};
+		A2F639991F1D3518002C4CC9 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639A91F1D3541002C4CC9 /* Model.xcdatamodel */,
+				A2F6399A1F1D3518002C4CC9 /* CoreDataExerciseViewController.h */,
+				A2F6399B1F1D3518002C4CC9 /* CoreDataExerciseViewController.m */,
+				A2F6399C1F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib */,
+				A2F6399D1F1D3518002C4CC9 /* CoreDataExerciseViewController_iPhone.xib */,
+				A2F6399E1F1D3518002C4CC9 /* User+CoreDataClass.h */,
+				A2F6399F1F1D3518002C4CC9 /* User+CoreDataClass.m */,
+				A2F639A01F1D3518002C4CC9 /* User+CoreDataProperties.h */,
+				A2F639A11F1D3518002C4CC9 /* User+CoreDataProperties.m */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		A2F639AB1F1D356F002C4CC9 /* Random Key */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639AC1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.h */,
+				A2F639AD1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.m */,
+				A2F639AE1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.xib */,
+			);
+			path = "Random Key";
+			sourceTree = "<group>";
+		};
+		A2F639B11F1D35AD002C4CC9 /* Broken Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639B21F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController.h */,
+				A2F639B31F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController.m */,
+				A2F639B41F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPad.xib */,
+				A2F639B51F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPhone.xib */,
+			);
+			path = "Broken Cryptography";
+			sourceTree = "<group>";
+		};
+		A2F639B91F1D3606002C4CC9 /* Plist Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639BA1F1D3606002C4CC9 /* Credentials.plist */,
+				A2F639BB1F1D3606002C4CC9 /* PlistStorageExerciseViewController.h */,
+				A2F639BC1F1D3606002C4CC9 /* PlistStorageExerciseViewController.m */,
+				A2F639BD1F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPad.xib */,
+				A2F639BE1F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPhone.xib */,
+			);
+			path = "Plist Storage";
+			sourceTree = "<group>";
+		};
+		A2F639C31F1D361A002C4CC9 /* CrossSite Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639C41F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController.h */,
+				A2F639C51F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController.m */,
+				A2F639C61F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPad.xib */,
+				A2F639C71F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPhone.xib */,
+			);
+			path = "CrossSite Scripting";
+			sourceTree = "<group>";
+		};
+		A2F639CB1F1D3625002C4CC9 /* Device Logging */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639CC1F1D3625002C4CC9 /* DeviceLogsExerciseViewController.h */,
+				A2F639CD1F1D3625002C4CC9 /* DeviceLogsExerciseViewController.m */,
+				A2F639CE1F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPad.xib */,
+				A2F639CF1F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPhone.xib */,
+			);
+			path = "Device Logging";
+			sourceTree = "<group>";
+		};
+		A2F639D31F1D3636002C4CC9 /* String Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639D41F1D3636002C4CC9 /* StringAnalysisExerciseController.h */,
+				A2F639D51F1D3636002C4CC9 /* StringAnalysisExerciseController.m */,
+				A2F639D61F1D3636002C4CC9 /* StringAnalysisExerciseController_iPad.xib */,
+				A2F639D71F1D3636002C4CC9 /* StringAnalysisExerciseController_iPhone.xib */,
+			);
+			path = "String Analysis";
+			sourceTree = "<group>";
+		};
+		A2F639DB1F1D3644002C4CC9 /* Method Swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639DC1F1D3645002C4CC9 /* MethodSwizzlingExerciseController.h */,
+				A2F639DD1F1D3645002C4CC9 /* MethodSwizzlingExerciseController.m */,
+				A2F639DE1F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPad.xib */,
+				A2F639DF1F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPhone.xib */,
 			);
 			name = "Method Swizzling";
+			path = "String Analysis/Method Swizzling";
 			sourceTree = "<group>";
 		};
-		BCFB4ADE19BE430600CB15F2 /* Public Key Pinning */ = {
+		A2F639E31F1D3663002C4CC9 /* PublicKey Pinning */ = {
 			isa = PBXGroup;
 			children = (
-				BCFB4ADF19BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib */,
-				BCFB4AE019BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib */,
-				BCFB4AE119BE43EA00CB15F2 /* PublicKeyPinningExerciseController.h */,
-				BCFB4AE219BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m */,
+				A2F639E41F1D3663002C4CC9 /* PublicKeyPinningExerciseController.h */,
+				A2F639E51F1D3663002C4CC9 /* PublicKeyPinningExerciseController.m */,
+				A2F639E61F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPad.xib */,
+				A2F639E71F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPhone.xib */,
 			);
-			name = "Public Key Pinning";
+			path = "PublicKey Pinning";
+			sourceTree = "<group>";
+		};
+		A2F639EB1F1D3697002C4CC9 /* User Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639EC1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController.h */,
+				A2F639ED1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController.m */,
+				A2F639EE1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPad.xib */,
+				A2F639EF1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */,
+			);
+			path = "User Defaults";
+			sourceTree = "<group>";
+		};
+		A2F639F31F1D36BE002C4CC9 /* Remote Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639F41F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.h */,
+				A2F639F51F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m */,
+				A2F639F61F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib */,
+				A2F639F71F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib */,
+				A2F639F81F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib */,
+			);
+			path = "Remote Authentication";
+			sourceTree = "<group>";
+		};
+		A2F639FD1F1D36CF002C4CC9 /* Backgrounding Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				A2F639FE1F1D36CF002C4CC9 /* BackgroundingExerciseController.h */,
+				A2F639FF1F1D36CF002C4CC9 /* BackgroundingExerciseController.m */,
+				A2F63A001F1D36CF002C4CC9 /* BackgroundingExerciseController.xib */,
+				A2F63A011F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib */,
+				A2F63A021F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib */,
+			);
+			name = "Backgrounding Exercise";
+			path = "Remote Authentication/Backgrounding Exercise";
+			sourceTree = "<group>";
+		};
+		A2F63A071F1D36DF002C4CC9 /* Cut Paste */ = {
+			isa = PBXGroup;
+			children = (
+				A2F63A081F1D36DF002C4CC9 /* CutAndPasteExerciseController.h */,
+				A2F63A091F1D36DF002C4CC9 /* CutAndPasteExerciseController.m */,
+				A2F63A0A1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib */,
+				A2F63A0B1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib */,
+				A2F63A0C1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPhone.xib */,
+			);
+			path = "Cut Paste";
+			sourceTree = "<group>";
+		};
+		A2F63A111F1D36EF002C4CC9 /* Key Chain */ = {
+			isa = PBXGroup;
+			children = (
+				A2F63A121F1D36EF002C4CC9 /* KeychainExerciseViewController.h */,
+				A2F63A131F1D36EF002C4CC9 /* KeychainExerciseViewController.m */,
+				A2F63A141F1D36EF002C4CC9 /* KeychainExerciseViewController.xib */,
+				A2F63A151F1D36EF002C4CC9 /* KeychainExerciseViewController_iPad.xib */,
+				A2F63A161F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib */,
+			);
+			path = "Key Chain";
+			sourceTree = "<group>";
+		};
+		A2F63A1B1F1D370F002C4CC9 /* Key Stroke */ = {
+			isa = PBXGroup;
+			children = (
+				A2F63A1C1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.h */,
+				A2F63A1D1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m */,
+				A2F63A1E1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib */,
+				A2F63A1F1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib */,
+				A2F63A201F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPhone.xib */,
+			);
+			path = "Key Stroke";
+			sourceTree = "<group>";
+		};
+		A2F63A251F1D371B002C4CC9 /* Local DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				A2F63A261F1D371B002C4CC9 /* LocalDataStorageExerciseController.h */,
+				A2F63A271F1D371B002C4CC9 /* LocalDataStorageExerciseController.m */,
+				A2F63A281F1D371B002C4CC9 /* LocalDataStorageExerciseController.xib */,
+				A2F63A291F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPad.xib */,
+				A2F63A2A1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPhone.xib */,
+			);
+			path = "Local DataStorage";
+			sourceTree = "<group>";
+		};
+		A2F63A2F1F1D372A002C4CC9 /* Server Communication */ = {
+			isa = PBXGroup;
+			children = (
+				A2F63A301F1D372A002C4CC9 /* ServerCommunicationExerciseController.h */,
+				A2F63A311F1D372A002C4CC9 /* ServerCommunicationExerciseController.m */,
+				A2F63A321F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib */,
+				A2F63A331F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPad.xib */,
+				A2F63A341F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib */,
+			);
+			path = "Server Communication";
+			sourceTree = "<group>";
+		};
+		A2F63A481F1D377B002C4CC9 /* SQL Injection */ = {
+			isa = PBXGroup;
+			children = (
+				A2F63A491F1D377B002C4CC9 /* articles.sqlite */,
+				A2F63A4A1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.h */,
+				A2F63A4B1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.m */,
+				A2F63A4C1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib */,
+				A2F63A4D1F1D377B002C4CC9 /* SQLInjectionExerciseController.h */,
+				A2F63A4E1F1D377B002C4CC9 /* SQLInjectionExerciseController.m */,
+				A2F63A4F1F1D377B002C4CC9 /* SQLInjectionExerciseController.xib */,
+				A2F63A501F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib */,
+				A2F63A511F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib */,
+			);
+			path = "SQL Injection";
+			sourceTree = "<group>";
+		};
+		A2F63A591F1D379F002C4CC9 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				A2F63A5A1F1D379F002C4CC9 /* about.html */,
+				A2F63A5B1F1D379F002C4CC9 /* KRvWAssociates.html */,
+				A2F63A5C1F1D379F002C4CC9 /* mansi.html */,
+				A2F63A5D1F1D379F002C4CC9 /* rutger.html */,
+				A2F63A5E1F1D379F002C4CC9 /* splash.html */,
+				A2F63A5F1F1D379F002C4CC9 /* Swaroop.html */,
+				A2F63A601F1D379F002C4CC9 /* Swaroop_anthony.html */,
+				A2F63A611F1D379F002C4CC9 /* Swaroop_Junard.html */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		A2F63A6A1F1D386F002C4CC9 /* Exercise Base */ = {
+			isa = PBXGroup;
+			children = (
+				A2F63A6B1F1D386F002C4CC9 /* Exercise.h */,
+				A2F63A6C1F1D386F002C4CC9 /* Exercise.m */,
+				A2F63A6D1F1D386F002C4CC9 /* ExerciseContainerViewController.h */,
+				A2F63A6E1F1D386F002C4CC9 /* ExerciseContainerViewController.m */,
+				A2F63A6F1F1D386F002C4CC9 /* ExerciseIntroViewController.h */,
+				A2F63A701F1D386F002C4CC9 /* ExerciseIntroViewController.m */,
+				A2F63A711F1D386F002C4CC9 /* ExerciseIntroViewController.xib */,
+				A2F63A721F1D386F002C4CC9 /* ExercisesViewController.h */,
+				A2F63A731F1D386F002C4CC9 /* ExercisesViewController.m */,
+				A2F63A741F1D386F002C4CC9 /* ExercisesViewController.xib */,
+				A2F63A751F1D386F002C4CC9 /* ExerciseViewController.h */,
+				A2F63A761F1D386F002C4CC9 /* ExerciseViewController.m */,
+			);
+			path = "Exercise Base";
+			sourceTree = "<group>";
+		};
+		A2F63A7E1F1D3890002C4CC9 /* AssetStore */ = {
+			isa = PBXGroup;
+			children = (
+				A2F63A7F1F1D3890002C4CC9 /* Asset.h */,
+				A2F63A801F1D3890002C4CC9 /* Asset.m */,
+				A2F63A811F1D3890002C4CC9 /* AssetStore.h */,
+				A2F63A821F1D3890002C4CC9 /* AssetStore.m */,
+				A2F63A831F1D3890002C4CC9 /* Category.h */,
+				A2F63A841F1D3890002C4CC9 /* Category.m */,
+			);
+			path = AssetStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1759,78 +1826,91 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143D7A2F16DD006D001AE794 /* articles.sqlite in Resources */,
-				A29FF9411EDDE4480047E340 /* RandomKeyGenerationExerciseViewController.xib in Resources */,
+				A2F63A541F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib in Resources */,
 				141E2FC816C3D49900586528 /* InfoPlist.strings in Resources */,
+				A2F63A581F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib in Resources */,
+				A2F63A7A1F1D386F002C4CC9 /* ExerciseIntroViewController.xib in Resources */,
 				141E2FD016C3D49900586528 /* Default.png in Resources */,
+				A2F63A2D1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPad.xib in Resources */,
+				A2F63A101F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPhone.xib in Resources */,
+				A2F639DA1F1D3636002C4CC9 /* StringAnalysisExerciseController_iPhone.xib in Resources */,
+				A2F63A671F1D379F002C4CC9 /* Swaroop.html in Resources */,
+				A2F6397A1F1D34E7002C4CC9 /* InfoViewController.xib in Resources */,
+				A2F63A1A1F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib in Resources */,
+				A2F63A7C1F1D386F002C4CC9 /* ExercisesViewController.xib in Resources */,
 				141E2FD216C3D49900586528 /* Default@2x.png in Resources */,
-				BCFB4AE419BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */,
-				4F253A2A1ECEDAA80070D22E /* CoreDataExerciseViewController_iPhone.xib in Resources */,
+				A2F639C11F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPad.xib in Resources */,
+				A2F63A681F1D379F002C4CC9 /* Swaroop_anthony.html in Resources */,
 				141E2FD416C3D49900586528 /* Default-568h@2x.png in Resources */,
+				A2F63A621F1D379F002C4CC9 /* about.html in Resources */,
 				A2D78F8C1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib in Resources */,
 				141E2FD716C3D49900586528 /* MainStoryboard_iPhone.storyboard in Resources */,
-				BCF7AD5919D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPhone.xib in Resources */,
 				141E2FDA16C3D49900586528 /* MainStoryboard_iPad.storyboard in Resources */,
-				4F0D66661EB44EA000AC8FDF /* Credentials.plist in Resources */,
+				A2F63A181F1D36EF002C4CC9 /* KeychainExerciseViewController.xib in Resources */,
 				A2E1E2121F052820003B363A /* CyrptoChallengeVC.xib in Resources */,
+				A2F639D11F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPad.xib in Resources */,
 				1462775F16C56431007FE838 /* Assets.plist in Resources */,
-				1462776716C56447007FE838 /* rutger.html in Resources */,
+				A2F63A571F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib in Resources */,
+				A2F639D21F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPhone.xib in Resources */,
 				1462776916C56447007FE838 /* igoat.css in Resources */,
+				A2F63A691F1D379F002C4CC9 /* Swaroop_Junard.html in Resources */,
 				A2CBC9A31EEACDF00032CF0B /* Images.xcassets in Resources */,
-				1462776A16C56447007FE838 /* about.html in Resources */,
-				BCA6D1CD19DA15A600002CA0 /* StringAnalysisExerciseController_iPhone.xib in Resources */,
 				A29FFD811EDEE3080047E340 /* YAPExcersizeViewController.xib in Resources */,
-				4F0D66621EB4458200AC8FDF /* PlistStorageExerciseViewController_iPhone.xib in Resources */,
+				A2F63A041F1D36CF002C4CC9 /* BackgroundingExerciseController.xib in Resources */,
 				A29FFD981EDEE5720047E340 /* CouchBaseExerciseViewController.xib in Resources */,
-				1462776B16C56447007FE838 /* splash.html in Resources */,
-				1462776C16C56447007FE838 /* KRvWAssociates.html in Resources */,
-				1462776F16C5645F007FE838 /* mansi.html in Resources */,
+				A2F63A651F1D379F002C4CC9 /* rutger.html in Resources */,
+				A2F63A0E1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib in Resources */,
+				A2F639D91F1D3636002C4CC9 /* StringAnalysisExerciseController_iPad.xib in Resources */,
+				A2F639E21F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPhone.xib in Resources */,
+				A2F639F11F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */,
+				A2F63A2E1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPhone.xib in Resources */,
+				A2F63A371F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPad.xib in Resources */,
+				A2F63A241F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPhone.xib in Resources */,
+				A2F639B71F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPad.xib in Resources */,
+				A2F639FB1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */,
 				1462777C16C5653E007FE838 /* Icon.png in Resources */,
 				BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */,
+				A2F63A361F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib in Resources */,
+				A2F63A051F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib in Resources */,
+				A2F639F21F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */,
 				1462777E16C56546007FE838 /* Icon@2x.png in Resources */,
-				4F7316721EE3D61E0095FCDA /* Swaroop_anthony.html in Resources */,
-				4F9C77091EA6649300710C1F /* DeviceLogsExerciseViewController_iPad.xib in Resources */,
-				1475029916D4DF6F009C2432 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */,
+				A2F63A521F1D377B002C4CC9 /* articles.sqlite in Resources */,
+				A2F63A231F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */,
+				A2F63A061F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib in Resources */,
+				A2F6397D1F1D34E7002C4CC9 /* RootViewController.xib in Resources */,
+				A2F639A41F1D3518002C4CC9 /* CoreDataExerciseViewController_iPhone.xib in Resources */,
 				A2E1E2141F052B95003B363A /* iphone.png in Resources */,
-				4F9C770A1EA6649300710C1F /* DeviceLogsExerciseViewController_iPhone.xib in Resources */,
-				4FE1C67B1F02E15F00F40320 /* Swaroop_Junard.html in Resources */,
-				1472EAA616D66FA300AD63D1 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */,
-				4F0777CF1EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
-				1472EAA816D6888C00AD63D1 /* BackgroundingExerciseController_iPhone.xib in Resources */,
-				1472EAAB16D68B6C00AD63D1 /* BackgroundingExerciseController_iPad.xib in Resources */,
-				BCFB4AE319BE43EA00CB15F2 /* PublicKeyPinningExerciseController_iPad.xib in Resources */,
-				1472EAAD16D695D800AD63D1 /* CutAndPasteExerciseController_iPhone.xib in Resources */,
+				A2F639E11F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPad.xib in Resources */,
+				A2F63A381F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib in Resources */,
+				A2F639CA1F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */,
 				82B7ED881F1391C300C90736 /* PersonalPhotoStorageVC.xib in Resources */,
+				A2F63A2C1F1D371B002C4CC9 /* LocalDataStorageExerciseController.xib in Resources */,
 				A2D78F9A1EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.xib in Resources */,
-				1472EAB416D7969100AD63D1 /* KeychainExerciseViewController_iPhone.xib in Resources */,
-				1472EABA16D7A81C00AD63D1 /* KeystrokeLoggingExerciseController_iPhone.xib in Resources */,
+				A2F639E91F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPad.xib in Resources */,
 				A2CBC9971EE978300032CF0B /* SocialEngineeringVC.xib in Resources */,
+				A2F63A661F1D379F002C4CC9 /* splash.html in Resources */,
+				A2F63A561F1D377B002C4CC9 /* SQLInjectionExerciseController.xib in Resources */,
 				A29FFD8A1EDEE3130047E340 /* RealmExerciseViewController.xib in Resources */,
 				82B7ED8D1F13959900C90736 /* PhotoViewerVC.xib in Resources */,
-				1472EABD16D7AB6700AD63D1 /* CutAndPasteExerciseController_iPad.xib in Resources */,
-				1472EABF16D7ACAE00AD63D1 /* KeychainExerciseViewController_iPad.xib in Resources */,
-				1472EAC116D7AEC000AD63D1 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */,
-				4F0D66751EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */,
-				1472EAC416D7B25600AD63D1 /* LocalDataStorageExerciseController_iPhone.xib in Resources */,
+				A2F639A31F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib in Resources */,
+				A2F63A0F1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib in Resources */,
+				A2F639BF1F1D3606002C4CC9 /* Credentials.plist in Resources */,
+				A2F639C91F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
 				82BDD97F1F00271F001DACAD /* BruteForceRuntimeVC.xib in Resources */,
-				4F0777D01EA8C4B60089AA18 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */,
-				14CFECDA16D7BD5900B6E6E7 /* LocalDataStorageExerciseController_iPad.xib in Resources */,
-				4F253A0B1ECE007D0070D22E /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */,
-				14CFECEE16D7C5A700B6E6E7 /* ServerCommunicationExerciseController_iPhone.xib in Resources */,
-				14CFECF016D7C6FF00B6E6E7 /* ServerCommunicationExerciseController_iPad.xib in Resources */,
-				4F253A291ECEDAA80070D22E /* CoreDataExerciseViewController_iPad.xib in Resources */,
-				14CFECF216D7CA3B00B6E6E7 /* SQLInjectionExerciseController_iPhone.xib in Resources */,
-				4F0D66761EB4DFD600AC8FDF /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */,
-				14CFECF616D7CC1400B6E6E7 /* SQLInjectionExerciseController_iPad.xib in Resources */,
-				143D7A3016DD0078001AE794 /* SQLInjectionArticlesViewController.xib in Resources */,
-				BCF7AD5819D0C2A8007ED80A /* MethodSwizzlingExerciseController_iPad.xib in Resources */,
-				4F93AF9B1EBB00C800361C70 /* BrokenCryptographyExerciseViewController_iPad.xib in Resources */,
-				4F0D66641EB4458A00AC8FDF /* PlistStorageExerciseViewController_iPad.xib in Resources */,
+				A2F639771F1D34E7002C4CC9 /* HintsViewController.xib in Resources */,
+				A2F639EA1F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */,
+				A2F639FA1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib in Resources */,
+				A2F639B81F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */,
+				A2F63A191F1D36EF002C4CC9 /* KeychainExerciseViewController_iPad.xib in Resources */,
+				A2F63A631F1D379F002C4CC9 /* KRvWAssociates.html in Resources */,
 				4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */,
-				4F0777D21EA8CD940089AA18 /* Swaroop.html in Resources */,
+				A2F63A641F1D379F002C4CC9 /* mansi.html in Resources */,
+				A2F639FC1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */,
+				A2F63A221F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib in Resources */,
+				A2F639B01F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.xib in Resources */,
 				A29FFD281EDEE2FB0047E340 /* README.txt in Resources */,
+				A2F639C21F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPhone.xib in Resources */,
 				A2CBC99D1EE983E90032CF0B /* WeakServerSideControlsVC.xib in Resources */,
-				BCA6D1C919DA14FF00002CA0 /* StringAnalysisExerciseController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1842,76 +1922,85 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */,
-				4F253A3F1ECF1CCA0070D22E /* User+CoreDataProperties.m in Sources */,
-				14CFECF316D7CAD200B6E6E7 /* SQLInjectionExerciseController.m in Sources */,
+				A2F6397E1F1D34E7002C4CC9 /* RotationLimitingNavigationViewController.m in Sources */,
+				A2F63A551F1D377B002C4CC9 /* SQLInjectionExerciseController.m in Sources */,
+				A2F639931F1D34FB002C4CC9 /* NSString+SBJSON.m in Sources */,
 				A29FFD5C1EDEE2FB0047E340 /* YapDatabaseViewPageMetadata.m in Sources */,
 				A29FFD701EDEE2FB0047E340 /* YapTouch.m in Sources */,
+				A2F63A171F1D36EF002C4CC9 /* KeychainExerciseViewController.m in Sources */,
 				A29FFD571EDEE2FB0047E340 /* YapDatabaseSecondaryIndexHandler.m in Sources */,
 				4FE1C65B1EF9321200F40320 /* maxpower.c in Sources */,
+				A2F639D81F1D3636002C4CC9 /* StringAnalysisExerciseController.m in Sources */,
 				A29FFD221EDEE2FB0047E340 /* DDFileLogger.m in Sources */,
+				A2F63A211F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m in Sources */,
 				A29FFD7B1EDEE2FB0047E340 /* YapDatabaseTransaction.m in Sources */,
+				A2F63A031F1D36CF002C4CC9 /* BackgroundingExerciseController.m in Sources */,
 				A29FFD6E1EDEE2FB0047E340 /* YapNull.m in Sources */,
 				A29FFD311EDEE2FB0047E340 /* YDBCKMappingTableInfo.m in Sources */,
-				14CFECF416D7CAD200B6E6E7 /* SQLInjectionArticlesViewController.m in Sources */,
-				BCF7AD5A19D0C2A8007ED80A /* MethodSwizzlingExerciseController.m in Sources */,
 				A29FFD4F1EDEE2FB0047E340 /* YapDatabaseRelationshipTransaction.m in Sources */,
 				A29FFD971EDEE5720047E340 /* CouchBaseExerciseViewController.m in Sources */,
 				A29FFD261EDEE2FB0047E340 /* DDDispatchQueueLogFormatter.m in Sources */,
 				A29FFD881EDEE3130047E340 /* RCreditInfo.m in Sources */,
-				14CFECDB16D7C27100B6E6E7 /* ServerCommunicationExerciseController.m in Sources */,
+				A2F63A2B1F1D371B002C4CC9 /* LocalDataStorageExerciseController.m in Sources */,
+				A2F639921F1D34FB002C4CC9 /* NSObject+SBJSON.m in Sources */,
 				A29FFD801EDEE3080047E340 /* YAPExcersizeViewController.m in Sources */,
 				A29FFD6A1EDEE2FB0047E340 /* YapDatabaseManager.m in Sources */,
+				A2F639A51F1D3518002C4CC9 /* User+CoreDataClass.m in Sources */,
 				A29FFD691EDEE2FB0047E340 /* YapDatabaseLogging.m in Sources */,
 				A29FFD721EDEE2FB0047E340 /* YapCache.m in Sources */,
+				A2F63A791F1D386F002C4CC9 /* ExerciseIntroViewController.m in Sources */,
 				A29FFD791EDEE2FB0047E340 /* YapDatabaseConnection.m in Sources */,
-				4F253A3E1ECF1CCA0070D22E /* User+CoreDataClass.m in Sources */,
 				A29FFD421EDEE2FB0047E340 /* YapDatabaseFullTextSearchHandler.m in Sources */,
 				A29FFD5A1EDEE2FB0047E340 /* YapDatabaseSecondaryIndexTransaction.m in Sources */,
+				A2F639911F1D34FB002C4CC9 /* NSData+AESEncryption.m in Sources */,
 				A29FFD211EDEE2FB0047E340 /* DDASLLogger.m in Sources */,
-				1472EAC216D7B23600AD63D1 /* LocalDataStorageExerciseController.m in Sources */,
+				A2F639E81F1D3663002C4CC9 /* PublicKeyPinningExerciseController.m in Sources */,
+				A2F639941F1D34FB002C4CC9 /* NSURL+Parameters.m in Sources */,
 				A29FFD4D1EDEE2FB0047E340 /* YapDatabaseRelationshipEdge.m in Sources */,
-				BCA6D1CB19DA14FF00002CA0 /* StringAnalysisExerciseController.m in Sources */,
+				A2F639AA1F1D3541002C4CC9 /* Model.xcdatamodel in Sources */,
+				A2F639E01F1D3645002C4CC9 /* MethodSwizzlingExerciseController.m in Sources */,
 				A29FFD761EDEE2FB0047E340 /* YapSet.m in Sources */,
 				82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */,
 				A29FFD6D1EDEE2FB0047E340 /* YapMemoryTable.m in Sources */,
-				1472EABB16D7AA4800AD63D1 /* KeystrokeLoggingExerciseController.m in Sources */,
+				A2F639791F1D34E7002C4CC9 /* InfoViewController.m in Sources */,
 				A29FFD3E1EDEE2FB0047E340 /* YapDatabaseFilteredViewTransaction.m in Sources */,
+				A2F639781F1D34E7002C4CC9 /* HtmlViewController.m in Sources */,
 				A29FFD661EDEE2FB0047E340 /* NSDictionary+YapDatabase.m in Sources */,
 				A29FFD2D1EDEE2FB0047E340 /* UIAlertController+EasyBlock.m in Sources */,
 				A29FFD371EDEE2FB0047E340 /* YapDatabaseCloudKit.m in Sources */,
-				1472EAB216D790B700AD63D1 /* KeychainExerciseViewController.m in Sources */,
 				A29FFD391EDEE2FB0047E340 /* YapDatabaseCloudKitOptions.m in Sources */,
 				A29FFD411EDEE2FB0047E340 /* YapDatabaseFullTextSearchConnection.m in Sources */,
 				A29FFD891EDEE3130047E340 /* RealmExerciseViewController.m in Sources */,
 				A29FFD231EDEE2FB0047E340 /* DDLog.m in Sources */,
 				A29FFD461EDEE2FB0047E340 /* YapDatabaseHooksConnection.m in Sources */,
-				1472EAAE16D695E400AD63D1 /* CutAndPasteExerciseController.m in Sources */,
 				A29FFD4C1EDEE2FB0047E340 /* YapDatabaseRelationshipConnection.m in Sources */,
 				A29FFD441EDEE2FB0047E340 /* YapDatabaseFullTextSearchTransaction.m in Sources */,
-				1472EAA916D6891B00AD63D1 /* BackgroundingExerciseController.m in Sources */,
 				A29FFD671EDEE2FB0047E340 /* YapDatabaseConnectionDefaults.m in Sources */,
 				A29FFD431EDEE2FB0047E340 /* YapDatabaseFullTextSearchSnippetOptions.m in Sources */,
 				A29FFD3D1EDEE2FB0047E340 /* YapDatabaseFilteredViewConnection.m in Sources */,
 				A29FFD341EDEE2FB0047E340 /* YDBCKMergeInfo.m in Sources */,
+				A2F639A61F1D3518002C4CC9 /* User+CoreDataProperties.m in Sources */,
 				A29FFD4B1EDEE2FB0047E340 /* YapDatabaseRelationship.m in Sources */,
 				A29FFD611EDEE2FB0047E340 /* YapDatabaseView.m in Sources */,
 				A29FFD551EDEE2FB0047E340 /* YapDatabaseSecondaryIndex.m in Sources */,
 				A29FFD731EDEE2FB0047E340 /* YapCollectionKey.m in Sources */,
+				A2F639971F1D34FB002C4CC9 /* SBJsonWriter.m in Sources */,
+				A2F6397B1F1D34E7002C4CC9 /* MasterViewController.m in Sources */,
 				A2D78F8B1EE5760400C815A8 /* BinaryCookiesExerciseViewController.m in Sources */,
-				146277C616C9662D007FE838 /* HtmlViewController.m in Sources */,
-				4F0D66721EB4DF7900AC8FDF /* NSUserDefaultsStorageExerciseViewController.m in Sources */,
+				A2F63A771F1D386F002C4CC9 /* Exercise.m in Sources */,
+				A2F639A21F1D3518002C4CC9 /* CoreDataExerciseViewController.m in Sources */,
+				A2F639C81F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController.m in Sources */,
 				A29FFD651EDEE2FB0047E340 /* YapDatabaseViewTypes.m in Sources */,
 				A29FFD1F1EDEE2FB0047E340 /* DDAbstractDatabaseLogger.m in Sources */,
-				146277C816C9662D007FE838 /* HintsViewController.m in Sources */,
+				A2F639AF1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.m in Sources */,
 				A29FFD271EDEE2FB0047E340 /* DDMultiFormatter.m in Sources */,
 				A29FFD591EDEE2FB0047E340 /* YapDatabaseSecondaryIndexSetup.m in Sources */,
 				A29FFD531EDEE2FB0047E340 /* YapDatabaseSearchResultsViewOptions.m in Sources */,
 				A29FFD631EDEE2FB0047E340 /* YapDatabaseViewOptions.m in Sources */,
 				A29FFD241EDEE2FB0047E340 /* DDTTYLogger.m in Sources */,
-				4F253A261ECEDA000070D22E /* CoreDataExerciseViewController.m in Sources */,
-				146277BE16C96440007FE838 /* ExerciseViewController.m in Sources */,
-				146277B916C962E6007FE838 /* RemoteAuthenticationExerciseController.m in Sources */,
 				A29FFD401EDEE2FB0047E340 /* YapDatabaseFullTextSearch.m in Sources */,
+				A2F63A851F1D3890002C4CC9 /* Asset.m in Sources */,
+				A2F639F01F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController.m in Sources */,
 				141E2FCA16C3D49900586528 /* main.m in Sources */,
 				141E2FCE16C3D49900586528 /* AppDelegate.m in Sources */,
 				A29FFD321EDEE2FB0047E340 /* YDBCKRecordTableInfo.m in Sources */,
@@ -1925,67 +2014,62 @@
 				A29FFD501EDEE2FB0047E340 /* YapDatabaseSearchQueue.m in Sources */,
 				A29FFD751EDEE2FB0047E340 /* YapMurmurHash.m in Sources */,
 				A29FFD361EDEE2FB0047E340 /* YDBCKRecordInfo.m in Sources */,
-				141E2FDD16C3D49900586528 /* MasterViewController.m in Sources */,
 				A29FFD331EDEE2FB0047E340 /* YDBCKChangeSet.m in Sources */,
+				A2F639761F1D34E7002C4CC9 /* HintsViewController.m in Sources */,
+				A2F639D01F1D3625002C4CC9 /* DeviceLogsExerciseViewController.m in Sources */,
 				A29FFD4A1EDEE2FB0047E340 /* YapDatabaseExtensionTransaction.m in Sources */,
-				4F253A1C1ECE07CF0070D22E /* Model.xcdatamodel in Sources */,
-				4F0777CC1EA8C4410089AA18 /* CrossSiteScriptingExerciseViewController.m in Sources */,
+				A2F63A7B1F1D386F002C4CC9 /* ExercisesViewController.m in Sources */,
+				A2F63A351F1D372A002C4CC9 /* ServerCommunicationExerciseController.m in Sources */,
 				A29FFD471EDEE2FB0047E340 /* YapDatabaseHooksTransaction.m in Sources */,
-				BCFB4AE519BE43EA00CB15F2 /* PublicKeyPinningExerciseController.m in Sources */,
-				141E2FE016C3D49900586528 /* DetailViewController.m in Sources */,
 				A29FFD5B1EDEE2FB0047E340 /* YapDatabaseViewPage.mm in Sources */,
-				146277B416C95FAB007FE838 /* Asset.m in Sources */,
-				4F93AF9F1EBB4EFC00361C70 /* NSData+AESEncryption.m in Sources */,
+				A2F639951F1D34FB002C4CC9 /* SBJsonBase.m in Sources */,
 				A29FFD771EDEE2FB0047E340 /* YapWhitelistBlacklist.m in Sources */,
-				146277B516C95FAB007FE838 /* AssetStore.m in Sources */,
 				A29FFD6F1EDEE2FB0047E340 /* YapRowidSet.mm in Sources */,
-				146277B616C95FAB007FE838 /* Category.m in Sources */,
 				A29FFD491EDEE2FB0047E340 /* YapDatabaseExtensionConnection.m in Sources */,
 				A29FFD511EDEE2FB0047E340 /* YapDatabaseSearchResultsView.m in Sources */,
-				146277B716C95FAB007FE838 /* Exercise.m in Sources */,
-				A2D78F9E1EE6D9C200C815A8 /* NSURL+Parameters.m in Sources */,
-				146277CC16CA5496007FE838 /* ExercisesViewController.m in Sources */,
 				A29FFD5E1EDEE2FB0047E340 /* YapDatabaseViewChange.m in Sources */,
 				A2CBC99C1EE983E90032CF0B /* WeakServerSideControlsVC.m in Sources */,
-				1475029C16D4E2CE009C2432 /* ExerciseContainerViewController.m in Sources */,
 				A29FFD3C1EDEE2FB0047E340 /* YapDatabaseFilteredView.m in Sources */,
-				1472EAB116D7863F00AD63D1 /* RotationLimitingNavigationViewController.m in Sources */,
 				A29FFD621EDEE2FB0047E340 /* YapDatabaseViewConnection.m in Sources */,
-				14CFECE816D7C46400B6E6E7 /* NSObject+SBJSON.m in Sources */,
-				14CFECE916D7C46400B6E6E7 /* NSString+SBJSON.m in Sources */,
 				A29FFD1E1EDEE2FB0047E340 /* CLIColor.m in Sources */,
 				A29FFD741EDEE2FB0047E340 /* YapDatabaseQuery.m in Sources */,
 				A29FFD3A1EDEE2FB0047E340 /* YapDatabaseCloudKitTransaction.m in Sources */,
+				A2F63A0D1F1D36DF002C4CC9 /* CutAndPasteExerciseController.m in Sources */,
 				A29FFD781EDEE2FB0047E340 /* YapDatabase.m in Sources */,
-				14CFECEA16D7C46400B6E6E7 /* SBJsonBase.m in Sources */,
 				A29FFD3B1EDEE2FB0047E340 /* YapDatabaseCloudKitTypes.m in Sources */,
 				A29FFD481EDEE2FB0047E340 /* YapDatabaseExtension.m in Sources */,
-				4F9C77061EA663ED00710C1F /* DeviceLogsExerciseViewController.m in Sources */,
 				A29FFD201EDEE2FB0047E340 /* DDASLLogCapture.m in Sources */,
-				14CFECEB16D7C46400B6E6E7 /* SBJsonParser.m in Sources */,
 				A2CBC9961EE978300032CF0B /* SocialEngineeringVC.m in Sources */,
-				4F93AF981EBB006D00361C70 /* BrokenCryptographyExerciseViewController.m in Sources */,
+				A2F6397C1F1D34E7002C4CC9 /* RootViewController.m in Sources */,
 				A29FFD7A1EDEE2FB0047E340 /* YapDatabaseOptions.m in Sources */,
+				A2F639751F1D34E7002C4CC9 /* DetailViewController.m in Sources */,
 				A29FFD601EDEE2FB0047E340 /* YapDatabaseViewRangeOptions.m in Sources */,
 				A29FFD6B1EDEE2FB0047E340 /* YapDatabaseStatement.m in Sources */,
-				14CFECEC16D7C46400B6E6E7 /* SBJsonWriter.m in Sources */,
+				A2F63A871F1D3890002C4CC9 /* Category.m in Sources */,
 				A29FFD541EDEE2FB0047E340 /* YapDatabaseSearchResultsViewTransaction.m in Sources */,
+				A2F63A7D1F1D386F002C4CC9 /* ExerciseViewController.m in Sources */,
 				82B7ED8C1F13959900C90736 /* PhotoViewerVC.m in Sources */,
 				A29FFD451EDEE2FB0047E340 /* YapDatabaseHooks.m in Sources */,
 				A29FFD4E1EDEE2FB0047E340 /* YapDatabaseRelationshipOptions.m in Sources */,
 				A29FFD301EDEE2FB0047E340 /* YDBCKChangeRecord.m in Sources */,
 				A29FFD351EDEE2FB0047E340 /* YDBCKRecord.m in Sources */,
+				A2F63A531F1D377B002C4CC9 /* SQLInjectionArticlesViewController.m in Sources */,
+				A2F63A861F1D3890002C4CC9 /* AssetStore.m in Sources */,
 				A29FFD641EDEE2FB0047E340 /* YapDatabaseViewTransaction.m in Sources */,
 				A2E1E2111F052820003B363A /* CyrptoChallengeVC.m in Sources */,
 				A2D78F991EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m in Sources */,
 				A29FFD581EDEE2FB0047E340 /* YapDatabaseSecondaryIndexOptions.m in Sources */,
+				A2F63A781F1D386F002C4CC9 /* ExerciseContainerViewController.m in Sources */,
+				A2F639981F1D34FB002C4CC9 /* Utils.m in Sources */,
+				A2F639F91F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m in Sources */,
 				A29FFD2F1EDEE2FB0047E340 /* YDBCKChangeQueue.m in Sources */,
-				4F0D66601EB444EB00AC8FDF /* PlistStorageExerciseViewController.m in Sources */,
+				A2F639C01F1D3606002C4CC9 /* PlistStorageExerciseViewController.m in Sources */,
+				A2F639961F1D34FB002C4CC9 /* SBJsonParser.m in Sources */,
 				A29FFD381EDEE2FB0047E340 /* YapDatabaseCloudKitConnection.m in Sources */,
 				A29FFD6C1EDEE2FB0047E340 /* YapDebugDictionary.m in Sources */,
 				A29FFD5F1EDEE2FB0047E340 /* YapDatabaseViewMappings.m in Sources */,
-				4F253A021ECDF8710070D22E /* RandomKeyGenerationExerciseViewController.m in Sources */,
 				A29FFD3F1EDEE2FB0047E340 /* YapDatabaseFilteredViewTypes.m in Sources */,
+				A2F639B61F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2126,7 +2210,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(BUILT_PRODUCTS_DIR)/libsqlcipher.a",
@@ -2155,7 +2239,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
