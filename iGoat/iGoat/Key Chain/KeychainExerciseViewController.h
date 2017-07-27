@@ -14,9 +14,12 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
-@property (weak, nonatomic) IBOutlet UISwitch *rememberMe;
+@property (weak, nonatomic) IBOutlet UISwitch *switch_userDefault;
+@property (weak, nonatomic) IBOutlet UISwitch *switch_keychain;
 
 - (IBAction)storeButtonPressed:(id)sender;
+- (IBAction)userDefaultSwitchDidClick:(UISwitch *)sender;
+- (IBAction)keychainSwitchDidClick:(UISwitch *)sender;
 
 @end
 

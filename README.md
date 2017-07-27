@@ -67,11 +67,12 @@ To contribute to iGoat project, please contact __Swaroop__ ( swaroop.yermalkar@o
 
 ### Project Contributors - ###
 * Anthony Gonsalves
+* Junard Lebajan (@junard)
 * Ken van Wyk
 * Jonathan Carter
 * Bernhard Mueller
 * Sagar Popat
-* Junard Lebajan (@junard)
+* Chandrakant Nial 
 * masbog
 * Cheena Kathpal
 * Matt Tesauro
