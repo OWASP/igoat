@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     // Do any additional setup after loading the view.
     // self.currentVC = self.childViewControllers.lastObject;
 }
@@ -38,43 +38,55 @@
     // Instantiate the associated view controller.
     NSString *initialControllerName = newExercise.initialViewController;
     NSString *nibName;
-    
+
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         nibName = [NSString stringWithFormat:@"%@_iPad", initialControllerName];
     } else {
         nibName = [NSString stringWithFormat:@"%@_iPhone", initialControllerName];
     }
-    
+
     NSString *path = [[NSBundle mainBundle]pathForResource:initialControllerName ofType:@".nib"];
     if (path) {
-        nibName = initialControllerName;
+        // LiTian(heefan(AT)gmail >> Add. 27Jul2017
+        // description:
+        //          when type "Start" in Keychain Usage Page, iGoat crashes.
+        // root cause:
+        //          Application goes to UI KeychainExerciseViewController.xib which have issue on "UserName"
+        // solution:
+        //          For "Keychain Usage Page" prefer use KeychainExerciseViewController_iPhone.xib
+        //          or KeychainExerciseViewController_iPad.xib
+//            nibName = initialControllerName;
+        // << End
+
+        if (![nibName isEqualToString:@"KeychainExerciseViewController_iPhone"]
+            && ![nibName isEqualToString:@"KeychainExerciseViewController_iPad"])
+        {
+            nibName = initialControllerName;
+        }
     }
-    
+
     ExerciseViewController *newController = [[NSClassFromString(initialControllerName) alloc] initWithNibName:nibName bundle:nil exercise:newExercise];
-    
-    
+
     if (newController) {
         // Disable the "Hints" button if there aren't any.
         if (newExercise.totalHints <= 0) self.hintsButton.enabled = NO;
-        
+
         // Switch to the new view controller/exercise.
         _exercise = newExercise;
         [self switchToViewController:newController];
-        
+
     } else {
-        
+
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Snap!"
                                                                        message:@"TError loading view controller."
                                                                 preferredStyle:UIAlertControllerStyleAlert];
-        
+
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
                                                               handler:^(UIAlertAction * action) {}];
-        
+
         [alert addAction:defaultAction];
         [self presentViewController:alert animated:YES completion:nil];
 
-        
-        
     }
 }
 
@@ -94,7 +106,7 @@
                                     self.currentVC = newController;
                                 }
          ];
-        
+
     } else {
         [self addChildViewController:newController];
         [self.view addSubview:newController.view];
@@ -105,7 +117,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSString *identifier = [segue identifier];
-    
+
     if ([identifier isEqualToString:@"showHints"]) {
         HintsViewController *controller = [segue destinationViewController];
         controller.exercise = self.exercise;
@@ -128,7 +140,6 @@
         return UIInterfaceOrientationMaskPortrait;
     }
 }
-
 
 @end
 
