@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeychainAnalyzerViewController">
             <connections>
+                <outlet property="textView" destination="abU-MX-y9Y" id="lH7-Xe-vXU"/>
                 <outlet property="view" destination="qkF-qr-l6U" id="qCK-pC-Rri"/>
             </connections>
         </placeholder>
@@ -26,10 +27,16 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE8-ME-lwm">
                             <rect key="frame" x="40" y="8" width="57" height="30"/>
                             <state key="normal" title="Analysis"/>
+                            <connections>
+                                <action selector="analysisButtonClicked:" destination="-1" eventType="touchUpInside" id="0rv-tD-Mmm"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zw-6H-DSi">
                             <rect key="frame" x="241" y="8" width="39" height="30"/>
                             <state key="normal" title="Clean"/>
+                            <connections>
+                                <action selector="cleanButtonClicked:" destination="-1" eventType="touchUpInside" id="QEx-pK-RxN"/>
+                            </connections>
                         </button>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The ouput of keychain " translatesAutoresizingMaskIntoConstraints="NO" id="abU-MX-y9Y">
                             <rect key="frame" x="0.0" y="37" width="320" height="369"/>

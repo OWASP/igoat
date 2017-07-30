@@ -11,5 +11,8 @@
 
 
 @interface KeychainAnalyzerViewController : ExerciseViewController
+- (IBAction)analysisButtonClicked:(id)sender;
+- (IBAction)cleanButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end

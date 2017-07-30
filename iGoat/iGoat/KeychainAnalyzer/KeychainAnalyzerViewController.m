@@ -7,32 +7,40 @@
 //
 
 #import "KeychainAnalyzerViewController.h"
+#import "KeychainDumper.h"
 
 @interface KeychainAnalyzerViewController ()
-
+{
+    KeychainDumper * _keychainDumper;
+}
 @end
 
 @implementation KeychainAnalyzerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"../../../../../Library/Keychains/keychain-2-debug.db"];
     
-    // Do any additional setup after loading the view from its nib.
+    BOOL isOk = [[NSFileManager defaultManager] fileExistsAtPath:sourcePath];
+    if (isOk) {
+        _textView.text = sourcePath;
+        
+        _keychainDumper = [[KeychainDumper alloc] initWithSimulator:sourcePath];
+    } else {
+        _textView.text = @"Keychain file not exist";
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)analysisButtonClicked:(id)sender
+{
+    [_keychainDumper dumpKeychainEntitlements];
 }
-*/
 
+- (IBAction)cleanButtonClicked:(id)sender {
+}
 @end
