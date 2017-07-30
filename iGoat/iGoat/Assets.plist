@@ -769,6 +769,26 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 			</dict>
 		</array>
 	</dict>
+	<key>iGoat Keychain Analyzer</key>
+	<dict>
+		<key>description</key>
+		<string>In this exercise, you&apos;re going to get keychain data.</string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>solution</key>
+				<string>To be added</string>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>initialViewController</key>
+				<string>KeychainAnalyzerViewController</string>
+				<key>name</key>
+				<string>iGoat Keychain Analyzer</string>
+				<key>description</key>
+				<string>To be added</string>
+			</dict>
+		</array>
+	</dict>
 	<key>Key Management</key>
 	<dict>
 		<key>description</key>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1C5AC51F2E248100815393 /* KeychainAnalyzerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1C5AC41F2E248100815393 /* KeychainAnalyzerViewController.xib */; };
+		0FCF48BD1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF48BB1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m */; };
 		141E2FBE16C3D49900586528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FBD16C3D49900586528 /* UIKit.framework */; };
 		141E2FC016C3D49900586528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FBF16C3D49900586528 /* Foundation.framework */; };
 		141E2FC216C3D49900586528 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FC116C3D49900586528 /* CoreGraphics.framework */; };
@@ -289,6 +291,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F1C5AC41F2E248100815393 /* KeychainAnalyzerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KeychainAnalyzerViewController.xib; path = KeychainAnalyzer/KeychainAnalyzerViewController.xib; sourceTree = "<group>"; };
+		0FCF48BA1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainAnalyzerViewController.h; path = KeychainAnalyzer/KeychainAnalyzerViewController.h; sourceTree = "<group>"; };
+		0FCF48BB1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainAnalyzerViewController.m; path = KeychainAnalyzer/KeychainAnalyzerViewController.m; sourceTree = "<group>"; };
 		141E2FBA16C3D49900586528 /* iGoat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGoat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		141E2FBD16C3D49900586528 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		141E2FBF16C3D49900586528 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -735,6 +740,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FCF48B91F2D6A850055ED1F /* iGoat Keychain Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				0FCF48BA1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.h */,
+				0FCF48BB1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m */,
+				0F1C5AC41F2E248100815393 /* KeychainAnalyzerViewController.xib */,
+			);
+			name = "iGoat Keychain Analyzer";
+			sourceTree = "<group>";
+		};
 		141E2FB116C3D49900586528 = {
 			isa = PBXGroup;
 			children = (
@@ -825,6 +840,7 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				0FCF48B91F2D6A850055ED1F /* iGoat Keychain Analyzer */,
 				A2E1E20D1F0527FC003B363A /* Cryto Challenge */,
 				4FE1C65E1EF9367000F40320 /* Runtime Analysis Challenge */,
 				A2CBC9981EE980880032CF0B /* WeakServerSideControls */,
@@ -1850,6 +1866,7 @@
 				A2E1E2121F052820003B363A /* CyrptoChallengeVC.xib in Resources */,
 				A2F639D11F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPad.xib in Resources */,
 				1462775F16C56431007FE838 /* Assets.plist in Resources */,
+				0F1C5AC51F2E248100815393 /* KeychainAnalyzerViewController.xib in Resources */,
 				A2F63A571F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib in Resources */,
 				A2F639D21F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPhone.xib in Resources */,
 				1462776916C56447007FE838 /* igoat.css in Resources */,
@@ -2035,6 +2052,7 @@
 				A29FFD741EDEE2FB0047E340 /* YapDatabaseQuery.m in Sources */,
 				A29FFD3A1EDEE2FB0047E340 /* YapDatabaseCloudKitTransaction.m in Sources */,
 				A2F63A0D1F1D36DF002C4CC9 /* CutAndPasteExerciseController.m in Sources */,
+				0FCF48BD1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m in Sources */,
 				A29FFD781EDEE2FB0047E340 /* YapDatabase.m in Sources */,
 				A29FFD3B1EDEE2FB0047E340 /* YapDatabaseCloudKitTypes.m in Sources */,
 				A29FFD481EDEE2FB0047E340 /* YapDatabaseExtension.m in Sources */,
