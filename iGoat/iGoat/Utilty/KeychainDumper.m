@@ -19,7 +19,6 @@
 
 @end
 
-
 @implementation KeychainDumper
 
 - (instancetype)initWithSimulator:(NSString *)path
@@ -32,74 +31,44 @@
 		[_arguments addObject:(id)kSecClassIdentity];
 	    [_arguments addObject:(id)kSecClassCertificate];
         [_arguments addObject:(id)kSecClassKey];
-        
+
         _keychainPath = path;
     }
- 
+
     return self;
-    
-}
-- (void)dumpKeychainEntitlements
-{
-    NSString *databasePath = _keychainPath;
-    const char *dbpath = [databasePath UTF8String];
-    sqlite3 *keychainDB;
-    sqlite3_stmt *statement;
-	NSMutableString *entitlementXML = [NSMutableString stringWithString:@"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-                                       "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n"
-                                       "<plist version=\"1.0\">\n"
-                                       "\t<dict>\n"
-                                       "\t\t<key>keychain-access-groups</key>\n"
-                                       "\t\t<array>\n"];
-	
-    if (sqlite3_open(dbpath, &keychainDB) == SQLITE_OK)
-    {
-        const char *query_stmt = "SELECT DISTINCT agrp FROM genp UNION SELECT DISTINCT agrp FROM inet";
-		
-        if (sqlite3_prepare_v2(keychainDB, query_stmt, -1, &statement, NULL) == SQLITE_OK)
-        {
-			while(sqlite3_step(statement) == SQLITE_ROW)
-            {            
-				NSString *group = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 0)];
-				
-                [entitlementXML appendFormat:@"\t\t\t<string>%@</string>\n", group];
-            }
-            sqlite3_finalize(statement);
-        }
-        else
-        {
-            NSLog(@"Unknown error querying keychain database\n");
-		}
-		[entitlementXML appendString:@"\t\t</array>\n"
-         "\t</dict>\n"
-         "</plist>\n"];
-		sqlite3_close(keychainDB);
-		NSLog(@"%@", entitlementXML);
-	}
-	else
-	{
-		NSLog(@"Unknown error opening keychain database\n");
-	}
+
 }
 
 - (NSArray *)getKeychainObjectsForSecClass:(CFTypeRef)kSecClassType
 {
 	NSMutableDictionary *genericQuery = [[NSMutableDictionary alloc] init];
-	
+
 	[genericQuery setObject:(__bridge id)kSecClassType forKey:(id)kSecClass];
 	[genericQuery setObject:(id)kSecMatchLimitAll forKey:(id)kSecMatchLimit];
 	[genericQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
 	[genericQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnRef];
 	[genericQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
-	
+
 	NSArray *keychainItems = nil;
-	if (SecItemCopyMatching((CFDictionaryRef)genericQuery, (void *)&keychainItems) != noErr)
-	{
+
+    OSStatus ret = SecItemCopyMatching((CFDictionaryRef)genericQuery, (CFTypeRef *)&keychainItems);
+
+    switch (ret) {
+        case errSecSuccess:
+            NSLog(@"");
+            break;
+        case errSecCRLNotFound:
+            NSLog(@"iGoat keychain has no data");
+            keychainItems = nil;
+            break;
+        default:
+            NSLog(@"keychain error code : %d", ret);
 		keychainItems = nil;
-	}
+            break;
+    }
+
 	return keychainItems;
 }
-
 
 - (NSString *)getEmptyKeychainItemString:(CFTypeRef)kSecClassType
 {
@@ -123,6 +92,44 @@
     }
 }
 
-    
+ - (NSDictionary *)dumpAllKeychainData
+{
+    NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
+    NSArray * keychainItems = nil;
+	for (id kSecClassType in (NSArray *) _arguments) {
+		keychainItems = [self getKeychainObjectsForSecClass:(CFTypeRef)kSecClassType];
+        dict[kSecClassType] = keychainItems;
+	}
+
+    return dict; 
+}
+
+- (void)printResultsForSecClass:(NSArray *)keychainItems classType:(CFTypeRef)kSecClassType
+{
+//	if (keychainItems == nil) {
+//		printToStdOut(getEmptyKeychainItemString(kSecClassType));
+//		return;
+//	}
+//
+//	NSDictionary *keychainItem;
+//	for (keychainItem in keychainItems) {
+//		if (kSecClassType == kSecClassGenericPassword) {
+//			printGenericPassword(keychainItem);
+//		}	
+//		else if (kSecClassType == kSecClassInternetPassword) {
+//			printInternetPassword(keychainItem);
+//		}
+//		else if (kSecClassType == kSecClassIdentity) {
+//			printIdentity(keychainItem);
+//		}
+//		else if (kSecClassType == kSecClassCertificate) {
+//			printCertificate(keychainItem);
+//		}
+//		else if (kSecClassType == kSecClassKey) {
+//			printKey(keychainItem);
+//		}
+//	}
+	return;
+}
 
 @end

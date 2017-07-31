@@ -17,14 +17,19 @@
 
 @implementation KeychainAnalyzerViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+
+    // if simulator
     NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"../../../../../Library/Keychains/keychain-2-debug.db"];
-    
+    // else in device (jailbreaking phone)
+
+    NSLog(@"%@", sourcePath);
     BOOL isOk = [[NSFileManager defaultManager] fileExistsAtPath:sourcePath];
     if (isOk) {
         _textView.text = sourcePath;
-        
+
         _keychainDumper = [[KeychainDumper alloc] initWithSimulator:sourcePath];
     } else {
         _textView.text = @"Keychain file not exist";
@@ -35,12 +40,15 @@
     [super didReceiveMemoryWarning];
 }
 
-
 - (IBAction)analysisButtonClicked:(id)sender
 {
-    [_keychainDumper dumpKeychainEntitlements];
+    NSDictionary * keychainItems = [_keychainDumper dumpAllKeychainData];
+
+    NSString * string = [[NSString alloc] initWithFormat:@"%@", keychainItems ];
+    _textView.text = string;
 }
 
 - (IBAction)cleanButtonClicked:(id)sender {
+    _textView.text = @"";
 }
 @end

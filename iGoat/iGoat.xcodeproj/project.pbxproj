@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F1C5AC51F2E248100815393 /* KeychainAnalyzerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1C5AC41F2E248100815393 /* KeychainAnalyzerViewController.xib */; };
-		0F1C5AEB1F2E2BA700815393 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1C5AEA1F2E2BA700815393 /* KeychainWrapper.m */; };
-		0F387F5A1F2E8D8C006F4090 /* KeychainDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F387F591F2E8D8C006F4090 /* KeychainDumper.m */; };
+		0F387F5A1F2E8D8C006F4090 /* KeychainDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F387F591F2E8D8C006F4090 /* KeychainDumper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0FCF48BD1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF48BB1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m */; };
 		141E2FBE16C3D49900586528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FBD16C3D49900586528 /* UIKit.framework */; };
 		141E2FC016C3D49900586528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FBF16C3D49900586528 /* Foundation.framework */; };
@@ -294,8 +293,6 @@
 
 /* Begin PBXFileReference section */
 		0F1C5AC41F2E248100815393 /* KeychainAnalyzerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KeychainAnalyzerViewController.xib; path = KeychainAnalyzer/KeychainAnalyzerViewController.xib; sourceTree = "<group>"; };
-		0F1C5AE91F2E2BA700815393 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
-		0F1C5AEA1F2E2BA700815393 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		0F387F581F2E8D66006F4090 /* KeychainDumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainDumper.h; sourceTree = "<group>"; };
 		0F387F591F2E8D8C006F4090 /* KeychainDumper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainDumper.m; sourceTree = "<group>"; };
 		0FCF48BA1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainAnalyzerViewController.h; path = KeychainAnalyzer/KeychainAnalyzerViewController.h; sourceTree = "<group>"; };
@@ -1487,8 +1484,6 @@
 			children = (
 				0F387F591F2E8D8C006F4090 /* KeychainDumper.m */,
 				0F387F581F2E8D66006F4090 /* KeychainDumper.h */,
-				0F1C5AE91F2E2BA700815393 /* KeychainWrapper.h */,
-				0F1C5AEA1F2E2BA700815393 /* KeychainWrapper.m */,
 				A2F639801F1D34FB002C4CC9 /* JSON.h */,
 				A2F639811F1D34FB002C4CC9 /* NSData+AESEncryption.h */,
 				A2F639821F1D34FB002C4CC9 /* NSData+AESEncryption.m */,
@@ -1809,7 +1804,7 @@
 				ORGANIZATIONNAME = "KRvW Associates, LLC";
 				TargetAttributes = {
 					141E2FB916C3D49900586528 = {
-						DevelopmentTeam = 6J6AZQ7T23;
+						DevelopmentTeam = AX7SV79V34;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1989,7 +1984,6 @@
 				A29FFD761EDEE2FB0047E340 /* YapSet.m in Sources */,
 				82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */,
 				A29FFD6D1EDEE2FB0047E340 /* YapMemoryTable.m in Sources */,
-				0F1C5AEB1F2E2BA700815393 /* KeychainWrapper.m in Sources */,
 				A2F639791F1D34E7002C4CC9 /* InfoViewController.m in Sources */,
 				A29FFD3E1EDEE2FB0047E340 /* YapDatabaseFilteredViewTransaction.m in Sources */,
 				A2F639781F1D34E7002C4CC9 /* HtmlViewController.m in Sources */,
@@ -2231,7 +2225,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6J6AZQ7T23;
+				DEVELOPMENT_TEAM = AX7SV79V34;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iGoat/ThirdParty/Realm",
@@ -2260,7 +2254,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6J6AZQ7T23;
+				DEVELOPMENT_TEAM = AX7SV79V34;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iGoat/ThirdParty/Realm",
