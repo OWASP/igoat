@@ -21,15 +21,16 @@
 {
     [super viewDidLoad];
 
-    // if simulator
+#if TARGET_IPHONE_SIMULATOR
     NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"../../../../../Library/Keychains/keychain-2-debug.db"];
-    // else in device (jailbreaking phone)
+#else
+    NSString *sourcePath = @"/var/Keychains/keychain-2.db";
+#endif
 
     NSLog(@"%@", sourcePath);
     BOOL isOk = [[NSFileManager defaultManager] fileExistsAtPath:sourcePath];
     if (isOk) {
         _textView.text = sourcePath;
-
         _keychainDumper = [[KeychainDumper alloc] initWithSimulator:sourcePath];
     } else {
         _textView.text = @"Keychain file not exist";

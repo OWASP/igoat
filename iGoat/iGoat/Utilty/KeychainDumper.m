@@ -55,10 +55,10 @@
 
     switch (ret) {
         case errSecSuccess:
-            NSLog(@"");
+            NSLog(@"Keychain Read Successfully");
             break;
         case errSecCRLNotFound:
-            NSLog(@"iGoat keychain has no data");
+            NSLog(@"iGoat keychain Record Item has not found");
             keychainItems = nil;
             break;
         default:
@@ -70,29 +70,7 @@
 	return keychainItems;
 }
 
-- (NSString *)getEmptyKeychainItemString:(CFTypeRef)kSecClassType
-{
-    if (kSecClassType == kSecClassGenericPassword) {
-        return @"No Generic Password Keychain items found.\n";
-    }
-    else if (kSecClassType == kSecClassInternetPassword) {
-        return @"No Internet Password Keychain items found.\n";	
-    } 
-    else if (kSecClassType == kSecClassIdentity) {
-        return @"No Identity Keychain items found.\n";
-    }
-    else if (kSecClassType == kSecClassCertificate) {
-        return @"No Certificate Keychain items found.\n";	
-    }
-    else if (kSecClassType == kSecClassKey) {
-        return @"No Key Keychain items found.\n";	
-    }
-    else {
-        return @"Unknown Security Class\n";
-    }
-}
-
- - (NSDictionary *)dumpAllKeychainData
+- (NSDictionary *)dumpAllKeychainData
 {
     NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
     NSArray * keychainItems = nil;
@@ -103,33 +81,4 @@
 
     return dict; 
 }
-
-- (void)printResultsForSecClass:(NSArray *)keychainItems classType:(CFTypeRef)kSecClassType
-{
-//	if (keychainItems == nil) {
-//		printToStdOut(getEmptyKeychainItemString(kSecClassType));
-//		return;
-//	}
-//
-//	NSDictionary *keychainItem;
-//	for (keychainItem in keychainItems) {
-//		if (kSecClassType == kSecClassGenericPassword) {
-//			printGenericPassword(keychainItem);
-//		}	
-//		else if (kSecClassType == kSecClassInternetPassword) {
-//			printInternetPassword(keychainItem);
-//		}
-//		else if (kSecClassType == kSecClassIdentity) {
-//			printIdentity(keychainItem);
-//		}
-//		else if (kSecClassType == kSecClassCertificate) {
-//			printCertificate(keychainItem);
-//		}
-//		else if (kSecClassType == kSecClassKey) {
-//			printKey(keychainItem);
-//		}
-//	}
-	return;
-}
-
 @end
