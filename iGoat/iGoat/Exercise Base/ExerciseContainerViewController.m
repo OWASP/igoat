@@ -50,6 +50,7 @@
         nibName = initialControllerName;
     }
     
+    NSLog(@"Nib file to be loaded: %@", nibName);
     ExerciseViewController *newController = [[NSClassFromString(initialControllerName) alloc] initWithNibName:nibName bundle:nil exercise:newExercise];
     
     
