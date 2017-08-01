@@ -45,9 +45,13 @@
         nibName = [NSString stringWithFormat:@"%@_iPhone", initialControllerName];
     }
     
-    NSString *path = [[NSBundle mainBundle]pathForResource:initialControllerName ofType:@".nib"];
-    if (path) {
-        nibName = initialControllerName;
+    //LiTian:>> workaround, bypass the "KeychainExerciseViewController.nib"
+    //Discussion: if KeychainExerciseViewController.nib is not used, we can delete it. 
+    if (![initialControllerName isEqualToString:@"KeychainExerciseViewController"]) {
+        NSString *path = [[NSBundle mainBundle]pathForResource:initialControllerName ofType:@".nib"];
+        if (path) {
+            nibName = initialControllerName;
+        }
     }
     
     NSLog(@"Nib file to be loaded: %@", nibName);
