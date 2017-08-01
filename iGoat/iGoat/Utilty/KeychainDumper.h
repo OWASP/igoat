@@ -6,7 +6,5 @@
 - (instancetype)initWithSimulator:(NSString *)path;
 - (NSDictionary *)dumpAllKeychainData;
 
-- (NSArray *)getKeychainObjectsForSecClass:(CFTypeRef)kSecClassType;
-- (NSString *)getEmptyKeychainItemString:(CFTypeRef)kSecClassType;
 
 @end
