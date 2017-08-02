@@ -135,7 +135,7 @@ NSString *alertMessage;
          */
 
         // Stores/udates data in Keychain.
-         [self storeCredentialsInKeychain];
+         //[self storeCredentialsInKeychain];
 
     } else {
         alertMessage = @"Not to be remembered.";

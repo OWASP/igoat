@@ -31,6 +31,7 @@
 		4FE1C65B1EF9321200F40320 /* maxpower.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6591EF9321200F40320 /* maxpower.c */; };
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
+		4FF491C81F319ABF00A4ED61 /* Swaroop_Heefan.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */; };
 		82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */; };
 		82B7ED881F1391C300C90736 /* PersonalPhotoStorageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */; };
 		82B7ED8C1F13959900C90736 /* PhotoViewerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED8A1F13959900C90736 /* PhotoViewerVC.m */; };
@@ -236,7 +237,6 @@
 		A2F63A531F1D377B002C4CC9 /* SQLInjectionArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A4B1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.m */; };
 		A2F63A541F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A4C1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib */; };
 		A2F63A551F1D377B002C4CC9 /* SQLInjectionExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A4E1F1D377B002C4CC9 /* SQLInjectionExerciseController.m */; };
-		A2F63A561F1D377B002C4CC9 /* SQLInjectionExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A4F1F1D377B002C4CC9 /* SQLInjectionExerciseController.xib */; };
 		A2F63A571F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A501F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib */; };
 		A2F63A581F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A511F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib */; };
 		A2F63A621F1D379F002C4CC9 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A5A1F1D379F002C4CC9 /* about.html */; };
@@ -325,6 +325,7 @@
 		4FE1C6661EF939AE00F40320 /* RuntimeAnalysisChallengeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeAnalysisChallengeVC.h; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.h"; sourceTree = "<group>"; };
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
+		4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Heefan.html; sourceTree = "<group>"; };
 		82B7ED841F1391C300C90736 /* PersonalPhotoStorageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalPhotoStorageVC.h; sourceTree = "<group>"; };
 		82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalPhotoStorageVC.m; sourceTree = "<group>"; };
 		82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalPhotoStorageVC.xib; sourceTree = "<group>"; };
@@ -686,7 +687,6 @@
 		A2F63A4C1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionArticlesViewController.xib; sourceTree = "<group>"; };
 		A2F63A4D1F1D377B002C4CC9 /* SQLInjectionExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLInjectionExerciseController.h; sourceTree = "<group>"; };
 		A2F63A4E1F1D377B002C4CC9 /* SQLInjectionExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLInjectionExerciseController.m; sourceTree = "<group>"; };
-		A2F63A4F1F1D377B002C4CC9 /* SQLInjectionExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController.xib; sourceTree = "<group>"; };
 		A2F63A501F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPad.xib; sourceTree = "<group>"; };
 		A2F63A511F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F63A5A1F1D379F002C4CC9 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
@@ -1715,7 +1715,6 @@
 				A2F63A4C1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib */,
 				A2F63A4D1F1D377B002C4CC9 /* SQLInjectionExerciseController.h */,
 				A2F63A4E1F1D377B002C4CC9 /* SQLInjectionExerciseController.m */,
-				A2F63A4F1F1D377B002C4CC9 /* SQLInjectionExerciseController.xib */,
 				A2F63A501F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib */,
 				A2F63A511F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib */,
 			);
@@ -1725,6 +1724,7 @@
 		A2F63A591F1D379F002C4CC9 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
+				4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */,
 				A2F63A5A1F1D379F002C4CC9 /* about.html */,
 				A2F63A5B1F1D379F002C4CC9 /* KRvWAssociates.html */,
 				A2F63A5C1F1D379F002C4CC9 /* mansi.html */,
@@ -1859,6 +1859,7 @@
 				A2F6397A1F1D34E7002C4CC9 /* InfoViewController.xib in Resources */,
 				A2F63A1A1F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib in Resources */,
 				A2F63A7C1F1D386F002C4CC9 /* ExercisesViewController.xib in Resources */,
+				4FF491C81F319ABF00A4ED61 /* Swaroop_Heefan.html in Resources */,
 				141E2FD216C3D49900586528 /* Default@2x.png in Resources */,
 				A2F639C11F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPad.xib in Resources */,
 				A2F63A681F1D379F002C4CC9 /* Swaroop_anthony.html in Resources */,
@@ -1911,7 +1912,6 @@
 				A2F639E91F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPad.xib in Resources */,
 				A2CBC9971EE978300032CF0B /* SocialEngineeringVC.xib in Resources */,
 				A2F63A661F1D379F002C4CC9 /* splash.html in Resources */,
-				A2F63A561F1D377B002C4CC9 /* SQLInjectionExerciseController.xib in Resources */,
 				A29FFD8A1EDEE3130047E340 /* RealmExerciseViewController.xib in Resources */,
 				82B7ED8D1F13959900C90736 /* PhotoViewerVC.xib in Resources */,
 				A2F639A31F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib in Resources */,
