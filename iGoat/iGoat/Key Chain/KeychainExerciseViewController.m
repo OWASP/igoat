@@ -118,7 +118,7 @@ NSString *alertMessage;
 
     if (self.rememberMe.on) {
         // Stores/updates credentials in NSUserDefaults.
-         [self storeCredentialsInSettingsApp];
+        // [self storeCredentialsInSettingsApp];
 
         /*
          SOLUTION
@@ -135,7 +135,7 @@ NSString *alertMessage;
          */
 
         // Stores/udates data in Keychain.
-        // [self storeCredentialsInKeychain];
+         [self storeCredentialsInKeychain];
 
     } else {
         alertMessage = @"Not to be remembered.";
