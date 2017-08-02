@@ -45,7 +45,7 @@
 {
     NSDictionary * keychainItems = [_keychainDumper dumpAllKeychainData];
 
-    NSString * string = [[NSString alloc] initWithFormat:@"%@", keychainItems ];
+    NSString * string = [[NSString alloc] initWithFormat:@"%@", keychainItems];
     _textView.text = string;
 }
 

@@ -15,6 +15,9 @@
 {
     NSMutableArray * _arguments;
     NSString * _keychainPath;
+    NSString * _passwordInGenp;
+    //
+    NSMutableDictionary  * _allKeychainData;
 }
 
 @end
@@ -39,6 +42,8 @@
 
 }
 
+// @desc: it may have multiple records in a table.
+// this is the array of multiple dictionary
 - (NSArray *)getKeychainObjectsForSecClass:(CFTypeRef)kSecClassType
 {
 	NSMutableDictionary *genericQuery = [[NSMutableDictionary alloc] init];
@@ -57,7 +62,7 @@
         case errSecSuccess:
             NSLog(@"Keychain Read Successfully");
             break;
-        case errSecCRLNotFound:
+        case errSecItemNotFound:
             NSLog(@"iGoat keychain Record Item has not found");
             keychainItems = nil;
             break;
@@ -70,15 +75,36 @@
 	return keychainItems;
 }
 
+// @disc: Add table name as the key of the dictionary.
+//  and the value will be the keychain data in the table.
 - (NSDictionary *)dumpAllKeychainData
 {
-    NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
+    _allKeychainData = nil;
+    _allKeychainData = [[NSMutableDictionary alloc] init];
     NSArray * keychainItems = nil;
 	for (id kSecClassType in (NSArray *) _arguments) {
 		keychainItems = [self getKeychainObjectsForSecClass:(CFTypeRef)kSecClassType];
-        dict[kSecClassType] = keychainItems;
+        _allKeychainData[kSecClassType] = keychainItems;
 	}
 
-    return dict; 
+    NSDictionary * readableKeychainData = [self getReadableKeychainData];
+    return readableKeychainData;
 }
+
+- (NSDictionary *)getReadableKeychainData
+{
+    NSMutableDictionary * dict = [[NSMutableDictionary alloc] initWithDictionary:_allKeychainData];
+
+    for (id eachTable in _arguments) {
+        NSArray * datas =  dict[eachTable];
+        for (NSMutableDictionary * eachDict in datas) {
+            NSData * pswd =  eachDict[(__bridge id)kSecValueData];
+            NSString *password = [[NSString alloc] initWithData:pswd encoding:NSUTF8StringEncoding];
+            eachDict[@"password"] = password;
+        }
+    }
+
+    return dict;
+}
+
 @end
