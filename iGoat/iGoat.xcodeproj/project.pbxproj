@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1C5AC51F2E248100815393 /* KeychainAnalyzerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1C5AC41F2E248100815393 /* KeychainAnalyzerViewController.xib */; };
+		0F387F5A1F2E8D8C006F4090 /* KeychainDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F387F591F2E8D8C006F4090 /* KeychainDumper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0FCF48BD1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF48BB1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m */; };
 		141E2FBE16C3D49900586528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FBD16C3D49900586528 /* UIKit.framework */; };
 		141E2FC016C3D49900586528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FBF16C3D49900586528 /* Foundation.framework */; };
 		141E2FC216C3D49900586528 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E2FC116C3D49900586528 /* CoreGraphics.framework */; };
@@ -28,6 +31,7 @@
 		4FE1C65B1EF9321200F40320 /* maxpower.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6591EF9321200F40320 /* maxpower.c */; };
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
+		4FF491C81F319ABF00A4ED61 /* Swaroop_Heefan.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */; };
 		82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */; };
 		82B7ED881F1391C300C90736 /* PersonalPhotoStorageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */; };
 		82B7ED8C1F13959900C90736 /* PhotoViewerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED8A1F13959900C90736 /* PhotoViewerVC.m */; };
@@ -233,7 +237,6 @@
 		A2F63A531F1D377B002C4CC9 /* SQLInjectionArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A4B1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.m */; };
 		A2F63A541F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A4C1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib */; };
 		A2F63A551F1D377B002C4CC9 /* SQLInjectionExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A4E1F1D377B002C4CC9 /* SQLInjectionExerciseController.m */; };
-		A2F63A561F1D377B002C4CC9 /* SQLInjectionExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A4F1F1D377B002C4CC9 /* SQLInjectionExerciseController.xib */; };
 		A2F63A571F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A501F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib */; };
 		A2F63A581F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A511F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib */; };
 		A2F63A621F1D379F002C4CC9 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A5A1F1D379F002C4CC9 /* about.html */; };
@@ -289,6 +292,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F1C5AC41F2E248100815393 /* KeychainAnalyzerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KeychainAnalyzerViewController.xib; path = KeychainAnalyzer/KeychainAnalyzerViewController.xib; sourceTree = "<group>"; };
+		0F387F581F2E8D66006F4090 /* KeychainDumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainDumper.h; sourceTree = "<group>"; };
+		0F387F591F2E8D8C006F4090 /* KeychainDumper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainDumper.m; sourceTree = "<group>"; };
+		0FCF48BA1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainAnalyzerViewController.h; path = KeychainAnalyzer/KeychainAnalyzerViewController.h; sourceTree = "<group>"; };
+		0FCF48BB1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainAnalyzerViewController.m; path = KeychainAnalyzer/KeychainAnalyzerViewController.m; sourceTree = "<group>"; };
 		141E2FBA16C3D49900586528 /* iGoat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGoat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		141E2FBD16C3D49900586528 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		141E2FBF16C3D49900586528 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -317,6 +325,7 @@
 		4FE1C6661EF939AE00F40320 /* RuntimeAnalysisChallengeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeAnalysisChallengeVC.h; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.h"; sourceTree = "<group>"; };
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
+		4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Heefan.html; sourceTree = "<group>"; };
 		82B7ED841F1391C300C90736 /* PersonalPhotoStorageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalPhotoStorageVC.h; sourceTree = "<group>"; };
 		82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalPhotoStorageVC.m; sourceTree = "<group>"; };
 		82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalPhotoStorageVC.xib; sourceTree = "<group>"; };
@@ -678,7 +687,6 @@
 		A2F63A4C1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionArticlesViewController.xib; sourceTree = "<group>"; };
 		A2F63A4D1F1D377B002C4CC9 /* SQLInjectionExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLInjectionExerciseController.h; sourceTree = "<group>"; };
 		A2F63A4E1F1D377B002C4CC9 /* SQLInjectionExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLInjectionExerciseController.m; sourceTree = "<group>"; };
-		A2F63A4F1F1D377B002C4CC9 /* SQLInjectionExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController.xib; sourceTree = "<group>"; };
 		A2F63A501F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPad.xib; sourceTree = "<group>"; };
 		A2F63A511F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F63A5A1F1D379F002C4CC9 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
@@ -735,6 +743,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FCF48B91F2D6A850055ED1F /* iGoat Keychain Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				0FCF48BA1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.h */,
+				0FCF48BB1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m */,
+				0F1C5AC41F2E248100815393 /* KeychainAnalyzerViewController.xib */,
+			);
+			name = "iGoat Keychain Analyzer";
+			sourceTree = "<group>";
+		};
 		141E2FB116C3D49900586528 = {
 			isa = PBXGroup;
 			children = (
@@ -825,6 +843,7 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				0FCF48B91F2D6A850055ED1F /* iGoat Keychain Analyzer */,
 				A2E1E20D1F0527FC003B363A /* Cryto Challenge */,
 				4FE1C65E1EF9367000F40320 /* Runtime Analysis Challenge */,
 				A2CBC9981EE980880032CF0B /* WeakServerSideControls */,
@@ -1463,6 +1482,8 @@
 		A2F6397F1F1D34FB002C4CC9 /* Utilty */ = {
 			isa = PBXGroup;
 			children = (
+				0F387F591F2E8D8C006F4090 /* KeychainDumper.m */,
+				0F387F581F2E8D66006F4090 /* KeychainDumper.h */,
 				A2F639801F1D34FB002C4CC9 /* JSON.h */,
 				A2F639811F1D34FB002C4CC9 /* NSData+AESEncryption.h */,
 				A2F639821F1D34FB002C4CC9 /* NSData+AESEncryption.m */,
@@ -1694,7 +1715,6 @@
 				A2F63A4C1F1D377B002C4CC9 /* SQLInjectionArticlesViewController.xib */,
 				A2F63A4D1F1D377B002C4CC9 /* SQLInjectionExerciseController.h */,
 				A2F63A4E1F1D377B002C4CC9 /* SQLInjectionExerciseController.m */,
-				A2F63A4F1F1D377B002C4CC9 /* SQLInjectionExerciseController.xib */,
 				A2F63A501F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib */,
 				A2F63A511F1D377B002C4CC9 /* SQLInjectionExerciseController_iPhone.xib */,
 			);
@@ -1704,6 +1724,7 @@
 		A2F63A591F1D379F002C4CC9 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
+				4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */,
 				A2F63A5A1F1D379F002C4CC9 /* about.html */,
 				A2F63A5B1F1D379F002C4CC9 /* KRvWAssociates.html */,
 				A2F63A5C1F1D379F002C4CC9 /* mansi.html */,
@@ -1783,7 +1804,7 @@
 				ORGANIZATIONNAME = "KRvW Associates, LLC";
 				TargetAttributes = {
 					141E2FB916C3D49900586528 = {
-						DevelopmentTeam = 6J6AZQ7T23;
+						DevelopmentTeam = AX7SV79V34;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1838,6 +1859,7 @@
 				A2F6397A1F1D34E7002C4CC9 /* InfoViewController.xib in Resources */,
 				A2F63A1A1F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib in Resources */,
 				A2F63A7C1F1D386F002C4CC9 /* ExercisesViewController.xib in Resources */,
+				4FF491C81F319ABF00A4ED61 /* Swaroop_Heefan.html in Resources */,
 				141E2FD216C3D49900586528 /* Default@2x.png in Resources */,
 				A2F639C11F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPad.xib in Resources */,
 				A2F63A681F1D379F002C4CC9 /* Swaroop_anthony.html in Resources */,
@@ -1850,6 +1872,7 @@
 				A2E1E2121F052820003B363A /* CyrptoChallengeVC.xib in Resources */,
 				A2F639D11F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPad.xib in Resources */,
 				1462775F16C56431007FE838 /* Assets.plist in Resources */,
+				0F1C5AC51F2E248100815393 /* KeychainAnalyzerViewController.xib in Resources */,
 				A2F63A571F1D377B002C4CC9 /* SQLInjectionExerciseController_iPad.xib in Resources */,
 				A2F639D21F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPhone.xib in Resources */,
 				1462776916C56447007FE838 /* igoat.css in Resources */,
@@ -1889,7 +1912,6 @@
 				A2F639E91F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPad.xib in Resources */,
 				A2CBC9971EE978300032CF0B /* SocialEngineeringVC.xib in Resources */,
 				A2F63A661F1D379F002C4CC9 /* splash.html in Resources */,
-				A2F63A561F1D377B002C4CC9 /* SQLInjectionExerciseController.xib in Resources */,
 				A29FFD8A1EDEE3130047E340 /* RealmExerciseViewController.xib in Resources */,
 				82B7ED8D1F13959900C90736 /* PhotoViewerVC.xib in Resources */,
 				A2F639A31F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib in Resources */,
@@ -1988,6 +2010,7 @@
 				A2F6397B1F1D34E7002C4CC9 /* MasterViewController.m in Sources */,
 				A2D78F8B1EE5760400C815A8 /* BinaryCookiesExerciseViewController.m in Sources */,
 				A2F63A771F1D386F002C4CC9 /* Exercise.m in Sources */,
+				0F387F5A1F2E8D8C006F4090 /* KeychainDumper.m in Sources */,
 				A2F639A21F1D3518002C4CC9 /* CoreDataExerciseViewController.m in Sources */,
 				A2F639C81F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController.m in Sources */,
 				A29FFD651EDEE2FB0047E340 /* YapDatabaseViewTypes.m in Sources */,
@@ -2035,6 +2058,7 @@
 				A29FFD741EDEE2FB0047E340 /* YapDatabaseQuery.m in Sources */,
 				A29FFD3A1EDEE2FB0047E340 /* YapDatabaseCloudKitTransaction.m in Sources */,
 				A2F63A0D1F1D36DF002C4CC9 /* CutAndPasteExerciseController.m in Sources */,
+				0FCF48BD1F2D6ACD0055ED1F /* KeychainAnalyzerViewController.m in Sources */,
 				A29FFD781EDEE2FB0047E340 /* YapDatabase.m in Sources */,
 				A29FFD3B1EDEE2FB0047E340 /* YapDatabaseCloudKitTypes.m in Sources */,
 				A29FFD481EDEE2FB0047E340 /* YapDatabaseExtension.m in Sources */,
@@ -2201,7 +2225,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6J6AZQ7T23;
+				DEVELOPMENT_TEAM = AX7SV79V34;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iGoat/ThirdParty/Realm",
@@ -2230,7 +2254,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6J6AZQ7T23;
+				DEVELOPMENT_TEAM = AX7SV79V34;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iGoat/ThirdParty/Realm",
