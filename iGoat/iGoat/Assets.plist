@@ -948,5 +948,29 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 			</dict>
 		</array>
 	</dict>
+	<key>Binary Patching</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop_Junard.html</string>
+				<key>description</key>
+				<string>In this exercise, you will need a binary patching tool to change the hardcoded password to its reverse, i.e.: &quot;1234&quot; becomes &quot;4321&quot;. After the exercise, you have to demonstrate that the new password is able to login to the page successfully.                  </string>
+				<key>hints</key>
+				<array>
+					<string>A very common password. </string>
+				</array>
+				<key>initialViewController</key>
+				<string>BinaryPatchingVC</string>
+				<key>name</key>
+				<string>Binary Patching</string>
+				<key>solution</key>
+				<string>Use Hopper or other similar tools to change the password to its reverse. </string>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>

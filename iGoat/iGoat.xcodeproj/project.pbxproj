@@ -32,6 +32,8 @@
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
 		4FF491C81F319ABF00A4ED61 /* Swaroop_Heefan.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */; };
+		82AF84271F32439700C4832F /* BinaryPatchingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82AF84251F32439700C4832F /* BinaryPatchingVC.m */; };
+		82AF84281F32439700C4832F /* BinaryPatchingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82AF84261F32439700C4832F /* BinaryPatchingVC.xib */; };
 		82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */; };
 		82B7ED881F1391C300C90736 /* PersonalPhotoStorageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */; };
 		82B7ED8C1F13959900C90736 /* PhotoViewerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED8A1F13959900C90736 /* PhotoViewerVC.m */; };
@@ -326,6 +328,9 @@
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
 		4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Heefan.html; sourceTree = "<group>"; };
+		82AF84241F32439700C4832F /* BinaryPatchingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryPatchingVC.h; sourceTree = "<group>"; };
+		82AF84251F32439700C4832F /* BinaryPatchingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryPatchingVC.m; sourceTree = "<group>"; };
+		82AF84261F32439700C4832F /* BinaryPatchingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryPatchingVC.xib; sourceTree = "<group>"; };
 		82B7ED841F1391C300C90736 /* PersonalPhotoStorageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalPhotoStorageVC.h; sourceTree = "<group>"; };
 		82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalPhotoStorageVC.m; sourceTree = "<group>"; };
 		82B7ED861F1391C300C90736 /* PersonalPhotoStorageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalPhotoStorageVC.xib; sourceTree = "<group>"; };
@@ -873,6 +878,7 @@
 				A2F63A481F1D377B002C4CC9 /* SQL Injection */,
 				82BDD97A1F00271F001DACAD /* Runtime Brute Force Attack */,
 				82B7ED831F1391C300C90736 /* Personal Photo Storage */,
+				82AF84231F32439700C4832F /* Binary Patching */,
 			);
 			name = Exercises;
 			sourceTree = "<group>";
@@ -886,6 +892,17 @@
 			);
 			name = "Runtime Analysis Challenge";
 			sourceTree = "<group>";
+		};
+		82AF84231F32439700C4832F /* Binary Patching */ = {
+			isa = PBXGroup;
+			children = (
+				82AF84241F32439700C4832F /* BinaryPatchingVC.h */,
+				82AF84251F32439700C4832F /* BinaryPatchingVC.m */,
+				82AF84261F32439700C4832F /* BinaryPatchingVC.xib */,
+			);
+			name = "Binary Patching";
+			path = "iGoat/Binary Patching";
+			sourceTree = SOURCE_ROOT;
 		};
 		82B7ED831F1391C300C90736 /* Personal Photo Storage */ = {
 			isa = PBXGroup;
@@ -1857,6 +1874,7 @@
 				A2F639DA1F1D3636002C4CC9 /* StringAnalysisExerciseController_iPhone.xib in Resources */,
 				A2F63A671F1D379F002C4CC9 /* Swaroop.html in Resources */,
 				A2F6397A1F1D34E7002C4CC9 /* InfoViewController.xib in Resources */,
+				82AF84281F32439700C4832F /* BinaryPatchingVC.xib in Resources */,
 				A2F63A1A1F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib in Resources */,
 				A2F63A7C1F1D386F002C4CC9 /* ExercisesViewController.xib in Resources */,
 				4FF491C81F319ABF00A4ED61 /* Swaroop_Heefan.html in Resources */,
@@ -2088,6 +2106,7 @@
 				A2F639F91F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m in Sources */,
 				A29FFD2F1EDEE2FB0047E340 /* YDBCKChangeQueue.m in Sources */,
 				A2F639C01F1D3606002C4CC9 /* PlistStorageExerciseViewController.m in Sources */,
+				82AF84271F32439700C4832F /* BinaryPatchingVC.m in Sources */,
 				A2F639961F1D34FB002C4CC9 /* SBJsonParser.m in Sources */,
 				A29FFD381EDEE2FB0047E340 /* YapDatabaseCloudKitConnection.m in Sources */,
 				A29FFD6C1EDEE2FB0047E340 /* YapDebugDictionary.m in Sources */,
