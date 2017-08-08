@@ -143,6 +143,8 @@
 		A29FFD9D1EDF03BA0047E340 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFD9C1EDF03BA0047E340 /* libz.tbd */; };
 		A29FFDA11EDF149C0047E340 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFDA01EDF149C0047E340 /* CFNetwork.framework */; };
 		A29FFDA31EDF15210047E340 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29FFDA21EDF15210047E340 /* CouchbaseLite.framework */; };
+		A2A7F48D1F38F1B900671753 /* KeyStorageServerSideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A7F48B1F38F1B900671753 /* KeyStorageServerSideVC.m */; };
+		A2A7F48E1F38F1B900671753 /* KeyStorageServerSideVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A7F48C1F38F1B900671753 /* KeyStorageServerSideVC.xib */; };
 		A2CBC9961EE978300032CF0B /* SocialEngineeringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC9941EE978300032CF0B /* SocialEngineeringVC.m */; };
 		A2CBC9971EE978300032CF0B /* SocialEngineeringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CBC9951EE978300032CF0B /* SocialEngineeringVC.xib */; };
 		A2CBC99C1EE983E90032CF0B /* WeakServerSideControlsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC99A1EE983E90032CF0B /* WeakServerSideControlsVC.m */; };
@@ -554,6 +556,9 @@
 		A29FFD9C1EDF03BA0047E340 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A29FFDA01EDF149C0047E340 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A29FFDA21EDF15210047E340 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+		A2A7F48A1F38F1B900671753 /* KeyStorageServerSideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyStorageServerSideVC.h; sourceTree = "<group>"; };
+		A2A7F48B1F38F1B900671753 /* KeyStorageServerSideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyStorageServerSideVC.m; sourceTree = "<group>"; };
+		A2A7F48C1F38F1B900671753 /* KeyStorageServerSideVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyStorageServerSideVC.xib; sourceTree = "<group>"; };
 		A2CBC9931EE978300032CF0B /* SocialEngineeringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialEngineeringVC.h; sourceTree = "<group>"; };
 		A2CBC9941EE978300032CF0B /* SocialEngineeringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialEngineeringVC.m; sourceTree = "<group>"; };
 		A2CBC9951EE978300032CF0B /* SocialEngineeringVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialEngineeringVC.xib; sourceTree = "<group>"; };
@@ -849,6 +854,7 @@
 			isa = PBXGroup;
 			children = (
 				0FCF48B91F2D6A850055ED1F /* iGoat Keychain Analyzer */,
+				A2A7F4891F38F1B900671753 /* Key Storage Server Side */,
 				A2E1E20D1F0527FC003B363A /* Cryto Challenge */,
 				4FE1C65E1EF9367000F40320 /* Runtime Analysis Challenge */,
 				A2CBC9981EE980880032CF0B /* WeakServerSideControls */,
@@ -1422,6 +1428,16 @@
 			path = CouchBase;
 			sourceTree = "<group>";
 		};
+		A2A7F4891F38F1B900671753 /* Key Storage Server Side */ = {
+			isa = PBXGroup;
+			children = (
+				A2A7F48A1F38F1B900671753 /* KeyStorageServerSideVC.h */,
+				A2A7F48B1F38F1B900671753 /* KeyStorageServerSideVC.m */,
+				A2A7F48C1F38F1B900671753 /* KeyStorageServerSideVC.xib */,
+			);
+			path = "Key Storage Server Side";
+			sourceTree = "<group>";
+		};
 		A2CBC9921EE977150032CF0B /* Social Engineering */ = {
 			isa = PBXGroup;
 			children = (
@@ -1934,6 +1950,7 @@
 				82B7ED8D1F13959900C90736 /* PhotoViewerVC.xib in Resources */,
 				A2F639A31F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib in Resources */,
 				A2F63A0F1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib in Resources */,
+				A2A7F48E1F38F1B900671753 /* KeyStorageServerSideVC.xib in Resources */,
 				A2F639BF1F1D3606002C4CC9 /* Credentials.plist in Resources */,
 				A2F639C91F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
 				82BDD97F1F00271F001DACAD /* BruteForceRuntimeVC.xib in Resources */,
@@ -1991,6 +2008,7 @@
 				A2F63A791F1D386F002C4CC9 /* ExerciseIntroViewController.m in Sources */,
 				A29FFD791EDEE2FB0047E340 /* YapDatabaseConnection.m in Sources */,
 				A29FFD421EDEE2FB0047E340 /* YapDatabaseFullTextSearchHandler.m in Sources */,
+				A2A7F48D1F38F1B900671753 /* KeyStorageServerSideVC.m in Sources */,
 				A29FFD5A1EDEE2FB0047E340 /* YapDatabaseSecondaryIndexTransaction.m in Sources */,
 				A2F639911F1D34FB002C4CC9 /* NSData+AESEncryption.m in Sources */,
 				A29FFD211EDEE2FB0047E340 /* DDASLLogger.m in Sources */,

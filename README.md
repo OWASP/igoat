@@ -70,6 +70,7 @@ To contribute to iGoat project, please contact __Swaroop__ ( swaroop.yermalkar@o
 * Junard Lebajan (@junard)
 * Ken van Wyk
 * Jonathan Carter
+* Heefan
 * Bernhard Mueller
 * Sagar Popat
 * Chandrakant Nial 
