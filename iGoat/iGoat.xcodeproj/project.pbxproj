@@ -210,7 +210,6 @@
 		A2F639F11F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639EE1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPad.xib */; };
 		A2F639F21F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639EF1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */; };
 		A2F639F91F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639F51F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m */; };
-		A2F639FA1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639F61F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib */; };
 		A2F639FB1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639F71F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib */; };
 		A2F639FC1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639F81F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib */; };
 		A2F63A031F1D36CF002C4CC9 /* BackgroundingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639FF1F1D36CF002C4CC9 /* BackgroundingExerciseController.m */; };
@@ -658,7 +657,6 @@
 		A2F639EF1F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		A2F639F41F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteAuthenticationExerciseController.h; sourceTree = "<group>"; };
 		A2F639F51F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteAuthenticationExerciseController.m; sourceTree = "<group>"; };
-		A2F639F61F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController.xib; sourceTree = "<group>"; };
 		A2F639F71F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController_iPad.xib; sourceTree = "<group>"; };
 		A2F639F81F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F639FE1F1D36CF002C4CC9 /* BackgroundingExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundingExerciseController.h; sourceTree = "<group>"; };
@@ -1659,7 +1657,6 @@
 			children = (
 				A2F639F41F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.h */,
 				A2F639F51F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.m */,
-				A2F639F61F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib */,
 				A2F639F71F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib */,
 				A2F639F81F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib */,
 			);
@@ -1956,7 +1953,6 @@
 				82BDD97F1F00271F001DACAD /* BruteForceRuntimeVC.xib in Resources */,
 				A2F639771F1D34E7002C4CC9 /* HintsViewController.xib in Resources */,
 				A2F639EA1F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */,
-				A2F639FA1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController.xib in Resources */,
 				A2F639B81F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPhone.xib in Resources */,
 				A2F63A191F1D36EF002C4CC9 /* KeychainExerciseViewController_iPad.xib in Resources */,
 				A2F63A631F1D379F002C4CC9 /* KRvWAssociates.html in Resources */,

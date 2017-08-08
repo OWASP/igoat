@@ -815,10 +815,10 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<key>creditsFile</key>
 				<string>Swaroop.html</string>
 				<key>description</key>
-				<string>In this exercise, you will study one of the way to generate random key to store sensitive locally.</string>
+				<string>TBD</string>
 				<key>hints</key>
 				<array>
-					<string>Look into one of side channel data leakage.</string>
+					<string>TBD</string>
 				</array>
 				<key>initialViewController</key>
 				<string>KeyStorageServerSideVC</string>
