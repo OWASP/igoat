@@ -15,7 +15,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    
+    [self addShowHideButton];
+}
+
+-(void)addShowHideButton {
+    CGSize hideShowSize = CGSizeMake(32, 32);
+    UIButton *hideShow = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, hideShowSize.width, self.passwordTxtField.frame.size.height)];
+    [hideShow setImage:[UIImage imageNamed:@"hide"] forState:UIControlStateNormal];
+    self.passwordTxtField.rightView = hideShow;
+    self.passwordTxtField.rightViewMode = UITextFieldViewModeAlways;
+    [hideShow addTarget:self action:@selector(hideShow:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+
+- (void)hideShow:(id)sender {
+    UIButton *hideShow = (UIButton *)self.passwordTxtField.rightView;
+    if (!self.passwordTxtField.secureTextEntry) {
+        self.passwordTxtField.secureTextEntry = YES;
+        [hideShow setImage:[UIImage imageNamed:@"show"] forState:UIControlStateNormal];
+    }
+    else {
+        self.passwordTxtField.secureTextEntry = NO;
+        [hideShow setImage:[UIImage imageNamed:@"hide"] forState:UIControlStateNormal];
+    }
+    [self.passwordTxtField becomeFirstResponder];
 }
 
 -(IBAction)loginItemPressed:(id)sender {
@@ -44,15 +67,15 @@
     
     if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError]) {
         [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-                  localizedReason:localizedReasonString
-                            reply:^(BOOL success, NSError *error) {
-                                if (success) {
-                                    [self showMessage:@"You have successfully logged In!!"];
-                                } else {
-                                    [self showMessage:error.description];
-                                    NSLog(@"Switch to fall back authentication - ie, display a keypad or password entry box");
-                                }
-                            }];
+                localizedReason:localizedReasonString
+                          reply:^(BOOL success, NSError *error) {
+                              if (success) {
+                                  [self showMessage:@"You have successfully logged In!!"];
+                              } else {
+                                  [self showMessage:error.description];
+                                  NSLog(@"Switch to fall back authentication - ie, display a keypad or password entry box");
+                              }
+                          }];
     } else {
         [self showMessage:authError.description];
     }

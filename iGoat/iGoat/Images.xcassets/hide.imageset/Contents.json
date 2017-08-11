@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "TouchID_off.png",
+      "filename" : "hide@2x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "TouchID_off@2x.png",
+      "filename" : "hide@2x-2.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "TouchID_off@3x.png",
+      "filename" : "hide@2x-1.png",
       "scale" : "3x"
     }
   ],

@@ -811,6 +811,22 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<key>solution</key>
 				<string>Check out device logs for encryption key.</string>
 			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop.html</string>
+				<key>description</key>
+				<string>TBD</string>
+				<key>hints</key>
+				<array>
+					<string>TBD</string>
+				</array>
+				<key>initialViewController</key>
+				<string>KeyStorageServerSideVC</string>
+				<key>name</key>
+				<string>Key Storage Server Side</string>
+				<key>solution</key>
+				<string>TBD</string>
+			</dict>
 		</array>
 	</dict>
 	<key>URL Scheme Attack</key>
