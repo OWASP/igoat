@@ -74,6 +74,8 @@ To contribute to iGoat project, please contact __Swaroop__ ( swaroop.yermalkar@o
 * Bernhard Mueller
 * Sagar Popat
 * Chandrakant Nial 
+* Valligayatri Rachakonda
+* Suraj Kumar
 * masbog
 * Cheena Kathpal
 * Matt Tesauro
