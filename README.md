@@ -14,7 +14,7 @@ As such, iGoat is a safe environment where iOS developers can learn about the ma
 Step 4 is optional, but highly recommended for all iOS developers. Assistance is available within iGoat if you don't know how to fix a specific problem.
 
 
-### Documentation: ([iGoat Guide](https://swaroopsy.gitbooks.io/owasp-igoat-setup/content/))
+### Documentation: [iGoat Guide](https://swaroopsy.gitbooks.io/owasp-igoat-setup/content/)
 
 ### Project Details ###
 
@@ -27,6 +27,15 @@ __Twitter__ - ([@OWASPiGoat](https://twitter.com/owaspigoat?lang=en))
 __Lead Developer__ - Anthony Gonsalves
 
 ### Vulnerabities Covered (version 3.0): ###
+* __Key Management__
+  * Hardcoded Encryption Keys
+  * Key Storage Server Side
+  * Random Key Generation
+  
+* __URL Scheme Attack__
+  
+* __Social Engineering__
+  
 * __Reverse Engineering__
   * String Analysis
   
@@ -57,7 +66,6 @@ __Lead Developer__ - Anthony Gonsalves
   * Cross Site Scripting
   
 * __Broken Cryptography__
-* __Key Management__
 
 ### How to countribute? ###
 * You can add new exercises
