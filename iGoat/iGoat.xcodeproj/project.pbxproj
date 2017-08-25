@@ -151,6 +151,19 @@
 		A2CBC99D1EE983E90032CF0B /* WeakServerSideControlsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CBC99B1EE983E90032CF0B /* WeakServerSideControlsVC.xib */; };
 		A2CBC9A11EEACCDF0032CF0B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CBC9A01EEACCDF0032CF0B /* LocalAuthentication.framework */; };
 		A2CBC9A31EEACDF00032CF0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2CBC9A21EEACDF00032CF0B /* Images.xcassets */; };
+		A2D08C621F4FF00900E6ECC9 /* MemoryManagementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D08C601F4FF00900E6ECC9 /* MemoryManagementVC.m */; };
+		A2D08C631F4FF00900E6ECC9 /* MemoryManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D08C611F4FF00900E6ECC9 /* MemoryManagementVC.xib */; };
+		A2D08C681F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D08C661F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.m */; };
+		A2D08C691F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D08C671F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.xib */; };
+		A2D08C6D1F4FFCA200E6ECC9 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D08C6C1F4FFCA200E6ECC9 /* UIImage+animatedGIF.m */; };
+		A2D08C791F4FFE9800E6ECC9 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D08C701F4FFE9800E6ECC9 /* SVIndefiniteAnimatedView.m */; };
+		A2D08C7A1F4FFE9800E6ECC9 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D08C721F4FFE9800E6ECC9 /* SVProgressAnimatedView.m */; };
+		A2D08C7B1F4FFE9800E6ECC9 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2D08C741F4FFE9800E6ECC9 /* SVProgressHUD.bundle */; };
+		A2D08C7C1F4FFE9800E6ECC9 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D08C761F4FFE9800E6ECC9 /* SVProgressHUD.m */; };
+		A2D08C7D1F4FFE9800E6ECC9 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D08C781F4FFE9800E6ECC9 /* SVRadialGradientLayer.m */; };
+		A2D08C7F1F50024400E6ECC9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D08C7E1F50024400E6ECC9 /* CoreFoundation.framework */; };
+		A2D08C811F5002EA00E6ECC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D08C801F5002EA00E6ECC9 /* QuartzCore.framework */; };
+		A2D08C831F50036500E6ECC9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D08C821F50036500E6ECC9 /* ImageIO.framework */; };
 		A2D78F8B1EE5760400C815A8 /* BinaryCookiesExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D78F891EE5760400C815A8 /* BinaryCookiesExerciseViewController.m */; };
 		A2D78F8C1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */; };
 		A2D78F991EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D78F971EE6D2E500C815A8 /* URLSchemeAttackExerciseVC.m */; };
@@ -566,6 +579,27 @@
 		A2CBC99B1EE983E90032CF0B /* WeakServerSideControlsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeakServerSideControlsVC.xib; sourceTree = "<group>"; };
 		A2CBC9A01EEACCDF0032CF0B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		A2CBC9A21EEACDF00032CF0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A2D08C5F1F4FF00900E6ECC9 /* MemoryManagementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryManagementVC.h; sourceTree = "<group>"; };
+		A2D08C601F4FF00900E6ECC9 /* MemoryManagementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManagementVC.m; sourceTree = "<group>"; };
+		A2D08C611F4FF00900E6ECC9 /* MemoryManagementVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoryManagementVC.xib; sourceTree = "<group>"; };
+		A2D08C651F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudMisconfigurationVC.h; sourceTree = "<group>"; };
+		A2D08C661F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudMisconfigurationVC.m; sourceTree = "<group>"; };
+		A2D08C671F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloudMisconfigurationVC.xib; sourceTree = "<group>"; };
+		A2D08C6B1F4FFCA200E6ECC9 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		A2D08C6C1F4FFCA200E6ECC9 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		A2D08C6F1F4FFE9800E6ECC9 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		A2D08C701F4FFE9800E6ECC9 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		A2D08C711F4FFE9800E6ECC9 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		A2D08C721F4FFE9800E6ECC9 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		A2D08C731F4FFE9800E6ECC9 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		A2D08C741F4FFE9800E6ECC9 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A2D08C751F4FFE9800E6ECC9 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		A2D08C761F4FFE9800E6ECC9 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		A2D08C771F4FFE9800E6ECC9 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		A2D08C781F4FFE9800E6ECC9 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		A2D08C7E1F50024400E6ECC9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A2D08C801F5002EA00E6ECC9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A2D08C821F50036500E6ECC9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A2D78F881EE5760400C815A8 /* BinaryCookiesExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryCookiesExerciseViewController.h; sourceTree = "<group>"; };
 		A2D78F891EE5760400C815A8 /* BinaryCookiesExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryCookiesExerciseViewController.m; sourceTree = "<group>"; };
 		A2D78F8A1EE5760400C815A8 /* BinaryCookiesExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryCookiesExerciseViewController.xib; sourceTree = "<group>"; };
@@ -732,6 +766,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D08C831F50036500E6ECC9 /* ImageIO.framework in Frameworks */,
+				A2D08C811F5002EA00E6ECC9 /* QuartzCore.framework in Frameworks */,
+				141E2FC216C3D49900586528 /* CoreGraphics.framework in Frameworks */,
+				A2D08C7F1F50024400E6ECC9 /* CoreFoundation.framework in Frameworks */,
 				A2CBC9A11EEACCDF0032CF0B /* LocalAuthentication.framework in Frameworks */,
 				A29FFDA11EDF149C0047E340 /* CFNetwork.framework in Frameworks */,
 				A29FFD9D1EDF03BA0047E340 /* libz.tbd in Frameworks */,
@@ -744,7 +782,6 @@
 				1472EAB616D798B100AD63D1 /* Security.framework in Frameworks */,
 				141E2FBE16C3D49900586528 /* UIKit.framework in Frameworks */,
 				141E2FC016C3D49900586528 /* Foundation.framework in Frameworks */,
-				141E2FC216C3D49900586528 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +822,9 @@
 		141E2FBC16C3D49900586528 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2D08C821F50036500E6ECC9 /* ImageIO.framework */,
+				A2D08C801F5002EA00E6ECC9 /* QuartzCore.framework */,
+				A2D08C7E1F50024400E6ECC9 /* CoreFoundation.framework */,
 				A2CBC9A01EEACCDF0032CF0B /* LocalAuthentication.framework */,
 				A29FFDA01EDF149C0047E340 /* CFNetwork.framework */,
 				A29FFD9C1EDF03BA0047E340 /* libz.tbd */,
@@ -851,6 +891,8 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				A2D08C641F4FF8A900E6ECC9 /* Cloud Misconfiguration */,
+				A2D08C5E1F4FEF1C00E6ECC9 /* Memory Management */,
 				0FCF48B91F2D6A850055ED1F /* iGoat Keychain Analyzer */,
 				A2A7F4891F38F1B900671753 /* Key Storage Server Side */,
 				A2E1E20D1F0527FC003B363A /* Cryto Challenge */,
@@ -951,6 +993,8 @@
 		A29FFC381EDEE2FB0047E340 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				A2D08C6E1F4FFE9800E6ECC9 /* SVProgressHUD */,
+				A2D08C6A1F4FFCA200E6ECC9 /* Gif */,
 				A29FFD901EDEE4340047E340 /* CouchBase */,
 				A29FFC391EDEE2FB0047E340 /* CocoaLumberjack */,
 				A29FFC531EDEE2FB0047E340 /* Realm */,
@@ -1456,6 +1500,52 @@
 			path = WeakServerSideControls;
 			sourceTree = "<group>";
 		};
+		A2D08C5E1F4FEF1C00E6ECC9 /* Memory Management */ = {
+			isa = PBXGroup;
+			children = (
+				A2D08C5F1F4FF00900E6ECC9 /* MemoryManagementVC.h */,
+				A2D08C601F4FF00900E6ECC9 /* MemoryManagementVC.m */,
+				A2D08C611F4FF00900E6ECC9 /* MemoryManagementVC.xib */,
+			);
+			path = "Memory Management";
+			sourceTree = "<group>";
+		};
+		A2D08C641F4FF8A900E6ECC9 /* Cloud Misconfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				A2D08C651F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.h */,
+				A2D08C661F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.m */,
+				A2D08C671F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.xib */,
+			);
+			path = "Cloud Misconfiguration";
+			sourceTree = "<group>";
+		};
+		A2D08C6A1F4FFCA200E6ECC9 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				A2D08C6B1F4FFCA200E6ECC9 /* UIImage+animatedGIF.h */,
+				A2D08C6C1F4FFCA200E6ECC9 /* UIImage+animatedGIF.m */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
+		A2D08C6E1F4FFE9800E6ECC9 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A2D08C6F1F4FFE9800E6ECC9 /* SVIndefiniteAnimatedView.h */,
+				A2D08C701F4FFE9800E6ECC9 /* SVIndefiniteAnimatedView.m */,
+				A2D08C711F4FFE9800E6ECC9 /* SVProgressAnimatedView.h */,
+				A2D08C721F4FFE9800E6ECC9 /* SVProgressAnimatedView.m */,
+				A2D08C731F4FFE9800E6ECC9 /* SVProgressHUD-Prefix.pch */,
+				A2D08C741F4FFE9800E6ECC9 /* SVProgressHUD.bundle */,
+				A2D08C751F4FFE9800E6ECC9 /* SVProgressHUD.h */,
+				A2D08C761F4FFE9800E6ECC9 /* SVProgressHUD.m */,
+				A2D08C771F4FFE9800E6ECC9 /* SVRadialGradientLayer.h */,
+				A2D08C781F4FFE9800E6ECC9 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		A2D78F841EE575C700C815A8 /* Binary Cookies */ = {
 			isa = PBXGroup;
 			children = (
@@ -1923,6 +2013,7 @@
 				A2F639B71F1D35AD002C4CC9 /* BrokenCryptographyExerciseViewController_iPad.xib in Resources */,
 				A2F639FB1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */,
 				1462777C16C5653E007FE838 /* Icon.png in Resources */,
+				A2D08C631F4FF00900E6ECC9 /* MemoryManagementVC.xib in Resources */,
 				BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */,
 				A2F63A361F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib in Resources */,
 				A2F63A051F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib in Resources */,
@@ -1931,6 +2022,7 @@
 				A2F63A521F1D377B002C4CC9 /* articles.sqlite in Resources */,
 				A2F63A231F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */,
 				A2F63A061F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib in Resources */,
+				A2D08C7B1F4FFE9800E6ECC9 /* SVProgressHUD.bundle in Resources */,
 				A2F6397D1F1D34E7002C4CC9 /* RootViewController.xib in Resources */,
 				A2F639A41F1D3518002C4CC9 /* CoreDataExerciseViewController_iPhone.xib in Resources */,
 				A2E1E2141F052B95003B363A /* iphone.png in Resources */,
@@ -1950,6 +2042,7 @@
 				A2A7F48E1F38F1B900671753 /* KeyStorageServerSideVC.xib in Resources */,
 				A2F639BF1F1D3606002C4CC9 /* Credentials.plist in Resources */,
 				A2F639C91F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
+				A2D08C691F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.xib in Resources */,
 				82BDD97F1F00271F001DACAD /* BruteForceRuntimeVC.xib in Resources */,
 				A2F639771F1D34E7002C4CC9 /* HintsViewController.xib in Resources */,
 				A2F639EA1F1D3663002C4CC9 /* PublicKeyPinningExerciseController_iPhone.xib in Resources */,
@@ -1987,11 +2080,15 @@
 				A29FFD221EDEE2FB0047E340 /* DDFileLogger.m in Sources */,
 				A2F63A211F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m in Sources */,
 				A29FFD7B1EDEE2FB0047E340 /* YapDatabaseTransaction.m in Sources */,
+				A2D08C6D1F4FFCA200E6ECC9 /* UIImage+animatedGIF.m in Sources */,
+				A2D08C7C1F4FFE9800E6ECC9 /* SVProgressHUD.m in Sources */,
 				A2F63A031F1D36CF002C4CC9 /* BackgroundingExerciseController.m in Sources */,
 				A29FFD6E1EDEE2FB0047E340 /* YapNull.m in Sources */,
 				A29FFD311EDEE2FB0047E340 /* YDBCKMappingTableInfo.m in Sources */,
 				A29FFD4F1EDEE2FB0047E340 /* YapDatabaseRelationshipTransaction.m in Sources */,
+				A2D08C7D1F4FFE9800E6ECC9 /* SVRadialGradientLayer.m in Sources */,
 				A29FFD971EDEE5720047E340 /* CouchBaseExerciseViewController.m in Sources */,
+				A2D08C621F4FF00900E6ECC9 /* MemoryManagementVC.m in Sources */,
 				A29FFD261EDEE2FB0047E340 /* DDDispatchQueueLogFormatter.m in Sources */,
 				A29FFD881EDEE3130047E340 /* RCreditInfo.m in Sources */,
 				A2F63A2B1F1D371B002C4CC9 /* LocalDataStorageExerciseController.m in Sources */,
@@ -2025,6 +2122,7 @@
 				A29FFD391EDEE2FB0047E340 /* YapDatabaseCloudKitOptions.m in Sources */,
 				A29FFD411EDEE2FB0047E340 /* YapDatabaseFullTextSearchConnection.m in Sources */,
 				A29FFD891EDEE3130047E340 /* RealmExerciseViewController.m in Sources */,
+				A2D08C681F4FF8CF00E6ECC9 /* CloudMisconfigurationVC.m in Sources */,
 				A29FFD231EDEE2FB0047E340 /* DDLog.m in Sources */,
 				A29FFD461EDEE2FB0047E340 /* YapDatabaseHooksConnection.m in Sources */,
 				A29FFD4C1EDEE2FB0047E340 /* YapDatabaseRelationshipConnection.m in Sources */,
@@ -2048,6 +2146,7 @@
 				A29FFD651EDEE2FB0047E340 /* YapDatabaseViewTypes.m in Sources */,
 				A29FFD1F1EDEE2FB0047E340 /* DDAbstractDatabaseLogger.m in Sources */,
 				A2F639AF1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.m in Sources */,
+				A2D08C7A1F4FFE9800E6ECC9 /* SVProgressAnimatedView.m in Sources */,
 				A29FFD271EDEE2FB0047E340 /* DDMultiFormatter.m in Sources */,
 				A29FFD591EDEE2FB0047E340 /* YapDatabaseSecondaryIndexSetup.m in Sources */,
 				A29FFD531EDEE2FB0047E340 /* YapDatabaseSearchResultsViewOptions.m in Sources */,
@@ -2105,6 +2204,7 @@
 				A29FFD541EDEE2FB0047E340 /* YapDatabaseSearchResultsViewTransaction.m in Sources */,
 				A2F63A7D1F1D386F002C4CC9 /* ExerciseViewController.m in Sources */,
 				82B7ED8C1F13959900C90736 /* PhotoViewerVC.m in Sources */,
+				A2D08C791F4FFE9800E6ECC9 /* SVIndefiniteAnimatedView.m in Sources */,
 				A29FFD451EDEE2FB0047E340 /* YapDatabaseHooks.m in Sources */,
 				A29FFD4E1EDEE2FB0047E340 /* YapDatabaseRelationshipOptions.m in Sources */,
 				A29FFD301EDEE2FB0047E340 /* YDBCKChangeRecord.m in Sources */,
