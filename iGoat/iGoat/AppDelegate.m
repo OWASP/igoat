@@ -54,7 +54,7 @@
     NSString *URLString = [url absoluteString];
     NSLog(@"handle url %@",URLString);
 
-    if ([url.scheme isEqualToString:@"iGoat"]) {
+    if ([url.scheme caseInsensitiveCompare:@"iGoat"] == NSOrderedSame) {
         NSDictionary *queryInfo = [url parmetersInfo];
         NSString *mobileNo = queryInfo[@"contactNumber"];
         NSString *message = queryInfo[@"message"];

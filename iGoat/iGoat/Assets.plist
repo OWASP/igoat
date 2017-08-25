@@ -988,5 +988,53 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 			</dict>
 		</array>
 	</dict>
+	<key>Memory Management</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop_Junard.html</string>
+				<key>description</key>
+				<string>TBD</string>
+				<key>hints</key>
+				<array>
+					<string>A very common password. </string>
+				</array>
+				<key>initialViewController</key>
+				<string>MemoryManagementVC</string>
+				<key>name</key>
+				<string>Memory Management</string>
+				<key>solution</key>
+				<string>TBD</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Cloud Misconfiguration</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>exercises</key>
+		<array>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop_Junard.html</string>
+				<key>description</key>
+				<string>TBD</string>
+				<key>hints</key>
+				<array>
+					<string>A very common password. </string>
+				</array>
+				<key>initialViewController</key>
+				<string>CloudMisconfigurationVC</string>
+				<key>name</key>
+				<string>Cloud Misconfiguration</string>
+				<key>solution</key>
+				<string>TBD</string>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>
