@@ -827,6 +827,27 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<key>solution</key>
 				<string>TBD</string>
 			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop_anthony.html</string>
+				<key>description</key>
+				<string>In this exercise, you&apos;ll exploit an app that safely stores sensitive
+                    data locally on the iOS device. In the lesson, the app stores data
+                    using a binary cookies file.
+                    
+                    Your task is to locate the binary cookies file and find the sensitive data that
+                    it contains.</string>
+				<key>hints</key>
+				<array>
+					<string>Try to find out key for data is saved in User Defaults</string>
+				</array>
+				<key>initialViewController</key>
+				<string>SecureUserDefaultsViewController</string>
+				<key>name</key>
+				<string>SecureNSUserDefaults</string>
+				<key>solution</key>
+				<string>Check for encrypted data for NSUserDefaults key</string>
+			</dict>
 		</array>
 	</dict>
 	<key>URL Scheme Attack</key>
