@@ -441,6 +441,24 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 				<key>solution</key>
 				<string>Check out binary cookies file located inside app sandbox.</string>
 			</dict>
+			<dict>
+				<key>creditsFile</key>
+				<string>Swaroop_Junard.html</string>
+				<key>description</key>
+				<string>In this exercise, you&apos;ll exploit an app that unsafely stores sensitive data locally on the iOS device. In the lesson, the app stores data using a web cache.
+                    
+Your task is to locate the cache file and find the sensitive data that it contains.</string>
+				<key>hints</key>
+				<array>
+					<string>TODO://Try to find out binary cookies file in app sandbox.</string>
+				</array>
+				<key>initialViewController</key>
+				<string>WebkitCacheExerciseViewController</string>
+				<key>name</key>
+				<string>Webkit Cache</string>
+				<key>solution</key>
+				<string>Check out cache file located inside app sandbox.</string>
+			</dict>
 		</array>
 	</dict>
 	<key>Data Protection (Transit)</key>
