@@ -42,6 +42,8 @@
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
 		4FF491C81F319ABF00A4ED61 /* Swaroop_Heefan.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */; };
+		829715DB1F55954900416774 /* WebkitCacheExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 829715D91F55954900416774 /* WebkitCacheExerciseViewController.m */; };
+		829715DC1F55954900416774 /* WebkitCacheExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829715DA1F55954900416774 /* WebkitCacheExerciseViewController.xib */; };
 		82AF84271F32439700C4832F /* BinaryPatchingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82AF84251F32439700C4832F /* BinaryPatchingVC.m */; };
 		82AF84281F32439700C4832F /* BinaryPatchingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82AF84261F32439700C4832F /* BinaryPatchingVC.xib */; };
 		82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */; };
@@ -360,6 +362,9 @@
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
 		4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Heefan.html; sourceTree = "<group>"; };
+		829715D81F55954900416774 /* WebkitCacheExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebkitCacheExerciseViewController.h; sourceTree = "<group>"; };
+		829715D91F55954900416774 /* WebkitCacheExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebkitCacheExerciseViewController.m; sourceTree = "<group>"; };
+		829715DA1F55954900416774 /* WebkitCacheExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebkitCacheExerciseViewController.xib; sourceTree = "<group>"; };
 		82AF84241F32439700C4832F /* BinaryPatchingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryPatchingVC.h; sourceTree = "<group>"; };
 		82AF84251F32439700C4832F /* BinaryPatchingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryPatchingVC.m; sourceTree = "<group>"; };
 		82AF84261F32439700C4832F /* BinaryPatchingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryPatchingVC.xib; sourceTree = "<group>"; };
@@ -925,6 +930,7 @@
 				82BDD97A1F00271F001DACAD /* Runtime Brute Force Attack */,
 				82B7ED831F1391C300C90736 /* Personal Photo Storage */,
 				82AF84231F32439700C4832F /* Binary Patching */,
+				829715D71F55954900416774 /* Webkit Cache */,
 			);
 			name = Exercises;
 			sourceTree = "<group>";
@@ -983,6 +989,16 @@
 				4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */,
 			);
 			name = "Runtime Analysis Challenge";
+			sourceTree = "<group>";
+		};
+		829715D71F55954900416774 /* Webkit Cache */ = {
+			isa = PBXGroup;
+			children = (
+				829715D81F55954900416774 /* WebkitCacheExerciseViewController.h */,
+				829715D91F55954900416774 /* WebkitCacheExerciseViewController.m */,
+				829715DA1F55954900416774 /* WebkitCacheExerciseViewController.xib */,
+			);
+			path = "Webkit Cache";
 			sourceTree = "<group>";
 		};
 		82AF84231F32439700C4832F /* Binary Patching */ = {
@@ -2040,6 +2056,7 @@
 				82B7ED8D1F13959900C90736 /* PhotoViewerVC.xib in Resources */,
 				A2F639A31F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib in Resources */,
 				A2F63A0F1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib in Resources */,
+				829715DC1F55954900416774 /* WebkitCacheExerciseViewController.xib in Resources */,
 				A2A7F48E1F38F1B900671753 /* KeyStorageServerSideVC.xib in Resources */,
 				A2F639BF1F1D3606002C4CC9 /* Credentials.plist in Resources */,
 				A2F639C91F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
@@ -2098,6 +2115,7 @@
 				A2F639A51F1D3518002C4CC9 /* User+CoreDataClass.m in Sources */,
 				A29FFD691EDEE2FB0047E340 /* YapDatabaseLogging.m in Sources */,
 				A29FFD721EDEE2FB0047E340 /* YapCache.m in Sources */,
+				829715DB1F55954900416774 /* WebkitCacheExerciseViewController.m in Sources */,
 				A2F63A791F1D386F002C4CC9 /* ExerciseIntroViewController.m in Sources */,
 				A29FFD791EDEE2FB0047E340 /* YapDatabaseConnection.m in Sources */,
 				A29FFD421EDEE2FB0047E340 /* YapDatabaseFullTextSearchHandler.m in Sources */,
