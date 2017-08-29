@@ -450,7 +450,7 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 Your task is to locate the cache file and find the sensitive data that it contains.</string>
 				<key>hints</key>
 				<array>
-					<string>TODO://Try to find out binary cookies file in app sandbox.</string>
+					<string>The correct key will decrypt the secret passphrase.</string>
 				</array>
 				<key>initialViewController</key>
 				<string>WebkitCacheExerciseViewController</string>
