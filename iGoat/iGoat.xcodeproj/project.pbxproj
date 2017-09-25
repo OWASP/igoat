@@ -2354,6 +2354,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/sqlcipher";
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2383,6 +2384,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGoat/iGoat-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/sqlcipher";
 				INFOPLIST_FILE = "iGoat/iGoat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
