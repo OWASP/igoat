@@ -32,11 +32,13 @@
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
 		4FF491C81F319ABF00A4ED61 /* Swaroop_Heefan.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */; };
-		50B23CEB1F52EA5E00B83CE3 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B23CE61F52EA5E00B83CE3 /* Base64.m */; };
-		50B23CEC1F52EA5E00B83CE3 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B23CE81F52EA5E00B83CE3 /* CocoaSecurity.m */; };
-		50B23CED1F52EA5E00B83CE3 /* NSUserDefaults+SecureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B23CEA1F52EA5E00B83CE3 /* NSUserDefaults+SecureAdditions.m */; };
-		50B23CF21F52EAB800B83CE3 /* SecureUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B23CF01F52EAB800B83CE3 /* SecureUserDefaultsViewController.m */; };
-		50B23CF31F52EAB800B83CE3 /* SecureUserDefaultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B23CF11F52EAB800B83CE3 /* SecureUserDefaultsViewController.xib */; };
+		50DDAC5A1F7981D5009E8B88 /* SecureUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DDAC511F7979B3009E8B88 /* SecureUserDefaultsViewController.m */; };
+		50DDAC5B1F7982BB009E8B88 /* SecureUserDefaultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50DDAC521F7979B3009E8B88 /* SecureUserDefaultsViewController.xib */; };
+		50DDAC5C1F798331009E8B88 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DDAC551F7979CE009E8B88 /* Base64.m */; };
+		50DDAC5D1F798335009E8B88 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DDAC571F7979CE009E8B88 /* CocoaSecurity.m */; };
+		50DDAC5E1F798339009E8B88 /* NSUserDefaults+SecureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DDAC591F7979CE009E8B88 /* NSUserDefaults+SecureAdditions.m */; };
+		829715DB1F55954900416774 /* WebkitCacheExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 829715D91F55954900416774 /* WebkitCacheExerciseViewController.m */; };
+		829715DC1F55954900416774 /* WebkitCacheExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829715DA1F55954900416774 /* WebkitCacheExerciseViewController.xib */; };
 		82AF84271F32439700C4832F /* BinaryPatchingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82AF84251F32439700C4832F /* BinaryPatchingVC.m */; };
 		82AF84281F32439700C4832F /* BinaryPatchingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82AF84261F32439700C4832F /* BinaryPatchingVC.xib */; };
 		82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */; };
@@ -337,15 +339,18 @@
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
 		4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Heefan.html; sourceTree = "<group>"; };
-		50B23CE51F52EA5E00B83CE3 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
-		50B23CE61F52EA5E00B83CE3 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
-		50B23CE71F52EA5E00B83CE3 /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
-		50B23CE81F52EA5E00B83CE3 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
-		50B23CE91F52EA5E00B83CE3 /* NSUserDefaults+SecureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SecureAdditions.h"; sourceTree = "<group>"; };
-		50B23CEA1F52EA5E00B83CE3 /* NSUserDefaults+SecureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SecureAdditions.m"; sourceTree = "<group>"; };
-		50B23CEF1F52EAB800B83CE3 /* SecureUserDefaultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureUserDefaultsViewController.h; sourceTree = "<group>"; };
-		50B23CF01F52EAB800B83CE3 /* SecureUserDefaultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureUserDefaultsViewController.m; sourceTree = "<group>"; };
-		50B23CF11F52EAB800B83CE3 /* SecureUserDefaultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecureUserDefaultsViewController.xib; sourceTree = "<group>"; };
+		50DDAC501F7979B3009E8B88 /* SecureUserDefaultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureUserDefaultsViewController.h; sourceTree = "<group>"; };
+		50DDAC511F7979B3009E8B88 /* SecureUserDefaultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureUserDefaultsViewController.m; sourceTree = "<group>"; };
+		50DDAC521F7979B3009E8B88 /* SecureUserDefaultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecureUserDefaultsViewController.xib; sourceTree = "<group>"; };
+		50DDAC541F7979CE009E8B88 /* Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		50DDAC551F7979CE009E8B88 /* Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		50DDAC561F7979CE009E8B88 /* CocoaSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
+		50DDAC571F7979CE009E8B88 /* CocoaSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		50DDAC581F7979CE009E8B88 /* NSUserDefaults+SecureAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SecureAdditions.h"; sourceTree = "<group>"; };
+		50DDAC591F7979CE009E8B88 /* NSUserDefaults+SecureAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SecureAdditions.m"; sourceTree = "<group>"; };
+		829715D81F55954900416774 /* WebkitCacheExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebkitCacheExerciseViewController.h; sourceTree = "<group>"; };
+		829715D91F55954900416774 /* WebkitCacheExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebkitCacheExerciseViewController.m; sourceTree = "<group>"; };
+		829715DA1F55954900416774 /* WebkitCacheExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebkitCacheExerciseViewController.xib; sourceTree = "<group>"; };
 		82AF84241F32439700C4832F /* BinaryPatchingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryPatchingVC.h; sourceTree = "<group>"; };
 		82AF84251F32439700C4832F /* BinaryPatchingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryPatchingVC.m; sourceTree = "<group>"; };
 		82AF84261F32439700C4832F /* BinaryPatchingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryPatchingVC.xib; sourceTree = "<group>"; };
@@ -877,9 +882,6 @@
 		1462777F16C56B2E007FE838 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
-				50B23CEE1F52EAB800B83CE3 /* SecureUserDefaults */,
-				A2D08C641F4FF8A900E6ECC9 /* Cloud Misconfiguration */,
-				A2D08C5E1F4FEF1C00E6ECC9 /* Memory Management */,
 				0FCF48B91F2D6A850055ED1F /* iGoat Keychain Analyzer */,
 				A2A7F4891F38F1B900671753 /* Key Storage Server Side */,
 				A2E1E20D1F0527FC003B363A /* Cryto Challenge */,
@@ -912,6 +914,8 @@
 				82BDD97A1F00271F001DACAD /* Runtime Brute Force Attack */,
 				82B7ED831F1391C300C90736 /* Personal Photo Storage */,
 				82AF84231F32439700C4832F /* Binary Patching */,
+				829715D71F55954900416774 /* Webkit Cache */,
+				50DDAC4F1F7979B3009E8B88 /* SecureUserDefaults */,
 			);
 			name = Exercises;
 			sourceTree = "<group>";
@@ -926,27 +930,38 @@
 			name = "Runtime Analysis Challenge";
 			sourceTree = "<group>";
 		};
-		50B23CE41F52EA5E00B83CE3 /* SecureNSUserDefaults */ = {
+		50DDAC4F1F7979B3009E8B88 /* SecureUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				50B23CE51F52EA5E00B83CE3 /* Base64.h */,
-				50B23CE61F52EA5E00B83CE3 /* Base64.m */,
-				50B23CE71F52EA5E00B83CE3 /* CocoaSecurity.h */,
-				50B23CE81F52EA5E00B83CE3 /* CocoaSecurity.m */,
-				50B23CE91F52EA5E00B83CE3 /* NSUserDefaults+SecureAdditions.h */,
-				50B23CEA1F52EA5E00B83CE3 /* NSUserDefaults+SecureAdditions.m */,
-			);
-			path = SecureNSUserDefaults;
-			sourceTree = "<group>";
-		};
-		50B23CEE1F52EAB800B83CE3 /* SecureUserDefaults */ = {
-			isa = PBXGroup;
-			children = (
-				50B23CEF1F52EAB800B83CE3 /* SecureUserDefaultsViewController.h */,
-				50B23CF01F52EAB800B83CE3 /* SecureUserDefaultsViewController.m */,
-				50B23CF11F52EAB800B83CE3 /* SecureUserDefaultsViewController.xib */,
+				50DDAC501F7979B3009E8B88 /* SecureUserDefaultsViewController.h */,
+				50DDAC511F7979B3009E8B88 /* SecureUserDefaultsViewController.m */,
+				50DDAC521F7979B3009E8B88 /* SecureUserDefaultsViewController.xib */,
 			);
 			path = SecureUserDefaults;
+			sourceTree = "<group>";
+		};
+		50DDAC531F7979CE009E8B88 /* SecureNSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				50DDAC541F7979CE009E8B88 /* Base64.h */,
+				50DDAC551F7979CE009E8B88 /* Base64.m */,
+				50DDAC561F7979CE009E8B88 /* CocoaSecurity.h */,
+				50DDAC571F7979CE009E8B88 /* CocoaSecurity.m */,
+				50DDAC581F7979CE009E8B88 /* NSUserDefaults+SecureAdditions.h */,
+				50DDAC591F7979CE009E8B88 /* NSUserDefaults+SecureAdditions.m */,
+			);
+			name = SecureNSUserDefaults;
+			path = iGoat/ThirdParty/SecureNSUserDefaults;
+			sourceTree = SOURCE_ROOT;
+		};
+		829715D71F55954900416774 /* Webkit Cache */ = {
+			isa = PBXGroup;
+			children = (
+				829715D81F55954900416774 /* WebkitCacheExerciseViewController.h */,
+				829715D91F55954900416774 /* WebkitCacheExerciseViewController.m */,
+				829715DA1F55954900416774 /* WebkitCacheExerciseViewController.xib */,
+			);
+			path = "Webkit Cache";
 			sourceTree = "<group>";
 		};
 		82AF84231F32439700C4832F /* Binary Patching */ = {
@@ -1003,9 +1018,7 @@
 		A29FFC381EDEE2FB0047E340 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				50B23CE41F52EA5E00B83CE3 /* SecureNSUserDefaults */,
-				A2D08C6E1F4FFE9800E6ECC9 /* SVProgressHUD */,
-				A2D08C6A1F4FFCA200E6ECC9 /* Gif */,
+				50DDAC531F7979CE009E8B88 /* SecureNSUserDefaults */,
 				A29FFD901EDEE4340047E340 /* CouchBase */,
 				A29FFC391EDEE2FB0047E340 /* CocoaLumberjack */,
 				A29FFC531EDEE2FB0047E340 /* Realm */,
@@ -1511,34 +1524,6 @@
 			path = WeakServerSideControls;
 			sourceTree = "<group>";
 		};
-		A2D08C5E1F4FEF1C00E6ECC9 /* Memory Management */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Memory Management";
-			sourceTree = "<group>";
-		};
-		A2D08C641F4FF8A900E6ECC9 /* Cloud Misconfiguration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Cloud Misconfiguration";
-			sourceTree = "<group>";
-		};
-		A2D08C6A1F4FFCA200E6ECC9 /* Gif */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Gif;
-			sourceTree = "<group>";
-		};
-		A2D08C6E1F4FFE9800E6ECC9 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
 		A2D78F841EE575C700C815A8 /* Binary Cookies */ = {
 			isa = PBXGroup;
 			children = (
@@ -2013,12 +1998,12 @@
 				1462777E16C56546007FE838 /* Icon@2x.png in Resources */,
 				A2F63A521F1D377B002C4CC9 /* articles.sqlite in Resources */,
 				A2F63A231F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */,
-				50B23CF31F52EAB800B83CE3 /* SecureUserDefaultsViewController.xib in Resources */,
 				A2F63A061F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib in Resources */,
 				A2F6397D1F1D34E7002C4CC9 /* RootViewController.xib in Resources */,
 				A2F639A41F1D3518002C4CC9 /* CoreDataExerciseViewController_iPhone.xib in Resources */,
 				A2E1E2141F052B95003B363A /* iphone.png in Resources */,
 				A2F639E11F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPad.xib in Resources */,
+				50DDAC5B1F7982BB009E8B88 /* SecureUserDefaultsViewController.xib in Resources */,
 				A2F63A381F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib in Resources */,
 				A2F639CA1F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPhone.xib in Resources */,
 				82B7ED881F1391C300C90736 /* PersonalPhotoStorageVC.xib in Resources */,
@@ -2031,6 +2016,7 @@
 				82B7ED8D1F13959900C90736 /* PhotoViewerVC.xib in Resources */,
 				A2F639A31F1D3518002C4CC9 /* CoreDataExerciseViewController_iPad.xib in Resources */,
 				A2F63A0F1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib in Resources */,
+				829715DC1F55954900416774 /* WebkitCacheExerciseViewController.xib in Resources */,
 				A2A7F48E1F38F1B900671753 /* KeyStorageServerSideVC.xib in Resources */,
 				A2F639BF1F1D3606002C4CC9 /* Credentials.plist in Resources */,
 				A2F639C91F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController_iPad.xib in Resources */,
@@ -2059,6 +2045,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */,
+				50DDAC5A1F7981D5009E8B88 /* SecureUserDefaultsViewController.m in Sources */,
 				A2F6397E1F1D34E7002C4CC9 /* RotationLimitingNavigationViewController.m in Sources */,
 				A2F63A551F1D377B002C4CC9 /* SQLInjectionExerciseController.m in Sources */,
 				A2F639931F1D34FB002C4CC9 /* NSString+SBJSON.m in Sources */,
@@ -2076,7 +2063,6 @@
 				A29FFD311EDEE2FB0047E340 /* YDBCKMappingTableInfo.m in Sources */,
 				A29FFD4F1EDEE2FB0047E340 /* YapDatabaseRelationshipTransaction.m in Sources */,
 				A29FFD971EDEE5720047E340 /* CouchBaseExerciseViewController.m in Sources */,
-				50B23CED1F52EA5E00B83CE3 /* NSUserDefaults+SecureAdditions.m in Sources */,
 				A29FFD261EDEE2FB0047E340 /* DDDispatchQueueLogFormatter.m in Sources */,
 				A29FFD881EDEE3130047E340 /* RCreditInfo.m in Sources */,
 				A2F63A2B1F1D371B002C4CC9 /* LocalDataStorageExerciseController.m in Sources */,
@@ -2086,10 +2072,12 @@
 				A2F639A51F1D3518002C4CC9 /* User+CoreDataClass.m in Sources */,
 				A29FFD691EDEE2FB0047E340 /* YapDatabaseLogging.m in Sources */,
 				A29FFD721EDEE2FB0047E340 /* YapCache.m in Sources */,
+				829715DB1F55954900416774 /* WebkitCacheExerciseViewController.m in Sources */,
 				A2F63A791F1D386F002C4CC9 /* ExerciseIntroViewController.m in Sources */,
 				A29FFD791EDEE2FB0047E340 /* YapDatabaseConnection.m in Sources */,
 				A29FFD421EDEE2FB0047E340 /* YapDatabaseFullTextSearchHandler.m in Sources */,
 				A2A7F48D1F38F1B900671753 /* KeyStorageServerSideVC.m in Sources */,
+				50DDAC5D1F798335009E8B88 /* CocoaSecurity.m in Sources */,
 				A29FFD5A1EDEE2FB0047E340 /* YapDatabaseSecondaryIndexTransaction.m in Sources */,
 				A2F639911F1D34FB002C4CC9 /* NSData+AESEncryption.m in Sources */,
 				A29FFD211EDEE2FB0047E340 /* DDASLLogger.m in Sources */,
@@ -2109,9 +2097,9 @@
 				A29FFD371EDEE2FB0047E340 /* YapDatabaseCloudKit.m in Sources */,
 				A29FFD391EDEE2FB0047E340 /* YapDatabaseCloudKitOptions.m in Sources */,
 				A29FFD411EDEE2FB0047E340 /* YapDatabaseFullTextSearchConnection.m in Sources */,
+				50DDAC5C1F798331009E8B88 /* Base64.m in Sources */,
 				A29FFD891EDEE3130047E340 /* RealmExerciseViewController.m in Sources */,
 				A29FFD231EDEE2FB0047E340 /* DDLog.m in Sources */,
-				50B23CEC1F52EA5E00B83CE3 /* CocoaSecurity.m in Sources */,
 				A29FFD461EDEE2FB0047E340 /* YapDatabaseHooksConnection.m in Sources */,
 				A29FFD4C1EDEE2FB0047E340 /* YapDatabaseRelationshipConnection.m in Sources */,
 				A29FFD441EDEE2FB0047E340 /* YapDatabaseFullTextSearchTransaction.m in Sources */,
@@ -2132,7 +2120,6 @@
 				A2F639A21F1D3518002C4CC9 /* CoreDataExerciseViewController.m in Sources */,
 				A2F639C81F1D361A002C4CC9 /* CrossSiteScriptingExerciseViewController.m in Sources */,
 				A29FFD651EDEE2FB0047E340 /* YapDatabaseViewTypes.m in Sources */,
-				50B23CEB1F52EA5E00B83CE3 /* Base64.m in Sources */,
 				A29FFD1F1EDEE2FB0047E340 /* DDAbstractDatabaseLogger.m in Sources */,
 				A2F639AF1F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.m in Sources */,
 				A29FFD271EDEE2FB0047E340 /* DDMultiFormatter.m in Sources */,
@@ -2174,7 +2161,6 @@
 				A29FFD3C1EDEE2FB0047E340 /* YapDatabaseFilteredView.m in Sources */,
 				A29FFD621EDEE2FB0047E340 /* YapDatabaseViewConnection.m in Sources */,
 				A29FFD1E1EDEE2FB0047E340 /* CLIColor.m in Sources */,
-				50B23CF21F52EAB800B83CE3 /* SecureUserDefaultsViewController.m in Sources */,
 				A29FFD741EDEE2FB0047E340 /* YapDatabaseQuery.m in Sources */,
 				A29FFD3A1EDEE2FB0047E340 /* YapDatabaseCloudKitTransaction.m in Sources */,
 				A2F63A0D1F1D36DF002C4CC9 /* CutAndPasteExerciseController.m in Sources */,
@@ -2186,6 +2172,7 @@
 				A2CBC9961EE978300032CF0B /* SocialEngineeringVC.m in Sources */,
 				A2F6397C1F1D34E7002C4CC9 /* RootViewController.m in Sources */,
 				A29FFD7A1EDEE2FB0047E340 /* YapDatabaseOptions.m in Sources */,
+				50DDAC5E1F798339009E8B88 /* NSUserDefaults+SecureAdditions.m in Sources */,
 				A2F639751F1D34E7002C4CC9 /* DetailViewController.m in Sources */,
 				A29FFD601EDEE2FB0047E340 /* YapDatabaseViewRangeOptions.m in Sources */,
 				A29FFD6B1EDEE2FB0047E340 /* YapDatabaseStatement.m in Sources */,
