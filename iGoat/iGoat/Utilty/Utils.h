@@ -13,6 +13,14 @@
     
 }
 
+
+/**
+ Returns Random NSString
+ 
+ @return NSString containing random string
+ */
++ (NSString *)generateRandomString;
+
 @end
 
 //******************************************************************************
