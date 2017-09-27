@@ -862,7 +862,7 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 				<key>initialViewController</key>
 				<string>SecureUserDefaultsViewController</string>
 				<key>name</key>
-				<string>SecureNSUserDefaults</string>
+				<string>Secure NSUserDefaults</string>
 				<key>solution</key>
 				<string>Check for encrypted data for NSUserDefaults key</string>
 			</dict>
