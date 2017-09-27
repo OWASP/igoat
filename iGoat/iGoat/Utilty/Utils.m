@@ -1,7 +1,18 @@
 #import "Utils.h"
 
 @implementation Utils
-
++ (NSString *)generateRandomString;
+{
+    size_t maxLength = 16;
+    NSMutableData *data = [NSMutableData dataWithLength:maxLength];
+    int result = SecRandomCopyBytes(kSecRandomDefault, maxLength, data.mutableBytes);
+    if (result != noErr) {
+        return nil;
+    }
+    
+    NSString *resultStr = [data base64EncodedStringWithOptions:kNilOptions];
+    return resultStr;
+}
 @end
 
 //******************************************************************************
