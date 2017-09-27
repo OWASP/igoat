@@ -12,9 +12,15 @@
 
 @interface SecureUserDefaultsViewController ()<UITextFieldDelegate>
 
+@property (nonatomic, weak) IBOutlet UILabel *fNameLbl;
+@property (nonatomic, weak) IBOutlet UILabel *lNameLbl;
+@property (nonatomic, weak) IBOutlet UILabel *genderLbl;
+@property (nonatomic, weak) IBOutlet UILabel *mobileLbl;
+@property (nonatomic, weak) IBOutlet UILabel *locationLbl;
+
 @property (nonatomic, weak) IBOutlet UITextField *fNameTextField;
 @property (nonatomic, weak) IBOutlet UITextField *lNameTextField;
-@property (nonatomic, weak) IBOutlet UITextField *genderTextField;
+@property (nonatomic, weak) IBOutlet UISegmentedControl *genderSegmentControl;
 @property (nonatomic, weak) IBOutlet UITextField *mobileTextField;
 @property (nonatomic, weak) IBOutlet UITextField *locationTextField;
 @property (nonatomic, weak) IBOutlet UIButton *saveBtn;
@@ -50,25 +56,25 @@
     [self.view resignFirstResponder];
     
     NSString *firstName = self.fNameTextField.text;
-    NSString *fNameKey = self.fNameTextField.placeholder;
+    NSString *fNameKey = self.fNameLbl.text;
     
     NSString *lastName = self.lNameTextField.text;
-    NSString *lNameKey = self.lNameTextField.placeholder;
-
-    NSString *gender = self.genderTextField.text;
-    NSString *genderKey = self.genderTextField.placeholder;
+    NSString *lNameKey = self.lNameLbl.text;
+    
+    NSString *gender = self.genderSegmentControl.selectedSegmentIndex == 0 ? @"Male" : @"Female";
+    NSString *genderKey = self.genderLbl.text;
     
     NSString *mobile = self.mobileTextField.text;
-    NSString *mobileKey = self.mobileTextField.placeholder;
+    NSString *mobileKey = self.mobileLbl.text;
     
     NSString *location = self.locationTextField.text;
-    NSString *locationKey = self.locationTextField.placeholder;
+    NSString *locationKey = self.locationLbl.text;
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     NSString *encryptionKey = [Utils generateRandomString];
     
-    NSLog(@"*******************NSUserDefaults+SecureAdditions*******************");
+    NSLog(@"*******************SecureUserDefaults*******************");
     
     NSLog(@"Encryption key: %@",encryptionKey);
     
@@ -76,30 +82,41 @@
     
     if (firstName.length) {
         [defaults setSecretObject:firstName forKey:fNameKey];
+        NSLog(@"\n%@:%@",fNameKey,[defaults objectForKey:fNameKey]);
         [self.fNameTextField setText:@""];
     }
     
     if (lastName.length) {
         [defaults setSecretObject:lastName forKey:lNameKey];
+        NSLog(@"\n%@:%@",lNameKey,[defaults objectForKey:lNameKey]);
         [self.lNameTextField setText:@""];
     }
     
     if (gender.length) {
         [defaults setSecretObject:gender forKey:genderKey];
-        [self.genderTextField setText:@""];
+        NSLog(@"\n%@:%@",genderKey,[defaults objectForKey:genderKey]);
     }
     
     if (mobile.length) {
         [defaults setSecretObject:mobile forKey:mobileKey];
         [self.mobileTextField setText:@""];
+        NSLog(@"\n%@:%@",mobileKey,[defaults objectForKey:mobileKey]);
     }
     
     if (location.length) {
         [defaults setSecretObject:location forKey:locationKey];
         [self.locationTextField setText:@""];
+        NSLog(@"\n%@:%@",locationKey,[defaults objectForKey:locationKey]);
     }
     
     NSLog(@"*********************************************************************");
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"SecureUserDefaults" message:@"Successfully Saved!" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 @end
