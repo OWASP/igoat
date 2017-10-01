@@ -337,8 +337,6 @@
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
 		4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Heefan.html; sourceTree = "<group>"; };
 		82A58E711F80E602002FA51A /* libBuild_Analyze_Rename.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBuild_Analyze_Rename.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		82A58E731F80E602002FA51A /* Build_Analyze_Rename.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Build_Analyze_Rename.h; sourceTree = "<group>"; };
-		82A58E741F80E602002FA51A /* Build_Analyze_Rename.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Build_Analyze_Rename.m; sourceTree = "<group>"; };
 		82AF84241F32439700C4832F /* BinaryPatchingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryPatchingVC.h; sourceTree = "<group>"; };
 		82AF84251F32439700C4832F /* BinaryPatchingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryPatchingVC.m; sourceTree = "<group>"; };
 		82AF84261F32439700C4832F /* BinaryPatchingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryPatchingVC.xib; sourceTree = "<group>"; };
@@ -779,7 +777,6 @@
 				4FE1C65A1EF9321200F40320 /* maxpower.h */,
 				A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */,
 				141E2FC316C3D49900586528 /* iGoat */,
-				82A58E721F80E602002FA51A /* Build_Analyze_Rename */,
 				141E2FBC16C3D49900586528 /* Frameworks */,
 				141E2FBB16C3D49900586528 /* Products */,
 			);
@@ -907,15 +904,6 @@
 				4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */,
 			);
 			name = "Runtime Analysis Challenge";
-			sourceTree = "<group>";
-		};
-		82A58E721F80E602002FA51A /* Build_Analyze_Rename */ = {
-			isa = PBXGroup;
-			children = (
-				82A58E731F80E602002FA51A /* Build_Analyze_Rename.h */,
-				82A58E741F80E602002FA51A /* Build_Analyze_Rename.m */,
-			);
-			path = Build_Analyze_Rename;
 			sourceTree = "<group>";
 		};
 		82AF84231F32439700C4832F /* Binary Patching */ = {
@@ -2445,6 +2433,7 @@
 				82A58E781F80E602002FA51A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
