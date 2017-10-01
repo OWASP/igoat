@@ -29,7 +29,7 @@
     self.navigationItem.title = @"Introduction";
 
     UIBarButtonItem *homeButton = [[[UIBarButtonItem alloc]
-                                    initWithTitle:@"Home" style:UIBarButtonItemStyleBordered
+                                    initWithTitle:@"Home" style:UIBarButtonItemStylePlain
                                     target:self action:@selector(goHome)] autorelease];
     
     self.navigationItem.rightBarButtonItem = homeButton;
@@ -41,12 +41,12 @@
 
     UIBarButtonItem *creditsButton = [[UIBarButtonItem alloc]
                                       initWithTitle:@"Credits"
-                                      style:UIBarButtonItemStyleBordered
+                                      style:UIBarButtonItemStylePlain
                                       target:self action:@selector(showInfoDialog)];
 
     UIBarButtonItem *startButton = [[UIBarButtonItem alloc]
                                     initWithTitle:@"Start Exercise"
-                                    style:UIBarButtonItemStyleBordered
+                                    style:UIBarButtonItemStylePlain
                                     target:self action:@selector(startExercise)];
 
     self.toolbarItems = [NSArray arrayWithObjects:creditsButton, flexibleSpaceItem, startButton, nil]; 
@@ -106,12 +106,13 @@
     
     infoViewController.delegate = self;
     
-    [self presentModalViewController:infoViewController animated:NO];
+    [self presentViewController:infoViewController animated:NO completion:nil];
+
     [infoViewController release];
 }
 
 - (void)didDismissInfoDialog {
-    [self dismissModalViewControllerAnimated:NO];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

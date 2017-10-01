@@ -65,7 +65,8 @@
     
     infoViewController.delegate = self;
     
-    [self presentModalViewController:infoViewController animated:NO];
+    [self presentViewController:infoViewController animated:NO completion:nil];
+
     [infoViewController release];
     [fileContentsAsString release];
 }
@@ -75,7 +76,7 @@
 }
 
 - (void)didDismissInfoDialog {
-    [self dismissModalViewControllerAnimated:NO];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
