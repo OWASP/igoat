@@ -56,7 +56,10 @@
     }
 
     NSLog(@"Nib file to be loaded: %@", nibName);
-    ExerciseViewController *newController = [[NSClassFromString(initialControllerName) alloc] initWithNibName:nibName bundle:nil exercise:newExercise];
+    
+    // If obfuscated run, presence of "_initialViewController". 
+    NSString *alias = newExercise.originalDictionary[@"_initialViewController"] ?  newExercise.originalDictionary[@"_initialViewController"] : initialControllerName;
+    ExerciseViewController *newController = [[NSClassFromString(alias) alloc] initWithNibName:nibName bundle:nil exercise:newExercise];
 
     if (newController) {
         // Disable the "Hints" button if there aren't any.

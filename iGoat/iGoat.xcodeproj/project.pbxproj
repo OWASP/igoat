@@ -264,6 +264,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		82A58E7A1F80E612002FA51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 141E2FB216C3D49900586528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 141E2FB916C3D49900586528;
+			remoteInfo = iGoat;
+		};
 		82EFD9071EFF889400729DB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2590B2C1EB9C17E00CBA9D7 /* sqlcipher.xcodeproj */;
@@ -329,6 +336,7 @@
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
 		4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Heefan.html; sourceTree = "<group>"; };
+		82A58E711F80E602002FA51A /* libBuild_Analyze_Rename.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBuild_Analyze_Rename.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		82AF84241F32439700C4832F /* BinaryPatchingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryPatchingVC.h; sourceTree = "<group>"; };
 		82AF84251F32439700C4832F /* BinaryPatchingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryPatchingVC.m; sourceTree = "<group>"; };
 		82AF84261F32439700C4832F /* BinaryPatchingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryPatchingVC.xib; sourceTree = "<group>"; };
@@ -778,6 +786,7 @@
 			isa = PBXGroup;
 			children = (
 				141E2FBA16C3D49900586528 /* iGoat.app */,
+				82A58E711F80E602002FA51A /* libBuild_Analyze_Rename.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1821,6 +1830,22 @@
 			productReference = 141E2FBA16C3D49900586528 /* iGoat.app */;
 			productType = "com.apple.product-type.application";
 		};
+		82A58E701F80E602002FA51A /* Build_Analyze_Rename */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82A58E791F80E602002FA51A /* Build configuration list for PBXNativeTarget "Build_Analyze_Rename" */;
+			buildPhases = (
+				82A58E7C1F80E622002FA51A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82A58E7B1F80E612002FA51A /* PBXTargetDependency */,
+			);
+			name = Build_Analyze_Rename;
+			productName = Build_Analyze_Rename;
+			productReference = 82A58E711F80E602002FA51A /* libBuild_Analyze_Rename.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1835,6 +1860,10 @@
 				TargetAttributes = {
 					141E2FB916C3D49900586528 = {
 						DevelopmentTeam = AX7SV79V34;
+						ProvisioningStyle = Automatic;
+					};
+					82A58E701F80E602002FA51A = {
+						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1858,6 +1887,7 @@
 			projectRoot = "";
 			targets = (
 				141E2FB916C3D49900586528 /* iGoat */,
+				82A58E701F80E602002FA51A /* Build_Analyze_Rename */,
 			);
 		};
 /* End PBXProject section */
@@ -1968,6 +1998,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82A58E7C1F80E622002FA51A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Build_Analyze_Rename\n\nPATH=\"$PATH:$SRCROOT/ThirdPartyTools/PPiOS-Rename:$SRCROOT/ThirdPartyTools/plistRename\"\n\ncd $CONFIGURATION_BUILD_DIR\necho \"PATH=$PATH\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\n\n# Analyze the symbols from the binary\n# Exclude symbol CBLManager because it's part of the embedded framework\n# todo: Find better way to manage excludes...\nppios-rename --analyze iGoat.app/iGoat -F '!CBLManager'\n\n# Copy the resulting symbols map to the source\nmkdir -p $SRCROOT/Build_Analyze_Rename\nSYMBOL_MAP_PATH=$SRCROOT/Build_Analyze_Rename/symbols.map\nrm -f $SYMBOL_MAP_PATH\ncp symbols.map $SYMBOL_MAP_PATH\n\n# Apply the rename obfuscation to all sources, storyboards and core data files.\nSOURCE_PATH_TO_OBFUSCATE=$SRCROOT/iGoat\ncd $SOURCE_PATH_TO_OBFUSCATE\nppios-rename --obfuscate-sources --symbols-map $SYMBOL_MAP_PATH\n\n\n# Apply rename obfuscation to Assets.plist \"initialViewController\" key\nPLIST_PATH=$SRCROOT/iGoat/Assets.plist\nOBFUSCATED_PLIST_PATH=$SRCROOT/iGoat/Assets_obfuscated.plist\nrm -f $OBFUSCATED_PLIST_PATH\nplistRename -map $SYMBOL_MAP_PATH -plist $PLIST_PATH -key initialViewController\ncp $OBFUSCATED_PLIST_PATH $SRCROOT/iGoat/Assets.plist\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		141E2FB616C3D49900586528 /* Sources */ = {
@@ -2133,6 +2179,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		82A58E7B1F80E612002FA51A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 141E2FB916C3D49900586528 /* iGoat */;
+			targetProxy = 82A58E7A1F80E612002FA51A /* PBXContainerItemProxy */;
+		};
 		82EFD9081EFF889400729DB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = sqlcipher;
@@ -2287,6 +2338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DEVELOPMENT_TEAM = AX7SV79V34;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2312,6 +2364,48 @@
 			};
 			name = Release;
 		};
+		82A58E771F80E602002FA51A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		82A58E781F80E602002FA51A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2329,6 +2423,15 @@
 			buildConfigurations = (
 				141E2FE416C3D49900586528 /* Debug */,
 				141E2FE516C3D49900586528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82A58E791F80E602002FA51A /* Build configuration list for PBXNativeTarget "Build_Analyze_Rename" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82A58E771F80E602002FA51A /* Debug */,
+				82A58E781F80E602002FA51A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -30,6 +30,7 @@
                                                        solution:[exerciseDict objectForKey:@"solution"]
                                           initialViewController:[exerciseDict objectForKey:@"initialViewController"]];
 
+            exercise.originalDictionary = exerciseDict;
             [category.exercises addObject:exercise];
         }
         

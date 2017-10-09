@@ -65,7 +65,8 @@
     
     infoViewController.delegate = self;
     
-    [self presentModalViewController:infoViewController animated:NO];
+    [self presentViewController:infoViewController animated:NO completion:nil];
+
     [infoViewController release];
     [fileContentsAsString release];
 }
@@ -75,7 +76,7 @@
 }
 
 - (void)didDismissInfoDialog {
-    [self dismissModalViewControllerAnimated:NO];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -83,7 +84,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [AssetStore.categories count];
+    return [ASSETSTORE.categories count];
 }
 
 // Customize the appearance of table view cells.
@@ -102,7 +103,7 @@
     selectedBackground.backgroundColor = UIColorFromHex(0x3366CC);
     [cell setSelectedBackgroundView:selectedBackground];
     [[cell textLabel] setTextColor:UIColorFromHex(0xc3c3c3)];
-    [[cell textLabel] setText:[[AssetStore.categories objectAtIndex:indexPath.row] description]];
+    [[cell textLabel] setText:[[ASSETSTORE.categories objectAtIndex:indexPath.row] description]];
 
     return cell;
 }
@@ -110,7 +111,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ExercisesViewController *exercisesViewController =
         [[ExercisesViewController alloc] initWithNibName:@"ExercisesViewController" bundle:nil
-                                                category:[AssetStore.categories
+                                                category:[ASSETSTORE.categories
                                                           objectAtIndex:indexPath.row]];
 
     // Pass the selected object to the new view controller.

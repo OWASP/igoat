@@ -3,10 +3,9 @@
 #import "Asset.h"
 #import "Category.h"
 
-@interface Exercise : Asset {
+@interface Exercise : Asset
 
-}
-
+@property (strong, nonatomic) NSDictionary *originalDictionary;
 @property (strong, nonatomic) NSString *creditsFile;
 @property (strong, nonatomic) NSMutableArray *hints;
 @property (nonatomic) NSInteger hintIndex;

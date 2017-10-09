@@ -5,7 +5,19 @@
 
 @implementation ExercisesViewController
 
-@synthesize category;
+@synthesize category = _category;
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil
+                         bundle:(NSBundle *)nibBundleOrNil
+                       category:(ExerciseCategory *)category
+{
+    self = [super initWithNibName:nibNameOrNil
+                           bundle:nibBundleOrNil];
+    if (self) {
+        _category = category;
+    }
+    return self;
+}
 
 - (void)awakeFromNib {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
@@ -34,7 +46,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [category.exercises count];
+    return [_category.exercises count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -48,7 +60,7 @@
     }
     
     // Configure the cell.
-    [[cell textLabel] setText:[[category.exercises objectAtIndex:indexPath.row] description]];
+    [[cell textLabel] setText:[[_category.exercises objectAtIndex:indexPath.row] description]];
     
     return cell;
 }

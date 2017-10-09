@@ -8,6 +8,9 @@
 
 @property (strong, nonatomic) ExerciseCategory *category;
 @property (strong, nonatomic) DetailViewController *detailViewController;
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil
+                         bundle:(NSBundle *)nibBundleOrNil
+                       category:(ExerciseCategory *)category;
 
 @end
 

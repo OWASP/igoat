@@ -28,7 +28,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [AssetStore.categories count];
+    return [ASSETSTORE.categories count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -42,7 +42,7 @@
     }
     
     // Configure the cell.
-    [[cell textLabel] setText:[[AssetStore.categories objectAtIndex:indexPath.row] description]];
+    [[cell textLabel] setText:[[ASSETSTORE.categories objectAtIndex:indexPath.row] description]];
     
     return cell;
 }
@@ -60,7 +60,7 @@
     if ([[segue identifier] isEqualToString:@"showExercises"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         ExercisesViewController *exercisesViewController = [segue destinationViewController];
-        exercisesViewController.category = [AssetStore.categories objectAtIndex:indexPath.row];
+        exercisesViewController.category = [ASSETSTORE.categories objectAtIndex:indexPath.row];
     }
 }
 
