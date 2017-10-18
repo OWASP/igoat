@@ -82,6 +82,7 @@ To contribute to iGoat project, please contact __Swaroop__ ( swaroop.yermalkar@o
 * Ken van Wyk
 * Jonathan Carter
 * Heefan
+* Tilak Kumar
 * Bernhard Mueller
 * Sagar Popat
 * Chandrakant Nial 
