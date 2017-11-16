@@ -253,7 +253,6 @@
 		A2F63A2D1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A291F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPad.xib */; };
 		A2F63A2E1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A2A1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPhone.xib */; };
 		A2F63A351F1D372A002C4CC9 /* ServerCommunicationExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A311F1D372A002C4CC9 /* ServerCommunicationExerciseController.m */; };
-		A2F63A361F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A321F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib */; };
 		A2F63A371F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A331F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPad.xib */; };
 		A2F63A381F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A341F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib */; };
 		A2F63A521F1D377B002C4CC9 /* articles.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A491F1D377B002C4CC9 /* articles.sqlite */; };
@@ -739,7 +738,6 @@
 		A2F63A2A1F1D371B002C4CC9 /* LocalDataStorageExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalDataStorageExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F63A301F1D372A002C4CC9 /* ServerCommunicationExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerCommunicationExerciseController.h; sourceTree = "<group>"; };
 		A2F63A311F1D372A002C4CC9 /* ServerCommunicationExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerCommunicationExerciseController.m; sourceTree = "<group>"; };
-		A2F63A321F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController.xib; sourceTree = "<group>"; };
 		A2F63A331F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController_iPad.xib; sourceTree = "<group>"; };
 		A2F63A341F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F63A491F1D377B002C4CC9 /* articles.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = articles.sqlite; sourceTree = "<group>"; };
@@ -1874,7 +1872,6 @@
 			children = (
 				A2F63A301F1D372A002C4CC9 /* ServerCommunicationExerciseController.h */,
 				A2F63A311F1D372A002C4CC9 /* ServerCommunicationExerciseController.m */,
-				A2F63A321F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib */,
 				A2F63A331F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPad.xib */,
 				A2F63A341F1D372A002C4CC9 /* ServerCommunicationExerciseController_iPhone.xib */,
 			);
@@ -2070,7 +2067,6 @@
 				A2F639FB1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */,
 				1462777C16C5653E007FE838 /* Icon.png in Resources */,
 				BC837C0219BF7C86003E4CFF /* iGoatSSLServer.der in Resources */,
-				A2F63A361F1D372A002C4CC9 /* ServerCommunicationExerciseController.xib in Resources */,
 				A2F63A051F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib in Resources */,
 				5071C0971F7A7A9B0003FDE4 /* SecureUserDefaultsViewController.xib in Resources */,
 				4FA602601F558DC800A05742 /* MemoryManagementVC.xib in Resources */,

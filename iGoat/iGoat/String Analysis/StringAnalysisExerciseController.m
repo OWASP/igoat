@@ -70,7 +70,7 @@
 
 // To use the solution coded below, begin cutting off and repalcing here
 
-NSString* StringAnalysisExercise = @"secret plaintext riddle answer: To prove it wasn't chicken";
+NSString* StringAnalysisExercise = @"secret plaintext riddle answer: To prove it was not chicken";
 
 - (BOOL) isValidResponse:(NSString*)proposedResponse {
     NSString* stringTableEntry = [self retrieveStringTableEntry];
