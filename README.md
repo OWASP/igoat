@@ -58,7 +58,7 @@ __Lead Developer__ - Anthony Gonsalves
   * Backgrounding
   * Keystroke Logging
   
-* __Tamepring__ 
+* __Tampering__ 
   * Method Swizzling
   
 * __Injection Flaws__
