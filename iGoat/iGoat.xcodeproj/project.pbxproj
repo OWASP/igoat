@@ -32,6 +32,9 @@
 		4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */; };
 		4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */; };
 		4FF491C81F319ABF00A4ED61 /* Swaroop_Heefan.html in Resources */ = {isa = PBXBuildFile; fileRef = 4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */; };
+		822601F61FDC4CF300C3A609 /* FWTObfuscator.m in Sources */ = {isa = PBXBuildFile; fileRef = 822601EF1FDC4CF200C3A609 /* FWTObfuscator.m */; };
+		822601F71FDC4CF300C3A609 /* FWTObfuscator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 822601F01FDC4CF200C3A609 /* FWTObfuscator.podspec */; };
+		822601F91FDC4CF300C3A609 /* NSString+FWTObfuscation.m in Sources */ = {isa = PBXBuildFile; fileRef = 822601F31FDC4CF200C3A609 /* NSString+FWTObfuscation.m */; };
 		82AF84271F32439700C4832F /* BinaryPatchingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82AF84251F32439700C4832F /* BinaryPatchingVC.m */; };
 		82AF84281F32439700C4832F /* BinaryPatchingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82AF84261F32439700C4832F /* BinaryPatchingVC.xib */; };
 		82B7ED871F1391C300C90736 /* PersonalPhotoStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7ED851F1391C300C90736 /* PersonalPhotoStorageVC.m */; };
@@ -336,6 +339,12 @@
 		4FE1C6671EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeAnalysisChallengeVC.m; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.m"; sourceTree = "<group>"; };
 		4FE1C66B1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RuntimeAnalysisChallengeVC.xib; path = "Runtime Analysis Challenge/RuntimeAnalysisChallengeVC.xib"; sourceTree = "<group>"; };
 		4FF491C71F319ABF00A4ED61 /* Swaroop_Heefan.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Swaroop_Heefan.html; sourceTree = "<group>"; };
+		822601ED1FDC4CF200C3A609 /* FWTObfuscator+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FWTObfuscator+Private.h"; sourceTree = "<group>"; };
+		822601EE1FDC4CF200C3A609 /* FWTObfuscator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTObfuscator.h; sourceTree = "<group>"; };
+		822601EF1FDC4CF200C3A609 /* FWTObfuscator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTObfuscator.m; sourceTree = "<group>"; };
+		822601F01FDC4CF200C3A609 /* FWTObfuscator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FWTObfuscator.podspec; sourceTree = "<group>"; };
+		822601F21FDC4CF200C3A609 /* NSString+FWTObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FWTObfuscation.h"; sourceTree = "<group>"; };
+		822601F31FDC4CF200C3A609 /* NSString+FWTObfuscation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FWTObfuscation.m"; sourceTree = "<group>"; };
 		82A58E711F80E602002FA51A /* libBuild_Analyze_Rename.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBuild_Analyze_Rename.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		82AF84241F32439700C4832F /* BinaryPatchingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryPatchingVC.h; sourceTree = "<group>"; };
 		82AF84251F32439700C4832F /* BinaryPatchingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryPatchingVC.m; sourceTree = "<group>"; };
@@ -648,7 +657,7 @@
 		A2F639CE1F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPad.xib; sourceTree = "<group>"; };
 		A2F639CF1F1D3625002C4CC9 /* DeviceLogsExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		A2F639D41F1D3636002C4CC9 /* StringAnalysisExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAnalysisExerciseController.h; sourceTree = "<group>"; };
-		A2F639D51F1D3636002C4CC9 /* StringAnalysisExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringAnalysisExerciseController.m; sourceTree = "<group>"; };
+		A2F639D51F1D3636002C4CC9 /* StringAnalysisExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StringAnalysisExerciseController.m; path = "iGoat/String Analysis/StringAnalysisExerciseController.m"; sourceTree = SOURCE_ROOT; };
 		A2F639D61F1D3636002C4CC9 /* StringAnalysisExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPad.xib; sourceTree = "<group>"; };
 		A2F639D71F1D3636002C4CC9 /* StringAnalysisExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F639DC1F1D3645002C4CC9 /* MethodSwizzlingExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingExerciseController.h; sourceTree = "<group>"; };
@@ -812,6 +821,7 @@
 		141E2FC316C3D49900586528 /* iGoat */ = {
 			isa = PBXGroup;
 			children = (
+				822601EC1FDC4CF200C3A609 /* obfuscator-objc */,
 				A2F6397F1F1D34FB002C4CC9 /* Utilty */,
 				A2F63A7E1F1D3890002C4CC9 /* AssetStore */,
 				A2F63A6A1F1D386F002C4CC9 /* Exercise Base */,
@@ -905,6 +915,20 @@
 			);
 			name = "Runtime Analysis Challenge";
 			sourceTree = "<group>";
+		};
+		822601EC1FDC4CF200C3A609 /* obfuscator-objc */ = {
+			isa = PBXGroup;
+			children = (
+				822601ED1FDC4CF200C3A609 /* FWTObfuscator+Private.h */,
+				822601EE1FDC4CF200C3A609 /* FWTObfuscator.h */,
+				822601EF1FDC4CF200C3A609 /* FWTObfuscator.m */,
+				822601F01FDC4CF200C3A609 /* FWTObfuscator.podspec */,
+				822601F21FDC4CF200C3A609 /* NSString+FWTObfuscation.h */,
+				822601F31FDC4CF200C3A609 /* NSString+FWTObfuscation.m */,
+			);
+			name = "obfuscator-objc";
+			path = "ThirdPartyTools/obfuscator-objc";
+			sourceTree = SOURCE_ROOT;
 		};
 		82AF84231F32439700C4832F /* Binary Patching */ = {
 			isa = PBXGroup;
@@ -1989,6 +2013,7 @@
 				4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */,
 				A2F63A641F1D379F002C4CC9 /* mansi.html in Resources */,
 				A2F639FC1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */,
+				822601F71FDC4CF300C3A609 /* FWTObfuscator.podspec in Resources */,
 				A2F63A221F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib in Resources */,
 				A2F639B01F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.xib in Resources */,
 				A29FFD281EDEE2FB0047E340 /* README.txt in Resources */,
@@ -2021,6 +2046,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE1C6691EF939AE00F40320 /* RuntimeAnalysisChallengeVC.m in Sources */,
+				822601F61FDC4CF300C3A609 /* FWTObfuscator.m in Sources */,
 				A2F6397E1F1D34E7002C4CC9 /* RotationLimitingNavigationViewController.m in Sources */,
 				A2F63A551F1D377B002C4CC9 /* SQLInjectionExerciseController.m in Sources */,
 				A2F639931F1D34FB002C4CC9 /* NSString+SBJSON.m in Sources */,
@@ -2030,6 +2056,7 @@
 				A29FFD571EDEE2FB0047E340 /* YapDatabaseSecondaryIndexHandler.m in Sources */,
 				4FE1C65B1EF9321200F40320 /* maxpower.c in Sources */,
 				A2F639D81F1D3636002C4CC9 /* StringAnalysisExerciseController.m in Sources */,
+				822601F91FDC4CF300C3A609 /* NSString+FWTObfuscation.m in Sources */,
 				A29FFD221EDEE2FB0047E340 /* DDFileLogger.m in Sources */,
 				A2F63A211F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m in Sources */,
 				A29FFD7B1EDEE2FB0047E340 /* YapDatabaseTransaction.m in Sources */,

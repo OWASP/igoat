@@ -11,4 +11,34 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+// Place at the project settings
+#ifndef OBFUSCATED
+#define OBFUSCATED
+#endif
+
+#ifdef OBFUSCATED
+
+#ifndef __obfuscated
+#define __obfuscated
+
+
+#import "FWTObfuscator.h"
+#import "NSString+FWTObfuscation.h"
+
+static inline NSString *Deobfuscate(NSString *string){
+
+    if (![FWTObfuscator defaultObfuscator].encryptionKey) {
+        [FWTObfuscator defaultObfuscator].encryptionKey = @"SomeKey";
+    }
+    
+    return [string unobfuscatedString];
+}
+#else
+static inline NSString *Deobfuscate(NSString *string){
+        return string;
+}
+
+#endif
+#endif
 #endif

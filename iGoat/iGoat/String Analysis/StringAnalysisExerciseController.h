@@ -7,9 +7,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *answerField;
 
-- (NSString*)retrieveStringTableEntry;
-- (BOOL) isValidResponse:(NSString*)proposedResponse;
-- (BOOL) isPlaintextStringTableEntry;
 - (IBAction)submit:(id)sender;
 
 @end
