@@ -8,48 +8,21 @@
 // try to do a proper string analysis of the binary and determine the
 // answer correctly.
 
-- (NSString*) retrieveStringTableEntry {
-    return StringAnalysisExercise;
-}
+__obfuscated NSString* StringAnalysisExercise = @"secret plaintext riddle answer: To prove it wasn't chicken";
 
-- (BOOL) isPlaintextStringTableEntry {
-    NSString* stringTableEntry = [self retrieveStringTableEntry];
-    return ([stringTableEntry rangeOfString:@"plaintext" options:NSCaseInsensitiveSearch].location != NSNotFound);
-}
 
 - (IBAction)submit:(id)sender {
     
-    if ([self isValidResponse:answerField.text]) {
-        if ([self isPlaintextStringTableEntry]) {
-            
-            
-            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Almost there..."
-                                                                           message:@"How can you change the string table entry to not store the plaintext answer?"
-                                                                    preferredStyle:UIAlertControllerStyleAlert];
-            
-            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                                  handler:^(UIAlertAction * action) {}];
-            
-            [alert addAction:defaultAction];
-            [self presentViewController:alert animated:YES completion:nil];
-            
-            
-        }
-        else {
-            
-            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Congratulations!"
-                                                                           message:@"You appear to have protected the answer against string analysis"
-                                                                    preferredStyle:UIAlertControllerStyleAlert];
-            
-            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                                  handler:^(UIAlertAction * action) {}];
-            
-            [alert addAction:defaultAction];
-            [self presentViewController:alert animated:YES completion:nil];
-            
-            
-            
-        }
+    if ([Deobfuscate(StringAnalysisExercise) rangeOfString:answerField.text options:NSCaseInsensitiveSearch].location != NSNotFound) {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Congratulations!"
+                                                                       message:@"You appear to have protected the answer against string analysis"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
     }
     else {
         
@@ -62,81 +35,8 @@
         
         [alert addAction:defaultAction];
         [self presentViewController:alert animated:YES completion:nil];
-        
-        
     }
-    
 }
-
-// To use the solution coded below, begin cutting off and repalcing here
-
-NSString* StringAnalysisExercise = @"secret plaintext riddle answer: To prove it wasn't chicken";
-
-- (BOOL) isValidResponse:(NSString*)proposedResponse {
-    NSString* stringTableEntry = [self retrieveStringTableEntry];
-    return ([stringTableEntry rangeOfString:proposedResponse options:NSCaseInsensitiveSearch].location != NSNotFound);
-}
-
-//******************************************************************************
-// SOLUTION
-//
-// There are a number of different strategies you could employ to solve this problem.
-// In the solution below, we use a hardcoded BASE64 encoded string that represents an
-// encrypted form of the string that is encrypted using a simple XOR algorithm with the
-// hardcoded key "iGoat"
-//
-// Replace the hardcoded string 'StringAnalysisExercise' with its equivalent below
-// Replace the isValidResponse method with the implementation below
-// Add the new transform method below to perform basic XOR encryption / decryption
-//
-// There are a number of other things to think about with this solution to make
-// things harder to reverse. For instance, you could move the string out of the string table entirely
-// and represent it as an array of hardcoded bytes.  Then, apply an XOR
-// encryption to the array of byes and store that within the binary instead.
-//
-// You'd also want to think about method names, preventing swizzling, etc.
-// Other exercises will help you tackle those issues too...
-//******************************************************************************
-
-
-// In real life, you'd want to avoid having this method exposed to a hacker. If it
-// must be exposed, give it a name that will not attract attention from someone doing
-// basic static analysis
-
-/*
- NSString* StringAnalysisExercise = @"EhEKNQoVVBsuCwUYDGcfDRUAKRsEDB1nDg8HHiIdW1Q9KE8RBgYxCkEdHWcYAAcHYBtBFwEuDAoRBw==";
- 
- - (void)transform:(NSData *)input
- {
- NSString* key = @"iGoat";
- unsigned char* pBytesInput = (unsigned char*)[input bytes];
- unsigned char* pBytesKey = (unsigned char*)[[key dataUsingEncoding:NSUTF8StringEncoding] bytes];
- unsigned int vlen = [input length];
- unsigned int klen = [key length];
- unsigned int v = 0;
- unsigned int k = vlen % klen;
- unsigned char c;
- for (v; v < vlen; v++) {
- c = pBytesInput[v] ^ pBytesKey[k];
- pBytesInput[v] = c;
- k = (++k < klen ? k : 0);
- }
- }
- 
- - (BOOL) isValidResponse:(NSString *)proposedResponse {
- NSString* stringTableEntryInput = [self retrieveStringTableEntry];
- NSData *data = [[NSData alloc] initWithBase64EncodedString:stringTableEntryInput options:0];
- 
- // Try to 'decrypt' the buffer, transformation happens in-place.
- [self transform:data];
- 
- // See if it got transformed back ok.
- NSString* result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
- 
- return ([result rangeOfString:proposedResponse options:NSCaseInsensitiveSearch].location != NSNotFound);
- }
- */
-
 @end
 
 //******************************************************************************

@@ -756,7 +756,7 @@ NSString *const YapDatabaseNotificationKey           = @"notification";
 			NSAssert(NO, @"YapDatabaseOptions.cipherKeyBlock cannot return nil!");
 			return NO;
 		}
-		
+        SQLITE_API int sqlite3_key(sqlite3 *db, const void *pKey, int nKey);
 		int status = sqlite3_key(sqlite, [keyData bytes], (int)[keyData length]);
 		if (status != SQLITE_OK)
 		{
