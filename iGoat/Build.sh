@@ -37,7 +37,7 @@ function BuildIgoat()
 
     ExpectedFile=$DerivedDataPath/Build/Products/Release-iphoneos/iGoat.app/iGoat
 
-     if [[ -f $ExpectedFile ]]; then
+     if [[ -f "$ExpectedFile" ]]; then
      	echo "SUCCESS FILE EXIST FOR: $ExpectedFile"
  	    iGoatBinary=$ExpectedFile
      else
@@ -75,7 +75,7 @@ function BuildArchive()
         -configuration Release\
         -sdk iphoneos\
         -derivedDataPath $DerivedDataPath\
-        -archivePath $ARCHIVEPATH\
+        -archivePath "$ARCHIVEPATH"\
         CODE_SIGNING_REQUIRED=NO\
         CODE_SIGN_IDENTITY=""\
         ENABLE_BITCODE=NO\
