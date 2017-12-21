@@ -26,10 +26,11 @@
 #import "FWTObfuscator.h"
 #import "NSString+FWTObfuscation.h"
 
+#define OBFUSCATIONKEY @"This is my obfuscation Key!"
 static inline NSString *Deobfuscate(NSString *string){
-
+    
     if (![FWTObfuscator defaultObfuscator].encryptionKey) {
-        [FWTObfuscator defaultObfuscator].encryptionKey = @"SomeKey";
+        [FWTObfuscator defaultObfuscator].encryptionKey = OBFUSCATIONKEY;
     }
     
     return [string unobfuscatedString];

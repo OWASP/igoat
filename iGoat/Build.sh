@@ -1,11 +1,19 @@
 #!/bin/sh
 
+if [[ "$1" == "" ]]; then
+    echo "Error! Usage:"
+    echo "\t./Build/sh <OBFUSCATIONKEY>"
+    exit 1
+fi
 
 export DerivedDataPath=DerivedData
-export StringObfuscationKey=SomeKey
-
+export StringObfuscationKey=$1
 declare iGoatBinary=''
 
+
+############################################################################
+# Revert Changes
+############################################################################
 function GitReset()
 {
 	git reset --hard HEAD
@@ -16,7 +24,10 @@ function GitReset()
 ############################################################################
 function ObfuscateStrings()
 {
-	./ThirdPartyTools/obfuscator-objc/objc-obfuscator obfuscate $StringObfuscationKey "iGoat/String Analysis/StringAnalysisExerciseController.m"
+    LINE="#define OBFUSCATIONKEY @\"$StringObfuscationKey\""
+    sed -i -e "s/#define OBFUSCATIONKEY.*/$LINE/" iGoat/iGoat-Prefix.pch
+    echo ObfuscationKey=\"$StringObfuscationKey\"
+	./ThirdPartyTools/obfuscator-objc/objc-obfuscator obfuscate "$StringObfuscationKey" "iGoat/String Analysis/StringAnalysisExerciseController.m"
 }
 
 ############################################################################
@@ -96,4 +107,3 @@ GitReset
 ObfuscateStrings
 ObfuscateClasses
 BuildArchive
-GitReset
