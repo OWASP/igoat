@@ -96,4 +96,4 @@ GitReset
 ObfuscateStrings
 ObfuscateClasses
 BuildArchive
-
+GitReset
