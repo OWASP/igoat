@@ -8,8 +8,9 @@ services:
       args:
         buildno: 1
     ports:
-      - "8084:8080"
+      - "8080:8080"
       - "8443:8443"
+      - "8442:8442"
     environment:
       - MAIN_APP_FILE=igoat_server.rb
     restart: always
