@@ -233,11 +233,9 @@
 		A2F639FB1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639F71F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPad.xib */; };
 		A2F639FC1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F639F81F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib */; };
 		A2F63A031F1D36CF002C4CC9 /* BackgroundingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F639FF1F1D36CF002C4CC9 /* BackgroundingExerciseController.m */; };
-		A2F63A041F1D36CF002C4CC9 /* BackgroundingExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A001F1D36CF002C4CC9 /* BackgroundingExerciseController.xib */; };
 		A2F63A051F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A011F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib */; };
 		A2F63A061F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A021F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib */; };
 		A2F63A0D1F1D36DF002C4CC9 /* CutAndPasteExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A091F1D36DF002C4CC9 /* CutAndPasteExerciseController.m */; };
-		A2F63A0E1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A0A1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib */; };
 		A2F63A0F1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A0B1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib */; };
 		A2F63A101F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A0C1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPhone.xib */; };
 		A2F63A171F1D36EF002C4CC9 /* KeychainExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A131F1D36EF002C4CC9 /* KeychainExerciseViewController.m */; };
@@ -245,7 +243,6 @@
 		A2F63A191F1D36EF002C4CC9 /* KeychainExerciseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A151F1D36EF002C4CC9 /* KeychainExerciseViewController_iPad.xib */; };
 		A2F63A1A1F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A161F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib */; };
 		A2F63A211F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A1D1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m */; };
-		A2F63A221F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A1E1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib */; };
 		A2F63A231F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A1F1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib */; };
 		A2F63A241F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F63A201F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPhone.xib */; };
 		A2F63A2B1F1D371B002C4CC9 /* LocalDataStorageExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F63A271F1D371B002C4CC9 /* LocalDataStorageExerciseController.m */; };
@@ -713,12 +710,10 @@
 		A2F639F81F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F639FE1F1D36CF002C4CC9 /* BackgroundingExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundingExerciseController.h; sourceTree = "<group>"; };
 		A2F639FF1F1D36CF002C4CC9 /* BackgroundingExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundingExerciseController.m; sourceTree = "<group>"; };
-		A2F63A001F1D36CF002C4CC9 /* BackgroundingExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController.xib; sourceTree = "<group>"; };
 		A2F63A011F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController_iPad.xib; sourceTree = "<group>"; };
 		A2F63A021F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F63A081F1D36DF002C4CC9 /* CutAndPasteExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutAndPasteExerciseController.h; sourceTree = "<group>"; };
 		A2F63A091F1D36DF002C4CC9 /* CutAndPasteExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CutAndPasteExerciseController.m; sourceTree = "<group>"; };
-		A2F63A0A1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController.xib; sourceTree = "<group>"; };
 		A2F63A0B1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController_iPad.xib; sourceTree = "<group>"; };
 		A2F63A0C1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F63A121F1D36EF002C4CC9 /* KeychainExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainExerciseViewController.h; sourceTree = "<group>"; };
@@ -728,7 +723,6 @@
 		A2F63A161F1D36EF002C4CC9 /* KeychainExerciseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseViewController_iPhone.xib; sourceTree = "<group>"; };
 		A2F63A1C1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeystrokeLoggingExerciseController.h; sourceTree = "<group>"; };
 		A2F63A1D1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeystrokeLoggingExerciseController.m; sourceTree = "<group>"; };
-		A2F63A1E1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController.xib; sourceTree = "<group>"; };
 		A2F63A1F1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController_iPad.xib; sourceTree = "<group>"; };
 		A2F63A201F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseController_iPhone.xib; sourceTree = "<group>"; };
 		A2F63A261F1D371B002C4CC9 /* LocalDataStorageExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataStorageExerciseController.h; sourceTree = "<group>"; };
@@ -1811,7 +1805,6 @@
 			children = (
 				A2F639FE1F1D36CF002C4CC9 /* BackgroundingExerciseController.h */,
 				A2F639FF1F1D36CF002C4CC9 /* BackgroundingExerciseController.m */,
-				A2F63A001F1D36CF002C4CC9 /* BackgroundingExerciseController.xib */,
 				A2F63A011F1D36CF002C4CC9 /* BackgroundingExerciseController_iPad.xib */,
 				A2F63A021F1D36CF002C4CC9 /* BackgroundingExerciseController_iPhone.xib */,
 			);
@@ -1824,7 +1817,6 @@
 			children = (
 				A2F63A081F1D36DF002C4CC9 /* CutAndPasteExerciseController.h */,
 				A2F63A091F1D36DF002C4CC9 /* CutAndPasteExerciseController.m */,
-				A2F63A0A1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib */,
 				A2F63A0B1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPad.xib */,
 				A2F63A0C1F1D36DF002C4CC9 /* CutAndPasteExerciseController_iPhone.xib */,
 			);
@@ -1848,7 +1840,6 @@
 			children = (
 				A2F63A1C1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.h */,
 				A2F63A1D1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.m */,
-				A2F63A1E1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib */,
 				A2F63A1F1F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPad.xib */,
 				A2F63A201F1D370F002C4CC9 /* KeystrokeLoggingExerciseController_iPhone.xib */,
 			);
@@ -1972,7 +1963,7 @@
 				KnownAssetTags = (
 					CyrptoChallengeVC,
 				);
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "KRvW Associates, LLC";
 				TargetAttributes = {
 					141E2FB916C3D49900586528 = {
@@ -2052,10 +2043,8 @@
 				A2F63A691F1D379F002C4CC9 /* Swaroop_Junard.html in Resources */,
 				A2CBC9A31EEACDF00032CF0B /* Images.xcassets in Resources */,
 				A29FFD811EDEE3080047E340 /* YAPExcersizeViewController.xib in Resources */,
-				A2F63A041F1D36CF002C4CC9 /* BackgroundingExerciseController.xib in Resources */,
 				A29FFD981EDEE5720047E340 /* CouchBaseExerciseViewController.xib in Resources */,
 				A2F63A651F1D379F002C4CC9 /* rutger.html in Resources */,
-				A2F63A0E1F1D36DF002C4CC9 /* CutAndPasteExerciseController.xib in Resources */,
 				A2F639D91F1D3636002C4CC9 /* StringAnalysisExerciseController_iPad.xib in Resources */,
 				A2F639E21F1D3645002C4CC9 /* MethodSwizzlingExerciseController_iPhone.xib in Resources */,
 				A2F639F11F1D3697002C4CC9 /* NSUserDefaultsStorageExerciseViewController_iPad.xib in Resources */,
@@ -2105,7 +2094,6 @@
 				4FE1C66C1EF93AE400F40320 /* RuntimeAnalysisChallengeVC.xib in Resources */,
 				A2F63A641F1D379F002C4CC9 /* mansi.html in Resources */,
 				A2F639FC1F1D36BF002C4CC9 /* RemoteAuthenticationExerciseController_iPhone.xib in Resources */,
-				A2F63A221F1D370F002C4CC9 /* KeystrokeLoggingExerciseController.xib in Resources */,
 				A2F639B01F1D356F002C4CC9 /* RandomKeyGenerationExerciseViewController.xib in Resources */,
 				A29FFD281EDEE2FB0047E340 /* README.txt in Resources */,
 				A2F639C21F1D3606002C4CC9 /* PlistStorageExerciseViewController_iPhone.xib in Resources */,
@@ -2333,12 +2321,18 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -2378,12 +2372,18 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
