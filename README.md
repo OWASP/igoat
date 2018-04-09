@@ -20,7 +20,7 @@ Step 4 is optional, but highly recommended for all iOS developers. Assistance is
 
 __Page__ - https://www.owasp.org/index.php/OWASP_iGoat_Tool_Project
 
-__Project Leader__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroopsy?lang=en))
+__Project Lead__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroopsy?lang=en))
 
 __Twitter__ - ([@OWASPiGoat](https://twitter.com/owaspigoat?lang=en))
 
