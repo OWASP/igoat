@@ -29,7 +29,7 @@ static NSString *failureMessage = @"Fail! You didn't purchase iPhone for $0";
     NSData *postData = [postString dataUsingEncoding:NSUTF8StringEncoding];
     
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://13.59.35.177/crypto1/checkout/"]
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:8081/crypto1/checkout/"]
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:1000.0];
     [request setHTTPMethod:@"POST"];

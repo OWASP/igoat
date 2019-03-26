@@ -12,7 +12,7 @@
 #import <CommonCrypto/CommonKeyDerivation.h>
 
 
-#define kURL    @"http://ec2-13-59-35-177.us-east-2.compute.amazonaws.com/crypto1/webkit.php"
+#define kURL    @"http://localhost:8081/crypto1/webkit.php"
 
 
 const char cipher[] = {
