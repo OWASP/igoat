@@ -33,7 +33,7 @@ static NSString *const SecretMessage = @"SecretPass";
 
 
 -(void) fetchKeyFromServer {
-    NSString *urlString = @"http://ec2-13-59-35-177.us-east-2.compute.amazonaws.com/crypto1/cryptoKey.php";
+    NSString *urlString = @"http://localhost:8081/cryptoKey.php";
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
     urlRequest.HTTPBody = [@"token=key" dataUsingEncoding:NSUTF8StringEncoding];
     urlRequest.HTTPMethod = @"POST";
