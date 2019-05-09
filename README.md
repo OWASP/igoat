@@ -89,6 +89,7 @@ To contribute to iGoat project, please contact __Swaroop__ ( swaroop.yermalkar@o
 * Anthony Gonsalves
 * Junard Lebajan (@junard)
 * Ken van Wyk
+* Arun @he_hacks 
 * Jonathan Carter
 * Heefan
 * Tilak Kumar
