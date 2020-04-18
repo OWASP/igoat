@@ -1,0 +1,11 @@
+name: iOS Build CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Run iGoat build
+      run: cd iGoat && xcodebuild clean build -project iGoat.xcodeproj -scheme iGoat -destination "platform=iOS Simulator,name=iPhone 11 Pro"
